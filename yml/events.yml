@@ -1,0 +1,2539 @@
+---
+# -----------------------------------------------------------
+#                      Priorité 1
+# -----------------------------------------------------------
+# -----------------------------------------------------------
+Thales:
+  titre: Thalès découvre l'électricité statique
+  date: -600
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Marseille:
+  titre: Les Phocéens fondent une colonie à Marseille
+  date: -600
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Bouddha:
+  titre: naissance de Bouddha
+  date: -563
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Rome:
+  titre: instauration de la République romaine
+  date: -509
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Confucius:
+  titre: mort de Confucius
+  date: -479
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Parthenon:
+  titre: construction du Parthénon
+  date: -447
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Peloponese:
+  titre: Sparte se dresse contre Athènes
+  date: -432
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Sophocle:
+  titre: Sophocle écrit Œdipe roi
+  date: -420
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Aristophane:
+  titre: Aristophane écrit L'Assemblée des femmes
+  date: -392
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Olympie:
+  titre: Les Arcadiens reprennent le contrôle des jeux à Olympie
+  date: -364
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Aristote:
+  titre: Aristote écrit son Histoire des Animaux
+  date: -343
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Alexandre:
+  titre: mort d'Alexandre le Grand
+  date: -323
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Phare:
+  titre: construction du Phare d'Alexandrie
+  date: -283
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Ctesibios:
+  titre: Ctésibios construit un orgue hydraulique
+  date: -260
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Philon:
+  titre: Philon de Byzance écrit la Syntaxe Mécanique
+  date: -240
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Hannibal:
+  titre: Hannibal traverse les Alpes
+  date: -218
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+QinShiHuang:
+  titre: armée de terre cuite de l'empereur Qin Shi Huang
+  date: -209
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Samothrace:
+  titre: la Victoire de Samothrace est sculptée
+  date: -190
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Seleucos:
+  titre: Séleucos comprend l'influence de la Lune sur les marées
+  date: -150
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Punique:
+  titre: Destruction de Carthage par les Romains
+  date: -146
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Alesia:
+  titre: bataille d'Alésia
+  date: -52
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Virgile:
+  titre: Virgile écrit l'Énéide
+  date: -20
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Jesus:
+  titre: naissance de Jésus
+  date: -4
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Metamorphoses:
+  titre: Ovide écrit les métamorphoses
+  date: 1
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Gard:
+  titre: Construction du Pont du Gard
+  date: 40
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Pompei:
+  titre: Destruction de Pompéi
+  date: 79
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Cailun:
+  titre: Cai Lun codifie la fabrication du papier
+  date: 105
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Hadrien:
+  titre: Hadrien fait construire un mur au nord de l'Angleterre
+  date: 122
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Arles:
+  titre: Construction du cirque romain d'Arles
+  date: 149
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Caracalla:
+  titre: Thermes de Caracalla à Rome
+  date: 216
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Goths:
+  titre: Les Goths atteignent la mer noire
+  date: 238
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Porcelaine:
+  titre: Invention de la porcelaine en Chine
+  date: 255
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Maya:
+  titre: Époque classique de la civilisation Maya
+  date: 300
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Jamblique:
+  titre: Jamblique romance la vie de Pythagore
+  date: 310
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Constantin:
+  titre: Constantin se convertit au christianisme
+  date: 326
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Ausone:
+  titre: Ausone écrit un centon nuptial
+  date: 369
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Augustin:
+  titre: Saint-Augustin écrit ses Confessions
+  date: 400
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Wisigoths:
+  titre: Sac de Rome par les Wisigoths
+  date: 410
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Catalauniques:
+  titre: bataille des Champs Catalauniques
+  date: 451
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Romain:
+  titre: Fin de l'Empire Romain d'Occident
+  date: 476
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Clovis:
+  titre: baptême de Clovis
+  date: 496
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Bamiyan:
+  titre: Construction du premier bouddha de Bâmiyân
+  date: 507
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Benoit:
+  titre: Saint Benoît fonde une communauté de moines.
+  date: 529
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Sophie:
+  titre: Achèvement de la basilique Sainte Sophie à Constantinople
+  date: 537
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Xilogravure:
+  titre: Les Chinois impriment des pages gravées sur bois
+  date: 593
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Moulin:
+  titre: le moulin à vent apparaît en Perse
+  date: 620
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Hegire:
+  titre: Hégire
+  date: 622
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Kairouan:
+  titre: Grande mosquée de Kairouan
+  date: 670
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Poudre:
+  titre: les Chinois inventent la poudre
+  date: 700
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Tarik:
+  titre: Conquête musulmane de la péninsule ibérique
+  date: 711
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Poitiers:
+  titre: bataille de Poitiers
+  date: 732
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+#
+Borobudur:
+  titre: Construction du temple de Borobudur
+  date: 750
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Bagdad:
+  titre: Fondation de Bagdad par al-Mansur
+  date: 762
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Cordoue:
+  titre: Construction de la Mosquée de Cordoue
+  date: 784
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Charlemagne:
+  titre: Charlemagne sacré empereur
+  date: 800
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Adli:
+  titre: Al-Adli écrit un traité du jeu d'échecs
+  date: 840
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+TraiteVerdun:
+  titre: Traité de Verdun
+  date: 843
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Angkor:
+  titre: Premiers édifices à Angkor
+  date: 879
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Vikings:
+  titre: Les Vikings assiègent Paris
+  date: 885
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Razi:
+  titre: Al-Razi classifie les composés chimiques
+  date: 900
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Cluny:
+  titre: Fondation de l'abbaye de Cluny
+  date: 910
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Toltex:
+  titre: Civilisation toltèque au Mexique
+  date: 930
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Gouvernail:
+  titre: Apparition du gouvernail d'étambot en Chine
+  date: 940
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Bibliotheque:
+  titre: La bibliothèque de Cordoue compte 400 000 volumes
+  date: 960
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Danemark:
+  titre: naissance du Danemark
+  date: 965
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Sahl:
+  titre: Ibn Sahl énonce des lois de la réfraction
+  date: 980
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Capet:
+  titre: Hugues Capet élu roi
+  date: 987
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Zahrawi:
+  titre: Al-Zahrawi invente différentes techniques chirurgicales
+  date: 1000
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Erikson:
+  titre: Leif Erikson arrive au Canada
+  date: 1010
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Sina:
+  titre: Ibn Sina écrit son Canon de la Médecine
+  date: 1025
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Sheng:
+  titre: Bi Sheng invente la typographie
+  date: 1045
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Hastings:
+  titre: bataille d'Hastings
+  date: 1066
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Roland:
+  titre: Rédaction de la Chanson de Roland
+  date: 1098
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Jerusalem:
+  titre: Prise de Jérusalem par les croisés
+  date: 1099
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Arthur:
+  titre: Légende du roi Arthur
+  date: 1136
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Alienor:
+  titre: Aliénor d'Aquitaine se remarie
+  date: 1152
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Notredame:
+  titre: Construction de Notre-Dame de Paris
+  date: 1163
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Saladin:
+  titre: Saladin reconquiert Jérusalem
+  date: 1187
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Renart:
+  titre: Le Roman de Renart
+  date: 1190
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Santiago:
+  titre: Nouvelle cathédrale de Saint Jacques de Compostelle
+  date: 1211
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Bouvines:
+  titre: Bataille de Bouvines
+  date: 1214
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Nafis:
+  titre: Ibn Nafis décrit la circulation du sang
+  date: 1242
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Mongols:
+  titre: Prise de Bagdad par les Mongols
+  date: 1258
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Lorris:
+  titre: Guillaume de Lorris écrit le Roman de la Rose.
+  date: 1275
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+MarcoPolo:
+  titre: Marco Polo de retour de Venise
+  date: 1298
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Ottoman:
+  titre: Début de l'Empire Ottoman
+  date: 1299
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Dante:
+  titre: Dante écrit la Divine Comédie
+  date: 1321
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Peste:
+  titre: Début de la Peste Noire
+  date: 1347
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Boccace:
+  titre: Boccace écrit le Décaméron
+  date: 1349
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Khaldoun:
+  titre: Ibn Khaldoun écrit une Histoire Universelle
+  date: 1377
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Chaucer:
+  titre: Chaucer écrit les Contes de Canterbury
+  date: 1400
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Azincourt:
+  titre: Bataille d'Azincourt
+  date: 1415
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Jeanne:
+  titre: Jeanne d'Arc est brûlée à Rouen
+  date: 1431
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Duomo:
+  titre: Dôme de la Cathédrale de Florence
+  date: 1436
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Machu:
+  titre: Construction du Machu Picchu
+  date: 1455
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+PriseConstantinople:
+  titre: Prise de Constantinople par les Turcs.
+  date: 1453
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Botticelli:
+  titre: Botticelli peint la naissance de Vénus
+  date: 1486
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Colomb:
+  titre: Christophe Colomb arrive aux Antilles
+  date: 1492
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Joconde:
+  titre: Léonard de Vinci peint la Joconde
+  date: 1505
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Marignan:
+  titre: Bataille de Marignan
+  date: 1515
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Cartier:
+  titre: Jacques Cartier arrive au Canada
+  date: 1534
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Pare:
+  titre: Ambroise Paré soigne des blessures de guerre
+  date: 1537
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Palissy:
+  titre: Bernard Palissy met au point un émail
+  date: 1555
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+SaintBarthelemy:
+  titre: Massacre de la Saint-Barthélémy
+  date: 1572
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Montaigne:
+  titre: Montaigne publie les Essais
+  date: 1580
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Nantes:
+  titre: Édit de Nantes
+  date: 1598
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Dutch:
+  titre: La Compagnie Néerlandaise des Indes Orientales est cotée en bourse
+  date: 1602
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Drebbel:
+  titre: Drebbel construit le premier sous-marin
+  date: 1620
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Mayflower:
+  titre: Le Mayflower accoste à Plymouth
+  date: 1620
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Montreal:
+  titre: Fondation de Montréal
+  date: 1642
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Rembrandt:
+  titre: Rembrandt peint la Ronde de Nuit
+  date: 1642
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Pyrenees:
+  titre: Traité des Pyrénées
+  date: 1659
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Vermeer:
+  titre: Vermeer peint la Jeune Fille à la perle
+  date: 1665
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Revocation:
+  titre: Louis XIV révoque l'Édit de Nantes
+  date: 1685
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+CanalMidi:
+  titre: Inauguration du Canal du Midi
+  date: 1681
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+SaintPetersbourg:
+  titre: Fondation de Saint-Pétersbourg
+  date: 1703
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Law:
+  titre: Law publie Money and Trade considered
+  date: 1705
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+PesteMarseille:
+  titre: Épidémie de peste à Marseille
+  date: 1720
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Vivaldi:
+  titre: Vivaldi compose les Quatre Saisons
+  date: 1723
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Celsius:
+  titre: Celsius propose une échelle thermométrique
+  date: 1742
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Lisbonne:
+  titre: Séisme à Lisbonne
+  date: 1755
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Rousseau:
+  titre: Rousseau écrit Du contrat social
+  date: 1762
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+EtatsUnis:
+  titre: Déclaration d'indépendance des États-Unis
+  date: 1776
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Montgolfier:
+  titre: Premier vol d'un être humain dans une montgolfière
+  date: 1783
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+ExecutionLouisXVI:
+  titre: Exécution de Louis XVI
+  date: 1793
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Carême:
+  titre: Carême donne la mesure de son talent de pâtissier
+  date: 1798
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Goya:
+  titre: Goya peint el Tres de Mayo
+  date: 1814
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+CongresVienne:
+  titre: Congrès de Vienne
+  date: 1815
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+#
+Glorieuses:
+  titre: Les Trois Glorieuses
+  date: 1830
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Andersen:
+  titre: Andersen écrit la Petite Sirène
+  date: 1835
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Esclavage:
+  titre: La Seconde République abolit l'esclavage
+  date: 1848
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Melville:
+  titre: Melville écrit Moby Dick
+  date: 1851
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Sadowa:
+  titre: Bataille de Sadowa
+  date: 1866
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+#
+Brahms:
+  titre: Brahms compose les Danses Hongroises
+  date: 1869
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+Haymarket:
+  titre: Le mouvement ouvrier dégénère à Chicago
+  date: 1886
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Eiffel:
+  titre: Inauguration de la Tour Eiffel
+  date: 1889
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+EglisesEtat:
+  titre: Loi de séparation des Églises et de l'État
+  date: 1905
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Einstein:
+  titre: Einstein publie sa Théorie de la Relativité restreinte
+  date: 1905
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+GuerreMondiale:
+  titre: Début de la Première Guerre Mondiale
+  date: 1914
+  priorite: 1
+  nature: politique
+
+# -----------------------------------------------------------
+Panama:
+  titre: Inauguration du canal de Panama
+  date: 1914
+  priorite: 1
+  nature: art
+
+# -----------------------------------------------------------
+#                      Priorité 2
+# -----------------------------------------------------------
+
+# -----------------------------------------------------------
+Kindi:
+  titre: Al-Kindi distille de l'alcool à des fins médicales
+  date: 850
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Aurillac:
+  titre: Fondation de l'abbaye d'Aurillac
+  date: 894
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Biruni:
+  titre: Al-Biruni écrit une chronologie des nations anciennes
+  date: 998
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Haytham:
+  titre: Al-Haytham écrit un traité d'Optique
+  date: 1020
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Rushd:
+  titre: Ibn Rushd théorise la mécanique
+  date: 1170
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Temujin:
+  titre: Temujin devient Gengis Khan
+  date: 1206
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Navas:
+  titre: Bataille de las Navas de Tolosa
+  date: 1212
+  priorite: 4
+  nature: politique
+
+# -----------------------------------------------------------
+Muret:
+  titre: Bataille de Muret
+  date: 1213
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+FredericII:
+  titre: Frédéric II devient roi de Jerusalem
+  date: 1229
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Westminster:
+  titre: Début de la construction de l'abbaye de Westminster
+  date: 1245
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+NotreDame:
+  titre: Achèvement de Notre-Dame de Paris
+  date: 1250
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+AlphonseX:
+  titre: Alphonse X couronné roi de Castille
+  date: 1252
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Bacon:
+  titre: Roger Bacon écrit son Opus Majus
+  date: 1267
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+LouisIX:
+  titre: Mort de Louis IX devant Tunis
+  date: 1270
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Farisi:
+  titre: Al-Farisi explique l'arc-en-ciel
+  date: 1300
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Avignon:
+  titre: Un pape en Avignon
+  date: 1305
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+Templiers:
+  titre: Exécution des Templiers
+  date: 1314
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Ockham:
+  titre: Guillaume d'Ockham réaffirme le principe du rasoir
+  date: 1319
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Alhambra:
+  titre: Achèvement de l'Alhambra de Grenade
+  date: 1333
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Crecy:
+  titre: Bataille de Crécy
+  date: 1346
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Buridan:
+  titre: Buridan théorise l'inertie
+  date: 1362
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Pekin:
+  titre: Achèvement de la Cité interdite à Pékin
+  date: 1420
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Arnolfini:
+  titre: Van Eyck peint les Arnolfini
+  date: 1434
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Gutenberg:
+  titre: Gutenberg invente l'imprimerie
+  date: 1454
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Peronne:
+  titre: Entrevue de Péronne
+  date: 1468
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Vinci:
+  titre: Léonard de Vinci dessine les plans d'une machine volante
+  date: 1488
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Grenade:
+  titre: Prise de Grenade
+  date: 1492
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Pacioli:
+  titre: Luca Pacioli décrit la comptabilité en partie double
+  date: 1494
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+VascoGama:
+  titre: Vasco de Gama ouvre la route des Indes
+  date: 1498
+  priorite: 4
+  nature: politique
+
+# -----------------------------------------------------------
+Cabral:
+  titre: Cabral débarque au Brésil
+  date: 1500
+  priorite: 4
+  nature: politique
+
+# -----------------------------------------------------------
+MichelAnge:
+  titre: Michel-Ange sculpte David
+  date: 1501
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Raphael:
+  titre: Raphaël termine l'École d'Athènes
+  date: 1512
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Machiavel:
+  titre: Machiavel écrit Le Prince
+  date: 1513
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Magellan:
+  titre: Magellan part pour le tour du Monde
+  date: 1518
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Chambord:
+  titre: Début de la construction du château de Chambord
+  date: 1519
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Luther:
+  titre: Excommunication de Luther
+  date: 1521
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Pavie:
+  titre: Bataille de Pavie
+  date: 1525
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+Paracelse:
+  titre: Paracelse soigne la syphilis par le mercure
+  date: 1529
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Pizarro:
+  titre: Pizarro arrive au Pérou
+  date: 1531
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+Rabelais:
+  titre: Rabelais écrit Pantagruel
+  date: 1532
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+HenriVIII:
+  titre: Annulation du mariage d'Henri VIII et Catherine d'Aragon
+  date: 1533
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+Vesale:
+  titre: Vésale publie ses Institutions Anatomiques
+  date: 1538
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Dolet:
+  titre: Exécution d'Étienne Dolet
+  date: 1546
+  priorite: 4
+  nature: politique
+
+# -----------------------------------------------------------
+Cortes:
+  titre: Cortés écrit un Breve Compendio de la Arte de Navegar
+  date: 1551
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Servet:
+  titre: Exécution de Miguel Servet
+  date: 1553
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+#
+CharlesQuint:
+  titre: Abdication de Charles Quint
+  date: 1555
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Veronese:
+  titre: Véronèse peint les Noces de Cana
+  date: 1563
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Bruegel:
+  titre: Bruegel peint le Repas de noce
+  date: 1566
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Mercator:
+  titre: Mercator invente une projection pour la carte du monde
+  date: 1569
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Lepante:
+  titre: Bataille de Lépante
+  date: 1571
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+Bourne:
+  titre: Bourne dessine les plans d'un sous-marin
+  date: 1578
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Stuart:
+  titre: Exécution de Marie Stuart
+  date: 1587
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Armada:
+  titre: Destruction de l'Invincible Armada
+  date: 1588
+  priorite: 4
+  nature: politique
+
+# -----------------------------------------------------------
+Janssen:
+  titre: Hans et Zacharias Janssen inventent le microscope
+  date: 1590
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Shakespeare:
+  titre: Shakespeare écrit Roméo et Juliette
+  date: 1595
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Bruno:
+  titre: Exécution de Giordano Bruno
+  date: 1600
+  priorite: 4
+  nature: politique
+
+# -----------------------------------------------------------
+Edo:
+  titre: Début de l'époque d'Edo au Japon
+  date: 1603
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+Cervantes:
+  titre: Premier volume de Don Quichotte
+  date: 1605
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Lippershey:
+  titre: Lippershey invente la lunette astronomique
+  date: 1608
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Quebec:
+  titre: Fondation de Québec
+  date: 1608
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+HenriIV:
+  titre: Assassinat d'Henri IV
+  date: 1610
+  priorite: 4
+  nature: politique
+
+# -----------------------------------------------------------
+CervantesShakespeare:
+  titre: Mort de Cervantes et Shakespeare
+  date: 1616
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Rubens:
+  titre: Rubens achève le cycle de Marie de Médicis
+  date: 1621
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Harvey:
+  titre: Harvey décrit la circulation sanguine
+  date: 1628
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+TajMahal:
+  titre: Début de la construction du Taj Mahal
+  date: 1632
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+LaTour:
+  titre: Georges de la Tour peint le Tricheur à l'as de carreau
+  date: 1635
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Corneille:
+  titre: Corneille écrit Le Cid
+  date: 1636
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Tulipe:
+  titre: Effondrement du cours des bulbes de tulipe à Haarlem
+  date: 1637
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Galilee:
+  titre: Galilée énonce ses lois sur la chute des corps
+  date: 1638
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Torricelli:
+  titre: Torricelli invente le baromètre
+  date: 1643
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Pascal:
+  titre: Le beau-frère de Pascal mesure la pression au sommet du Puy de Dôme
+  date: 1647
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+RevolutionAnglaise:
+  titre: Première révolution anglaise
+  date: 1649
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Leviathan:
+  titre: Hobbes écrit le Léviathan
+  date: 1651
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Velasquez:
+  titre: Velasquez peint les Ménines
+  date: 1656
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Huygens:
+  titre: Huygens invente une horloge à pendule pesant
+  date: 1657
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+LouisXIV:
+  titre: Louis XIV prend le pouvoir
+  date: 1661
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+Boyle:
+  titre: Boyle découvre la loi des gaz parfaits
+  date: 1662
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Hooke:
+  titre: Hooke découvre la cellule
+  date: 1665
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Moliere:
+  titre: Molière écrit le Médecin malgré lui
+  date: 1666
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Racine:
+  titre: Racine écrit Andromaque
+  date: 1667
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+LaFontaine:
+  titre: Premier recueil des Fables de La Fontaine
+  date: 1668
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Newton:
+  titre: Newton invente un télescope à miroir parabolique
+  date: 1672
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Turenne:
+  titre: Ravage du Palatinat par Turenne
+  date: 1674
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Roemer:
+  titre: Roemer détermine la vitesse de la lumière
+  date: 1676
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Mariotte:
+  titre: Mariotte publie un Essai sur la nature de l'Air
+  date: 1679
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+TurcsVienne:
+  titre: Les Turcs assiègent Vienne
+  date: 1683
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+BillRights:
+  titre: Glorieuse Révolution d'Angleterre
+  date: 1689
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+Charpentier:
+  titre: Marc-Antoine Charpentier compose un Te Deum
+  date: 1692
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Perrault:
+  titre: Perrault publie les Contes de ma Mère l'Oye
+  date: 1697
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+SuccessionEspagne:
+  titre: Début de la guerre de Succession d'Espagne
+  date: 1701
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Cristofori:
+  titre: Cristofori invente le pianoforte
+  date: 1709
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Fahrenheit:
+  titre: Fahrenheit invente un thermomètre à mercure
+  date: 1714
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Persanes:
+  titre: Montesquieu écrit les Lettres Persanes
+  date: 1721
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Vico:
+  titre: Vico écrit la Science Nouvelle
+  date: 1725
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Swift:
+  titre: Swift écrit les Voyages de Gulliver
+  date: 1726
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Chardin:
+  titre: Chardin peint la Raie
+  date: 1728
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Marivaux:
+  titre: Marivaux écrit le Jeu de l'Amour et du Hasard
+  date: 1730
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+#
+Voltaire:
+  titre: Voltaire écrit les Lettres Anglaises
+  date: 1734
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Harrison:
+  titre: Harrison met au point un chronomètre de marine
+  date: 1737
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Vaucanson:
+  titre: Le canard de Vaucanson le rend célèbre
+  date: 1738
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Bach:
+  titre: Bach compose l'Art de la Fugue
+  date: 1740
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Haendel:
+  titre: Haendel compose le Messie
+  date: 1741
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Leyde:
+  titre: La bouteille de Leyde crée des décharges électriques
+  date: 1745
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Montesquieu:
+  titre: Montesquieu écrit De l'esprit des Lois
+  date: 1748
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Encyclopedie:
+  titre: Premier volume de l'Encyclopédie
+  date: 1751
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Franklin:
+  titre: Franklin attache une clé à un cerf-volant un soir d'orage
+  date: 1752
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Linne:
+  titre: Von Linné propose une nomenclature des espèces vivantes
+  date: 1753
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Acadiens:
+  titre: Déportation des Acadiens
+  date: 1755
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+Candide:
+  titre: Voltaire écrit Candide
+  date: 1759
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Jesuites:
+  titre: Expulsion des Jésuites de France
+  date: 1763
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+Spallanzani:
+  titre: Spallanzani réfute la génération spontanée
+  date: 1768
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Watt:
+  titre: Watt dépose le brevet d'une machine à vapeur
+  date: 1769
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Messier:
+  titre: Messier publie un catalogue d'objets célestes
+  date: 1771
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Boston:
+  titre: Boston Tea Party
+  date: 1773
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Werther:
+  titre: Goethe écrit Les Souffrances du jeune Werther
+  date: 1774
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Necker:
+  titre: Necker écrit Sur la Législation et le Commerce des grains
+  date: 1775
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Smith:
+  titre: Smith publie ses recherches sur la richesse des nations
+  date: 1776
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Lavoisier:
+  titre: Lavoisier nomme un nouveau gaz, l'oxygène
+  date: 1777
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Beaumarchais:
+  titre: Beaumarchais écrit le Mariage de Figaro
+  date: 1778
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Kant:
+  titre: Kant écrit la Critique de la raison pure
+  date: 1781
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Choderlos:
+  titre: Choderlos de Laclos écrit les Liaisons Dangereuses
+  date: 1782
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Cavendish:
+  titre: Cavendish réalise la synthèse de l'eau
+  date: 1784
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Perouse:
+  titre: Départ de La Pérouse
+  date: 1785
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Saussure:
+  titre: Saussure mesure la pression atmosphérique au sommet du Mont-Blanc
+  date: 1787
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+RevolutionFrancaise:
+  titre: Début de la Révolution française
+  date: 1789
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Goethe:
+  titre: Goethe écrit un Essai sur la Métamorphose des plantes
+  date: 1790
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Mozart:
+  titre: Mozart compose la Flute Enchantée
+  date: 1791
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+RepubliqueFrancaise:
+  titre: Première République Française
+  date: 1792
+  priorite: 4
+  nature: politique
+
+# -----------------------------------------------------------
+Huber:
+  titre: Huber écrit ses Nouvelles Observations sur les Abeilles
+  date: 1792
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Chappe:
+  titre: Chappe expérimente son système de télégraphe
+  date: 1794
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Appert:
+  titre: Appert met au point la mise en conserve des aliments
+  date: 1795
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Jenner:
+  titre: Jenner teste un vaccin contre la variole
+  date: 1796
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Brumaire:
+  titre: Coup d'état du dix-huit brumaire
+  date: 1799
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+Volta:
+  titre: Volta invente une pile électrique
+  date: 1800
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Humboldt:
+  titre: Humboldt gravit le Chimborazo
+  date: 1802
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Say:
+  titre: Say écrit un Traité d'économie politique
+  date: 1803
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Louisiane:
+  titre: Vente de la Louisiane aux États-Unis
+  date: 1803
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+Trevithick:
+  titre: Trevithick construit la première locomotive à vapeur
+  date: 1804
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Napoleon:
+  titre: Napoléon sacré Empereur
+  date: 1804
+  priorite: 4
+  nature: politique
+
+# -----------------------------------------------------------
+Trafalgar:
+  titre: Bataille de Trafalgar
+  date: 1805
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+Iena:
+  titre: Bataille d'Iena
+  date: 1806
+  priorite: 4
+  nature: politique
+
+# -----------------------------------------------------------
+Faust:
+  titre: Goethe écrit Faust
+  date: 1808
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+RetraiteRussie:
+  titre: Retraite de Russie
+  date: 1812
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Cuvier:
+  titre: Cuvier théorise l'extinction des espèces vivantes
+  date: 1812
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Laennec:
+  titre: Laennec invente le stéthoscope
+  date: 1817
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Gericault:
+  titre: Géricault peint le Radeau de la Méduse
+  date: 1819
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Bolivar:
+  titre: Bolivar devient président de la République de Colombie
+  date: 1821
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+Fresnel:
+  titre: Fresnel publie sa Théorie Ondulatoire de la Lumière
+  date: 1822
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Scott:
+  titre: Walter Scott écrit Quentin Durward
+  date: 1823
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Beethoven:
+  titre: Beethoven compose la Neuvième Symphonie
+  date: 1824
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Stephenson:
+  titre: Stephenson ouvre la première ligne ferroviaire
+  date: 1825
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Niepce:
+  titre: Niépce fixe une image photographique
+  date: 1826
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Ohm:
+  titre: Ohm énonce une loi sur les résistances électriques
+  date: 1827
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Algerie:
+  titre: Conquête de l'Algérie par la France
+  date: 1830
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Berlioz:
+  titre: Berlioz compose la Symphonie Fantastique
+  date: 1830
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Hugo:
+  titre: Victor Hugo écrit Notre-Dame de Paris
+  date: 1831
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Balzac:
+  titre: Balzac écrit Eugénie Grandet
+  date: 1833
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Faraday:
+  titre: Faraday énonce les lois de l'électrolyse
+  date: 1834
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Morse:
+  titre: Morse invente un système de télégraphie électrique
+  date: 1836
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Daguerre:
+  titre: Présentation du daguerréotype au public
+  date: 1839
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Verdi:
+  titre: Verdi compose Nabucco
+  date: 1841
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Chopin:
+  titre: Chopin compose la Polonaise héroïque
+  date: 1842
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Turner:
+  titre: Turner peint Lumière et Couleur
+  date: 1843
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Dumas:
+  titre: Alexandre Dumas écrit les Trois Mousquetaires
+  date: 1844
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Sax:
+  titre: Sax dépose le brevet du saxophone
+  date: 1846
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+RueeOr:
+  titre: Début de la ruée vers l'or en Californie
+  date: 1848
+  priorite: 4
+  nature: politique
+
+# -----------------------------------------------------------
+Chateaubriand:
+  titre: Chateaubriand écrit les Mémoires d'outre-tombe
+  date: 1850
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+NapoleonIII:
+  titre: Coup d'état de Louis-Napoléon Bonaparte
+  date: 1851
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Sebastopol:
+  titre: Début de la guerre de Crimée
+  date: 1853
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+Bessemer:
+  titre: Bessemer dépose un brevet pour la production de l'acier
+  date: 1855
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Wagner:
+  titre: Wagner compose la Chevauchée des Valkyries
+  date: 1856
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Baudelaire:
+  titre: Baudelaire écrit les Fleurs du Mal
+  date: 1857
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Cable:
+  titre: Premier câble transatlantique
+  date: 1858
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Solferino:
+  titre: Bataille de Solferino
+  date: 1859
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+Darwin:
+  titre: Darwin publie L'Origine des espèces
+  date: 1859
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+NiceSavoie:
+  titre: Comté de Nice et Savoie rattachés à la France
+  date: 1860
+  priorite: 4
+  nature: politique
+
+# -----------------------------------------------------------
+Servage:
+  titre: Abolition du servage en Russie
+  date: 1861
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+Dunant:
+  titre: Henry Dunant écrit Un souvenir de Solférino
+  date: 1862
+  priorite: 4
+  nature: politique
+
+# -----------------------------------------------------------
+Manet:
+  titre: Manet peint le Déjeuner sur l'herbe
+  date: 1863
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Maxwell:
+  titre: Maxwell propose une théorie dynamique du champ électromagnétique
+  date: 1864
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Lincoln:
+  titre: Assassinat de Lincoln
+  date: 1865
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+Mendel:
+  titre: Mendel publie ses Expériences sur les Hybrides de Plantes
+  date: 1865
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Strauss:
+  titre: Strauss compose le Beau Danube Bleu
+  date: 1866
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Tolstoi:
+  titre: Tolstoï publie Guerre et Paix
+  date: 1867
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Mendeleiev:
+  titre: Mendeleïev conçoit une classification périodique des éléments
+  date: 1869
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+TroisiemeRepublique:
+  titre: début de la Troisième République
+  date: 1870
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+CommuneParis:
+  titre: Commune de Paris
+  date: 1871
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+Monet:
+  titre: Monet peint Impression Soleil Levant
+  date: 1872
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Bizet:
+  titre: Bizet compose Carmen
+  date: 1875
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Tchaikovski:
+  titre: Tchaïkovski compose le Lac des Cygnes
+  date: 1876
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Bell:
+  titre: Bell réalise la première liaison téléphonique
+  date: 1877
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Ibsen:
+  titre: Ibsen écrit Une maison de poupée
+  date: 1879
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Laique:
+  titre: École laïque gratuite et obligatoire
+  date: 1882
+  priorite: 4
+  nature: politique
+
+# -----------------------------------------------------------
+Rodin:
+  titre: Rodin sculpte le Penseur
+  date: 1882
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Nietszche:
+  titre: Nietszche écrit Ainsi parlait Zarathoustra
+  date: 1883
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Zola:
+  titre: Zola écrit Germinal
+  date: 1884
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Pasteur:
+  titre: Pasteur découvre le vaccin antirabique
+  date: 1885
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Albeniz:
+  titre: Albéniz compose une Suite espagnole
+  date: 1886
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Michelson:
+  titre: Expérience de Michelson et Morley
+  date: 1887
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+VanGogh:
+  titre: Van Gogh peint les Tournesols
+  date: 1888
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Cezanne:
+  titre: Cézanne peint les Joueurs de cartes
+  date: 1890
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Dickson:
+  titre: Dickson invente le Kinetoscope
+  date: 1891
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Ivanovsky:
+  titre: Ivanovsky découvre le virus de la mosaïque du tabac
+  date: 1892
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Diesel:
+  titre: Diesel théorise la construction d'un moteur à combustion
+  date: 1893
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+DreyfusArrete:
+  titre: Arrestation du capitaine Dreyfus
+  date: 1894
+  priorite: 2
+  nature: politique
+
+# -----------------------------------------------------------
+Marconi:
+  titre: Marconi invente la télégraphie sans fil
+  date: 1894
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Rontgen:
+  titre: Röntgen découvre les rayons X
+  date: 1895
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Becquerel:
+  titre: Bequerel découvre la radioactivité naturelle
+  date: 1896
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Rostand:
+  titre: Rostand écrit Cyrano de Bergerac
+  date: 1897
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Dukas:
+  titre: Dukas compose l'Apprenti sorcier
+  date: 1897
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Curie:
+  titre: Pierre et Marie Curie découvrent le polonium et le radium
+  date: 1898
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Boxers:
+  titre: Révolte des Boxers en Chine
+  date: 1899
+  priorite: 3
+  nature: politique
+
+# -----------------------------------------------------------
+Tesla:
+  titre: Tesla découvre le principe du radar
+  date: 1900
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Freud:
+  titre: Freud publie l'Interprétation du rêve
+  date: 1900
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Wright:
+  titre: Les frères Wright font voler un avion
+  date: 1902
+  priorite: 4
+  nature: art
+
+# -----------------------------------------------------------
+Sibelius:
+  titre: Sibelius compose la Valse triste
+  date: 1903
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+DreyfusRehabilite:
+  titre: Dreyfus est réhabilité
+  date: 1906
+  priorite: 4
+  nature: politique
+
+# -----------------------------------------------------------
+Picasso:
+  titre: Picasso peint les Demoiselles d'Avignon
+  date: 1907
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Amundsen:
+  titre: Amundsen arrive au pôle Sud
+  date: 1911
+  priorite: 3
+  nature: art
+
+# -----------------------------------------------------------
+Wegener:
+  titre: Wegener démontre la dérive des continents
+  date: 1912
+  priorite: 2
+  nature: art
+
+# -----------------------------------------------------------
+Stravinski:
+  titre: Stravinski compose le Sacre du Printemps
+  date: 1913
+  priorite: 2
+  nature: art

@@ -1,0 +1,610 @@
+---
+title: Foire aux Questions
+model: default
+---
+[#<]
+{#def]Titre[#,]titre[][#>]
+<h1 class="ui header">
+  <div class="content">
+    #{titre}
+  </div>
+</h1>
+[#def}
+
+{#def]Rubrique[#,]titre[]
+[#html>]<!--------------------------- debut rubrique ----------------------------->
+<font color=#cb000><h2>#{titre}</h2></font>
+[#def}
+
+{#def]Question[#,]id[][#,]titre[][#,]image[][#,]reponse[][#,]width.table[80%][#,]width.image[400][#,]width.tdimg[40%][#,]width.tdrep[40%]
+[#rb<]id=#{=id}.strip;titre=#{=titre}.strip;image=#{=image}.strip
+[#html>]
+<!--------------------------- debut question ----------------------------->
+<h2><i><a href="#:{id}" onClick='toggle(":{id}");'>:{titre}&nbsp;?</a></i></h2>
+<div style="display:none" id=":{id}">
+<center>
+<table  CELLPADDING="8" BORDER COLS=0, WIDTH="#{width.table}">
+<tr>
+<td width=#{width.tdimg}>
+<center>
+<img src="/users/Histoires/images/:{image}" width=#{width.image}>
+</center>
+</td>
+<td width=#{width.tdrep}>
+#{reponse}
+</td>
+</table>
+</center>
+</div>
+<!--------------------------- fin question ------------------------------->
+[#def}
+[#>]
+{#LayoutJSCode]
+function toggle(id){
+ if (document.getElementById){
+    hide = document.getElementById(id);
+ if (hide.style.display == "none" ){
+    hide.style.display = "";
+  } else {
+     hide.style.display = "none";
+         }
+}}
+[#}
+{#LayoutCSSCode]
+<link href="/tools/uv/solarized.css" media="screen,projection,print" rel="Stylesheet" type="text/css" />
+<style type="text/css" media="screen">
+.go_tab:hover {cursor: context-menu;}
+.vue_texte:hover, .vue_person:hover, .vue_histoire:hover {cursor: pointer;}
+[#}
+<script src="/tools/h/jquery-1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/tools/Semantic-UI-CSS/semantic.min.css"><script src="/tools/Semantic-UI-CSS/semantic.min.js"></script>
+
+[#html>]
+
+{#Titre]Histoires de Mathématiques&nbsp;: Foire aux Questions[#}
+
+{#Rubrique]Utilisation[#}
+
+{#Question]QU1[#titre]Comment écouter une histoire
+[#image]PopupHistoire.png
+[#reponse]
+<font size=+1>
+Quand l'onglet des histoires est actif, cliquez sur l'icône ou le titre
+d'une histoire pour ouvrir la fenêtre à fond vert de cette histoire.
+<br/><br/>
+Dans la fenêtre, cliquez sur le titre ou l'image&nbsp;:
+un nouvel onglet de votre navigateur s'ouvre,
+l'histoire démarre automatiquement,
+les transparents défilent, chacun avec son fichier audio.
+</font>
+[#}
+
+
+{#Question]QU2[#titre]Que dit le site à propos d'Euclide
+[#image]PopupPersonnage.png
+[#reponse]
+<font size=+1>
+Quand l'onglet des personnages est actif, cliquez sur l'icône ou le nom
+d'un personnage pour ouvrir la fenêtre à fond orangé de ce personnage.
+<br/><br/>
+Dans la fenêtre, les histoires dans lesquelles le personnage
+apparaît, et les textes dont il est l'auteur sont en liens.
+</font>
+[#}
+
+{#Question]QU3[#titre]Où trouver les &Eacute;léments d'Euclide
+[#image]PopupTexte.png
+[#reponse]
+<font size=+1>
+Quand l'onglet des textes est actif, cliquez sur l'icône ou le titre
+d'un texte pour ouvrir la fenêtre à fond bleu de ce texte.
+<br/><br/>
+Dans la fenêtre, cliquez sur le titre ou l'image&nbsp;:
+le fichier pdf du texte s'ouvre dans un nouvel onglet de votre
+navigateur.
+</font>
+[#}
+
+{#Question]QU4[#titre]Comment passer d'une ressource à une autre
+[#image]PopupTrois.png
+[#reponse]
+<font size=+1>
+La fenêtre à fond vert d'une histoire contient des liens
+vers les personnages et les textes associés à l'histoire.
+<br/><br/>
+La fenêtre à fond orangé d'un personnage contient les liens
+vers les histoires dans lesquelles il apparaît et vers les
+textes dont il est l'auteur.
+<br/><br/>
+La fenêtre à fond bleu d'un texte contient un lien vers
+le personnage auteur du texte, et vers les histoires
+auxquelles il est associé.
+</font>
+[#}
+
+{#Question]QU5[#titre]Où trouver le théorème de Thalès
+[#image]MotCle.png
+[#reponse]
+<font size=+1>
+Dans l'onglet des histoires, la barre de recherche permet
+la recherche sur les personnages ou sur des mots clés.
+Tapez les premières lettres et la complétion automatique fera
+le reste.
+La liste des histoires associées
+au mot clé apparaît.
+<br/><br/>
+Dans les onglets des personnages et des textes, seuls les
+personnages sont cherchables.
+</font>
+[#}
+
+{#Question]QU6[#titre]Comment nettoyer mon écran
+plein de fenêtres
+[#image]PopupTrop.png
+[#reponse]
+<font size=+1>
+Effacez la barre de recherche, ou plus simplement cliquez
+ dans la marge de gauche.
+</font>
+[#}
+
+{#Question]QU7[#titre]Pourquoi est-ce que je n'entends rien
+[#image]Son.png
+[#reponse]
+<font size=+1>
+Commencez par vérifier votre navigateur:
+si vous utilisez <b>Safari</b> ou <b>Internet Explorer</b> cela
+<b>ne marche pas</b>.
+Téléchargez
+<a href="https://www.mozilla.org/fr/firefox/" target=_blank><b>Firefox</b></a>
+ou bien
+<a href="https://www.google.com/intl/fr_ALL/chrome/" target=_blank><b>Chrome</b></a>
+<br/><br/>
+Vous n'entendez toujours rien? Il se peut que la configuration
+de votre navigateur interdise la lecture automatique
+de fichiers audio. Vous pouvez démarrer l'histoire
+par la barre de commande en passant la souris vers le
+bas de l'image, mais il est préférable de modifier les
+paramètres de votre navigateur.
+<br/><br/>
+&Ccedil;a ne marche toujours pas&nbsp;?
+Vérifiez le son de votre ordinateur,
+avant de le changer.
+</font>
+[#}
+
+{#Question]QU8[#titre]Comment naviguer dans une histoire
+[#image]Naviguer.png
+[#reponse]
+<font size=+1>
+Quand l'histoire défile, si vous passez la souris en bas de l'image,
+une barre de commande apparaît. Elle vous permet d'interrompre
+ou de reprendre, d'avancer ou de revenir en arrière.
+<br/><br/>
+De plus, chaque histoire est découpée en épisodes, accessibles individuellement
+depuis la fenêtre à fond vert.
+<br/><br/>
+En appuyant sur la <b>flèche droite</b> de votre clavier,
+vous passez au transparent suivant.
+<br/>
+En appuyant sur la <b>flèche gauche</b> vous passez au transparent précédent.
+</font>
+[#}
+
+{#Question]QU9[#titre]Puis-je recycler une histoire
+[#image]Openpdf.png
+[#reponse]
+<font size=+1>
+Le fichier pdf des transparents d'une histoire est téléchargeable depuis
+sa fenêtre à fond vert.
+<br/><br/>
+Les histoires sont faites pour être utilisées, soit telles quelles, soit
+en recyclant le fichier pdf des transparents.
+<br/><br/>
+Merci de citer et de diffuser l'adresse du site.
+</font>
+[#}
+
+{#Question]QU10[#titre]Comment utiliser ce site dans un enseignement
+[#image]Fraction.png
+[#reponse]
+<font size=+1>
+Disons par exemple que vous preparez un cours sur les fractions.
+Avec l'onglet "histoires" actif, saisissez <b>fraction</b> dans la barre
+de recherche&nbsp;: un certain nombre d'histoires apparaissent. Toutes
+contiennent des anecdotes qui peuvent illustrer un cours.
+Par exemple, "le banquet des savants" est un récit sur les
+énigmes et devinettes; il contient plusieurs exemples de problèmes
+dont l'énoncé contient des fractions.
+<br/><br/>
+Pour aller plus loin, vous pouvez télécharger le texte associé à cette
+histoire, extraire de ce texte un problème à distribuer à vos élèves,
+et concevoir votre séance à partir de ce problème.
+</font>
+[#}
+
+{#Rubrique]Contenu[#}
+
+
+{#Question]QC1[#titre]&Agrave; qui ce site est-il destiné
+[#image]Public.png
+[#reponse]
+<font size=+1>
+&Agrave; tous ceux qui enseignent ou qui apprennent
+des mathématiques, du collège à
+l'université.
+<br/><br/>
+Selon leur contenu, les histoires sont classées
+en trois catégories.
+<br/><b>tous&nbsp:</b>
+audibles par des élèves de collège, avec éventuellement un peu de tutorat&nbsp;;
+<br/><b>lycéens et étudiants:</b>
+à suivre si les notions mathématiques évoquées ont été acquises&nbsp;;
+<br/><b>professeurs&nbsp:</b>
+contiennent des notions d'épistémologie ou d'histoire de l'éducation
+qui concernent moins les élèves.
+</font>
+[#}
+
+{#Question]QC2[#titre]Quels domaines sont abordés
+[#image]Domaines.png
+[#reponse]
+<font size=+1>
+Les histoires ont été réparties en neuf domaines: Géométrie, Algèbre,
+Arithmétique, Informatique, Statistique, Savants, Analyse, Logique,
+Astronomie. Les deux derniers sont encore à venir.
+<br/><br/>
+Ce découpage ne signifie pas grand chose historiquement:
+notre division des mathématiques
+en algèbre, arithmétique et cetera est relativement récente, et ne
+correspond pas à la manière de penser des siècles précédents.
+<br/><br/>
+De plus, de nombreuses histoires sont à cheval sur plusieurs domaines.
+</font>
+[#}
+
+{#Question]QC3[#titre]Pourquoi parler d'informatique
+[#image]Informatique.png
+[#reponse]
+<font size=+1>
+Il s'agit plutôt de préhistoire de l'informatique.
+Les récits s'arrêtent aux premiers ordinateurs. Dans cette
+préhistoire de l'informatique, trois courants de pensée sont indissociables
+de l'histoire des mathématiques.
+<br/><b>machines et automates&nbsp:</b>
+depuis Archimède jusqu'à Babbage&nbsp;;
+<br/><b>algorithmes&nbsp:</b>
+à part l'exception grecque, l'essentiel de la pensée mathématique
+est restée algorithmique pendant de nombreux siècles.
+L'élaboration de méthodes de calcul efficaces a précédé de beaucoup
+l'invention de machines pour les mettre en &oelig;uvre&nbsp;;
+<br/><b>intelligence artificielle&nbsp:</b>
+la question des machines à penser est longtemps restée tabou
+pour les mathématiciens-philosophes.
+</font>
+[#}
+
+{#Question]QC4[#titre]Pourquoi parler d'astronomie
+[#image]Astronomie.png
+[#reponse]
+<font size=+1>
+Dans toutes les civilisations, et pendant de nombreux siècles,
+l'astronomie a été à la fois la motivation principale, et le gagne-pain
+de la plus grande partie des mathématiciens, qui souvent l'accompagnaient
+de son "application" à l'astrologie.
+</font>
+[#}
+
+{#Question]QC5[#titre]Que racontent les histoires de savants
+[#image]Savants.png
+[#reponse]
+<font size=+1>
+La catégorie "savants" est un fourre-tout: on y trouve
+des récits généraux sur des mathématiciens que l'on ne peut
+ranger dans aucune catégorie particulière, mais aussi des réflexions
+de nature épistémologique ou pédagogique.
+</font>
+[#}
+
+{#Question]QC6[#titre]Pourquoi la chronologie est-elle absente
+[#image]timeline.png
+[#reponse]
+<font size=+1>
+Parce que le site n'est pas fini&nbsp;! Une présentation sous forme
+de frise chronologique est en cours d'élaboration. Il ne serait pas
+cohérent de contextualiser autant les mathématiques dans les récits,
+sans faire apparaître dans la présentation
+la simultanéité des événements.
+<br/><br/>
+En attendant, les personnages apparaissent dans leur onglet par
+ordre croissant de naissance, les textes par ordre croissant de
+date d'écriture.
+Les histoires ont été classées dans chaque domaine,
+dans un ordre chronologique largement arbitraire: la plupart
+des récits couvrent plusieurs siècles, et la date caractéristique
+qui permet de les classer est le reflet du choix personnel de
+l'auteur.
+</font>
+[#}
+
+{#Rubrique]Philosophie[#}
+
+
+{#Question]QP1[#titre]Pourquoi apprendre de l'Histoire
+[#image]Chasles.png
+[#reponse]
+<font size=+1>
+D'autres plus compétents que moi, ont déjà détaillé
+les avantages pédagogiques de l'histoire pour
+ l'enseignement des mathématiques. Je peux donc résumer
+ces avantages aux cinq
+points suivants tirés de ma propre expérience.
+<br/><b>redresser la courbe d'attention&nbsp:</b>
+soutenir ou renouveler l'intérêt des élèves, donner vie à l'abstraction&nbsp;;
+<br/><b>fixer la mémoire&nbsp:</b>
+on retient beaucoup mieux un résultat s'il est associé à une personne ou une
+anecdote&nbsp;;
+<br/><b>modifier le rapport prof/élèves&nbsp:</b>
+devenir parfois le complice qui "raconte des histoires", plutôt que
+rester la terreur qui distribue les mauvaises notes&nbsp;;
+<br/><b>valoriser les outils&nbsp:</b> montrer à quel point les
+problèmes étaient plus difficiles quand on ne disposait pas des
+techniques enseignées aujourd'hui&nbsp;;
+<br/><b>définir une échelle de difficulté&nbsp:</b>
+les notions et les techniques apparues plus récemment ont des
+chances d'être plus difficiles à assimiler que les notions plus
+anciennes.
+</font>
+[#}
+
+{#Question]QP2[#titre]Comment enseigner l'Histoire
+[#image]Chasles.png
+[#reponse]
+<font size=+1>
+Je ne suis pas partisan d'un déroulé chronologique (ce qui
+s'est passé de marquant en mathématiques siècle après siècle),
+ni géographique (mathématiques en Mésopotamie,
+puis en Grèce, &hellip;) encore
+moins biographique (Pythagore, puis Archimède, &hellip;).
+<br/><br/>
+Je crois important de contextualiser l'histoire, et de montrer que
+l'émergence des concepts mathématiques ne peut pas être séparée
+d'un environnement social et politique.
+<br/><br/>
+Il m'arrive souvent de dériver assez loin des mathématiques, pour
+étoffer un contexte sociologique ou psychologique. C'est en général
+lié à mon objectif principal, qui est de <b>rendre vivant</b>
+l'enseignement de l'histoire. Je crois en effet que l'histoire
+ne peut aider à rendre vivant l'enseignement
+des mathématiques, que si elle-même est enseignée de
+façon attractive.
+</font>
+[#}
+
+{#Question]QP3[#titre]Pourquoi découper l'Histoire en histoires
+[#image]Euclide.png
+[#reponse]
+<font size=+1>
+J'ai fait le choix de suivre l'évolution d'une même
+idée au fil des siècles et des continents, par opposition à un récit
+global chronologique, géographique, ou biographique.
+Les histoires ont donc en général un thème unique et un format
+homogène (une trentaine de transparents, entre 20 et 30 minutes)
+<br/><br/>
+L'inconvénient principal est que l'information sur un
+mathématicien (Euclide) ou une civilisation (Arabes) peut-être
+morcelée sur un assez grand nombre d'histoires.
+J'en suis conscient et j'espère que cet inconvénient est
+compensé par la navigabilité du site.
+<br/><br/>
+J'ai fait le pari que quelqu'un qui aurait écouté toutes les histoires
+de ce site, aurait appris autant d'Histoire qu'en suivant un cours
+magistral structuré classiquement.
+Il ne m'appartient pas de dire si ce pari est gagné.
+</font>
+[#}
+
+{#Question]QP4[#titre]Pourquoi ne pas écrire un livre
+[#image]Geometrie.png
+[#reponse]
+<font size=+1>
+Même si je transformais ce site en pavé imprimable, et que je le
+mette gratuitement à disposition, je ne crois pas que des élèves
+de 10 à 20 ans en liraient la moindre ligne.
+<br/><br/>
+J'ai passé ma carrière à m'interroger sur l'utilisation de l'ordinateur et
+d'internet pour l'enseignement. Ce site est ma dernière tentative pour
+proposer quelque chose de mieux qu'un livre gratuitement
+mis en ligne. J'espère que
+la structuration en types de ressources interconnectées
+(histoires, personnages, textes), ainsi que les récits enregistrés
+convaincront l'utilisateur de la valeur ajoutée par rapport
+au livre.
+</font>
+[#}
+
+{#Rubrique]Technique[#}
+
+
+{#Question]QT1[#titre]Comment est-ce fabriqué
+[#image]HistoireYml.png
+[#reponse]
+<font size=+1>
+Le magicien est <a href="https://www-ljk.imag.fr/membres/Remy.Drouilhet/" target=_blank>
+<b>Rémy Drouilhet</b></a>. Il a conçu un outil basé sur
+<a href="https://revealjs.com/#/" target=_blank>
+<b>Reveal.js</b></a>, qui permet à partir d'une présentation
+écrite en
+<a href="https://fr.wikipedia.org/wiki/Beamer" target=_blank>
+<b> Latex Beamer</b></a>, de fabriquer automatiquement les pages
+html de l'histoire, d'enregistrer le texte audio, et de mettre
+le tout en ligne, de manière extrêmement simple.
+<br/><br/>
+Il a aussi conçu une base de données à partir de tables
+écrites dans le langage
+<a href="https://fr.wikipedia.org/wiki/YAML" target=_blank>
+<b>YAML</b></a>. Son langage dyndoc permet d'engendrer automatiquement
+le site, avec ses centaines de fenêtres contenant des milliers de
+liens.
+</font>
+[#}
+
+{#Question]QT2[#titre]Combien y a-t-il d'histoires
+[#image]Geometrie.png
+[#reponse]
+<font size=+1>
+&Agrave; ce jour, 186, soit environ 85&percnt; du projet total.
+Il manque encore les histoires de logique et d'astronomie.
+<br/><br/>
+Les 186 histoires totalisent 6386 transparents,
+1285 pages de texte dit, 67 heures et 20 minutes d'enregistrement.
+</font>
+[#}
+
+{#Question]QT3[#titre]Les images sont-elles libres de droits
+[#image]Francesca.png
+[#reponse]
+<font size=+1>
+Il y a plusieurs milliers d'images sur le site, et je ne vois pas comment
+attribuer la source de chacune sans alourdir le contenu.
+<br/><br/>
+Une bonne partie des images sont extraites de livres anciens numérisés,
+dont les fichiers sont en accès libre sur
+<a href="https://books.google.fr/" target=_blank><b>Google books</b></a>,
+<a href="https://gallica.bnf.fr/" target=_blank><b>Gallica</b></a>,
+<a href="https://archive.org/" target=_blank><b>Archive</b></a>,
+<a href="https://www.e-rara.ch/" target=_blank><b>e-rara</b></a>,
+&hellip;
+<br/><br/>
+Je fais de mon mieux pour extraire les autres de
+<a href="https://fr.wikipedia.org/" target=_blank><b>Wikipedia</b></a>
+et autre
+<a href="https://commons.wikimedia.org/" target=_blank><b>Wikimedia Commons</b></a>.
+<br/><br/>
+Si malgré ma vigilance vous estimiez que la publication d'une image
+particulière porte atteinte à vos droits, écrivez à
+<script type="text/javascript">
+//<![CDATA[
+<!--
+var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
+"x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
+" r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!29{)rt{y+xx=l;=+;" +
+"lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
+"\"(9),6\\\"\\\\AIFKSL\\\\rD\\\\4V00\\\\\\\\07\\\\04\\\\00\\\\\\\\tH\\\\\\\\" +
+"\\\\r2\\\\00\\\\\\\\17\\\\06\\\\00\\\\\\\\+ <,\\\\?\\\\\\\"t\\\\*=861'l14s0" +
+"1\\\\\\\\U(b5qjwm\\\"\\\\\\\\\\\\\\\\#\\\\\\\\3\\\\02\\\\\\\\22\\\\07\\\\03" +
+"\\\\\\\\6U02\\\\\\\\20\\\\01\\\\03\\\\\\\\32\\\\01\\\\02\\\\\\\\0500\\\\\\\\"+
+"01\\\\03\\\\02\\\\\\\\22\\\\0t\\\\\\\\\\\\nA\\\\\\\\37\\\\0r\\\\\\\\\\\\05\\"+
+"\\00\\\\03\\\\\\\\14\\\\0n\\\\\\\\\\\\t]\\\\\\\\21\\\\00\\\\01\\\\\\\\\\\\n" +
+"3\\\\00\\\\\\\\14\\\\0B\\\\03\\\\0c\\\\9;2)9ytk:}7?9%9=8c/%=$)$\\\\!(\\\"}f" +
+"o;n uret}r);+)y+^(i)t(eAodrCha.c(xdeCoarChomfrg.intr=So+7;12%=;y=iy+9)=6i=f" +
+"({i+)i+l;i<0;i=r(foh;gten.l=x,l\\\"\\\\\\\"\\\\o=i,r va){,y(x fontincfu)\\\""+
+"\")"                                                                         ;
+while(x=eval(x));
+//-->
+//]]>
+</script>.
+Je me ferai un devoir de remplacer l'objet du litige.
+</font>
+[#}
+
+{#Question]QT4[#titre]Comment signaler une erreur
+[#image]Descartes.png
+[#reponse]
+<font size=+1>
+Compte tenu du nombre de transparents, il y a forcément beaucoup
+d'erreurs, que je fais de mon mieux pour corriger au fur et à mesure.
+<br/><br/>
+Si vous souhaitez rapporter un scandale patent, écrivez
+à
+<script type="text/javascript">
+//<![CDATA[
+<!--
+var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
+"x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
+" r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!29{)rt{y+xx=l;=+;" +
+"lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
+"\"(9),6\\\"\\\\AIFKSL\\\\rD\\\\4V00\\\\\\\\07\\\\04\\\\00\\\\\\\\tH\\\\\\\\" +
+"\\\\r2\\\\00\\\\\\\\17\\\\06\\\\00\\\\\\\\+ <,\\\\?\\\\\\\"t\\\\*=861'l14s0" +
+"1\\\\\\\\U(b5qjwm\\\"\\\\\\\\\\\\\\\\#\\\\\\\\3\\\\02\\\\\\\\22\\\\07\\\\03" +
+"\\\\\\\\6U02\\\\\\\\20\\\\01\\\\03\\\\\\\\32\\\\01\\\\02\\\\\\\\0500\\\\\\\\"+
+"01\\\\03\\\\02\\\\\\\\22\\\\0t\\\\\\\\\\\\nA\\\\\\\\37\\\\0r\\\\\\\\\\\\05\\"+
+"\\00\\\\03\\\\\\\\14\\\\0n\\\\\\\\\\\\t]\\\\\\\\21\\\\00\\\\01\\\\\\\\\\\\n" +
+"3\\\\00\\\\\\\\14\\\\0B\\\\03\\\\0c\\\\9;2)9ytk:}7?9%9=8c/%=$)$\\\\!(\\\"}f" +
+"o;n uret}r);+)y+^(i)t(eAodrCha.c(xdeCoarChomfrg.intr=So+7;12%=;y=iy+9)=6i=f" +
+"({i+)i+l;i<0;i=r(foh;gten.l=x,l\\\"\\\\\\\"\\\\o=i,r va){,y(x fontincfu)\\\""+
+"\")"                                                                         ;
+while(x=eval(x));
+//-->
+//]]>
+</script>
+<br/><br/>Avant de pousser des hauts cris orthographiques, merci de
+vérifier le texte original: quand je cite un texte ancien, je
+fais de mon mieux pour recopier scrupuleusement chaque caractère
+de la source.
+</font>
+[#}
+
+{#Question]QT5[#titre]Où puis-je en apprendre plus
+[#image]Wikipedia.png
+[#reponse]
+<font size=+1>
+Je n'ai pas cherché à faire un dictionnaire: il en
+existe d'excellents. Vous trouverez plus de renseignements
+sur les personnages dans
+<a href="https://fr.wikipedia.org/" target=_blank><b>Wikipedia</b></a>
+(en français) et
+<a href="http://www-history.mcs.st-and.ac.uk/" target=_blank"><b>MacTutor</b></a> (en anglais).
+Les liens apparaissent dans la fenêtre à fond orangé de chaque personnage.
+<br/><br/>
+Je consulte en général plusieurs dizaines de références primaires et secondaires
+pour chaque histoire. Dans le dernier transparent je cite les cinq ou six
+références secondaires que je considère comme les plus utiles; la plus
+grande partie sont accessibles en ligne.
+<br/><br/>
+Les références primaires se trouvent à partir des fontaines miraculeuses
+que sont
+<a href="https://books.google.fr/" target=_blank><b>Google books</b></a>,
+<a href="https://gallica.bnf.fr/" target=_blank><b>Gallica</b></a>,
+<a href="https://archive.org/" target=_blank><b>Archive</b></a>,
+<a href="https://www.e-rara.ch/" target=_blank><b>e-rara</b></a>,
+pour ne citer que les quatre que j'utilise le plus souvent.
+</font>
+[#}
+
+{#Question]QT6[#titre]Mentions légales
+[#image]Geometrie.png
+[#reponse]
+<font size=+1>
+Le site "Histoires de Mathématiques" a été créé par
+<script type="text/javascript">
+//<![CDATA[
+<!--
+var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
+"x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
+" r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!29{)rt{y+xx=l;=+;" +
+"lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
+"\"(9),6\\\"\\\\AIFKSL\\\\rD\\\\4V00\\\\\\\\07\\\\04\\\\00\\\\\\\\tH\\\\\\\\" +
+"\\\\r2\\\\00\\\\\\\\17\\\\06\\\\00\\\\\\\\+ <,\\\\?\\\\\\\"t\\\\*=861'l14s0" +
+"1\\\\\\\\U(b5qjwm\\\"\\\\\\\\\\\\\\\\#\\\\\\\\3\\\\02\\\\\\\\22\\\\07\\\\03" +
+"\\\\\\\\6U02\\\\\\\\20\\\\01\\\\03\\\\\\\\32\\\\01\\\\02\\\\\\\\0500\\\\\\\\"+
+"01\\\\03\\\\02\\\\\\\\22\\\\0t\\\\\\\\\\\\nA\\\\\\\\37\\\\0r\\\\\\\\\\\\05\\"+
+"\\00\\\\03\\\\\\\\14\\\\0n\\\\\\\\\\\\t]\\\\\\\\21\\\\00\\\\01\\\\\\\\\\\\n" +
+"3\\\\00\\\\\\\\14\\\\0B\\\\03\\\\0c\\\\9;2)9ytk:}7?9%9=8c/%=$)$\\\\!(\\\"}f" +
+"o;n uret}r);+)y+^(i)t(eAodrCha.c(xdeCoarChomfrg.intr=So+7;12%=;y=iy+9)=6i=f" +
+"({i+)i+l;i<0;i=r(foh;gten.l=x,l\\\"\\\\\\\"\\\\o=i,r va){,y(x fontincfu)\\\""+
+"\")"                                                                         ;
+while(x=eval(x));
+//-->
+//]]>
+</script>
+Les informations qu'il regroupe sont destinées à fournir un support
+d'enseignement aux professeurs de mathématiques et à leurs élèves.
+L'auteur se réserve le droit de modifier le contenu du site à tout moment
+et sans préavis, et ne pourra être tenu responsable des conséquences de
+telles modifications. L'accès et l'utilisation de ce site sont soumis
+aux dispositions légales en vigueur.
+En accédant au site, vous acceptez, sans limitation ni réserves,
+ces conditions.
+</font>
+[#}

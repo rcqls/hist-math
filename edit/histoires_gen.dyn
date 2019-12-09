@@ -1,0 +1,791 @@
+---
+model: jquery3
+semantic_ui: css,js
+title: histoires de mathématiques
+math: mathjax
+---
+[#require]Histoires/dynlib/histoiresGames
+[#main][#<]{#initDDG#} (Attention: ne pas le déplacer dans histoiresGames.dyn)
+[#=]wsp[&thinsp;&thinsp;&thinsp;]
+[#=]icons[<<histoires[unmute]<<people[user]<<textes[book]<<jeux[gift]]
+[#=]popup[
+  <<style[<<size[min-width:500px;]]
+  <<class[ fluid]<<class[]
+  <<histoires[histoires]<<people[personnages]<<textes[textes]
+  ]
+[#=]bgcolor[
+  <<opacity[opacity: 0.95;]
+  <<histoires[background-color: #F6E3CE;]<<histoires[background-color: #FEFEFA;]<<histoires[background-color: #a9f5d0;]
+  <<people[background-color: #F5ECCE;]<<people[background-color: #FAFEFE;]<<people[background-color: #a9bcf5;]
+  <<textes[background-color: #F5F6CE;]<<textes[background-color: #FEFAFE;]<<textes[background-color: #d0a9f5;]
+  ]
+[#=]bgcolor[<<histoires[background-color: honeydew;]<<people[background-color: linen;]<<textes[background-color: lightcyan;]]
+[#rb<]require 'yaml'
+domaines=["Analyse","Astronomie","Geometrie","Algebre","Arithmetique","Savants","Statistique","Informatique"]
+domaines_titres={"Algebre" => "Algèbre","Arithmetique" => "Arithmétique", "Geometrie" => "Géométrie"}
+domaines.each {|dom| domaines_titres[dom]=dom unless domaines_titres[dom]}
+motsclesHistoires=[]
+histoires_motscles={}
+periodesHistoires={}
+histoires=YAML::load_file(File.expand_path("~/RodaSrv/public/users/Histoires/histoires.yml"))
+people=YAML::load_file(File.expand_path("~/RodaSrv/public/users/Histoires/people.yml"))
+textes=YAML::load_file(File.expand_path("~/RodaSrv/public/users/Histoires/textes.yml"))
+domaines.each do |domaine| #
+  domaine_titre=domaines_titres[domaine]
+  vitrine=histoires.select {|k,e| e["domain"]==domaine_titre}.sort_by{|k,e| e["location"].to_i}
+  vitrine.each do |hist,info| #
+    if info["keywords"] or info["motscles"]
+      motsclesHistoires << (info["keywords"] || info["motscles"]).split(";").map{|e| #
+        motcle=e.strip  #.downcase
+        histoires_motscles[motcle] ||= []
+        histoires_motscles[motcle] << hist
+        motcle
+      }
+    end
+    if info["people"]
+      info["people"].split(";").each{|e| #
+        if people[(e.strip)[0...(-3)]] and people[(e.strip)[0...(-3)]]["keywords"]
+          people[(e.strip)[0...(-3)]]["keywords"].split(";").each {|k| #
+            motcle=k.strip
+            histoires_motscles[motcle] ||= []
+            histoires_motscles[motcle] << hist
+            motsclesHistoires << motcle
+          }
+        #else
+        #  puts (e.strip)[0...(-3)]
+        end
+      }
+    end
+    if info["period"] or info["periode"]
+      from,to=(info["period"] || info["periode"]).split(";").map{|e| e.strip}
+      periodesHistoires[hist]=[from,to]
+    end
+  end
+end
+motsclesHistoires=motsclesHistoires.flatten.uniq.sort #sort_by{|e| e.upcase}
+motsclesHistoires_tous=motsclesHistoires.map{|e| '"'+e+'"'}.join(",")
+motsclesHistoires_dropdown=motsclesHistoires.map{|e| e}.select{|e| !e.empty?}.join("|")
+motscles2histoires='{'+motsclesHistoires.map{|e| '"'+e+'": "'+histoires_motscles[e].join(",")+'"'}.join(", ")+'}'
+periodesHistoires_js='{'+periodesHistoires.keys.map{|hist| '"'+hist+'": ['+periodesHistoires[hist][0].to_s+','+periodesHistoires[hist][1].to_s+']' }.join(", ")+'}'
+
+motsclesPeople=[]
+people_motscles={}
+periodesPeople={}
+people.each do |person,info| #
+  if info["keywords"] or info["motscles"]
+    motsclesPeople << (info["keywords"] || info["motscles"]).split(";").map{|e| #
+      motcle=e.strip  #.downcase
+      people_motscles[motcle] ||= []
+      people_motscles[motcle] << person
+      motcle
+    }
+  end
+  if info["dates"] or info["periode"]
+    from,to=(info["dates"] || info["periode"]).split(";").map{|e| (e2=e.strip) =~ /\?.*/ ? e2[1..-1] : e2 }
+    periodesPeople[person]=[from,to]
+  end
+end
+motsclesPeople=motsclesPeople.flatten.uniq.sort #sort_by{|e| e.upcase}
+motsclesPeople_tous=motsclesPeople.map{|e| '"'+e+'"'}.join(",")
+motsclesPeople_dropdown=motsclesPeople.map{|e| e}.join("|")
+motscles2people='{'+motsclesPeople.map{|e| '"'+e+'": "'+people_motscles[e].join(",")+'"'}.join(", ")+'}'
+periodesPeople_js='{'+periodesPeople.keys.map{|person| '"'+person+'": ['+periodesPeople[person][0].to_s+','+periodesPeople[person][1].to_s+']' }.join(", ")+'}'
+
+# Find histoires for people
+people2histoires={}
+histoires.each do |hist,info| #
+  if info["people"]
+    info["people"].split(";").each{|e| #
+      person=(e.strip)[0...(-3)]
+      people2histoires[person] ||= []
+      people2histoires[person] << [hist,(e.strip)[-2].to_i]
+    }
+  end
+end
+
+# Find textes for histoires
+textes2histoires={}
+textes.each do |texte,info| #
+  if info["histoires"]
+    info["histoires"].split(";").each{|e| #
+      hist=e.strip
+      textes2histoires[hist] ||= []
+      textes2histoires[hist] << texte
+    }
+  end
+end
+
+# Find textes for people
+textes2people={}
+textes.each do |texte,info| #
+  if info["auteur"]
+    info["auteur"].split(";").each{|e| #
+      auteur=e.strip
+      textes2people[auteur] ||= []
+      textes2people[auteur] << texte
+    }
+  end
+end
+
+motsclesTextes=[]
+textes_motscles={}
+periodesTextes={}
+textes.each do |texte,info| #
+  if info["auteur"]
+	  info["auteur"].split(";").each{|e| #
+      if people[e]
+        motcle=people[e]["name"]
+        textes_motscles[motcle] ||= []
+        textes_motscles[motcle] << texte
+        motsclesTextes << motcle
+      end
+    }
+  end
+  if info["date"] or info["periode"]
+    date= info["date"].to_s
+    tmp=date.split(";").map{|e| (e2=e.strip) =~ /\?.*/ ? e2[1..-1] : e2 }[0]
+    #tmp=tmp*(3-tmp.length)
+    from,to=tmp,tmp
+	  periodesTextes[texte]=[from,to]
+  end
+end
+motsclesTextes=motsclesTextes.flatten.uniq.sort #sort_by{|e| e.upcase}
+motsclesTextes_tous=motsclesTextes.map{|e| '"'+e+'"'}.join(",")
+motsclesTextes_dropdown=motsclesTextes.map{|e| e}.join("|")
+motscles2textes='{'+motsclesTextes.map{|e| '"'+e+'": "'+textes_motscles[e].join(",")+'"'}.join(", ")+'}'
+periodesTextes_js='{'+periodesTextes.keys.map{|texte| '"'+texte+'": ['+periodesTextes[texte][0].to_s+','+periodesTextes[texte][1].to_s+']' }.join(", ")+'}'
+
+[#=]motsclesHistoires[:{motsclesHistoires_dropdown}]
+[#=]periodesHistoires[:{periodesHistoires_js}]
+[#<]{#LayoutCSSCode]
+.go_tab:hover {cursor: context-menu;}
+.vue_texte:hover, .vue_person:hover, .vue_histoire:hover {cursor: pointer;}
+[#}
+{#LayoutJSCode]
+Array.prototype.unique = function() {
+    var o = {}, i, l = this.length, r = [];
+    for(i=0; i<l;i+=1) o[this[i]] = this[i];
+    for(i in o) r.push(o[i]);
+    return r;
+};
+
+Histoires={}
+Histoires.motscles=[:{motsclesHistoires_tous}];
+Histoires.motscles2histoires=:{motscles2histoires};
+Histoires.periodes=#{periodesHistoires};
+Histoires.et_ou="";
+Histoires.motscles_selection="";
+
+function intersectPeriodHistoires(from,to) {
+  var histoires=[];
+  Object.keys(Histoires.periodes).forEach(function(hist) {
+    var periode=Histoires.periodes[hist];
+    //alert("periode:"+JSON.stringify(periode)+","+JSON.stringify(from)+","+JSON.stringify(to));
+    if(periode[1]>=from && periode[0]<=to) {
+      histoires.push(hist);
+    }
+  });
+  //alert("periodes="+JSON.stringify(histoires));
+  return histoires;
+};
+
+function select_histoires(motscles_selection,et_ou) {
+  var histoiresParMotscles=motscles_selection.split(",").unique();
+  //fix weird behavior of split "".split(",") == [""]
+  if(histoiresParMotscles.includes("") && histoiresParMotscles.length==1) histoiresParMotscles=[];
+  Histoires.motscles_selection=histoiresParMotscles.join(",");
+  motscles_selection=Histoires.motscles_selection;
+  var periode=$("#periode_histoires").val(),inter=[];
+  var histoiresParPeriodes=[];
+  if(periode != "") {
+    inter=periode.split(";");
+    if(inter.length==1) inter.push(inter[0]);
+    //alert("inter="+JSON.stringify(inter));
+    histoiresParPeriodes=intersectPeriodHistoires(parseInt(inter[0]),parseInt(inter[1]));
+  }
+  //alert("periode=<"+periode+"> et/ou=<"+et_ou+"> motscles=<"+motscles+">");
+  //alert("periodes="+JSON.stringify(histoiresParPeriodes)+"] et/ou=<"+JSON.stringify(et_ou)+"> motscles="+JSON.stringify(histoiresParMotscles));
+  //hide and show
+  $(".histoire").hide();
+  if(histoiresParMotscles.length==0 && histoiresParPeriodes.length==0) {
+    $(".histoire").show();
+  } else {
+    histoiresParMotscles.forEach(function(elt) {
+      if(["","ou"].includes(et_ou) || histoiresParPeriodes.includes(elt)) {
+        //alert("elt="+JSON.stringify(elt));
+        $("."+elt).show();
+      }
+    });
+    histoiresParPeriodes.forEach(function(elt) {
+      if(["","ou"].includes(et_ou) || histoiresParMotscles.includes(elt)) {
+        $("."+elt).show();
+      }
+    });
+  }
+  $('.image_histoires').visibility('refresh');
+}
+
+function activeGoTab() {
+  $(".go_tab").click(function(evt) {
+    var sel,psel,tab=$(this).attr("tab"),to=$(this).attr("to");
+    sel="#"+tab.substring(0,1)+"_"+to;
+    psel="#p"+tab.substring(0,1)+"_"+to;
+    //alert("sel:"+sel+" tab:"+tab+" et psel:"+ psel);
+    if(!open_popups.includes(psel)) {
+      if (evt.altKey) {
+        $("#motscles_"+tab).dropdown("remove selected",$("#motscles_"+tab).dropdown("get values"));
+        $("#et_ou_"+tab).dropdown("clear");
+        $("#periode_"+tab).dropdown().val("");
+        eval("select_"+tab+"('','');");
+        //console.log("1");
+        $(".tabitem").tab("change tab",tab);
+        //console.log("2");
+        $("html,body").animate({scrollTop: $(sel).offset().top},"slow");
+        //console.log("3");
+        $(sel).click();
+        open_popups=[psel];
+      } else {
+        $(this).popup({
+          popup: $(psel),
+          inline: true,
+          on: 'click',
+          context: 'body',
+          closable: true,
+          lastResort: 'bottom left',
+          onVisible: function() {
+            //alert("popup:"+psel);
+            open_popups.push(psel);
+          },
+          onHide: function() {
+            //alert("hide pt "+psel);
+            var pos=open_popups.indexOf(psel);
+            if(pos>=0) {
+              open_popups.splice(pos,1);
+            }
+            //return(false);
+          }
+        }).popup('toggle');
+      }
+    }
+  });
+}
+[#LayoutJSCode}
+
+[#=]motsclesPeople[:{motsclesPeople_dropdown}]
+[#=]periodesPeople[:{periodesPeople_js}]
+[#<]{#LayoutJSCode]
+People={}
+People.motscles=[:{motsclesPeople_tous}];
+People.motscles2people=:{motscles2people};
+People.periodes=#{periodesPeople};
+People.et_ou="";
+People.motscles_selection="";
+
+function intersectPeriodPeople(from,to) {
+  var people=[];
+  Object.keys(People.periodes).forEach(function(person) {
+    var periode=People.periodes[person];
+    //alert("periode:"+JSON.stringify(periode)+","+JSON.stringify(from)+","+JSON.stringify(to));
+    if(periode[1]>=from && periode[0]<=to) {
+      people.push(person);
+    }
+  });
+  //alert("periodes="+JSON.stringify(people));
+  return people;
+};
+
+function select_people(motscles_selection,et_ou) {
+  var peopleParMotscles=motscles_selection.split(",").unique();
+  //fix weird behavior of split "".split(",") == [""]
+  if(peopleParMotscles.includes("") && peopleParMotscles.length==1) peopleParMotscles=[];
+  People.motscles_selection=peopleParMotscles.join(",");
+  motscles_selection=People.motscles_selection;
+  var periode=$("#periode_people").val(),inter=[];
+  var peopleParPeriodes=[];
+  if(periode != "") {
+    inter=periode.split(";");
+    if(inter.length==1) inter.push(inter[0]);
+    //alert("inter="+JSON.stringify(inter));
+    peopleParPeriodes=intersectPeriodPeople(parseInt(inter[0]),parseInt(inter[1]));
+  }
+  //alert("periode=<"+periode+"> et/ou=<"+et_ou+"> motscles=<"+motscles+">");
+  //alert("periodes="+JSON.stringify(peopleParPeriodes)+"] et/ou=<"+JSON.stringify(et_ou)+"> motscles="+JSON.stringify(peopleParMotscles));
+  //hide and show
+  $(".people").hide();
+  if(peopleParMotscles.length==0 && peopleParPeriodes.length==0) {
+    $(".people").show();
+  } else {
+    peopleParMotscles.forEach(function(elt) {
+      if(["","ou"].includes(et_ou) || peopleParPeriodes.includes(elt)) {
+        //alert("elt="+JSON.stringify(elt));
+        $("."+elt).show();
+      }
+    });
+    peopleParPeriodes.forEach(function(elt) {
+      if(["","ou"].includes(et_ou) || peopleParMotscles.includes(elt)) {
+        $("."+elt).show();
+      }
+    });
+  }
+  $('.image_people').visibility('refresh');
+}
+[#LayoutJSCode}
+
+[#=]motsclesTextes[:{motsclesTextes_dropdown}]
+[#=]periodesTextes[:{periodesTextes_js}]
+[#<]{#LayoutJSCode]
+Textes={}
+Textes.motscles=[:{motsclesTextes_tous}];
+Textes.motscles2textes=:{motscles2textes};
+Textes.periodes=#{periodesTextes};
+Textes.et_ou="";
+Textes.motscles_selection="";
+
+function intersectPeriodTextes(from,to) {
+  var textes=[];
+  //debug: var log="Search: "+","+JSON.stringify(from)+","+JSON.stringify(to)+" => ";
+  Object.keys(Textes.periodes).forEach(function(texte) {
+    var periode=Textes.periodes[texte];
+    if(periode[1]>=from && periode[0]<=to) {
+      //debug: log = log + ", [texte: "+texte+" -> periode:"+JSON.stringify(periode)+"]";
+      textes.push(texte);
+    }
+  });
+  //alert("periodes="+JSON.stringify(textes));
+  //debug: alert(log);
+  return textes;
+};
+
+function select_textes(motscles_selection,et_ou) {
+  var textesParMotscles=motscles_selection.split(",").unique();
+  //fix weird behavior of split "".split(",") == [""]
+  if(textesParMotscles.includes("") && textesParMotscles.length==1) textesParMotscles=[];
+  Textes.motscles_selection=textesParMotscles.join(",");
+  motscles_selection=Textes.motscles_selection;
+  var periode=$("#periode_textes").val(),inter=[];
+  var textesParPeriodes=[];
+  if(periode != "") {
+    inter=periode.split(";");
+    if(inter.length==1) inter.push(inter[0]);
+    //alert("inter="+JSON.stringify(inter));
+    textesParPeriodes=intersectPeriodTextes(parseInt(inter[0]),parseInt(inter[1]));
+  }
+  //alert("periode=<"+periode+"> et/ou=<"+et_ou+"> motscles=<"+motscles+">");
+  //alert("periodes="+JSON.stringify(textesParPeriodes)+"] et/ou=<"+JSON.stringify(et_ou)+"> motscles="+JSON.stringify(textesParMotscles));
+  //hide and show
+  $(".textes").hide();
+  if(textesParMotscles.length==0 && textesParPeriodes.length==0) {
+    $(".textes").show();
+  } else {
+    textesParMotscles.forEach(function(elt) {
+      if(["","ou"].includes(et_ou) || textesParPeriodes.includes(elt)) {
+        //alert("elt="+JSON.stringify(elt));
+        $("."+elt).show();
+      }
+    });
+    textesParPeriodes.forEach(function(elt) {
+      if(["","ou"].includes(et_ou) || textesParMotscles.includes(elt)) {
+        $("."+elt).show();
+      }
+    });
+  }
+  $('.image_textes').visibility('refresh');
+}
+[#LayoutJSCode}
+[#>]
+<h1 class="ui header">
+  <div class="content">
+    Histoires de Mathématiques
+  </div>
+</h1>
+<div class="content" align="center">
+<a href="/FAQ" target=_blank>
+<font color=#cb000><b>Foire aux Questions</b></font></a>
+</div>
+<div class="content">
+  <div class="ui pointing secondary menu">
+    <a id="h_tab" class="active item tabitem" data-tab="histoires"><i class="#{icons.histoires} icon"></i>histoires</a>
+    <a id="p_tab" class="item tabitem" data-tab="people"><i class="#{icons.people} icon"></i>personnages</a>
+    <a id="t_tab" class="item tabitem" data-tab="textes"><i class="#{icons.textes} icon"></i>textes</a>
+    <a id="t_tab" class="item tabitem" data-tab="jeux"><i class="#{icons.jeux} icon"></i>jeux</a>
+  </div>
+  <div class="ui tab segment tab_histoires" data-tab="histoires">
+    <div class="ui grid">
+    <div class="one wide column"></div>
+    <div class="nine wide column">
+      {#dropdown]motscles_histoires[#class]search selection fluid normal[#multiple]true[#default]mots-clés ou personnages[#choices]#{motsclesHistoires}[#js]
+      |//alert("changed "+JSON.stringify(value) + " " +JSON.stringify(value.length) + " " +JSON.stringify(text) + " " +JSON.stringify($selectedItem) + " " +JSON.stringify(typeof($selectedItem)));
+      |if(typeof($selectedItem)=="string") {//add
+
+      |} else if(typeof($selectedItem)=="object") {//close
+      |var selHists=Histoires.motscles2histoires[$selectedItem.text()].split(",").map(function(elt) {return "#ph_"+elt;});
+      |//alert( JSON.stringify(selHists)+" "+JSON.stringify(open_popups)) ;
+      |//selHists.forEach(function(hist) {if(open_popups.includes(hist)) {alert("h:"+hist);}}) ;
+      |$("#h_tab").click();
+      |open_popups=[];
+      |}
+      |if(value.length > 0) {select_histoires(Histoires.motscles_selection=value.map(function(elt) {return Histoires.motscles2histoires[elt];}).join(","),Histoires.et_ou);} else {$("#h_tab").click();select_histoires('','');}
+      [#}
+    </div>
+    <div class="two wide column">
+      {#dropdown]et_ou_histoires[#default]et/ou[#choices]et|ou[#js]
+      |select_histoires(Histoires.motscles_selection,Histoires.et_ou=value);
+      [#}
+    </div>
+    <div class="three wide column">
+      {#inputUI]periode_histoires[#default]periode...[#js]if(event.which==13) {select_histoires(Histoires.motscles_selection,Histoires.et_ou);}[#}
+    </div>
+    <div class="ui divider sixteen wide column"></div>
+  </div>
+[#rb>]
+  domaines.each do |domaine| #
+  domaine_titre=domaines_titres[domaine]
+  {#>]<font color=#cb000><h2> :{domaine_titre}</h2></font></center>
+  <div class="ui list">
+  [#>}
+  vitrine=histoires.select {|k,e| e["domain"]==domaine_titre}.sort_by{|k,e| e["location"].to_i}
+  vitrine.each do |hist,info| #
+  {#>]
+    <div id="h_:{hist}" class="item :{hist} histoire vue_histoire">
+      <img class="ui mini image image_histoires" data-src="/users/Histoires/histoires/:{hist}.png"></img>
+      <div class="content">
+        <div class="header">:{info["title"]}</div>
+        <div class="description">:{info["subtitle"]}</div>
+      </div>
+    </div>
+    <div id="ph_:{hist}" class="ui#{popup.class} popup" style="#{popup.style.size}#{bgcolor.histoires}#{bgcolor.opacity}">
+      <div class="card">
+        <div class="content">
+          <div><!-- div class=":{hist} histoire"-->
+            <div class="eight wide column" align="justify">
+              <h3 class="ui header">
+                <a href="/:{hist}-auto" target="_blank" style="color:black">:{info["title"]}</a>
+                <div class="sub header">:{info["subtitle"]}</div>
+              </h3>
+              <a href="/:{hist}-auto" target="_blank"><img class="ui right floated image"  src="/users/Histoires/histoires/:{hist}.png" height="180"></img></a>
+              |:{info["abstract"]}|
+              <BR/>
+              <strong>durée</strong>#{wsp}:#{wsp}<i>:{info["duration"]}</i>,#{wsp}<strong>public</strong>#{wsp}:#{wsp}:{{1=>"tous", 3 => "lycéens et étudiants", 5 => "professeurs"}[info["level"]]},#{wsp}<strong><a href="/users/Histoires/:{domaine}/:{hist}.pdf" target="_blank" style="color:teal">pdf</a></strong>#{wsp}:#{wsp}<i>:{info["slides"]}#{wsp}p.</i>
+              <br/>[#rb<]episodes=info["episodes"].split(";").map{|k| k.strip =~ /(.*)\((\d+)\-(\d+)\)$/; [$1,$2.to_i,$3.to_i]}[#>]<strong>épisodes</strong>#{wsp}:#{wsp}:{episodes.map{|e| "[<a href='/"+hist+"-auto#/"+e[1].to_s+"' target='_blank' style='color:teal'>"+e[0]+"</a> ("+(e[1]+1).to_s+"-"+(e[2]+1).to_s+")]"}.join(" ")}
+              <br/><strong>personnage:{"s" if info["people"].split(";").length > 1}</strong>#{wsp}:#{wsp}[#rb>]people_list=info["people"].split(";").sort_by{|e| 10 - e.strip[-2].to_i}.each do |k| #
+                  person=k.strip[0..-4]
+                  full_name=people[person]["name"]
+                  {#>][[<a class="go_tab" tab="people" to=":{person}" {#hide]onClick='$(".menu .item").tab("change tab","people");$("html,body").animate({scrollTop: $("#p_:{person}").offset().top},"slow");$("#p_:{person}").click();'[#hide} style="color:teal">:{full_name}</a>] ][#>}
+              end
+              if textes2histoires[hist]
+                {#>]<br/><strong>texte:{"s" if textes2histoires[hist].length > 1}</strong>#{wsp}:#{wsp}[#>}
+                textes2histoires[hist].sort_by{|e| e2=e.strip;first=(textes[e2]["date"].to_s.split(";")[0]).strip;first=(first =~ /^\?.*/ ? first[1..-1] : first); first.to_f}.each_with_index do |texte,i| #
+                  {#>][[<a class="go_tab" tab="textes" to=":{texte}" {#hide]onClick='$(".menu .item").tab("change tab","textes");$("html,body").animate({scrollTop: $("#t_:{texte}").offset().top},"slow");$("#t_:{texte}").click();'[#hide} style="color:teal">:{textes[texte]["titre"]}</a>] ][#>}
+                end
+              end
+              [#>]
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+[#>}
+end
+{#>]
+  </div>
+[#>}
+end
+[#>]
+</div>
+<div class="ui tab segment tab_people" data-tab="people">
+  <div class="ui grid">
+    <div class="one wide column"></div>
+    <div class="nine wide column">
+      {#dropdown]motscles_people[#class]search selection fluid normal[#multiple]true[#default]personnages[#choices]#{motsclesPeople}[#js]
+      //alert("changed "+JSON.stringify(value));
+      if(typeof(value) != "undefined" && value.length > 0) {
+      select_people(People.motscles_selection=value.map(function(elt) {return People.motscles2people[elt];}).join(","),People.et_ou);
+      } else {$("#p_tab").click();select_people('','');}
+      [#}
+    </div>
+    <div class="two wide column">
+      {#dropdown]et_ou_people[#default]et/ou[#choices]et|ou[#js]
+      select_people(People.motscles_selection,People.et_ou=value);
+      [#}
+    </div>
+    <div class="three wide column">{#inputUI]periode_people[#default]periode...[#js]if(event.which==13) {select_people(People.motscles_selection,People.et_ou);}[#}</div>
+    <div class="ui divider sixteen wide column"></div>
+  </div>
+  <div class="ui list">
+  [#rb>]
+  personnages=people.sort_by{|person,info| birth=(info["dates"].split(";")[0]).strip;birth=(birth =~ /^\?.*/ ? birth[1..-1] : birth); birth.to_i}
+  personnages.each do |person,info| #
+    dates=info["dates"].split(";").map{|e| (e2=e.strip) =~ /^\?.*/ ? "c. "+e2[1..-1] : e2}.join(", ")
+  {#>]
+    <div id="p_:{person}" class="item :{person} people vue_person">
+      <img class="ui avatar image image_people" data-src="/users/Histoires/people/{#if]info["portrait"][#>]:{person}[#else]interrogation[#if}.png"></img>
+      <div class="content">
+        <div class="ui header"> <span class="ui small">:{info["complete"]} (:{dates})</span> {#hide]{#if]info["wikipedia"][#>]<a href="https://fr.wikipedia.org/wiki/:{info["wikipedia"]}" target="_blank">wikipedia</a>[#if} {#if]info["mactutor"][#>]<a href="http://www-history.mcs.st-and.ac.uk/Biographies/:{info["mactutor"]}.html" target="_blank">MacTutor</a>[#if}[#hide}</div>
+        <div class="description">
+          {#if]!info["abstract"].strip.empty?[#>]<I>:{info["abstract"]}</I>[#if}
+        [#>]
+        </div>
+      </div>
+    </div>
+    <div id="pp_:{person}"  class="ui#{popup.class} popup" style="#{popup.style.size}#{bgcolor.people}#{bgcolor.opacity}">
+      <div class="card">
+        <div class="content">
+          <div> <!-- div class=":{person} people"-->
+            <div class="eight wide column" align="justify">
+              <img class="ui small image floated right" src="/users/Histoires/people/{#if]info["portrait"][#>]:{person}[#else]interrogation[#if}.png"></img>
+              <h3 class="ui header">
+                :{info["complete"]} (:{dates})
+                <div class="sub header">:{info["abstract"]}</div>
+              </h3>
+              <strong>{#if]info["wikipedia"][#>]<a href="https://fr.wikipedia.org/wiki/:{info["wikipedia"]}" target="_blank">wikipedia</a>[#if} {#if]info["mactutor"][#>]<a href="http://www-history.mcs.st-and.ac.uk/Biographies/:{info["mactutor"]}.html" target="_blank">MacTutor</a>[#if}</strong><br/>
+              [#rb>]if people2histoires[person]
+                {#>]<br/><strong>histoire:{"s" if people2histoires[person].length > 1}</strong>#{wsp}:#{wsp}[#>}
+                people2histoires[person].sort_by{|e,imp|  10 - imp }.each_with_index do |h,i| #
+                  hist=h[0]
+                  {#>][[<a class="go_tab" tab="histoires" to=":{hist}" {#hide]href="/:{hist}-auto" target="_blank" onClick='$(".menu .item").tab("change tab","histoires");$("html,body").animate({scrollTop: $("#h_:{hist}").offset().top},"slow");$("#h_:{hist}").click();'[#hide} style="color:teal">:{histoires[hist]["title"]}</a>]{#if](i+1) != people2histoires[person].length[#>] [#if}{#if](i+1) % 3 == 0 [#>] <br/>[#if} ][#>}
+                end
+              end
+              if textes2people[person]
+                {#>]<br/><strong>texte:{"s" if textes2people[person].length > 1}</strong>#{wsp}:#{wsp}[#>}
+                textes2people[person].sort_by{|e| e2=e.strip;first=(textes[e2]["date"].to_s.split(";")[0]).strip;first=(first =~ /^\?.*/ ? first[1..-1] : first); first.to_f}.each_with_index do |texte,i| #
+                  {#>][[<a class="go_tab" tab="textes" to=":{texte}" {#hide]onClick='$(".menu .item").tab("change tab","textes");$("html,body").animate({scrollTop: $("#t_:{texte}").offset().top},"slow");$("#t_:{texte}").click();'[#hide} style="color:teal">:{textes[texte]["titre"]}</a>] ][#>}
+                end
+              end
+              [#>]
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  [#>}
+end
+[#>]
+  </div>
+</div>
+<div class="ui tab segment tab_textes" data-tab="textes">
+  <div class="ui grid">
+    <div class="one wide column"></div>
+    <div class="nine wide column">
+      {#dropdown]motscles_textes[#class]search selection fluid normal[#multiple]true[#default]personnages[#choices]#{motsclesTextes}[#js]
+      //alert("changed "+JSON.stringify(value));
+      if(value.length > 0) {select_textes(Textes.motscles_selection=value.map(function(elt) {return Textes.motscles2textes[elt];}).join(","),Textes.et_ou);} else {$("#t_tab").click();select_textes('','');}
+      [#}
+    </div>
+    <div class="two wide column">
+      {#dropdown]et_ou_textes[#default]et/ou[#choices]et|ou[#js]
+      select_textes(Textes.motscles_selection,Textes.et_ou=value);
+      [#}
+    </div>
+    <div class="three wide column">{#inputUI]periode_textes[#default]periode...[#js]if(event.which==13) {select_textes(Textes.motscles_selection,Textes.et_ou);}[#}</div>
+    <div class="ui divider sixteen wide column"></div>
+  </div>
+  <div class="ui list">
+[#rb>]
+textes.sort_by{|texte,info| first=(info["date"].to_s.split(";")[0]).strip;first=(first =~ /^\?.*/ ? first[1..-1] : first); first.to_f}.each do |texte,info| #
+  auteurs=info["auteur"].split(";").map{|e| e.strip}
+  image=auteurs[0]
+  image="interrogation" unless people[image]["portrait"]
+  auteurs_liens=auteurs.map{|e| '<a class="go_tab" tab="people" to="'+e+'" style="color:teal">'+people[e]["complete"]+'</a>'}.join(", ")
+  an,edition=info["date"].to_s.split(";").map{|e| (e2=e.strip) =~ /^\?.*/ ? "c. "+e2[1..-1].to_i.to_s : e2.to_i.to_s}
+  ref=info["reference"] || (auteurs.map{|e| people[e]["name"]}.join(", ").to_s + " ("+ an + ") " + info["titre"] + ", " + (info["traducteur"] ? ("trad. : " + (people[info["traducteur"]] ? people[info["traducteur"]]["name"] : info["traducteur"]) + ", ") : "") + (info["editeur"] || "") + " " + (edition || "").to_s)
+  source=case (info["source"] || "").downcase
+    when "gallica"
+      {nom: "Gallica", lien: "http://gallica.bnf.fr"}
+    when "google"
+      {nom: "Google books", lien: "https://books.google.fr"}
+    when "archive"
+      {nom: "Internet Archive",lien: "https://archive.org"}
+    when "e-rara"
+      {nom: "e|rara",lien: "http://www.e-rara.ch"}
+    when "gdz"
+      {nom: "Göttinger Digitalisierungszentrum", lien: "http://gdz.sub.uni-goettingen.de/gdz/"}
+    when "beic"
+      {nom: "Biblioteca Europea", lien: "http://www.beic.it"}
+    when "jstor"
+      {nom: "JSTOR",lien: "https://www.jstor.org/"}
+    when "numdam"
+      {nom: "NumDam",lien: "http://www.numdam.org/"}
+    else
+      {nom: info["source"]}
+    end
+  {#>]
+    <div id="t_:{texte}" class="item :{texte} textes vue_texte">
+      <img class="ui avatar image image_textes" data-src="/users/Histoires/people/:{image}.png"></img>
+      <div class="content">
+        <div class="ui header"> :{info["titre"]}</div>
+        <div class="description"> <b>:{an} {#if]edition[#>] (édition de :{edition})[#if}</b> :{auteurs.map{|e| people[e]["complete"]}.join(", ")}
+        </div>
+      </div>
+    </div>
+    <div id="pt_:{texte}" class="ui#{popup.class} popup" style="#{popup.style.size}#{bgcolor.textes}#{bgcolor.opacity}">
+      <div class="card">
+        <div class="content">
+          <div><!-- div class=":{texte} textes"-->
+            <div class="eight wide column" align="justify">
+              <img class="ui small image floated right" src="/users/Histoires/people/:{image}.png"></img>
+              <h3 class="ui header">
+                <a href="/users/Histoires/textes/:{texte}.pdf" target="_blank" style="color:black">:{info["titre"]}</a>
+                <div class="sub header">:{an} {#if]edition[#>] (édition de :{edition})[#if}</b> :{auteurs_liens}</div>
+              </h3>
+              <I>:{info["abstract"]}</I>
+              <br/><strong>réf.</strong>#{wsp}:#{wsp} :{ref}
+              <br/><strong>source</strong>#{wsp}:#{wsp} {#if]source[:lien][#>]<a href=":{source[:lien]}" target="_blank">:{source[:nom]}</a>[#else]:{source[:nom]}[#if}
+              [#rb>]
+                hists=info["histoires"].split(";").map{|e| e.strip}
+                {#>]<br/><strong>histoire:{"s" if hists.length > 1}</strong>#{wsp}:#{wsp}[#>}
+                hists.sort_by{|e| histoires[e.strip]["location"].to_i}.each_with_index do |hist,i| #
+                  {#>][[<a class="go_tab" tab="histoires" to=":{hist}" {#hide]href="/:{hist}-auto" target="_blank" onClick='$(".menu .item").tab("change tab","histoires");$("html,body").animate({scrollTop: $("#h_:{hist}").offset().top},"slow");$("#h_:{hist}").click();'[#hide} style="color:teal">:{histoires[hist]["title"]}</a>] ][#>}
+                end
+              [#>]
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  [#>}
+end
+[#>]
+  </div>
+</div>
+<div class="ui tab segment tab_jeux" data-tab="jeux">
+{#tabHistoiresGames#}
+</div>
+<script>
+open_popups=[];
+zIndexPop={};
+
+$('.menu .item')
+  .tab({
+  "onVisible": function(path) {
+      $('.image_'+path).visibility('refresh');
+    }
+  })
+;
+$('.menu .item').tab('change tab','histoires');
+$('.image_histoires')
+  .visibility({
+    type       : 'image',
+    transition : 'fade in',
+    duration   : 1000
+  })
+;
+$('.image_people')
+  .visibility({
+    type       : 'image',
+    transition : 'fade in',
+    duration   : 1000
+  })
+;
+$('.image_textes')
+  .visibility({
+    type       : 'image',
+    transition : 'fade in',
+    duration   : 1000
+  })
+;
+$('.vue_histoire')
+  .popup({
+    inline     : true,
+    on  : 'click',
+    boundary: '.tab_histoires',
+    position: 'bottom left',
+    delay: {
+      show: 300 //,
+      //hide: 800
+    },
+    //hoverable: true,
+    //prefer: 'opposite',
+    lastResort: 'bottom left',
+    onVisible: function() {
+      //alert("ph #"+$(this).attr("id"));
+      open_popups.push("#"+$(this).attr("id"));
+    },
+    onHide: function() {
+      var psel="#"+$(this).attr("id");
+      //alert("hide pt "+psel);
+      var pos=open_popups.indexOf(psel);
+      if(pos>=0) {
+        open_popups.splice(pos,1);
+      }
+      //return(false);
+    }
+  })
+;
+$('.vue_person')
+  .popup({
+    inline     : true,
+    on  : 'click',
+    boundary: '.tab_people',
+    context: '.tab_people',
+    position: 'bottom left',
+    delay: {
+      show: 0 //,
+      //hide: 800
+    },
+    //hoverable: true,
+    //prefer: 'opposite',
+    exclusive: true,
+    lastResort: 'bottom left',
+    onVisible: function() {
+      //alert("pp #"+$(this).attr("id"));
+      open_popups.push("#"+$(this).attr("id"));
+    },
+    onHide: function() {
+      var psel="#"+$(this).attr("id");
+      //alert("hide pt "+psel);
+      var pos=open_popups.indexOf(psel);
+      if(pos>=0) {
+        open_popups.splice(pos,1);
+      }
+      //return(false);
+    }
+  })
+;
+$('.vue_texte')
+  .popup({
+    inline     : true,
+    on  : 'click',
+    boundary: '.tab_textes',
+    position: 'bottom left',
+    // delay: {
+    //   show: 0 //,
+    //   //hide: 800
+    // },
+    //hoverable: true,
+    //prefer: 'opposite',
+    exclusive: true,
+    lastResort: 'bottom left',
+    onVisible: function() {
+      //alert("pt #"+$(this).attr("id"));
+      open_popups.push("#"+$(this).attr("id"));
+    },
+    onHide: function() {
+      var psel="#"+$(this).attr("id");
+      //alert("hide pt "+psel);
+      var pos=open_popups.indexOf(psel);
+      if(pos>=0) {
+        open_popups.splice(pos,1);
+      }
+      //return(false);
+    }
+  })
+;
+
+
+$('.ui.popup').click(function(evt) {
+  if (evt.altKey) {
+    //alert("pop :"+$(this).attr("id"));
+    var zPop=parseInt(zIndexPop.css("zIndex")),zThis=parseInt($(this).css("zIndex"));
+    zIndexPop.css("zIndex",zThis);
+    if(zThis == zPop) {zPop = zPop + 1;}
+    $(this).css("zIndex",zPop);
+    //alert("swap "+zIndexPop.attr("id") + ":"+ zPop+ " " + $(this).attr("id")+ ":" + zThis);
+    return(false);
+  }
+  //Save old clicked popup
+  zIndexPop=$(this);
+  //return(false);
+});
+
+activeGoTab();
+</script>

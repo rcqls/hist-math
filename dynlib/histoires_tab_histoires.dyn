@@ -1,0 +1,85 @@
+{#def]tabHistoires[#html>]
+<div class="ui tab segment tab_histoires" data-tab="histoires">
+    <div class="ui grid">
+    <div class="one wide column"></div>
+    <div class="nine wide column">
+      {#dropdown]motscles_histoires[#class]search selection fluid normal[#multiple]true[#default]mots-clés ou personnages[#choices]:{motsclesHistoires_dropdown}[#js]
+      |//alert("changed "+JSON.stringify(value) + " " +JSON.stringify(value.length) + " " +JSON.stringify(text) + " " +JSON.stringify($selectedItem) + " " +JSON.stringify(typeof($selectedItem)));
+      |if(typeof($selectedItem)=="string") {//add
+
+      |} else if(typeof($selectedItem)=="object") {//close
+      |var selHists=Histoires.motscles2histoires[$selectedItem.text()].split(",").map(function(elt) {return "#ph_"+elt;});
+      |//alert( JSON.stringify(selHists)+" "+JSON.stringify(open_popups)) ;
+      |//selHists.forEach(function(hist) {if(open_popups.includes(hist)) {alert("h:"+hist);}}) ;
+      |$("#h_tab").click();
+      |open_popups=[];
+      |}
+      |if(value.length > 0) {select_histoires(Histoires.motscles_selection=value.map(function(elt) {return Histoires.motscles2histoires[elt];}).join(","),Histoires.et_ou);} else {$("#h_tab").click();select_histoires('','');}
+      [#}
+    </div>
+    <div class="two wide column">
+      {#dropdown]et_ou_histoires[#default]et/ou[#choices]et|ou[#js]
+      |select_histoires(Histoires.motscles_selection,Histoires.et_ou=value);
+      [#}
+    </div>
+    <div class="three wide column">
+      {#inputUI]periode_histoires[#default]periode...[#js]if(event.which==13) {select_histoires(Histoires.motscles_selection,Histoires.et_ou);}[#}
+    </div>
+    <div class="ui divider sixteen wide column"></div>
+  </div>
+[#rb>]
+  domaines.each do |domaine| #
+  domaine_titre=domaines_titres[domaine]
+  {#>]<font color=#cb000><h2> :{domaine_titre}</h2></font></center>
+  <div class="ui list">
+  [#>}
+  vitrine=histoires.select {|k,e| e["domain"]==domaine_titre}.sort_by{|k,e| e["location"].to_i}
+  vitrine.each do |hist,info| #
+  {#>]
+    <div id="h_:{hist}" class="item :{hist} histoire vue_histoire">
+      <img class="ui mini image image_histoires" data-src="/users/Histoires/histoires/:{hist}.png"></img>
+      <div class="content">
+        <div class="header">:{info["title"]}</div>
+        <div class="description">:{info["subtitle"]}</div>
+      </div>
+    </div>
+    <div id="ph_:{hist}" class="ui#{popup.class} popup" style="#{popup.style.size}#{bgcolor.histoires}#{bgcolor.opacity}">
+      <div class="card">
+        <div class="content">
+          <div><!-- div class=":{hist} histoire"-->
+            <div class="eight wide column" align="justify">
+              <h3 class="ui header">
+                <a href="/:{hist}-auto" target="_blank" style="color:black">:{info["title"]}</a>
+                <div class="sub header">:{info["subtitle"]}</div>
+              </h3>
+              <a href="/:{hist}-auto" target="_blank"><img class="ui right floated image"  src="/users/Histoires/histoires/:{hist}.png" height="180"></img></a>
+              |:{info["abstract"]}|
+              <BR/>
+              <strong>durée</strong>#{wsp}:#{wsp}<i>:{info["duration"]}</i>,#{wsp}<strong>public</strong>#{wsp}:#{wsp}:{{1=>"tous", 3 => "lycéens et étudiants", 5 => "professeurs"}[info["level"]]},#{wsp}<strong><a href="/users/Histoires/:{domaine}/:{hist}.pdf" target="_blank" style="color:teal">pdf</a></strong>#{wsp}:#{wsp}<i>:{info["slides"]}#{wsp}p.</i>
+              <br/>[#rb<]episodes=info["episodes"].split(";").map{|k| k.strip =~ /(.*)\((\d+)\-(\d+)\)$/; [$1,$2.to_i,$3.to_i]}[#>]<strong>épisodes</strong>#{wsp}:#{wsp}:{episodes.map{|e| "[<a href='/"+hist+"-auto#/"+e[1].to_s+"' target='_blank' style='color:teal'>"+e[0]+"</a> ("+(e[1]+1).to_s+"-"+(e[2]+1).to_s+")]"}.join(" ")}
+              <br/><strong>personnage:{"s" if info["people"].split(";").length > 1}</strong>#{wsp}:#{wsp}[#rb>]people_list=info["people"].split(";").sort_by{|e| 10 - e.strip[-2].to_i}.each do |k| #
+                  person=k.strip[0..-4]
+                  full_name=people[person]["name"]
+                  {#>][[<a class="go_tab" tab="people" to=":{person}" {#hide]onClick='$(".menu .item").tab("change tab","people");$("html,body").animate({scrollTop: $("#p_:{person}").offset().top},"slow");$("#p_:{person}").click();'[#hide} style="color:teal">:{full_name}</a>] ][#>}
+              end
+              if textes2histoires[hist]
+                {#>]<br/><strong>texte:{"s" if textes2histoires[hist].length > 1}</strong>#{wsp}:#{wsp}[#>}
+                textes2histoires[hist].sort_by{|e| e2=e.strip;first=(textes[e2]["date"].to_s.split(";")[0]).strip;first=(first =~ /^\?.*/ ? first[1..-1] : first); first.to_f}.each_with_index do |texte,i| #
+                  {#>][[<a class="go_tab" tab="textes" to=":{texte}" {#hide]onClick='$(".menu .item").tab("change tab","textes");$("html,body").animate({scrollTop: $("#t_:{texte}").offset().top},"slow");$("#t_:{texte}").click();'[#hide} style="color:teal">:{textes[texte]["titre"]}</a>] ][#>}
+                end
+              end
+              [#>]
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+[#>}
+end
+{#>]
+  </div>
+[#>}
+end
+[#html>]
+</div>
+[#def}

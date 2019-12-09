@@ -1,0 +1,4656 @@
+---
+# -----------------------------------------------------------
+#                 Histoires d'Astronomie
+# -----------------------------------------------------------
+
+# -----------------------------------------------------------
+dumee:
+  title: Les femmes savantes
+  subtitle: astronomie pour les dames
+  abstract: |
+    Il y a eu du temps de Molière des femmes bien plus savantes
+    que les hommes qui s'en moquaient&nbsp;!
+  episodes: |
+    droit de savoir(00-06); Jeanne Dumée(07-11); Madame de la Sablière(12-18);
+    astronomies des dames(19-28); de Bryan à Flammarion(29-34)
+  period: 1650;1900
+  duration: "21:52"
+  slides: 35
+  location: 1693
+  level: 1
+  keywords:
+    astronomie; femme; astrolabe
+  people:
+    Moliere(5); Dumee(3); Sabliere(3); Lenclos(3); Boileau(2); Gassendi(4);
+    Roberval(2); Fontenelle(4); Germain(4); Lalande(4); Bryan(4);
+    Flammarion(4); Chatelet(2)
+  domain: Astronomie
+
+# -----------------------------------------------------------
+keplers:
+  title: La chasse aux sorcières
+  subtitle: astronomie selon Kepler
+  abstract: |
+    Entre ses deux premières lois et la troisième, il s'est passé beaucoup
+    de choses dans la vie de Kepler&nbsp;!
+  episodes: |
+    lois de Kepler(00-06); Rodolphe II(07-16); harmonices mundi(17-25);
+    chasse aux sorcières(26-32); somnium(33-39)
+  period: 1600;1640
+  duration: "27:20"
+  slides: 40
+  location: 1619
+  level: 1
+  keywords:
+    astronomie; astrologie; sorcière; alchimie; lois de Kepler; femme;
+    magie; science fiction; lune
+  people:
+    Kepler(8); Copernic(2); RodolpheII(5); BraheTycho(2); ElizabethI(1);
+    Dee(2); Napier(2); Wilkins(2); Godwin(2)
+  domain: Astronomie
+
+# -----------------------------------------------------------
+lepaute:
+  title: Assistantes et calculatrices
+  subtitle: astronomie au féminin
+  abstract: |
+    Bien des femmes ont été capables non seulement de passer des nuits
+    en observation, mais encore de mener à bien les énormes calculs
+    astronomiques.
+  episodes: |
+    couple Hevelius(00-08); autres couples(09-18); comète de Halley(19-24);
+    Lalande et les femmes(25-34); Mary Somerville(35-39)
+  period: 1650;1850
+  duration: "25:28"
+  slides: 40
+  location: 1759
+  level: 1
+  keywords:
+    astronomie; comète; approximation; gravitation; table numérique; femme
+  people:
+    Lepaute(8); Pierry(4); Harlay(4); HerschelCaroline(4);
+    HerschelWilliam(4); Hevelius(2); Koopman(4); BraheTycho(2);
+    BraheSophie(4); Winckelmann(4); Kirch(2); Eimmart(2);
+    ManfrediEustachio(2); ManfrediMaddalena(2); ManfrediTeresa(2);
+    Fontenelle(2); Lalande(4); Clairaut(4); Halley(2); Somerville(4);
+    Laplace(2); CassiniCesarFrancois(2)
+  domain: Astronomie
+
+# -----------------------------------------------------------
+#                 Histoires d'Analyse
+# -----------------------------------------------------------
+
+# -----------------------------------------------------------
+abel:
+  title: La série du binôme
+  subtitle: entre formules et concepts
+  abstract: |
+    Il a fallu que Cauchy écrive un théorème faux pour qu'on s'avise de
+    démontrer ce qui était connu depuis  Newton&nbsp;!
+  episodes: |
+    binôme de Newton(00-08); démonstrations d'Euler et Lagrange(09-16);
+    cours d'analyse de Cauchy(17-21); Abel(22-25); Gauss et Bolzano (26-30)
+  period: 1665;1826
+  duration: "22:37"
+  slides: 31
+  location: 1826
+  level: 3
+  keywords:
+    analyse; Cambridge; formule du binôme; série entière; démonstration;
+    développement en série; limite; continuité; équation fonctionnelle;
+    école polytechnique
+  people:
+    Abel(8); Cauchy(6); Bolzano(2); Gauss(2); Euler(4); Lagrange(2);
+    Agnesi(2); Newton(4); Wallis(2)
+  domain: Analyse
+
+# -----------------------------------------------------------
+archimedea:
+  title: La chevelure de Bérénice
+  subtitle: quadratures d'Archimède
+  abstract: |
+    Pourquoi Archimède est-il le plus grand&nbsp;? Ses quadratures
+    devraient vous convaincre&nbsp;!
+  episodes: |
+    admirateurs d'Archimède(00-06); oeuvres d'Archimède(07-13);
+    méthode d'exhaustion(14-18); volume de la sphère en Chine(19-22);
+    chevelure de Bérénice(23-27); aire de la spirale(27-33)
+  period: -270;-200
+  duration: "21:43"
+  slides: 34
+  location: -230
+  level: 3
+  keywords:
+    analyse; quadrature; intégrale; approximation; volume; sphère; cylindre;
+    spirale; méthode d'exhaustion; neuf chapitres; principe de Cavalieri;
+    Grecs; Chinois; limite; astronomie
+  people:
+    Archimede(8); dellaFrancesca(4); LiuHui(2); ZuChongzhi(2); ZuGengzhi(4);
+    HeronAlexandrie(2); Ciceron(1); Eudoxe(2)
+  domain: Analyse
+
+# -----------------------------------------------------------
+berkeley:
+  title: La paille et la poutre
+  subtitle: oppositions au calcul infinitésimal
+  abstract: |
+    La nouvelle analyse a suscité des critiques virulentes&nbsp;:
+    ont-elles été utiles&nbsp;?
+  episodes: |
+    parabole de la paille et la poutre (00-04); critiques méritées (05-11);
+    oppositions en France(12-19); projet des Bermudes(20-29)
+  period: 1690;1740
+  duration: "19:40"
+  slides: 30
+  location: 1734
+  level: 3
+  keywords:
+    analyse; calcul différentiel; calcul infinitésimal; Amérique; Bermudes;
+    dérivée; théorème de Rolle; limite
+  people:
+    Berkeley(8); Varignon(4); Rolle(6); Leibniz(2); Newton(2);
+    BernoulliJean(2); Montucla(2); Fontenelle(2)
+  domain: Analyse
+
+# -----------------------------------------------------------
+bernoullia:
+  title: Le Chat botté
+  subtitle: diffusion du calcul différentiel
+  abstract: |
+    Le Marquis de l'Hôpital aurait acheté sa réputation mathématique à
+    Jean Bernoulli. Est-ce si simple&nbsp;?
+  episodes: |
+    Jean Bernoulli(00-05); Guillaume de l'Hôpital(06-12);
+    règle de l'Hôpital(13-15); nuances(16-20); les frères Bernoulli(21-26);
+    père et fils(27-32)
+  period: 1690;1750
+  duration: "22:34"
+  slides: 33
+  location: 1696
+  level: 3
+  keywords:
+    analyse; calcul différentiel; règle de l'Hôpital; dérivée;
+    équation différentielle; chaînette; caténaire; tractrice
+  people:
+    lHopital(8); BernoulliJean(6); BernoulliJacques(2); BernoulliDaniel(2);
+    Leibniz(2); Varignon(2); Huygens(2); Fontenelle(2); Perrault(3)
+  domain: Analyse
+
+# -----------------------------------------------------------
+bolzano:
+  title: Rencontres à Prague
+  subtitle: Bolzano, Cauchy et les valeurs intermédiaires
+  abstract: |
+    Entre autres points communs, ils ont fondé la rigueur de l'analyse
+    moderne. En ont-ils parlé&nbsp;?
+  episodes: |
+    Bolzano à Prague(00-06); Cauchy à Prague(07-17); Euler et Lagrange(18-24);
+    Encontre (25-29); Bolzano et Cauchy(30-39)
+  period: 1500;1840
+  duration: "31:08"
+  slides: 39
+  location: 1817
+  level: 3
+  keywords:
+    analyse; théorème des valeurs intermédiaires; limite; continuité;
+    fausse position; approximation; démonstration; équation; polynôme;
+    suite de Cauchy; école polytechnique
+  people:
+    Bolzano(8); Cauchy(6); HenriV(5); CharlesX(5); Euler(2); Lagrange(4);
+    Encontre(8)
+  domain: Analyse
+
+# -----------------------------------------------------------
+cantor:
+  title: Hôtel de Hilbert
+  subtitle: paradoxes de l'infini
+  abstract: |
+    Comment admettre que le tout, peut n'être pas plus grand que la
+    partie&nbsp;?
+  episodes: |
+    l'infini de Hilbert(00-03); l'infini chez les Grecs(04-08);
+    Grosseteste et Galilée(09-15); avancée de Bolzano(16-21);
+    théorie de Cantor(22-27)
+  period: -400;1900
+  duration: "22:46"
+  slides: 28
+  location: 1900
+  level: 3
+  keywords:
+    analyse; infini; paradoxe; éléments; hypothèse du continu; Grecs; Indiens
+  people:
+    Hilbert(6); Aristote(2); Euclide(2); Grosseteste(4); Bhaskaracharya(2);
+    Galilee(4); Locke(2); Bolzano(6); Cantor(6)
+  domain: Analyse
+
+# -----------------------------------------------------------
+cauchy:
+  title: Le rossignol et les chenilles
+  subtitle: Cauchy et l'analyse complexe
+  abstract: |
+    Même s'il n'avait fait que cela, il serait quand même le plus
+    grand&nbsp;!
+  episodes: |
+    défauts de Cauchy(00-07); 789 mémoires(08-13); logarithme complexe(14-21);
+    avant Cauchy(22-25); réussite de Cauchy(26-33)
+  period: 1690;1850
+  duration: "28:13"
+  slides: 34
+  location: 1825
+  level: 3
+  keywords:
+    analyse; complexe; théorème des résidus; résidu; fonction holomorphe;
+    fonction analytique; logarithme; école polytechnique
+  people:
+    Cauchy(8); BernoulliJean(4); Leibniz(4); Euler(2); dAlembert(2);
+    Laplace(2); Poisson(4); Liouville(2); Stendhal(3); Menabrea(2);
+    Biot(2); Bertrand(4)
+  domain: Analyse
+
+# -----------------------------------------------------------
+cellerier:
+  title: Le père de l'analyse moderne
+  subtitle: dépouillé d'une gloire
+  abstract: |
+    Un professeur de Genève a-t-il inventé l'analyse avant Weierstrass&nbsp;?
+  episodes: |
+    Weierstrass et ses élèves(00-08); toute fonction est dérivable(09-16);
+    fonctions nulle part dérivables(17-22); convergence uniforme (23-26);
+    Charles Cellérier(27-33)
+  period: 1820;1890
+  duration: "23:10"
+  slides: 34
+  location: 1860
+  level: 3
+  keywords:
+    analyse; fonction; continuité; dérivée; fractal; convergence uniforme;
+    limite; série; intégrale; série trigonométrique; Suisse; Genève;
+    école polytechnique; démonstration; somme de Riemann
+  people:
+    Cellerier(8); Weierstrass(8); Dedekind(2); Cantor(2); Mittag(2);
+    Kovalevskaia(2); Heine(2); Schwarz(2); Dini(2); Cauchy(2); Ampere(4);
+    Bertrand(4); Darboux(6); Bolzano(6)
+  domain: Analyse
+
+# -----------------------------------------------------------
+dedekind:
+  title: Lune de miel à Interlaken
+  subtitle: la construction des nombres réels
+  abstract: |
+    D'autres avaient pu anticiper leurs constructions, avant que Cantor
+    et Dedekind n'établissent l'analyse sur des bases solides.
+  episodes: |
+    avant Dedekind(00-04); coupures de Dedekind(05-10); Charles Méray(11-16);
+    suites de Cantor(17-20); Cantor et Dedekind(21-39)
+  period: 1840;1880
+  duration: "20:01"
+  slides: 30
+  location: 1872
+  level: 3
+  keywords:
+    analyse; suite de Cauchy; nombre réel; coupure; Suisse; racine;
+    nombre rationnel; rationnel; nombre irrationnel; irrationnel;
+    racine carrée
+  people:
+    Dedekind(8); Cantor(8); Bolzano(2); Bertrand(4); Meray(8)
+  domain: Analyse
+
+# -----------------------------------------------------------
+dirichlet:
+  title: L'honneur de l'esprit humain
+  subtitle: séries trigonométriques
+  abstract: |
+    Elles ont fait progresser l'analyse pendant tout le dix-neuvième
+    siècle&nbsp;: bien après Fourier&nbsp;!
+  episodes: |
+    cordes vibrantes(00-07); séries de Fourier(08-14);
+    déboires de Fourier(15-18); séries trigonométriques(19-26);
+    famille Mendelssohn(27-37)
+  period: 1740;1870
+  duration: "25:57"
+  slides: 38
+  location: 1829
+  level: 3
+  keywords:
+    analyse; série trigonométrique; corde vibrante; femme;
+    EDP; équation aux dérivées partielles; équation des ondes;
+    équation de la chaleur; musique; fonction; somme de Riemann;
+    fonction trigonométrique
+  people:
+    Fourier(8); Euler(4); dAlembert(4); BernoulliDaniel(4); Dirichlet(8);
+    Riemann(4); Heine(2); Cantor(2); Lebesgue(2); Humboldt(3); Taylor(2);
+    MendelssohnFanny(3); MendelssohnFelix(3); MendelssohnRebecka(5);
+    Lagrange(2)
+  domain: Analyse
+
+# -----------------------------------------------------------
+eulera:
+  title: Le jet d'eau de Sans-Souci
+  subtitle: exploits d'Euler
+  abstract: |
+    Et si le plus grand exploit d'Euler était l'incompréhension
+    de ses successeurs&nbsp;?
+  episodes: |
+    Euler et Frédéric II(00-07); hydrostatique et hydrodynamique(08-11);
+    séries divergentes(12-16); série de Grandi(17-24); Cesàro(25-28);
+    oppositions(29-35)
+  period: 1740;1900
+  duration: "23:50"
+  slides: 36
+  location: 1760
+  level: 3
+  keywords:
+    analyse; série numérique; série divergente; hydrodynamique;
+    hydrostatique; série de Grandi; série géométrique; Académie
+  people:
+    Euler(8); FredericII(3); Voltaire(3); Ramanujan(4); Hardy(4);
+    dAlembert(4); Abel(4); Cesaro(6); Grandi(4); Leibniz(2); Oresme(6);
+    Chatelet(2)
+  domain: Analyse
+
+# -----------------------------------------------------------
+fermata:
+  title: De maximis et minimis
+  subtitle: prémisses du calcul différentiel
+  abstract: |
+    Avec sa méthode, Fermat avait-il conscience d'anticiper le calcul
+    différentiel&nbsp;?
+  episodes: |
+    optimisation avant Fermat(00-06); méthode de Fermat(07-15);
+    Descartes contre Fermat(16-19); Fermat précurseur(20-30)
+  period: -200;1700
+  duration: "25:28"
+  slides: 31
+  location: 1629
+  level: 3
+  keywords:
+    analyse; calcul différentiel; optimisation; tangente; dérivée;
+    maximum; minimum; Académie
+  people:
+    Fermat(8); Apollonius(2); Viviani(2); ibnQurra(2); Descartes(4);
+    alTusi(2); Huygens(4); Newton(2); Barrow(2); Leibniz(2)
+  domain: Analyse
+
+# -----------------------------------------------------------
+gregory:
+  title: La stéréométrie des tonneaux de vin
+  subtitle: géométrie des indivisibles
+  abstract: |
+    Si la vendange de 1613 avait été moins bonne, quelle aurait été
+    l'histoire du calcul intégral&nbsp;?
+  episodes: |
+    mesurer les tonneaux(00-06); calculs de Kepler (07-11);
+    principe de Cavalieri(12-16); sommes de puissances(17-24);
+    prémisses du calcul intégral(25-31)
+  period: 1600;1700
+  duration: "19:29"
+  slides: 32
+  location: 1615
+  level: 3
+  keywords:
+    analyse; principe de Cavalieri; calcul intégral; volume; optimisation;
+    tonneau; velte; indivisibles; méthode d'exhaustion; maximum; minimum;
+    neuf chapitres; limite; sphère
+  people:
+    Kepler(8); LiuHui(2); Cavalieri(6); Fermat(2); Roberval(2); Aryabhata(2);
+    alHaytham(4); Wallis(4); Pascal(2); Gregory(2); Barrow(2); Newton(2);
+    Leibniz(2); Huygens(2); Guldin(2); ZuGengzhi(2)
+  domain: Analyse
+
+# -----------------------------------------------------------
+heron:
+  title: De Babylone ou d'ailleurs
+  subtitle: approcher des racines
+  abstract: |
+    Algorihme de Babylone ou méthode de Héron&nbsp;? Ce qui est sûr,
+    c'est que la méthode est très ancienne.
+  episodes: |
+    justifications modernes(00-04); racines babyloniennes(05-09);
+    racines indiennes(10-15); racines grecques(16-21);
+    algorithme moderne (22-29); fractions continues(30-36)
+  period: -1800;1700
+  duration: "31:57"
+  slides: 37
+  location: -1800
+  level: 3
+  keywords:
+    analyse;  équation de Pell-Fermat; racine carrée; approximation;
+    algorithme; méthode de Héron; neuf chapitres; fraction continue;
+    Sulba Sutra; Grecs; Indiens; Chinois; Mésopotamiens; racine;
+    limite; racine cubique
+  people:
+    HeronAlexandrie(6); LiuHui(2); BanuMusa(2); Khayyam(2); alHaytham(2);
+    Bombelli(4); Cataldi(4); Wallis(2); Bhaskaracharya(2); TheonSmyrne(2);
+    Brahmagupta(4); Brouncker(2)
+  domain: Analyse
+
+# -----------------------------------------------------------
+ibnqurra:
+  title: Quadratures et talismans
+  subtitle: la famille ibn Qurra
+  abstract: |
+    Un grand mathématicien peut-il aussi fabriquer des talismans&nbsp;?
+  episodes: |
+    de Harran à Bagdad(00-07); mesure de la parabole(07-14);
+    religion des Sabéens(15-19); talismans(20-24); pommade magique(25-29)
+  period: 800;950
+  duration: "24:44"
+  slides: 30
+  location: 850
+  level: 3
+  keywords:
+    analyse; quadrature; parabole; somme de Riemann; Maison de la Sagesse;
+    Bagdad; méthode d'exhaustion; astrologie; Arabes; série géométrique
+  people:
+    ibnQurra(8); BanuMusa(4); Archimede(2); Apollonius(4)
+  domain: Analyse
+
+# -----------------------------------------------------------
+kovalevskaia:
+  title: Le mariage de Sofia
+  subtitle: une fameuse brèche dans la bêtise humaine
+  abstract: |
+    Il en fallait de la volonté, pour résister aux préjugés&nbsp;!
+  episodes: |
+    Le mur tapissé(00-05); mariage(06-14); thèse et Commune(15-21);
+    consécration(22-27); revendications et oppositions(28-38)
+  period: 1840;1900
+  duration: "31:38"
+  slides: 39
+  location: 1888
+  level: 3
+  keywords:
+    analyse; femme; équation différentielle; Académie; Commune de Paris;
+    mécanique
+  people:
+    Kovalevskaia(8); Mittag(6); Weierstrass(6); Hermite(2); Tchebychev(2);
+    Voltaire(1); Verne(1); Pizan(1); Klumpke(4); Cauchy(2)
+
+  domain: Analyse
+
+# -----------------------------------------------------------
+leibniza:
+  title: La guerre des philosophes
+  subtitle: Newton contre Leibniz
+  abstract: |
+    Que deux des plus grands esprits de tous les temps aient perdu leur
+     temps à cela&nbsp;: est-ce bien raisonnable&nbsp;?
+  episodes: |
+    calcul des fluxions de Newton(00-05); opposition religieuse(05-08);
+    calcul différentiel de Leibniz(09-13); querelle (14-20);
+    postérité (21-25); Fatio de Duillier(26-39)
+  period: 1660;1730
+  duration: "34:45"
+  slides: 40
+  location: 1712
+  level: 3
+  keywords:
+    analyse; dérivée; primitive; calcul différentiel; calcul intégral;
+    tangente; équation différentielle; intégrale; tractrice;
+    brachistochrone; Principia
+  people:
+    Newton(6); Leibniz(6); Oldenburg(4); Fatio(6); Gillray(1); Euler(4);
+    Lacroix(2); Babbage(2); Voltaire(3); BernoulliJean(2); Perrault(3);
+    Huygens(2); Ann(3)
+  domain: Analyse
+
+# -----------------------------------------------------------
+madhava:
+  title: De Madhava à Taylor
+  subtitle: développements en série
+  abstract: |
+    Il y a peu d'exemples de formules dont les découvreurs aient été
+    aussi nombreux&nbsp;!
+  episodes: |
+    quadrature de Leibniz(00-04); séries de Gregory(05-08);
+    séries indiennes(09-12); Jones et Machin(13-15); formule de Taylor(16-27)
+  period: 1400;1700
+  duration: "20:29"
+  slides: 28
+  location: 1671
+  level: 3
+  keywords:
+    analyse; série entière; développement en série; formule de Taylor;
+    quadrature; calcul différentiel; dérivée; Indiens; pi; cercle
+  people:
+    Madhava(4); Taylor(6); Leibniz(6); Huygens(4); BernoulliJean(2);
+    Gregory(4); deMoivre(4); Newton(2)
+  domain: Analyse
+
+# -----------------------------------------------------------
+merton:
+  title: La chute des graves
+  subtitle: mécanique avant Galilée
+  abstract: |
+    Galilée a-t-il vraiment inventé la mécanique à lui tout seul&nbsp;?
+  episodes: |
+    louanges à Galilée(00-03); mouvement chez les Grecs(04-08);
+    critiques d'Aristote(09-18); calculateurs d'Oxford(19-24);
+    Domingo de Soto et Stevin(25-29); Galilée (30-35)
+  period: -400;1700
+  duration: "22:15"
+  slides: 36
+  location: 1340
+  level: 3
+  keywords:
+    analyse; parabole; chute des corps; dérivée; mécanique; vitesse;
+    accélération; fonction; Arabes; Grecs; Oxford; théorème de Merton;
+    courbe; représentation graphique; fonction
+  people:
+    Galilee(8); Einstein(2); Lagrange(2); Leibniz(2); Aristote(4);
+    Archimede(2); Philopon(2); ibnSina(2); ibnRushd(2); ibnBajja(2);
+    ThomasdAquin(2); Ockham(2); Buridan(2); Oresme(4); DomingoSoto(4);
+    Stevin(4); Swineshead(6); CharlesV(1)
+  domain: Analyse
+
+# -----------------------------------------------------------
+newtona:
+  title: La méthode des fluxions
+  subtitle: le plus difficile des problèmes
+  abstract: |
+    La révolution à lui tout seul, à 23 ans&nbsp;: comment
+    est-ce possible &nbsp;?
+  episodes: |
+    années de jeunesse(00-08); son propre récit(09-14);
+    manuscrits(15-19); méthode des fluxions(20-31)
+  period: 1660;1740
+  duration: "23:44"
+  slides: 32
+  location: 1666
+  level: 3
+  keywords:
+    analyse; dérivées; calcul différentiel; intégrale; primitive;
+    équation différentielle; Cambridge; formule du binôme; série entière;
+    développement en série; attraction universelle; limite; Principia
+  people:
+    Newton(8); Barrow(4); Wallis(2); Buffon(2); Oldenburg(2); Leibniz(2);
+    Poincare(2); SaintVincent(2); Ann(1)
+  domain: Analyse
+
+# -----------------------------------------------------------
+oresme:
+  title: La continuité des intensités
+  subtitle: vers le concept de fonction
+  abstract: |
+    Pourquoi l'évolution du concept de fonction
+    a-t-elle été aussi lente&nbsp;?
+  episodes: |
+    tables antiques(00-05); mouvement et courbes chez les Grecs (06-14);
+    Indiens et Arabes(15-19); Oresme(20-27); après Descartes(21-34)
+  period: -400;1900
+  duration: "27:35"
+  slides: 35
+  location: 1351
+  level: 3
+  keywords:
+    analyse; Grecs; Indiens; Arabes; mouvement; mécanique; vitesse;
+    accélération; table numérique; courbe; graphe; femme; sinus;
+    astronomie; Egyptiens; papyrus; codex; Maya; courbe;
+    représentation graphique; fonction
+  people:
+    Oresme(8); Pizan(3); Descartes(2); Newton(2); Leibniz(4); Euler(2);
+    Dirichlet(4); Swineshead(2); Aryabhata(4); BhaskaraI(2); Ptolemee(2);
+    Platon(2); Aristote(2); AlphonseX(1); Archimede(2); Apollonius(2);
+    CharlesV(1)
+  domain: Analyse
+
+# -----------------------------------------------------------
+pascala:
+  title: De la roue à la roulette
+  subtitle: le langage des indivisibles
+  abstract: |
+    Il fallait Pascal pour faire d'une rage de dents, une &oelig;uvre
+    digne d'inspirer Leibniz&nbsp;!
+  episodes: |
+    roulette de Pascal(00-08); antécédents(09-17); roue d'Aristote(18-23);
+    de Pascal à Leibniz(24-30)
+  period: 1600;1700
+  duration: "24:45"
+  slides: 31
+  location: 1658
+  level: 3
+  keywords:
+    analyse; courbe; intégrale; roulette; cycloïde; quadrature;
+    roue d'Aristote; indivisibles; cercle
+  people:
+    Pascal(8); laLoubere(2); Fermat(4); Roberval(4); Mersenne(4);
+    Torricelli(4); Galilee(2); Aristote(2); Leibniz(2); Huygens(2);
+    Cavalieri(2)
+  domain: Analyse
+
+# -----------------------------------------------------------
+ramanujan:
+  title: L'homme qui savait l'infini
+  subtitle: approximations de pi
+  abstract: |
+    Les formules de Ramanujan étaient-elles dictées par la déesse
+    Namagiri&nbsp;?
+  episodes: |
+    Ramanujan en Inde(00-05); Ramanujan et Hardy(06-11);
+    formules de Ramanujan(12-16); en remontant le temps(17-27)
+  period: -200;1920
+  duration: "21:51"
+  slides: 28
+  location: 1914
+  level: 3
+  keywords:
+    analyse; Indiens; quadrature; approximation;
+    fonction gamma; pi; quadrateur; méthode d'exhaustion;
+    série numérique; produit infini; limite
+  people:
+    Ramanujan(8); Hardy(6); Russell(2); Euler(4); Wallis(4); Viete(4);
+    Archimede(2); Eudoxe(2)
+  domain: Analyse
+
+# -----------------------------------------------------------
+rolle:
+  title: La vibration des cordes
+  subtitle: en peine de définitions
+  abstract: |
+    Une dispute de plus entre Euler et d'Alembert, mais la tentative de
+    Lagrange pour les mettre d'accord était vouée à l'échec.
+  episodes: |
+    difficulté du calcul différentiel(00-06); cordes vibrantes(07-13);
+    Lagrange(14-18); princesse Dashkova(19-25); fonctions analytiques(26-32);
+    fonctions selon Cauchy(33-39)
+  period: 1747;1821
+  duration: "28:21"
+  slides: 40
+  location: 1800
+  level: 3
+  keywords:
+    analyse; fonction; fonction analytique; équation aux dérivées partielles;
+    série trigonométrique; dérivée; formule de Taylor; calcul variationnel;
+    optimisation; école polytechnique; développement en série
+  people:
+    Berkeley(2); Voltaire(1); dAlembert(4); Euler(4); Lagrange(6);
+    Dashkova(5); CatherineII(3); Rolle(2); Newton(2); Cauchy(6); Taylor(2)
+  domain: Analyse
+
+# -----------------------------------------------------------
+zenon:
+  title: Achille et la tortue
+  subtitle: séries géométriques
+  abstract: |
+    Comment une flèche peut-elle atteindre sa cible&nbsp;?
+  episodes: |
+    Paradoxes de Zénon(00-11); versions modernes(12-18);
+    Archimède et la parabole(19-22); calculateurs d'Oxford(23-26);
+    Grégoire de Saint-Vincent(27-34); Jacques Bernoulli(35-38)
+  period: -500;1700
+  duration: "29:20"
+  slides: 39
+  location: -450
+  level: 3
+  keywords:
+    analyse; échecs; Mésopotamiens; éléments; Oxford; théorème de Merton;
+    série numérique; série géométrique; série convergente; quadrature;
+    logarithme; limite; parabole; hyperbole
+  people:
+    Zenon(8); Aristote(4); Euclide(2); Esope(3); Archimede(4);
+    SaintVincent(4); Descartes(2); Montucla(2); BernoulliJacques(2);
+    vonNeumann(2); Alcuin(2)
+  domain: Analyse
+
+# -----------------------------------------------------------
+#                 Histoires de Géométrie
+# -----------------------------------------------------------
+# -----------------------------------------------------------
+apollonius:
+  title: Tracer des arcs rampants
+  subtitle: les coniques d'Apollonius
+  abstract: |
+    Un des monuments légués par les Grecs a-t-il préparé la
+    révolution newtonnienne&nbsp;?
+  episodes: |
+    coniques avant Apollonius(00-06); coniques et coordonnées(07-13);
+    instruments de tracé(14-23); arcs rampants(24-28);
+    ballistique et astronomie(29-34)
+  period: -400;1700
+  duration: "24:48"
+  slides: 35
+  location: -200
+  level: 3
+  keywords:
+    géométrie; conique; parabole; ellipse; hyperbole; coordonnées; abscisse;
+    ordonnée; optique; cône; second degré; compas; instrument; graphique;
+    architecture; gravitation; ballistique; canon; astronomie; tangent;
+    cercle; diamètre; courbe; Principia
+  people:
+    Apollonius(8); Euclide(4); Archimede(2); BanuMusa(2); deCaus(2); Newton(4);
+    Einstein(2); Tartaglia(2); Galilee(2); Kepler(2); Torricelli(2); alQuhi(6)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+babyloneg:
+  title: La mesure du cercle
+  subtitle: préhistoire de pi
+  abstract: |
+    Comment a-t-on compris que le rapport de la circonférence au diamètre,
+    ne pouvait pas être calculé exactement&nbsp;?
+  episodes: |
+    représentations circulaires(00-07); décorations(08-11);
+    Egyptiens et Indiens(12-17); méthode d'exhaustion et Archimède(18-23);
+    Arabes et Chinois(24-28); Nicolas Chuquet(29-31)
+  period: -2000;700
+  duration: "22:48"
+  slides: 32
+  location: -210
+  level: 1
+  keywords:
+    géométrie; cercle; diamètre; pi; rayon; Japonais; Chinois; Arabes; Grecs;
+    Sulba Sutra; Indiens; Egyptiens; papyrus; Mésopotamiens; méthode
+    d'exhaustion; approximation; algorithme; quadrature; limite; polygone;
+    nombre; nombre irrationnel; irrationnel; fraction; rationnel;
+    nombre rationnel; neuf chapitres; poésie
+  people:
+    BanuMusa(6); Archimede(6); Chuquet(4); LiuHui(4); ZuChongzhi(4);
+    alTusi(2); Euclide(4); Eudoxe(6); Ptolemee(2)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+demorgan:
+  title: Morbus cyclometricus
+  subtitle: l'obsession de la quadrature
+  abstract: |
+    Qu'aurait-il fallu pour dissuader tous des amateurs de s'attaquer
+    à la quadrature du cercle&nbsp;?
+  episodes: |
+   le défi de Mathulon(00-08); chevalier de Causans(09-14);
+   décision de l'Académie(15-20); quadrateurs anciens(21-28);
+   Scaliger(29-35); Hobbes contre Wallis(36-43)
+  period: 1300;1800
+  duration: "25:15"
+  slides: 44
+  location: 1775
+  level: 1
+  keywords:
+    géométrie; Académie; quadrature; cercle; trisection de l'angle;
+    duplication du cube; quadrateur; Lyon; femme; pi
+  people:
+    DeMorgan(4); Montucla(4); dAlembert(2); Llull(4); Scaliger(4);
+    Hobbes(6); Wallis(4); Kircher(2); Errard(4); Leonardo(2)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+demotic:
+  title: Le rat et le faucon
+  subtitle: des habits pour Pythagore
+  abstract: |
+    Le théorème de Pythagore est enseigné depuis toujours&nbsp;: quels
+    exercices a-t-on utilisé pour le rendre attractif&nbsp;?
+  episodes: |
+    perche contre un mur(00-04); Chinois et Indiens(05-13);
+    du Moyen-Âge à la Renaissance(14-21); récréations mathématiques(22-26)
+  period: -1800;1650
+  duration: "18:54"
+  slides: 27
+  location: 629
+  level: 1
+  keywords:
+    géométrie; neuf chapitres; théorème de Pythagore; enseignement; pédagogie;
+    Zhoubi Suanjing; liber abaci; récréations; triplet pythagoricien;
+    Mésopotamiens; Egyptiens; Indiens; Chinois; Lilavati; Espagne
+  people:
+    BhaskaraI(8); Bhaskaracharya(2); Mahaviracharya(2); Fibonacci(2);
+    Pacioli(2); Henrion(2); Lemoine(2); Aryabhata(2); Brahmagupta(2)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+desargues:
+  title: Le broüillon project
+  subtitle: Desargues et la géométrie projective
+  abstract: |
+    Son travail aurait-il été mieux reconnu s'il avait eu meilleur
+    caractère&nbsp;?
+  episodes: |
+   agressivité de Desargues(00-09); critiques(10-17);
+   broüillon project(18-24); reconnaissance des pairs(25-34)
+  period: 1630;1650
+  duration: "20:41"
+  slides: 35
+  location: 1639
+  level: 3
+  keywords:
+    géométrie; géométrie projective; Lyon; architecture; cadran solaire;
+    taille des pierres;
+  people:
+    Desargues(8); Descartes(4); Pascal(6); Mersenne(4); Seguier(3);
+    Fermat(2); Poncelet(4); Richelieu(1)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+descartes:
+  title: Le poêle de Descartes
+  subtitle: discours de la méthode et géométrie
+  abstract: |
+    Les coordonnées cartésiennes viennent-elles vraiment de Descartes&nbsp;?
+  episodes: |
+   discours de la méthode(00-07); années de jeunesse(08-15);
+   introduction de l'algèbre(16-22); caractère de Descartes(22-28);
+   vision de Leibniz(29-32)
+  period: 1600;1700
+  duration: "23:12"
+  slides: 33
+  location: 1637
+  level: 3
+  keywords:
+    géométrie; discours de la méthode; coordonnées; algèbre; cercle;
+    parabole; équation; troisième degré; courbe; conique; optimisation;
+    maximum; minimum
+  people:
+    Descartes(8); HenriIV(3); Nassau(3); ElisabethBoheme(1); Fermat(6);
+    Pappus(4); Mersenne(2); Leibniz(4); Richelieu(1); Roberval(4)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+dosithee:
+  title: Le palimpseste d'Archimède
+  subtitle: division de figures
+  abstract: |
+    Il se peut que ce soit le plus ancien procédé rigoureux de démonstration,
+    et aussi le plus ancien casse-tête.
+  episodes: |
+    exploits d'Archimède(00-04); le palimpseste(05-07); stomachion(08-13);
+    tangram(14-21); division chez les grecs(22-28); Abu l-Wafa(29-34)
+  period: -1800;1850
+  duration: "21:23"
+  slides: 35
+  location: -211
+  level: 1
+  keywords:
+    géométrie; tangram; Zhoubi Suanjing; théorème de Pythagore;
+    Mésopotamiens; Chinois; stomachion; Japonais; casse-tête; jeu;
+    neuf chapitres; mosaïque; Arabes; découpage; théorème de Thalès;
+    Alhambra; pavage; palimpseste; démonstration
+  people:
+    Archimede(8); Euclide(2); HeronAlexandrie(2); AbulWafa(6)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+douat:
+  title: Les pavages de Truchet
+  subtitle: combinatoire géométrique
+  abstract: |
+    Sans ses pavages, nous l'aurions oublié&nbsp;: ç'aurait été
+    dommage&nbsp;!
+  episodes: |
+   formation(00-06); au service du Roi(07-12);
+   combinaisons de carreaux(13-17); pavages de Douat(18-24);
+   postérité(25-29)
+  period: 1650;1730
+  duration: "14:37"
+  slides: 30
+  location: 1704
+  level: 1
+  keywords:
+    géométrie; pavage; Académie; combinatoire; permutation; hexamètre;
+    Lyon; dénombrement; comptage
+  people:
+    Truchet(8); LouisXIV(3); Fontenelle(2); Prestet(2)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+escher:
+  title: La géométrie d'Escher
+  subtitle: pavages du plan
+  abstract: |
+    Il n'a jamais prétendu faire des mathématiques&nbsp;; mais
+    n'y aurait pas contribué&nbsp;?
+  episodes: |
+   divisions régulières du plan(00-06); mosaïques(07-15);
+   pavages chez les Arabes(16-19); pavages en Europe(20-24);
+   géométrie hyperbolique(25-32)
+  period: 900;1950
+  duration: "15:10"
+  slides: 33
+  location: 1300
+  level: 1
+  keywords:
+    géométrie; géométrie hyperbolique; pavage; mosaïque; Arabes;
+    Mésopotamiens; Egyptiens; Grecs; Romains; Chinois; Indiens;
+    Alhambra; sphère; polyèdre; groupe; hexagone; cercle
+  people:
+    Escher(7); AbulWafa(4); Durer(2); Kepler(4); Klein(4)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+euclide:
+  title: Les héritiers d'Euclide
+  subtitle: postérité des &Eacute;léments
+  abstract: |
+    Comment ce livre est-il resté le seul manuel de géométrie pendant
+    autant de siècles&nbsp;?
+  episodes: |
+    traductions des éléments(00-08); Euclide en Angleterre(09-11);
+    Pierre de la Ramée(12-18); contestation en France(19-25);
+    réflexion pédagogique(26-32); bataille en Angleterre(33-37)
+  period: -300;1900
+  duration: "30:21"
+  slides: 38
+  location: -315
+  level: 5
+  keywords:
+    géométrie; éléments; enseignement; pédagogie; Grecs; Arabes; Jésuites;
+    caducée; alchimie; magie; cercle; Oxford; Cambridge; manuel
+  people:
+    Euclide(8); BanuMusa(4); alTusi(2); Dee(6); Ramee(6); Kepler(2);
+    Arnauld(2); Clairaut(4); Lacroix(4); MillietdeChales(2); Ozanam(2);
+    dAlembert(2); Houel(2); Sylvester(2); Cayley(2); Dodgson(4); ibnQurra(2);
+    Shakespeare(3); ElizabethI(1)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+francesca:
+  title: La naissance de la perspective
+  subtitle: du miroir au point de fuite
+  abstract: |
+    De quand datent les liens de la peinture et de la géométrie&nbsp;?
+  episodes: |
+   Brunelleschi et Alberti(00-07); della Francesca(08-12);
+   peintres de la Renaissance(13-18); antiquité(19-30);
+   al-Haytham et Bacon(31-35)
+  period: -300;1600
+  duration: "24:00"
+  slides: 36
+  location: 1435
+  level: 1
+  keywords:
+    géométrie; perspective; architecture; Grecs; Romains; peinture;
+    géométrie projective
+  people:
+    Alberti(6); dellaFrancesca(6); Uccello(3); Durer(2); Euclide(4); Vitruve(3);
+    Democrite(4); Ptolemee(4); Leonardo(2); alHaytham(4); BaconRoger(4)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+helbronner:
+  title: Les officiers géodésiens
+  subtitle: trianguler des montagnes
+  abstract: |
+    Des alpinistes mathématiciens&nbsp;; et pourquoi faire&nbsp;?
+  episodes: |
+    de Frisius à Picard(00-07); mesure du méridien(08-18);
+    triangulation des Pyrénées(19-24); Triangulation des Alpes(25-28);
+    Helbronner(28-36); reconnaissance(37-40)
+  period: 1500;1900
+  duration: "25:24"
+  slides: 41
+  location: 1826
+  level: 1
+  keywords:
+    géométrie; triangulation; géodésie; méridien; équateur; Pérou; Laponie;
+    Alpes; Pyrénées; Mont-Blanc; Belgique; sphère; approximation
+  people:
+    Frisius(8); Picard(6); Borda(2); Maupertuis(2); laCondamine(2);
+    CassiniCesarFrancois(4); Delambre(2); Mechain(2); Legendre(4);
+    Napoleon(1); LouisXIV(1)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+hippocrate:
+  title: Les lunules d'Hippocrate
+  subtitle: trois problèmes grecs
+  abstract: |
+    La quadrature du cercle, la trisection de l'angle et la duplication
+    du cube&nbsp;: une grande partie des mathématiques actuelles sont nées de
+    trois problèmes.
+  episodes: |
+    Hippocrate et ses lunules(00-06); al-Haytham et les quadratures(07-11);
+    figures circulaires(12-17); trois problèmes et leurs outils(18-23);
+    classification des problèmes(24-30)
+  period: -400;1650
+  duration: "25:30"
+  slides: 31
+  location: -420
+  level: 1
+  keywords:
+    géométrie; quadrature; cercle; lunule; polygone; médiété; moyenne;
+    trisection de l'angle; duplication du cube; Mésopotamiens; Grecs;
+    Arabes; courbe; quadratrice; mésolabe; compas; règle; conique;
+    théorème de Pythagore; troisième degré; instrument; fonction;
+    théorème de Thalès; équation; pi; démonstration
+  people:
+    HippocrateChios(8); Aristote(2); alHaytham(4); Leonardo(6); Eratosthene(4);
+    Pappus(4); Descartes(4); Durer(2)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+iamblichus:
+  title: La chaise de la mariée
+  subtitle: démonstrations de Pythagore
+  abstract: |
+    Quelle démonstration du théorème de Pythagore faut-il enseigner&nbsp;?
+    Les réponses n'ont pas toujours été les mêmes.
+  episodes: |
+    démonstrations par découpage(00-07); résultats analogues(08-14);
+    démonstration par Euclide(15-20); démonstrations apocryphes (21-24);
+    généralisations(25-31)
+  period: -500;1900
+  duration: "25:21"
+  slides: 32
+  location: -310
+  level: 1
+  keywords:
+    géométrie; théorème de Pythagore; Zhoubi Suanjing; Lilavati;
+    Mésopotamiens; Grecs; Indiens; Chinois; Sulba Sutra; pédagogie;
+    enseignement; découpage; démonstration
+  people:
+    Pythagore(4); Lemoine(4); Laisant(4); Saunderson(2); Bhaskaracharya(2);
+    Platon(2); Socrate(2); Lucas(2); Euclide(4); Schopenhauer(3); Herigone(4);
+    alTusi(2); Leonardo(2); ibnQurra(4); Clairaut(2); Proclus(2); Garfield(3)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+kashi:
+  title: Le théorème d'al-Kashi
+  subtitle: de la géométrie à la trigonométrie
+  abstract: |
+    Se serait-il senti offensé s'il avait su que son nom serait
+    associé à un résultat aussi ancien&nbsp;?
+  episodes: |
+   depuis Euclide(00-04); manuels de Legendre et Lacroix(05-10);
+   trigonométrie sphérique(11-21); Samarcande(22-33)
+  period: -300;1450
+  duration: "24:31"
+  slides: 34
+  location: 1427
+  level: 3
+  keywords:
+    géométrie; trigonométrie; sinus; cosinus; fonction trigonométrique;
+    tangente; théorème de Pythagore; éléments; Almageste; Grecs; Arabes;
+    architecture; corde; sphère; géodésie; astronomie; Indiens
+  people:
+    alKashi(8); Euclide(2); Legendre(4); Lacroix(4); Ptolemee(2);
+    Aryabhata(2); alBiruni(2); AbulWafa(4); alTusi(4); UlughBeg(4);
+    Hipparque(2); ibnQurra(2)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+klein:
+  title: Le programme d'Erlangen
+  subtitle: unifier la géométrie
+  abstract: |
+    Une révolution géométrique&nbsp;: que disait ce fameux
+    programme pour bouleverser l'histoire des mathématiques&nbsp;?
+  episodes: |
+    explosion des géométries(00-08);
+    Klein, Lie et la théorie des groupes(09-16);
+    déboires de Lie en France(17-24); postérité du programme(25-29);
+    Grace Chisholm à Göttingen(30-33)
+  period: 1800;1900
+  duration: "24:20"
+  slides: 34
+  location: 1872
+  level: 3
+  keywords:
+    géométrie; géométrie projective; géométrie hyperbolique; femme; groupe;
+    surface; vecteur; Cambridge; Göttingen; Berlin
+  people:
+    Klein(8); Lie(8); Poncelet(2); Lobatchevski(2); Bolyai(2); Gauss(2);
+    Grassmann(2); Riemann(2); Monge(2); Plucker(2); Jordan(2); NapoleonIII(1);
+    Darboux(2); Poincare(2); Chisholm(4); Hilbert(2)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+legendre:
+  title: L'affaire Carton
+  subtitle: somme des angles d'un triangle
+  abstract: |
+    Pourquoi a-t-il fallu autant de temps pour comprendre et admettre
+    les géométries non euclidiennes&nbsp;?
+  episodes: |
+    Legendre contre Gauss(00-04); tentatives de Legendre(05-12);
+    réticences philosophiques(13-23); affaire Carton(24-33)
+  period: 1830;1900
+  duration: "20:23"
+  slides: 34
+  location: 1869
+  level: 3
+  keywords:
+    géométrie; triangle; éléments; géométrie hyperbolique;
+    postulat des parallèles; Académie
+  people:
+    Euclide(2); Lobatchevski(2); Bolyai(2); Gauss(6); Legendre(6);
+    Aristote(2); ThomasdAquin(1); Descartes(2); Locke(1); Voltaire(1);
+    Kant(1); Schopenhauer(1); Houel(4); Bertrand(4); Dodgson(2)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+lhuilier:
+  title: La querelle des alvéoles
+  subtitle: une suite de malentendus
+  abstract: |
+    Les abeilles sont-elles vraiment supérieures aux géomètres grecs&nbsp;?
+  episodes: |
+   Pappus et Ibn Qurra(00-07); Kepler et Swammerdam(07-13);
+   Réaumur contre Buffon (14-22); König(23-27); Antoine Parent(28-32);
+   Lhuilier, Huber, Darwin(33-41)
+  period: 300;1800
+  duration: "30:41"
+  slides: 42
+  location: 1712
+  level: 1
+  keywords:
+    géométrie; alvéoles; abeilles; hexagone; neige; flocon; Suisse;
+    Académie; pavage; isopérimétrie; optimisation; maximum; minimum
+  people:
+    Parent(6); Voltaire(3); Pappus(4); ibnQurra(2); Kepler(4); Reaumur(4);
+    Buffon(4); Konig(4); Chatelet(2); Lhuilier(4); Huber(5); Cramer(2);
+    Darwin(3); Boerhaave(1)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+mohr:
+  title: Le problème de Napoléon
+  subtitle: à Bonaparte l'Italique
+  abstract: |
+    Bonaparte donnant une leçon de géométrie à Laplace et Lagrange&nbsp;:
+    vous y croyez vous&nbsp;?
+  episodes: |
+   Bonaparte en Italie(00-06); Mascheroni(07-10);
+   propagande bonapartiste(11-19); Mohr(20-22); compas fixe(23-29)
+  period: 900;1850
+  duration: "20:12"
+  slides: 30
+  location: 1797
+  level: 1
+  keywords:
+    géométrie; cercle; compas; cadran solaire; Académie; Italie; Arabes;
+    Hollande; Danemark
+  people:
+    Napoleon(7); Mascheroni(8); Mohr(8); deNeufchateau(2); Lagrange(2);
+    Laplace(2); Carnot(2); Delambre(4); AbulWafa(2); Poncelet(2);
+    Steiner(2); Bougainville(2)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+monge:
+  title: Le comte de Péluze
+  subtitle: géométrie descriptive de Monge
+  abstract: |
+    Quelle géométrie Monge a-t-il inventé et que nous a-t-il légué&nbsp;?
+  episodes: |
+    témoignages sur Monge(00-09); réalisations(10-14);
+    géométrie descriptive (14-20); géométrie et architecture avant Monge(21-28);
+    Amédée-François Frézier(29-37)
+  period: 1200;1820
+  duration: "19:14"
+  slides: 38
+  location: 1811
+  level: 3
+  keywords:
+    géométrie; coniques; ellipse; ellipsoïde; surface; surface réglée;
+    architecture; taille des pierres; école polytechnique; Amérique
+  people:
+    Monge(8); Napoleon(3); Arago(2); Roland(3); Geoffroy(3); Stendhal(3);
+    Raphael(3); Vitruve(3); Villard(5); dellaFrancesca(3); Desargues(4);
+    Blondel(3); Frezier(5)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+pascal:
+  title: L'hexagramme mystique
+  subtitle: les coniques de Pascal
+  abstract: |
+    Qu'aurions-nous pensé si ce livre, écrit à l'âge de dix-sept ans,
+    avait été publié&nbsp;?
+  episodes: |
+   famille Pascal(00-07); Pascal enfant(07-12); traité des coniques(13-17);
+   Leibniz et Pascal(18-23); chevalier de Méré(24-30)
+  period: 1630;1700
+  duration: "24:01"
+  slides: 31
+  location: 1640
+  level: 3
+  keywords:
+    géométrie; conique; ellipse; parabole; hyperbole; hexagramme;
+    éléments; tangente
+  people:
+    Pascal(8); Desargues(4); Pappus(4); Leibniz(4);
+    Mere(3); Euclide(2); Richelieu(3); Seguier(1); Arnauld(2)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+poncelet:
+  title: La retraite de Russie
+  subtitle: Poncelet et la géométrie projective
+  abstract: |
+    Prisonnier en Russie, il a inventé à lui tout seul une
+    discipline nouvelle&nbsp;: impressionnant non&nbsp;?
+  episodes: |
+   retraite de Russie(00-06); prisonnier à Saratov(07-12);
+   propriétés projectives(13-19); règlements de comptes(20-23);
+   mécanique appliquée(24-30)
+  period: 1800;1900
+  duration: "26:56"
+  slides: 31
+  location: 1812
+  level: 3
+  keywords:
+    géométrie; conique; ellipse; parabole; hyperbole; tangente; machine;
+    Révolution industrielle; géométrie projective; géométrie hyperbolique;
+    Académie; Grecs; Russie
+  people:
+    Poncelet(8); Cauchy(4); Napoleon(3); Pascal(2); Desargues(2);
+    Dupin(2); Lobatchevski(2); Bolyai(2); Bertrand(2); Lagrange(2);
+    Crelle(2); Monge(2); Carnot(2); Hugo(3)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+saccheri:
+  title: Vengé de toute tache
+  subtitle: le postulat des parallèles
+  abstract: |
+    Ils étaient tellement persuadés qu'Euclide avait tort qu'ils ont
+    réussi à démontrer qu'il avait raison&nbsp;!
+  episodes: |
+    parallèles chez Euclide(00-05); le cinquième postulat(05-09);
+    tentatives grecques et arabes(10-18); tentatives européennes(19-26);
+    Saccheri et Lambert(27-31); Bolyai, Lobatchevski et Gauss (32-41)
+  period: -300;1840
+  duration: "36:19"
+  slides: 41
+  location: 1591
+  level: 3
+  keywords:
+    géométrie; éléments; postulat des parallèles; géométrie hyperbolique;
+    mésolabe; Grecs; Arabes; calendrier; Jésuites; échecs
+  people:
+    Euclide(4); Aristote(2); dAlembert(2); Proclus(4); Clavius(6);
+    ibnQurra(4); alHaytham(2); Khayyam(2); Gersonide(2); alTusi(2);
+    MillietdeChales(2); Saccheri(6); Lambert(4); Bolyai(6); Lobatchevski(6);
+    Ptolemee(2); Gauss(6)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+sangaku:
+  title: Les trois cercles
+  subtitle: des sangakus aux groupes kleiniens
+  abstract: |
+    Ces problèmes de géométrie que les Japonais affichaient devant leurs
+    temples, sont-ils aussi uniques qu'on le pense&nbsp;?
+  episodes: |
+    sangakus(00-08); récréations géométriques(09-12);
+    problème des trois cercles(12-17); de Viète à Descartes(18-24);
+    Klein et les fractals(25-32)
+  period: -300;1900
+  duration: "18:50"
+  slides: 33
+  location: 300
+  level: 3
+  keywords:
+    géométrie; Japonais; cercle; tangent; récréations; limite; suite;
+    Mésopotamiens; Grecs; fractal; groupe; femme; sangaku; arbelos
+  people:
+    Ozanam(4); Apollonius(4); Pappus(4); alQuhi(6); Herigone(2); Viete(4);
+    Descartes(4); ElisabethBoheme(3); Klein(6); Archimede(2)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+thales:
+  title: Mesurer l'inaccessible
+  subtitle: les instruments de Thalès
+  abstract: |
+    Que Thalès l'ait énoncé ou non, son théorème a toujours été associé
+    à la mesure de ce qu'on ne pouvait pas atteindre.
+  episodes: |
+    Thalès et ses théorèmes(00-07); Euclide et Liu Hui(08-12);
+    instruments anciens(13-17); instruments de la Renaissance(18-27);
+    Tycho Brahé et après(28-37)
+  period: -620;1600
+  duration: "26:07"
+  slides: 38
+  location: -520
+  level: 1
+  keywords:
+    géométrie; théorème de Thalès; parallèle; Grecs; Mésopotamiens; optique;
+    neuf chapitres; arpentage; gnomon; instrument; astrolabe; Arabes; Romains;
+    bâton de Jacob; astronomie; sphère armillaire; compas; éléments;
+    récréations; lunette
+  people:
+    Thales(8); Euclide(2); LiuHui(6); Eudoxe(2); HeronAlexandrie(2);
+    alHaytham(2); Gersonide(4); Alberti(4); Apian(4); Fine(6); Brahe(6);
+    UlughBeg(2); Galilee(2); Proclus(2); Anaximandre(4)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+theetete:
+  title: L'harmonie du monde
+  subtitle: solides de Platon
+  abstract: |
+    Il n'y a que cinq polyèdres sphériques dont les faces sont des polygones
+    réguliers identiques&nbsp;: étonnant non&nbsp;?
+  episodes: |
+    polyèdres chez les Grecs(00-06); polyèdres concrets(07-14);
+    solides archimédiens et isopérimétrie(15-19);
+    engouement à la renaissance(20-27); Jamnitzer et Kepler (28-31);
+    Descartes Euler et après(32-35)
+  period: -450;1900
+  duration: "24:07"
+  slides: 36
+  location: -360
+  level: 3
+  keywords:
+    géométrie; polygone; polyèdre; éléments; tétraèdre; cube; octaèdre;
+    dodécaèdre; icosaèdre; isopérimétrie; groupe; formule d'Euler;
+    perspective; musique; optimisation; maximum; minimum
+  people:
+    Platon(6); Archimede(4); Pappus(4); Euclide(4); Theetete(4); Cyrano(3);
+    Ptolemee(2); alHaytham(4); Uccello(3); Escher(3); dellaFrancesca(4);
+    Pacioli(4); Leonardo(4); Kepler(4); Descartes(4); Euler(4); Klein(4);
+    Durer(2)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+viviani:
+  title: Le dernier disciple de Galilée
+  subtitle: triomphe de la géométrie nouvelle
+  abstract: |
+    Ridiculisé pour avoir été fidèle&nbsp;: n'est-ce pas un
+    peu injuste&nbsp;?
+  episodes: |
+   Viviani et Galilée(00-09); Viviani reconnaissant(10-15);
+   exploit de Viviani(16-22); défi aux analystes(23-28);
+   triomphe de Leibniz(29-33)
+  period: 1600;1700
+  duration: "26:54"
+  slides: 34
+  location: 1692
+  level: 3
+  keywords:
+    géométrie; Florence; Italie; Académie; optimisation; tangente;
+    conique; chaînette; caténaire; parabole; fenêtre de Viviani;
+    calcul différentiel; calcul intégral; sphère; cylindre; analyse;
+    maximum; minimum; équation différentielle
+  people:
+    Viviani(8); Galilee(6); Fontenelle(4); Torricelli(2); LouisXIV(5);
+    Apollonius(4); Mersenne(2); Descartes(2); Leibniz(4); BernoulliJean(2);
+    Huygens(2); Pappus(2)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+wantzel:
+  title: La fin du suspense
+  subtitle: démontrer une impossibilité
+  abstract: |
+    Pourquoi a-t-il fallu autant de temps pour mettre un point final
+    à trois problèmes hérités des Grecs&nbsp;?
+  episodes: |
+   Lambert à Berlin(00-09); irrationalité de pi(10-15);
+   constructions impossibles(16-23); Hermite et Lindemann(24-29);
+   quadrateurs obstinés(30-34)
+  period: -400;1900
+  duration: "26:29"
+  slides: 35
+  location: 1837
+  level: 1
+  keywords:
+    géométrie; Académie; quadrature; cercle; trisection de l'angle;
+    duplication du cube; nombre transcendant; nombre irrationnel;
+    irrationnel; rationnel; nombre rationnel; pi; tangente;
+    fraction continue; éléments; anthyphérèse; quadrateur; polygone;
+    transcendant; Prusse
+  people:
+    Wantzel(8); Lambert(8); FredericII(5); dAlembert(2); Lagrange();
+    Euler(2); Hermite(4); Lindemann(4); Klein(2); Hilbert(2); Euclide(2);
+    Descartes(2); Montucla(2); Gauss(4)
+  domain: Géométrie
+
+# -----------------------------------------------------------
+#                 Histoires d'Algèbre
+# -----------------------------------------------------------
+# -----------------------------------------------------------
+alkhwarizmi:
+  title: Al-Jabr wa'l-Muqabala
+  subtitle: les débuts de l'algèbre
+  abstract: |
+    Le livre d'al-Khwarizmi a fondé une discipline. Que contient-il&nbsp;?
+  episodes: |
+    al-Khwarizmi et son livre(00-04); inconnues et équations(05-13);
+    algebristas au temps de Cervantes(14-20);
+    les successeurs d'al-Khwarizmi(21-30)
+  period: 800;1200
+  duration: "21:01"
+  slides: 31
+  location: 830
+  level: 3
+  keywords:
+    Mésopotamiens; Grecs; algèbre; équation; Arabes; second degré;
+    inconnue; géométrie; identité remarquable; Bagdad; Maison de la Sagesse;
+    Bait al-Hikma
+  people:
+    alKhwarizmi(8); AbuKamil(4); Euclide(2); Cervantes(3); Bombelli(2);
+    Tartaglia(4); Diophante(2); Fibonacci(2); Khayyam(2); alTusi(2);
+    ibnKhaldoun(3); alMamun(3)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+argand:
+  title: Illustres inconnus
+  subtitle: la représentation des complexes
+  abstract: |
+    Comment la représentation géométrique des complexes a-t-elle pu
+    échapper aux plus grands?
+  episodes: |
+    de Wallis à Euler(00-03); inconnus du dix-huitième(04-10);
+    Wessel et Argand(11-18); Gauss et Cauchy (11-22);
+    Buée et la mère Duchesne(23-33)
+  period: 1690;1850
+  duration: "24:38"
+  slides: 34
+  location: 1799
+  level: 3
+  keywords:
+    algèbre; nombre complexe; nombre imaginaire; imaginaire; complexe;
+    géométrie; vecteur; Révolution française; polynôme;
+    théorème fondamental de l'algèbre; Suisse; Norvège; Danemark
+  people:
+    Argand(8); Wessel(8); Laplace(2); Cauchy(4); Gauss(4); deFoncenex(6);
+    Legendre(2); Lagrange(2); Delambre(2); Wallis(2); Euler(2); Buee(8)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+babylone:
+  title: Les pères de l'algèbre
+  subtitle: qu'avaient-ils en tête&nbsp;?
+  abstract: |
+    Les Mésopotamiens savaient résoudre les équations du second degré.
+    Faisaient-ils de l'algèbre pour autant&nbsp;?
+  episodes: |
+    déchiffrer des tablettes(00-07); interprétation géométrique(08-15);
+    références culturelles(16-20); la notation de Diophante(21-24)
+  period: -1800;400
+  duration: "22:24"
+  slides: 25
+  location: -1800
+  level: 3
+  keywords:
+    Mésopotamiens; Grecs; algèbre; équation; système d'équations;
+    inconnue; géométrie; identité remarquable; tablette; second degré;
+    découpage
+  people:
+    Diophante(4); Euclide(2); Hammurabi(3)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+bombelli:
+  title: Les marais du Val di Chiana
+  subtitle: l'Algebra de Bombelli
+  abstract: |
+    Bombelli doit à un concours de circonstances d'avoir pu écrire son seul
+    livre. En quoi est-il si important&nbsp;?
+  episodes: |
+    assécher des marais(00-06); Bombelli au Val di Chiana(07-12);
+    les prédecesseurs de Bombelli(13-20);
+    introduction des nombres complexes(21-26)
+  period: 1550;1600
+  duration: "18:19"
+  slides: 27
+  location: 1572
+  level: 3
+  keywords:
+    algèbre; équation; inconnue; géométrie; nombre complexe;
+    nombre imaginaire; complexe; imaginaire; Florence; Bologne;
+    troisième degré; quatrième degré; Italie; Pape; racine
+  people:
+    Bombelli(8); Cardan(4); Ferrari(2); delFerro(2); Tartaglia(4);
+    Diophante(2); Descartes(2); Chuquet(2); Galilee(2); Torricelli(2);
+    Leonardo(2)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+brahmagupta:
+  title: Le festival des couleurs
+  subtitle: algèbre en Inde
+  abstract: |
+    Les Indiens ont été les premiers à nommer les inconnues; pas par
+    des lettres&nbsp;: par des couleurs.
+  episodes: |
+    couleurs en Inde(00-07);  Brahmagupta(08-11);
+    notations chez Bhaskara(12-21); problèmes indiens(22-28)
+  period: 600;1200
+  duration: "18:31"
+  slides: 29
+  location: 628
+  level: 3
+  keywords:
+    Indiens; algèbre; équation; système d'équations; inconnue; polynôme;
+    Lilavati; identité de Bézout; algorithme d'Euclide; second degré;
+    fausse position
+  people:
+    Brahmagupta(4); Bhaskaracharya(6); Mahaviracharya(2)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+cayley:
+  title: From the womb of a common parent
+  subtitle: naissance des matrices
+  abstract: |
+    Deux amis ont développé la théorie des matrices, et ont supporté
+    la cause des femmes.
+  episodes: |
+    Sylvester en Virginie(00-08); Cayley et les matrices(09-15);
+    style de Sylvester(16-19); cause des femmes(20-24);
+    Sylvester à Baltimore(25-32)
+  period: 1800;1900
+  duration: "23:38"
+  slides: 33
+  location: 1858
+  level: 3
+  keywords:
+    algèbre; Amérique; femme; matrice; déterminant; groupe; valeur propre;
+    Cambridge; tripos
+  people:
+    Cayley(8); Sylvester(8); Jefferson(5); Vandermonde(2); Scott(6);
+    Ladd(6); Peirce(2)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+cramer:
+  title: Les formules de Cramer
+  subtitle: et d'autres inconnus
+  abstract: |
+    La postérité a été injuste pour de Cramer, et pour d'autres aussi.
+  episodes: |
+    travaux de Cramer(00-08); voyage en Europe (08-14);
+    les courbes algébriques(15-18); travaux de Bézout(19-26);
+    la règle de Sarrus(27-30)
+  period: 1730;1850
+  duration: "23:54"
+  slides: 31
+  location: 1750
+  level: 3
+  keywords:
+    algèbre; équation; inconnue; géométrie; déterminant;
+    élimination; Suisse; Genève; Académie; identité de Bézout
+  people:
+    Cramer(8); Bezout(6); Sylvester(2); dAlembert(2); Clairaut(2);
+    Gravesande(2); BernoulliJean(4); Saunderson(4); deGua(2); Sarrus(4)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+dalembert:
+  title: Voyage autour du monde
+  subtitle: le théorème fondamental de l'algèbre
+  abstract: |
+    Il n'y a qu'en France que ce théorème porte le nom de
+    d'Alembert. Allez savoir pourquoi&nbsp;!
+  episodes: |
+    énoncés de Girard et Descartes(00-03);
+    erreurs de Bernoulli et Leibniz(03-08); démonstration d'Euler(09-14);
+    démonstration de d'Alembert(15-19); aventures de Bougainville (20-29);
+    vraies et fausses démonstrations (30-35)
+  period: 1620;1850
+  duration: "27:55"
+  slides: 36
+  location: 1754
+  level: 3
+  keywords:
+    algèbre; équation; polynôme; nombre complexe; nombre imaginaire;
+    complexe; imaginaire; théorème fondamental de l'algèbre; Tahiti;
+    Canada; femme;
+  people:
+    Girard(4); Descartes(4); BernoulliJean(4); Leibniz(4); Euler(6);
+    BernoulliNicolas(4); dAlembert(6); Bougainville(8); Laplace(2);
+    Gauss(4); Argand(4)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+degua:
+  title: La chasse aux abbés
+  subtitle: compter des racines
+  abstract: |
+    Ce pauvre abbé se serait bien passé de ce genre de célébrité&nbsp;!
+  episodes: |
+    abbés galants(00-05); de Gua et ses mésaventures(05-14);
+    règle de Descartes(15-23); algorithme de Sturm(24-30)
+  period: 1630;1830
+  duration: "25:11"
+  slides: 31
+  location: 1741
+  level: 3
+  keywords:
+    algèbre; équation; polynôme; racine; complexe; imaginaire;
+    nombre complexe; nombre imaginaire; Suisse; Genève;
+    théorème fondamental de l'algèbre
+  people:
+    Descartes(6); Wallis(4); Sturm(6); Colladon(3); Prestet(2);
+    Roberval(2); Harriot(2); dAlembert(2); Cramer(2);
+    Condorcet(2); Girard(2); Hermite(2); deGua(8)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+dodgson:
+  title: Le plus célèbre des mathématiciens
+  subtitle: au pays des merveilles
+  abstract: |
+    Lewis Carroll est beaucoup plus célèbre que Gauss ou Euler; et
+    surtout beaucoup plus que Charles Dodgson&nbsp;!
+  episodes: |
+    Dodgson et Alice(00-08); Dodgson et les déterminants(09-13);
+    différentes notations(14-23); jeux de mots(24-28)
+  period: 1850;1900
+  duration: "17:19"
+  slides: 29
+  location: 1864
+  level: 3
+  keywords:
+    algèbre; matrice; déterminant; notation; Lewis Carroll; casse-tête;
+    Oxford
+  people:
+    Dodgson(8); Spottiswoode(4)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+euler:
+  title: La république des lettres
+  subtitle: Euler n'aurait pas dû
+  abstract: |
+    Il avait fait consciencieusement son travail. Pourquoi une telle
+    volée de bois vert venant de Voltaire&nbsp;?
+  episodes: |
+    Maupertuis à Berlin(00-05); principe de moindre action(05-10);
+    Voltaire contre Maupertuis(11-21); la magie d'Euler(22-28)
+  period: 1650;1760
+  duration: "22:35"
+  slides: 29
+  location: 1748
+  level: 3
+  keywords:
+    algèbre; analyse; polynôme; exponentielle; fonction trigonométrique;
+    Académie; réfraction; optique; principe de moindre action; Prusse;
+    alvéoles; abeilles; trigonométrie
+  people:
+    Euler(8); Maupertuis(6); Voltaire(5); FredericII(5); Konig(6);
+    Leibniz(4); Fermat(4); alHaytham(2); Descartes(2); Clairaut(2);
+    Celsius(2)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+galois:
+  title: Une infâme coquette
+  subtitle: et des héros très romantiques
+  abstract: |
+    Pourquoi sont-ils morts si jeunes, alors qu'ils avaient encore tant
+    à dire&nbsp;!
+  episodes: |
+    repères romantiques(00-03); mésaventures de Galois(03-11);
+    Galois et Abel(12-15); postérité de Galois(16-20)
+    théorie des équations algébriques(21-26); portraits(27-32)
+  period: 1800;1890
+  duration: "27:59"
+  slides: 33
+  location: 1830
+  level: 3
+  keywords:
+    algèbre; équation; polynôme; groupe; racine; substitution;
+    fonction elliptique; cinquième degré
+  people:
+    Galois(8); Abel(8); Ruffini(8); Jordan(4); Klein(4); Cauchy(4); Lie(4);
+    Lagrange(4); Laplace(2); Legendre(2); Germain(2); Fourier(2);
+    Vandermonde(4); Liouville(4); Raspail(5); Dumas(5); Jacobi(4);
+    Hugo(1); Libri(2); CharlesX(1); Buee(2); LouisPhilippe(3); Crelle(2)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+girard:
+  title: Joueurs de luth
+  subtitle: invention nouvelle en l'algèbre
+  abstract: |
+    Même s'il a surtout traduit et commenté Stevin, Albert Girard a tout
+    de même énoncé le théorème fondamental de l'algèbre.
+  episodes: |
+    Stevin et la musique(00-07); Girard et Stevin(07-11);
+    siège de Bois-le-Duc(11-17); mésaventures de Girard(18-21);
+    invention nouvelle en l'algèbre(22-28)
+  period: 1580;1630
+  duration: "22:26"
+  slides: 29
+  location: 1629
+  level: 3
+  keywords:
+    algèbre; musique; équation; fonction symétrique; polynôme; symbole;
+    nombre complexe; nombre imaginaire; complexe; imaginaire; musique;
+    quatrième degré; racine
+  people:
+    Girard(8); Stevin(6); Nassau(5); Descartes(2); Gassendi(2); Peiresc(2)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+grassmann:
+  title: Vérité éternelle et divine
+  subtitle: l'algèbre linéaire
+  abstract: |
+    Pourquoi l'histoire de l'algèbre linéaire est-elle aussi longue
+    et compliquée&nbsp;?
+  episodes: |
+    Grassmann et Möbius(00-07); rêve de Leibniz(07-10);
+    difficultés de Grassmann(10-13); vecteurs et mécanique(13-17);
+    autres notions(18-28); lente acceptation(29-37)
+  period: 1840;1910
+  duration: "26:18"
+  slides: 38
+  location: 1844
+  level: 3
+  keywords:
+    algèbre; vecteur; quaternion; équipollence; barycentre; ruban;
+    espace; dimension; Principia
+  people:
+    Grassmann(8); Bellavitis(8); Mobius(4); Laisant(4); Kummer(4);
+    Argand(2); Wessel(2); Hamilton(2); Abbott(5); SaintVenant(4);
+    Cauchy(2); Newton(2); Stevin(4); Varignon(4); Leibniz(4);
+    Huygens(2); Descartes(2); Escher(1)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+hamilton:
+  title: Autant en emporte le vent
+  subtitle: les quaternions de Hamilton
+  abstract: |
+    Oh la belle histoire d'amour malheureux&nbsp;!&hellip; Vraiment&nbsp;?
+  episodes: |
+    jeunesse de Hamilton(00-08); poètes romantiques(09-14);
+    multiplication des quaternions(15-21); Euler et Rodrigues(22-24);
+    Saint-Simon(24-29)
+  period: 1840;1870
+  duration: "23:35"
+  slides: 30
+  location: 1843
+  level: 3
+  keywords:
+    algèbre; vecteur; quaternion; rotation; espace; enfant précoce
+  people:
+    Hamilton(8); SaintSimon(3); Rodrigues(4); Wordsworth(5); Euler(4);
+    Gauss(2)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+helios:
+  title: Les troupeaux d'Hélios
+  subtitle: équations de Pell-Fermat
+  abstract: |
+    La solution d'une énigme laissée par Archimède passe par une
+    équation arithmétique. Elle a été résolue par les Indiens bien avant
+    tout le monde.
+  episodes: |
+    l'Odyssée(00-09); les boeufs d'Archimède(10-20);
+    l'équation de Pell-Fermat(21-26); défis européens(27-31);
+    le rôle de Pell(31-35); d'Euler à Galois(36-39)
+  period: -200;1800
+  duration: "20:58"
+  slides: 40
+  location: -212
+  level: 3
+  keywords:
+    Grecs; arithmétique; algèbre; équation; Odyssée; nombres polygonaux;
+    fraction continue; Indiens; nombre; nombre entier; identité de Bézout;
+    approximation; racine; fraction; équation de Pell-Fermat
+  people:
+    Archimede(6); Brahmagupta(4); Bhaskaracharya(2); Fermat(4); Brouncker(4);
+    Wallis(4); Euler(2); Lagrange(2); Galois(2); Apollonius(2); Eratosthene(2);
+    TheonSmyrne(4); Pell(6)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+jordan:
+  title: Dialogue de sourds
+  subtitle: valeurs propres et vecteurs propres
+  abstract: |
+    Dire que pendant tant de temps, on diagonalisait des
+    matrices qui n'existaient pas encore&nbsp;!
+  episodes: |
+    axes d'inertie(00-07); diagonaliser des systèmes(08-13);
+    Cauchy et Le Verrier(14-22); Jordan contre Kronecker(23-28);
+    les suites(30-37)
+  period: 1740;1890
+  duration: "26:36"
+  slides: 38
+  location: 1874
+  level: 3
+  keywords:
+    algèbre; vecteur; matrice; rotation; inertie; valeur propre;
+    vecteur propre; diagonalisation; Académie; système d'équations
+  people:
+    Apollonius(2); Descartes(2); Newton(2); Maupertuis(2); Euler(4);
+    dAlembert(4); Lagrange(4); Laplace(4); Cauchy(6); LeVerrier(4);
+    Weierstrass(4); Kronecker(4); Jordan(6); Hermite(4); SaintVenant(2)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+khayyam:
+  title: Preuve de la vérité
+  subtitle: poète persan et mathématicien arabe
+  abstract: |
+    Les quatrains d'Omar Khayyam sont plus connus que son livre
+    d'algèbre. Ils sont aussi beaucoup plus sulfureux.
+  episodes: |
+    la réputation de Khayyam(00-06); les rubaiyat(07-18);
+    équations cubiques(19-24); la postérité(25-28)
+  period: 1000;1200
+  duration: "20:40"
+  slides: 29
+  location: 1100
+  level: 3
+  keywords:
+    Grecs; Arabes; arithmétique; algèbre; géométrie; équation; conique;
+    troisième degré; second degré
+  people:
+    Khayyam(8); alKhwarizmi(4); Apollonius(2); Euclide(2);
+    Fibonacci(4); Hohenstaufen(3); ibnSina(2); ibnRushd(2)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+liuhui:
+  title: Le rouge et le noir
+  subtitle: équations linéaires en Chine
+  abstract: |
+    Au début de notre ère, les Chinois ont pris une longueur d'avance dans
+    la résolution des systèmes linéaires. Comment faisaient-ils et comment
+    faisaient les autres&nbsp;?
+  episodes: |
+    système mésopotamien(00-04); la fausse position(05-10);
+    les neuf chapitres(11-19); baguettes à compter(20-30);
+    héritage japonais(31-34)
+  period: -100;1600
+  duration: "25:02"
+  slides: 35
+  location: 263
+  level: 3
+  keywords:
+    Mésopotamiens; Chinois; algèbre; équation; système d'équations; Arabes;
+    fausse position; neuf chapitres; inconnue; anthologie; Japonais; tablette
+  people:
+    LiuHui(8); Tartaglia(2); Gauss(2); Seki(2); Diophante(2); Fibonacci(2)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+metrodore:
+  title: Le banquet des savants
+  subtitle: énigmes et devinettes
+  abstract: |
+    Le goût des Grecs pour les énigmes s'étendait aux devinettes
+    mathématiques. Certaines ont traversé les siècles. Comment les
+    résolvaient-ils&nbsp;?
+  episodes: |
+    propos de table(00-08); l'âge de Diophante(09-13);
+    fausse position(13-20); problèmes de robinets(21-31)
+  period: -400;500
+  duration: "21:28"
+  slides: 31
+  location: 500
+  level: 1
+  keywords:
+    Egyptiens; hiéroglyphes; Grecs; arithmétique; algèbre; équation; robinets;
+    fausse position; Chinois; neuf chapitres; papyrus; anthologie; inconnue;
+    devinette; fraction
+  people:
+    Metrodore(8); Platon(2); Raphael(2); Bhaskaracharya(2); Mahaviracharya(2);
+    LiuHui(2); Diophante(2); Pythagore(2); Socrate(2); Lemoine(4)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+pamiers:
+  title: Les écoles d'abaque
+  subtitle: algorisme en Languedoc
+  abstract: |
+    Les arithmétiques commerciales ont transmis le calcul indien et
+    l'algèbre arabe à l'Europe. Il y en a eu un peu partout, en
+    particulier dans le sud de la France actuelle.
+  episodes: |
+    Aragon et Montpellier(00-07); commerce et écoles(08-14);
+    arithmétiques commerciales(15-18);
+    problèmes du manuscrit de Pamiers(19-26)
+  period: 1200;1500
+  duration: "17:53"
+  slides: 27
+  location: 1430
+  level: 1
+  keywords:
+    algèbre; équation; Arabes; arithmétique; fausse position; règle de trois;
+    arithmétique commerciale; manuscrit
+  people:
+    alKhwarizmi(2); Fibonacci(4)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+peletier:
+  title: Les notations algébriques
+  subtitle: zenzizenzicube et zenzicubicube
+  abstract: |
+    Notre symbolisme algébrique date du dix-septième siècle. Comment
+    écrivait-on les équations avant&nbsp;?
+  episodes: |
+    notations anciennes(00-04); l'algèbre de Cardan(05-09);
+    innovations allemandes(10-16); Robert Recorde(17-23);
+    poètes français(24-31); algébristes français(32-39)
+  period: 1500;1560
+  duration: "19:12"
+  slides: 40
+  location: 1550
+  level: 1
+  keywords:
+    Arabes; équation; inconnue; Amérique; Grecs; symbole; manuscrit;
+    algèbre; fausse position; incunable; nombre complexe;
+    nombre imaginaire; complexe; imaginaire; notation; notation algébrique;
+    notation littérale; racine
+  people:
+    alKhwarizmi(2); Diophante(2); Chuquet(2); Pacioli(2); Cardan(6); Stifel(6);
+    Recorde(8); HenriII(3); Ronsard(3); duBellay(3); Peletier(6); Ramee(4);
+    Wallis(2); Descartes(2)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+pellos:
+  title: Du manuscrit au livre
+  subtitle: plagiaires et mathématiciens
+  abstract: |
+    Les premiers livres mathématiques imprimés ont marqué leur temps.
+    Mais étaient-ils vraiment originaux&nbsp;?
+  episodes: |
+    incunables célèbres(00-05); incunables antérieurs(06-08);
+    manuscrits influents(09-13); l'arithmétique de Calandri(14-18);
+    Chuquet et de la Roche(19-23); della Francesca et Pacioli(24-29)
+  period: 1400;1550
+  duration: "17:12"
+  slides: 30
+  location: 1492
+  level: 1
+  keywords:
+    algèbre; manuscrit; arithmétique commerciale; fausse position
+  people:
+    Chuquet(4); dellaFrancesca(6); Pacioli(2); Alberti(2); Pacioli(4);
+    LouisXI(1); Gutenberg(3)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+perron:
+  title: La mère de l'algèbre moderne
+  subtitle: mathématiques à Göttingen
+  abstract: |
+    Emmy Noether était-elle la plus grande des mathématiciennes
+    ou un très grand mathématicien&nbsp;?
+  episodes: |
+    mathématiques allemandes(00-06); difficultés à Göttingen(07-15);
+    Emmy Noether(16-21); appréciations et louanges(22-27)
+  period: 1800;1950
+  duration: "19:48"
+  slides: 28
+  location: 1934
+  level: 3
+  keywords:
+    algèbre; anneau; Allemagne; Amérique; femme; invariant; Göttingen
+  people:
+    Gauss(2); Jacobi(2); Dirichlet(2); Kummer(2); Weierstrass(2);
+    Kronecker(2); Riemann(2); Cantor(2); Klein(2); Hilbert(6);
+    Bieberbach(4); Noether(8); Einstein(4)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+seki:
+  title: Image du monde flottant
+  subtitle: les premiers déterminants
+  abstract: |
+    Une période de paix et de prospérité, une politique isolationniste,
+    ont suffi pour que le Japon développe une culture originale;
+    y compris en mathématiques.
+  episodes: |
+    époque d'Edo(00-07); culture japonaise(08-15); Flavius Josèphe(16-19);
+    algèbre linéaire chinoise(20-23); déterminants de Leibniz(24-26);
+    controverse au Japon(27-31)
+  period: 1600;1800
+  duration: "19:28"
+  slides: 31
+  location: 1683
+  level: 3
+  keywords:
+    algèbre; équation; déterminant; Japonais; Chinois; neuf chapitres;
+    inconnue; polynôme; système d'équations; Japon; poésie
+  people:
+    Seki(8); Chuquet(2); Cardan(2); Tartaglia(2); Leibniz(4); Flavius(3);
+    ZhuShijie(6); YangHui(4); LiuHui(4)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+tartaglia:
+  title: Cinq blessures mortelles
+  subtitle: Tartaglia contre Cardan
+  abstract: |
+    La dispute autour de l'équation du troisième degré est bien connue. Le
+    méchant est-il celui qu'on croit&nbsp;?
+  episodes: |
+    le sac de Brescia(00-06); Tartaglia et Cardan(07-12);
+    del Ferro et Ferrari(13-20)
+  period: 1500;1570
+  duration: "18:47"
+  slides: 21
+  location: 1545
+  level: 1
+  keywords:
+    équation; Ars Magna; troisième degré; quatrième degré; Italie; canon;
+    ballistique
+  people:
+    Tartaglia(8); Cardan(6); Bayard(5); Ferrari(6); delFerro(6); Pacioli(4)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+vandermonde:
+  title: Vivre libre ou mourir
+  subtitle: le déterminant de Vandermonde
+  abstract: |
+    Il a fait très peu de mathématiques, mais elles ont suffi pour
+    qu'on en parle encore.
+  episodes: |
+    témoignages(00-05); la Révolution vue par Lesueur(05-14);
+    Vandermonde au temps de la Terreur(15-19);
+    les travaux de Vandermonde(20-26);
+    le déterminant de Vandermonde(27-35)
+  period: 1770;1850
+  duration: "19:58"
+  slides: 36
+  location: 1771
+  level: 3
+  keywords:
+    algèbre; équation; élimination; déterminant; Révolution française;
+    inconnue;
+  people:
+    Vandermonde(8); Cauchy(4); Jacobi(4); Monge(2); Berthollet(3);
+    Lagrange(4); Roland(3); Crelle(2)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+viete:
+  title: Qu'on m'aille quérir M. Viète
+  subtitle: une vie bien remplie
+  abstract: |
+    De son temps Viète était connu comme juriste et conseiller du Roi.
+    Il a surtout été son cryptanalyste. Comment a-t-il trouvé le temps
+    d'inventer l'algèbre moderne?
+  episodes: |
+    Viète cryptanalyste(00-08); Adriaan van Roomen(09-15);
+    réponse de Viète(16-21); l'art analytique(22-28)
+  period: 1540;1610
+  duration: "24:14"
+  slides: 29
+  location: 1593
+  level: 1
+  keywords:
+    algèbre; équation; cryptologie; cryptographie; polynôme; femme; pi;
+    polygone; symbole; quadrature; produit infini
+  people:
+    Viete(8); HenriIV(5); Parthenay(3); Montucla(2); PhilippeII(3)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+wallis:
+  title: Découvrir un nouveau monde
+  subtitle: de Viète à Descartes
+  abstract: |
+    L'algèbre symbolique est la création de Viète, pourtant celle que nous
+    utilisons nous vient de Descartes. Comment est-on passé de l'un à l'autre?
+  episodes: |
+    entre Viète et Descartes(00-07); Harriot en Virginie(08-19);
+    Harriot mathématicien(20-25); difficulté de l'algèbre(26-34)
+  period: 1580;1690
+  duration: "25:00"
+  slides: 35
+  location: 1631
+  level: 1
+  keywords:
+    algèbre; équation; tabac; Amérique; maïs; langue universelle; symbole;
+    notation; notation algébrique; notation littérale
+  people:
+    Harriot(8); Viete(4); Descartes(4); Herigone(4); Voltaire(3);
+    Chatelet(1); Prestet(2); Wallis(4); Pell(2); Roberval(2); ElizabethI(3);
+    Gillray(1); Oughtred(3)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+zhang:
+  title: Les cent volailles
+  subtitle: voyages d'une devinette
+  abstract: |
+    Comment le même problème a-t-il voyagé de la Chine à l'Europe, en passant
+    par l'Inde et la Perse?
+  episodes: |
+    en Chine(00-07); en Inde(08-16);
+    chez les Arabes(16-22); en Europe(23-33)
+  period: 400;1700
+  duration: "21:13"
+  slides: 34
+  location: 900
+  level: 1
+  keywords:
+    Chine; Indiens; Arabes; algorithme; Chinois; cent volailles; Bhaskali;
+    équation; inconnue; identité de Bézout; algorithme d'Euclide; devinette;
+    volailles
+  people:
+    ZhangQiujian(8); Mahaviracharya(2); Bhaskaracharya(2); Sridhara(2);
+    AbuKamil(6); alKashi(2); Alcuin(4); Fibonacci(4); Cataldi(6); Bachet(4);
+    Saunderson(4)
+  domain: Algèbre
+
+# -----------------------------------------------------------
+#                 Histoires d'Arithmétique
+# -----------------------------------------------------------
+# -----------------------------------------------------------
+gilgamesh:
+  title: Où tout a commencé
+  subtitle: l'invention des nombres
+  abstract: |
+    L'invention des nombres et celle de l'écriture sont probablement
+    liées. Elles ont eu lieu il y a cinq mille ans, en Mésopotamie.
+  episodes: |
+    des traces dans la Bible(00-08); le code d'Hammourabi(09-14);
+    une société de redistribution(15-21); la numération sexagésimale(22-27)
+  period: -3500;-1000
+  duration: "14:16"
+  slides: 28
+  location: -3000
+  level: 1
+  keywords:
+    Mésopotamiens; tablette; cunéiforme; sexagésimal; Nippur; Babylone;
+    Gilgamesh; déluge; Enkidu; tour de Babel; ziggurat; numération;
+    arithmétique; bulle comptable; jetons; base; écriture; calcul; nombre
+  people:
+    Hammurabi(5); Laplace(2); Ptolemee(2)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+rhind:
+  title: L'&oelig;il d'Horus
+  subtitle: la multiplication égyptienne
+  abstract: |
+    Comment les égyptiens calculaient-ils et qu'en est-il resté&nbsp;?
+  episodes: |
+    hiéroglyphes(00-05); scribes et papyrus(06-10);
+    multiplication et fractions(11-19); greniers cylindriques(20-23);
+    ce qui en est resté(24-29)
+  period: -1800;2000
+  duration: "17:18"
+  slides: 30
+  location: -1650
+  level: 1
+  keywords:
+    Egyptiens; hiéroglyphes; Grecs; arithmétique; multiplication; base;
+    algorithme; pi; papyrus;  numération; nombre; calcul; fraction
+  people:
+    Sylvester(2); Platon(2); Erdos(2);
+    Fibonacci(2); Ptolemee(2)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+pythagore:
+  title: Les vers dorés de Pythagore
+  subtitle: arithmétique et mystique
+  abstract: |
+    Mathématicien ou gourou: qui était vraiment Pythagore&nbsp;?
+  episodes: |
+    ses origines(00-08); religion à Crotone(09-13);
+    symboles et vers dorés(14-17); genre de vie(18-23);
+    arithmétique et mystique(24-29); nombres parfaits(30-35)
+  period: -600;2000
+  duration: "24:32"
+  slides: 36
+  location: -536
+  level: 1
+  keywords:
+    quadrivium; arithmétique; Apollon; Grecs; nombres polygonaux; tétrade;
+    nombre parfait; calcul; nombre; poésie; nombre entier; crible
+  people:
+    Pythagore(8); Mersenne(2); Nicomaque(4); Euclide(4); Voltaire(1);
+    Platon(4); Proclus(2); Eratosthene(2)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+proclus:
+  title: Les tendeurs de cordes
+  subtitle: triplets pythagoriciens
+  abstract: |
+    Cette fameuse corde à treize n&oelig;uds qui permet de tracer
+    des triangles rectangles, a-t-elle existé&nbsp;?
+  episodes: |
+    tendeurs de corde en Egypte(00-06);
+    Pythagore pour l'architecture(06-12); outils d'arpenteurs(13-16);
+    triplets pythagoriciens(17-21); Fibonacci(22-27);
+    Mésopotamie, Chine et Inde(28-35)
+  period: -600;1300
+  duration: "21:16"
+  slides: 36
+  location: 430
+  level: 1
+  keywords:
+    arithmétique; Grecs; Chinois; Arabes; Indiens; triplet pythagoricien;
+    Egyptiens; théorème de Pythagore; papyrus; Zhoubi Suanjing;
+    Vedas; nombre entier; nombre; Sulba Sutra
+  people:
+    Pythagore(6); Ciceron(3); Leonard(1); Herodote(3); Euclide(4);
+    Fibonacci(4); Platon(2); Alberti(2); Vitruve(3); Proclus(2)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+hippase:
+  title: Le scandale des irrationnelles
+  subtitle: la croix des mathématiciens
+  abstract: |
+    Que dans une figure aussi simple qu'un carré, le côté et la diagonale
+    ne soient pas commensurables, ça faisait désordre pour les
+    pythagoriciens&nbsp;!
+  episodes: |
+    pourquoi des irrationnelles(00-05);
+    incommensurabilité de la diagonale(06-12);
+    le livre dix des Eléments(13-19);
+    commentateurs arabes(20-23); Simon Stevin(24-29);
+    les nombres sourds(30-33)
+  period: -600;1800
+  duration: "24:27"
+  slides: 34
+  location: 350
+  level: 1
+  keywords:
+    arithmétique; Grecs; Arabes; Indiens; Mésopotamiens; nombre irrationnel;
+    Encyclopédie; irrationnel; nombre rationnel; rationnel; nombre;
+    Sulba Sutra; approximation; algorithme d'Euclide; anthyphérèse;
+    nombre d'or; racine
+  people:
+    Pythagore(4); Euclide(6); Nassau(1); Pappus(4); Aristote(4);
+    Erdos(4); DeMorgan(2); alKhazin(4); alSamawal(4); Stevin(6);
+    Arnauld(2); Nicole(2); Newton(2); laChapelle(2); dAlembert(2)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+platon:
+  title: Le nombre nuptial
+  subtitle: une devinette de Platon
+  abstract: |
+    Platon a beaucoup fait pour que les mathématiques soient étudiées et
+    enseignées. Il nous a aussi laissé un nombre à deviner.
+  episodes: |
+    Platon et Socrate(00-08); la République de Platon(09-12);
+    quadrivium et arts libéraux(12-21); les mathématiques de Platon(21-25);
+    réponses à la devinette(25-29)
+  period: -500;200
+  duration: "17:31"
+  slides: 30
+  location: -380
+  level: 1
+  keywords:
+    harmonie; fréquence; moyenne; nombre parfait; Grecs; nombre;
+    arithmétique; Académie; musique; astronomie; géométrie; nombre entier;
+    triplet pythagoricien; trivium; quadrivium; République; caverne; devinette
+  people:
+    Aristote(4); Pythagore(4); Platon(8); Racine(3); Socrate(4); Proclus(2)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+aristoter:
+  title: Une leçon d'Aristote
+  subtitle: l'harmonie de la décade
+  abstract: |
+    Pourquoi compter en base 10&nbsp;? Les Pythagoriciens ont des
+    réponses, mais Aristote n'est pas d'accord.
+  episodes: |
+    Aristote et Alexandre le Grand(00-14); un problème d'Aristote(14-17);
+    réponses pythagoriciennes(17-23); Pythagore et la musique(23-28);
+    autres réponses pythagoriciennes(28-33); la réponse d'Aristote(33-38)
+  period: -500;200
+  duration: "19:22"
+  slides: 39
+  location: -330
+  level: 1
+  keywords:
+    décade; tetractys; harmonie; fréquence; moyenne; nombre parfait;
+    nombre premier; arithmétique; base; décimal; lycée; Académie; musique;
+    gamme; astronomie; Grecs; nombre entier; nombre; numération
+  people:
+    Aristote(8); Pythagore(8); Platon(4); TheonSmyrne(4); Nicomaque(4);
+    AlexandreGrand(5); Racine(3); Socrate(2)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+archimede:
+  title: Des grains de sable dans l'univers
+  subtitle: dire les grands nombres
+  abstract: |
+    Archimède savait compter les grains de sable dans l'univers;
+    Bouddha aussi; et nous&nbsp;?
+  episodes: |
+    l'Arénaire d'Archimède(00-07); les comptes de Bouddha(08-16);
+    les comptes indiens(17-22); échelle courte et échelle longue(23-38)
+  period: -300;2000
+  duration: "21:54"
+  slides: 39
+  location: -220
+  level: 1
+  keywords:
+    Arénaire; Grecs; Indiens; Lalita-Vistara; Vedas; sanscrit; Borobudur;
+    numération; arithmétique; nombre; base
+  people:
+    Archimede(8); Bouddha(5); Wallis(4); Aryabhata(4); alBiruni(6);
+    Fibonacci(4); Chuquet(6); Pacioli(2); Cocker(2); Corachan(2);
+    Barreme(2); Camus(4); Euler(2)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+pingala:
+  title: Le meru-prast&#257;ra
+  subtitle: combinatoire binaire et poésie sanscrite
+  abstract: |
+    Le triangle de Pascal a été réinventé maintes fois. Il est apparu en
+    Inde avant notre ère, avec les premiers algorithmes
+    de calcul sur les mots binaires.
+  period: -200;1660
+  episodes: |
+    triangle arithmétique(00-13); Bhagavad-Gita(13-16);
+    métrique sanscrite(16-20); algorithmes binaires(20-28);
+    Mahavira et Bhaskara(29-33)
+  duration: "21:51"
+  slides: 34
+  location: -200
+  level: 3
+  keywords:
+    Arabes; Chine; Indiens; sanscrit; numération; binaire; Bhagavad-Gita;
+    suite de Fibonacci; nombres de Fibonacci; lapins; Lilavati; informatique;
+    triangle arithmétique; base; algorithme; arithmétique; formule du binôme;
+    combinatoire; dénombrement; comptage; nombre entier; nombre
+  people:
+    Pascal(4); alKaraji(2); alSamawal(2); alTusi(2); alBiruni(2);
+    JiaXian(2); YangHui(2); ZhuShijie(2); Jordanus(2); Apian(2);
+    Stifel(2); Tartaglia(2); Cardan(2); Mersenne(2); Izquierdo(2);
+    Pingala(8); Mahaviracharya(4); Bhaskaracharya(4); Fibonacci(4);
+    Herigone(2)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+diophante:
+  title: Les livres perdus de Diophante
+  subtitle: arithmétique ou algèbre?
+  abstract: |
+    Les Arithmétiques de Diophante sont un des livres fondateurs de la science
+    arabe, comme de la science européenne; et dire qu'il nous en manque encore
+    trois&nbsp;!
+  episodes: |
+    ibn Luqa et al-Karaji(00-05); al-Khazin(06-11);
+    découverte européenne(11-15); Pedro Nunes(15-20);
+    de Bombelli à Bachet(21-26); Fermat dans la marge(26-31)
+  period: 300;1700
+  duration: "22:42"
+  slides: 32
+  location: 300
+  level: 1
+  keywords:
+    arithmétique; triplet pythagoricien; algèbre; Grecs; Arabes; Portugal;
+    nombre entier; nombre; équation
+
+  people:
+    Diophante(6); alKaraji(4); alKhazin(4); Euclide(2); Montucla(2);
+    Regiomontanus(4); Nunes(4); Bombelli(2); Stevin(2); Bachet(4); Fermat(4);
+    Hypatie(2); alKhwarizmi(2)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+aryabhata:
+  title: Le vide dans les nombres
+  subtitle: invention du zéro
+  abstract: |
+    Mais au fait, de quels zéros parle-t-on, quand et où sont-ils
+    apparus&nbsp;?
+  episodes: |
+    zéro mésopotamien(00-04); zéro grec(05-12); zéro maya(13-14);
+    zéros indiens(15-28); traces historiques(29-38)
+  period: -300;1000
+  duration: "26:11"
+  slides: 39
+  location: 499
+  level: 1
+  keywords:
+    Mésopotamiens; Arabes; Grecs; Indiens; Maya; Vedas; sanscrit; numération;
+    zéro; chiffres; infini; pi; Lilavati; arithmétique; tablette; corde;
+    calcul; nombre; nombre entier; Almageste
+  people:
+    Aristote(4); Pythagore(4); Ptolemee(2); alBiruni(2);
+    alKhwarizmi(2); Aryabhata(4); Varahamihira(4); Brahmagupta(6);
+    Mahaviracharya(6); Bhaskaracharya(6); Sebokht(4); Laplace(2)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+sunzi:
+  title: Les comptes du général
+  subtitle: restes chinois et pulvérisateur indien
+  abstract: |
+    Les problèmes de restes chinois viennent probablement de l'astronomie. Les
+    Indiens les ont poussés plus loin que les Chinois.
+  episodes: |
+    Han Xin(00-05); Sun Zi et Yang Hui(05-10);
+    Aryabhata et Brahmagupta(11-16); Mahaviracharya(17-20);
+    autres formulations(21-25)
+  period: 400;1300
+  duration: "13:52"
+  slides: 25
+  location: 628
+  level: 3
+  keywords:
+    arithmétique; Chinois; Indiens; modulo; restes chinois; astronomie;
+    nombre; nombre entier; équation; système d'équations; algorithme d'Euclide;
+    identité de Bézout
+  people:
+    SunZi(8); YangHui(6); Aryabhata(4); Brahmagupta(4);
+    Ozanam(2); Mahaviracharya(4)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+alhaytham:
+  title: Les nombres de Thabit
+  subtitle: découvertes et redécouvertes
+  abstract: |
+    Deux théorèmes arabes n'ont été redécouverts en Europe que bien des
+    siècles plus tard.
+  episodes: |
+    nombres parfaits et amiables(00-08); redécouverte européenne(09-14);
+    théorème de Wilson et Lagrange(14-18); ibn al-Haytham(19-24);
+    Fibonacci et Bachet(25-32)
+  period: 850;1850
+  duration: "23:04"
+  slides: 33
+  location: 900
+  level: 3
+  keywords:
+    Arabes; nombre parfait; nombre premier; nombres amiables;
+    identité de Bézout; factorielle; Bagdad; Maison de la Sagesse;
+    Bait al-Hikma; nombre entier; nombre; modulo
+  people:
+    ibnQurra(6); alHaytham(6); Euclide(4); Nicomaque(2); Descartes(4);
+    Fermat(4); Roberval(2); Mersenne(2); Euler(4); Legendre(2);
+    Lagrange(2); Fibonacci(4); Bachet(4)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+boece:
+  title: La géométrie de Boèce
+  subtitle: l'origine des nombres
+  abstract: |
+    D'où viennent les nombres que nous utilisons&nbsp;: d'Inde ou de
+    Grèce&nbsp;?
+  episodes: |
+    codex vigilanus(00-04); Gerbert d'Aurillac et Ibn Sina(05-11);
+    le théâtre de Hrotsvita(12-17); Boèce et ses oeuvres(18-25);
+    les traces avant le dix-neuvième(25-32); la polémique(33-40)
+  period: -300;1620
+  duration: "19:24"
+  slides: 41
+  location: 976
+  level: 1
+  keywords:
+    codex; numération; zéro; quadrivium; musique; géométrie; apices;
+    Arabes; Indiens; femme; abaque; éléments; Grecs; arithmétique;
+    nombre; nombre entier; nombres polygonaux
+  people:
+    Boece(8); Gerbert(4); ibnSina(4); Hrotsvita(3); Pythagore(4); Vossius(3);
+    Montucla(4); Chasles(6); Libri(2); alKhwarizmi(2); alKindi(2);
+    Platon(2); Nicomaque(4); Euclide(2)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+gerbert:
+  title: Le pape de l'an mil
+  subtitle: l'abaque de Gerbert
+  abstract: |
+    Génie ou démon&nbsp;? Gerbert savait beaucoup de choses, au moins
+    par rapport à ses contemporains.
+  episodes: |
+    vie de Gerbert(00-05); Gerbert et les mathématiques(05-14);
+    Gerbert et le diable(15-31)
+  period: 960;1460
+  duration: "17:33"
+  slides: 32
+  location: 1000
+  level: 1
+  keywords:
+    abaque; apices; numération; Arabes; quadrivium; astronomie; armillaire;
+    triplet pythagoricien; théorème de Pythagore; zéro; Grecs; Indiens;
+    arithmétique; nombre; nombre entier; fraction
+  people:
+    Gerbert(8); Hugo(5); Abelard(3); ibnFirnas(5); Capet(1); Boece(2)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+fibonacci:
+  title: Stupeur du monde
+  subtitle: l'arithmétique de Fibonacci
+  abstract: |
+    Il y a chez lui beaucoup plus que quelques couples de lapins.
+  episodes: |
+    Frédéric de Hohenstaufen(00-09); liber abaci(10-13);
+    liber quadratorum(14-21); postérité(22-27)
+  period: 1200;1600
+  duration: "17:20"
+  slides: 28
+  location: 1225
+  level: 3
+  keywords:
+    Arabes; triplet pythagoricien; suite de Fibonacci; nombres de Fibonacci;
+    lapins; croisade; nombre; nombre entier; liber abaci; équation
+  people:
+    Fibonacci(8); Fermat(2); Hohenstaufen(7); Pacioli(4); Tartaglia(4);
+    alKhazin(4)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+sissa:
+  title: La légende de Sissa
+  subtitle: sur la route de la soie
+  abstract: |
+    Un grain de blé sur la première case d'un échiquier, et on double à
+    chaque case&nbsp;; d'où vient cette histoire&nbsp;?
+  episodes: |
+    de Mésopotamie en Chine(00-07); Europe et Inde(08-16);
+    légende de Sissa(17-21); progressions géométriques(22-29)
+  period: -1800;1270
+  duration: "15:43"
+  slides: 30
+  location: 1260
+  level: 1
+  keywords:
+    Arabes; Indiens; Egyptiens; Mésopotamiens; papyrus; arithmétique;
+    suite géométrique; Lilavati; Chine; Jiushang suanchu; neuf chapitres;
+    Suan Shu Shu; tablette; nombre; nombre entier; exponentielle;
+    liber abaci; échecs
+  people:
+    Fibonacci(4); AlphonseX(1); Brahmagupta(2); Bhaskaracharya(2); Alcuin(4)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+sikidy:
+  title: Le sikidy
+  subtitle: arithmétique modulo deux
+  abstract: |
+    Quelles mathématiques fait-on en Afrique avec des graines?
+  episodes: |
+    arithmétique modulo deux(00-06); géomancie(06-14);
+    sikidy à Madagascar(14-18); jeux de semaille en Afrique(19-29)
+  period: -900;2000
+  duration: "12:59"
+  slides: 30
+  location: 1295
+  level: 1
+  keywords:
+    Arabes; Madagascar; Afrique; arithmétique; divination; hexagramme; Chinois;
+    graines; modulo; Chine; mancala; awalé; sikidy; astrologie; astronomie;
+    groupe; nombre; nombre entier
+  people:
+    ibnSina(2); alKhwarizmi(2); Euclide(2); Ptolemee(2)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+poma:
+  title: La controverse de Valladolid
+  subtitle: comptes en Amérique précolombienne
+  abstract: |
+    L'empire Inca et la civilisation Maya disposaient de systèmes
+    de numération sophistiqués. On est loin de connaître tous
+    leurs secrets.
+  episodes: |
+    la controverse(00-04); Poma de Ayala(05-12); les quipus(12-18);
+    témoignages sur les quipus(19-26); la numération maya(27-32);
+    des zéros et des dieux(33-42)
+  period: -300;1620
+  duration: "21:02"
+  slides: 43
+  location: 1530
+  level: 1
+  keywords:
+    Inca; Maya; codex; numération; base; zéro; abaque; quipu; astrologie;
+    comptabilité; yupana; Xolotl; arithmétique; Amérique; nombre;
+    nombre entier; calcul
+  people:
+    lasCasas(5); IncaGarcilaso(5); CharlesQuint(3)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+fermat:
+  title: Des marges trop exiguës
+  subtitle: la descente infinie de Fermat
+  abstract: |
+    Vantard&nbsp;? paresseux&nbsp;? génial&nbsp;? qui était vraiment
+    Pierre de Fermat&nbsp;?
+  episodes: |
+    éloges(00-05); Gaspard de Fieubet(06-09);
+    passages de ses lettres(10-18); observations sur Diophante(19-26);
+    descente infinie(26-30)
+  period: 1630;1670
+  duration: "17:14"
+  slides: 31
+  location: 1637
+  level: 3
+  keywords:
+    triplet pythagoricien; théorème de Fermat-Wiles; descente infinie;
+    récurrence; nombre; nombre entier; arithmétique
+  people:
+    Fermat(8); Descartes(2); Mersenne(2); Euclide(2); Wallis(2); Roberval(2);
+    Diophante(2); Fibonacci(2); Bachet(2)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+vulson:
+  title: Les eaux d'Oriol
+  subtitle: jeux arithmétiques
+  abstract: |
+    Jouer avec les nombres: pour deviner, pour apprendre, ou simplement
+    pour le plaisir&nbsp;?
+  episodes: |
+    les eaux d'Oriol(00-04); Marc Vulson(05-07);
+    le palais des curieux(08-15); jeux de divination(16-21);
+    la rithmomachie(22-27)
+  period: 450;1750
+  duration: "14:25"
+  slides: 27
+  location: 1639
+  level: 1
+  keywords:
+    divination; numérologie; rithmomachie; calcul; nombre; nombre entier;
+    arithmétique; jeu; casse-tête
+  people:
+    HenriIV(3); SunZi(2)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+maurolico:
+  title: Et ainsi de suite à l'infini
+  subtitle: de l'induction à la récurrence
+  abstract: |
+    Pourquoi a-t-il fallu autant de temps pour formaliser un mode de
+    raisonnement que Platon utilisait déjà&nbsp;?
+  episodes: |
+    la récurrence chez Pascal(00-04); induction chez les Grecs(05-11);
+    d'Euclide au moyen-âge(12-20); l'émergence de la rigueur(21-32);
+    une récurrence de Cauchy(33-39)
+  period: -500;1830
+  duration: "24:30"
+  slides: 40
+  location: 1654
+  level: 3
+  keywords:
+    récurrence; Arabes; Grecs; induction; nombres polygonaux; Tetractys;
+    formule du binôme; triangle arithmétique; permutation; factorielle;
+    arithmétique; nombre; nombre entier; démonstration
+  people:
+    Pascal(6); Pythagore(2); Nicomaque(2); TheonSmyrne(4); Platon(4);
+    Aristote(4); Euclide(4); Aryabhata(2); alKaraji(4); alSamawal(4);
+    Gersonide(4); Maurolico(4); Bachet(4); Wallis(4); Fermat(4);
+    BernoulliJacques(4); Cauchy(4); Archimede(2)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+fohi:
+  title: Les lignes de Fohi
+  subtitle: arithmétique binaire
+  abstract: |
+    Est-il certain que les hexagrammes du livre des mutations soient la
+    plus ancienne numération binaire&nbsp;? Leibniz en était persuadé.
+  episodes: |
+    Fuxi et le bagua(00-10); arithmétique binaire(11-15);
+    Leibniz et Bouvet(16-22); conséquences philosophiques(23-26);
+    Boby Lapointe(27-32)
+  period: 1580;1730
+  duration: "19:09"
+  slides: 33
+  location: 1701
+  level: 3
+  keywords:
+    arithmétique; informatique; binaire; trigramme; hexagramme; divination;
+    machine arithmétique; Chinois; base; Chine; numération; base;
+    hexadécimal; nombre; nombre entier
+  people:
+    Leibniz(4); LouisXIV(1); Napier(4); Pingala(2); Kangxi(5); Lapointe(5)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+borda:
+  title: La journée de dix heures
+  subtitle: victoire du système décimal
+  abstract: |
+    L'écriture des nombres décimaux telle que nous la connaissons ne s'est
+    imposée que quand la base dix a été choisie pour le système métrique.
+  episodes: |
+    écritures anciennes(00-10); Stevin et Napier(11-15);
+    alternatives à la base dix(16-22); réforme révolutionnaire(23-28);
+    victoire du décimal(29-37)
+  period: 1580;1800
+  duration: "21:52"
+  slides: 38
+  location: 1793
+  level: 1
+  keywords:
+    arithmétique; base; mètre; Mésopotamiens; Chine; décimal; duodécimal;
+    Chinois; Arabes; système métrique; nombre; nombre entier;
+    nombre rationnel; nombre décimal; fraction; binaire; mesure
+  people:
+    Lagrange(4); Hauy(6); Condorcet(2); Buffon(4); Stevin(6); Napier(4);
+    alKashi(4); LiuHui(4); Gerbert(2); Vauban(3); Tamerlan(1); UlughBeg(1);
+    Wilkins(3); Burattini(3); Borda(4); Lavoisier(3); Laplace(2)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+buttner:
+  title: Les mosaïques de Thiele
+  subtitle: résidus quadratiques et entiers de Gauss
+  abstract: |
+    Pourquoi Gauss est-il le Prince des Mathématiciens&nbsp;? Lisez ses
+    Recherches Arithmétiques&nbsp;!
+  episodes: |
+    lemme de Gauss(00-06); residus quadratiques(07-14);
+    loi de réciprocité(15-21); entiers de Gauss(22-35)
+  period: 1790;1860
+  duration: "18:17"
+  slides: 35
+  location: 1801
+  level: 3
+  keywords:
+    arithmétique; congruences; modulo; pavage; nombre complexe;
+    nombre imaginaire; complexe; imaginaire; nombre premier; nombre;
+    nombre entier; enfant précoce
+  people:
+    Gauss(8); Fermat(4); Leibniz(2); Euler(4); Legendre(6);
+    Lagrange(4); Jacobi(2); Dirichlet(2); Brunswick(5)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+germain:
+  title: Votre très humble servante
+  subtitle: le grand plan de Sophie Germain
+  abstract: |
+    Que Gauss ait manifesté autant de respect pour elle en dit
+    aussi long que ses articles non publiés&nbsp;!
+  episodes: |
+    légende racontée par Libri(00-05); Lagrange et Cousin(05-07);
+    Lalande(08-14); distinctions(14-16); lettres à Gauss(17-30);
+    le grand plan(31-33)
+  period: 1770;1830
+  duration: "23:06"
+  slides: 34
+  location: 1806
+  level: 3
+  keywords:
+    arithmétique; théorème de Fermat-Wiles; femme; astronomie; nombre;
+    nombre entier; équation
+  people:
+    Germain(8); Gauss(6); Legendre(2); Lagrange(2); Lalande(4); Lepaute(2);
+    Harlay(2); Pierry(2); Fourier(2); Pernety(3); Napoleon(1); Brunswick(3);
+    Libri(4); Archimede(2); Montucla(2)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+lucas:
+  title: La tour de Hanoï
+  subtitle: amuser pour instruire
+  abstract: |
+    Lucas a renouvelé le genre des récréations mathématiques, avec sa
+    loufoquerie et ses inventions.
+  episodes: |
+    tour de Hanoï(00-05); Lucas et son temps(06-10);
+    récréations avant Lucas(11-20); autres amusements de Lucas(21-25);
+    Laisant(26-29)
+  period: 1840;1920
+  duration: "16:29"
+  slides: 29
+  location: 1883
+  level: 1
+  keywords:
+    arithmétique; informatique; tour de Hanoï; algorithme; récréations; jeu;
+    casse-tête; devinette
+  people:
+    Lucas(8); Fermat(2); Laisant(4); Mace(3); Bhaskaracharya(2); Metrodore(2);
+    Platon(4); NapoleonIII(3); Darboux(2)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+hadamard:
+  title: Savants Cosinus
+  subtitle: la raréfaction des nombres premiers
+  abstract: |
+    Hadamard et Erdös ont en commun d'avoir démontré le théorème
+    des nombres premiers, et aussi quelques traits de caractère.
+  episodes: |
+    l'audace d'Euler(00-10); conjectures de Gauss et Legendre(11-14);
+    Tchebychev et Riemann(15-18); démonstrations du théorème(19-25);
+    savants distraits(26-32); errances(33-35)
+  period: 1730;1950
+  duration: "18:10"
+  slides: 36
+  location: 1896
+  level: 3
+  keywords:
+    arithmétique; nombre premier; fonction zeta; nombre; nombre entier;
+    limite; série harmonique
+  people:
+    Hadamard(8); Erdos(8); Euler(6); Tchebychev(4); Riemann(6);
+    Vallee(2); Selberg(2); Topffer(5); Colomb(5);
+    Platon(2); Socrate(2); Thales(2)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+wiles:
+  title: Le théorème de Fermat-Wiles
+  subtitle: enfin&nbsp;!
+  abstract: |
+    Plusieurs siècles pour démontrer qu'une toute petite équation n'a pas de
+    solution&nbsp;: est-ce bien raisonnable&nbsp;?
+  episodes: |
+    conjecture de Fermat(00-04); Legendre, Sophie Germain et Gauss(05-11);
+    déboires de Lamé et Cauchy(12-19); prix Wolfskehl(20-25)
+  period: 1650;2000
+  duration: "21:02"
+  slides: 26
+  location: 1908
+  level: 3
+  keywords:
+    arithmétique; équation; Académie; polygone; constructible;
+    polynôme cyclotomique; théorème de Fermat-Wiles; nombre; nombre entier
+  people:
+    Wiles(8); Lame(6); Kummer(6); Germain(6); Legendre(6);
+    Euler(4); Fermat(4); Gauss(6); Cauchy(4); Diophante(2);
+    Liouville(4); Bertrand(2); Wolfskehl(4)
+  domain: Arithmétique
+
+# -----------------------------------------------------------
+#                 Histoires d'Informatique
+# -----------------------------------------------------------
+# -----------------------------------------------------------
+moschopoulos:
+  title: Le b&oelig;uf en daube
+  subtitle: recettes et algorithmes
+  abstract: |
+    L'importance qu'ont eue les éléments d'Euclide, nous a fait oublier
+    que pour apprendre, une recette ou un algorithme sont plus efficaces
+    qu'une définition suivie d'un théorème.
+  episodes: |
+    viandes en sauce(00-10); algorithme d'Euclide(11-25); carrés magiques(26-37)
+  period: -500;2000
+  duration: "23:52"
+  slides: 38
+  location: -280
+  level: 5
+  keywords:
+    algorithme; Arabes; Grecs; carrés magiques; éléments; Mésopotamiens;
+    tablette; recette; Bourbaki; informatique; nombre; nombre entier;
+    équation; identité de Bézout
+  people:
+    Moschopoulos(4); alBuni(2); Bachet(6); alHaytham(2);
+    laLoubere(6); Euler(8); Euclide(4); Bezout(2); Knuth(2)
+  domain: Informatique
+
+# -----------------------------------------------------------
+soroban:
+  title: Abaques et bouliers
+  subtitle: compter du bout des doigts
+  abstract: |
+    Alors que les tables à calcul étaient d'usage courant en Europe
+    occidentale au moins depuis le Moyen Âge, pourquoi le boulier est-il
+    resté ignoré si longtemps&nbsp;?
+  episodes: |
+    bouliers et abaques(00-09); tables à compter(09-17);
+    manuels d'arithmétique(17-27); le calcul aux jetons(28-35);
+    pédagogie et boulier(36-42)
+  period: -100;1900
+  duration: "22:25"
+  slides: 43
+  location: 1200
+  level: 1
+  keywords:
+    abaque; boulier; numération; suanpan; soroban; stchoty; jetons;
+    Chine; Japon; Russie; Jésuites; Exchequer; Chinois;
+    arithmétique; opérations; base; informatique; calcul; nombre; nombre entier
+  people:
+    Boece(2); Pythagore(2); Buisson(5); Condorcet(4);
+    Lavoisier(3); Jacob(4); Kobel(4); leComte(3); Reisch(4); Cathalan(4);
+    Trenchant(4)
+  domain: Informatique
+
+# -----------------------------------------------------------
+anticythere:
+  title: Le mécanisme d'Anticythère
+  subtitle: la première machine à prédire
+  abstract: |
+    Malgré ce qu'en disait Cicéron, que les machines d'Archimède aient pu
+    atteindre un tel degré de sophistication, il fallait le voir pour y
+    croire.
+  episodes: |
+    la sphère d'Archimède(00-09); mécanisme d'Anticythère(10-19);
+    après Archimède(20-26)
+  period: -300;1800
+  duration: "12:14"
+  slides: 27
+  location: -87
+  level: 1
+  keywords:
+    Anticythère; Grecs; machine; astronomie; planètes; soleil;
+    système solaire; lune; éclipse; engrenage; sphère armillaire; calcul;
+    planetarium; Astrarium; informatique; Almageste
+  people:
+    Ciceron(3); Archimede(8); Kondos(3); Eisinga(5);
+    Ptolemee(4); Lactance(3); Kircher(4); Thales(2);
+    alBiruni(4); Dondi(5);
+  domain: Informatique
+
+# -----------------------------------------------------------
+algorismus:
+  title: Dixit algoritmi
+  subtitle: les avatars d'un surnom
+  abstract: |
+    Algorithme vient d'al-Khwarizmi, tout le monde le sait. Quel chemin
+    ce mot a-t-il emprunté pour arriver à son sens actuel&nbsp;?
+  episodes: |
+    al-Khwarizmi et ses traducteurs(00-06); augorisme et guarismo(06-12);
+    les deux sens des encyclopédies(13-21); Leibniz et Newton(22-28);
+    Euler et Gauss(28-35)
+  period: 800;1850
+  duration: "18:59"
+  slides: 36
+  location: 830
+  level: 1
+  keywords:
+    algorithme; Encyclopédie; Arabes; informatique; calcul
+  people:
+    alKhwarizmi(8); Caramuel(4); Corachan(4); Chambers(5);
+    Peuerbach(2); Graffenried(2); Karsten(2); Wallis(4); Leibniz(6);
+    Newton(4); Hayes(4); Euler(6); Gauss(6); dAlembert(2)
+  domain: Informatique
+
+# -----------------------------------------------------------
+banumusa:
+  title: Noter les cylindres
+  subtitle: la première mémoire de stockage
+  abstract: |
+    Inventé par les frères Banu Musa au IX<sup>e</sup> siècle, le principe
+    du cylindre à picots pour stocker des morceaux de musique est encore en
+    fonctionnement. C'est la plus ancienne mémoire binaire de l'histoire.
+  episodes: |
+    l'instrument qui joue par lui-même(00-07); Salomon de Caus(07-17);
+    le cylindre de Diderot(18-24); carillons et serinettes(25-33);
+    la serinette et le serin(31-36)
+  period: 800;1800
+  duration: "21:26"
+  slides: 37
+  location: 850
+  level: 1
+  keywords:
+    mémoire; cylindre; musique; serinette; orgue; Arabes; Grecs; machine;
+    carillon; machine à vapeur; intelligence artificielle; informatique
+  people:
+    BanuMusa(8); Diderot(6); deCaus(4);
+    Vaucanson(2); dAlembert(2); HeronAlexandrie(2)
+  domain: Informatique
+
+# -----------------------------------------------------------
+llull:
+  title: Docteur Illuminé
+  subtitle: la force de la combinatoire
+  abstract: |
+    Dans le cas de Ram&oacute;n Llull,  Doctor Illuminatus ne
+    devrait pas être traduit littéralement; à moins que&hellip;
+  episodes: |
+    Llull et son temps(00-12); cercles concentriques(13-22);
+    la postérité de Llull(22-38)
+  period: 1200;1800
+  duration: "20:26"
+  slides: 39
+  location: 1300
+  level: 1
+  keywords:
+    combinatoire; zairja; Sepher Yetzirah; croisade; cryptographie; graphe;
+    informatique; comptage; dénombrement
+  people:
+    Llull(8); Kircher(6); Leibniz(6); Izquierdo(2); Gerson(2); Alberti(2);
+    alBuni(2); LouisIX(3)
+  domain: Informatique
+
+# -----------------------------------------------------------
+napier:
+  title: La mirifique règle des logarithmes
+  subtitle: supprimer les entraves
+  abstract: |
+    Le premier artifice pour raccourcir les calculs et diminuer les erreurs:
+    l'invention de Napier tombait à pic pour les astronomes!
+  episodes: |
+    les inventions de Napier(00-07); quelques prédécesseurs(08-13);
+    Napier et Briggs(14-22); Képler(23-29); Barrême(30-33)
+  period: 1600;1710
+  duration: "15:36"
+  slides: 34
+  location: 1614
+  level: 3
+  keywords:
+    logarithme; Merchiston; informatique; astronomie; calcul; base;
+    exponentielle; analyse
+  people:
+    Napier(8); Briggs(6); Burgi(6); Kepler(6); Henrion(4);
+    Oresme(4); Chuquet(4); Stifel(4); Barreme(4); Laplace(2)
+  domain: Informatique
+
+# -----------------------------------------------------------
+oughtred:
+  title: La règle à calcul
+  subtitle: faiseurs de tours et jongleurs
+  abstract: |
+    Conséquence directe de l'invention des logarithmes par Napier,
+    la règle à calcul a été en usage pendant quatre siècles: nos ordinateurs
+    pourront-ils en dire autant&nbsp;?
+  episodes: |
+    la règle de proportion(00-07); Oughtred(08-12);
+    Oughtred contre Delamain(13-17); lente diffusion(18-21);
+    au siècle dernier(22-28)
+  period: 1600;2000
+  duration: "13:24"
+  slides: 29
+  location: 1630
+  level: 3
+  keywords:
+    logarithme; règle à calcul; instrument; cercle à calcul;
+    Merchiston; informatique; calcul; machine
+  people:
+    Napier(4); Oughtred(8); Gunter(6); Wingate(6);
+    Asimov(3); Delamain(6); Bion(4)
+  domain: Informatique
+
+# -----------------------------------------------------------
+schickard:
+  title: La Pascaline
+  subtitle: et autres machines arithmétiques
+  abstract: |
+    Même si la machine arithmétique de Pascal est la plus célèbre, elle n'est
+    ni la première ni la seule machine inventée au XVII<sup>e</sup> siècle.
+  episodes: |
+    avant Pascal(00-08); annonce de Pascal(09-19);
+    tentatives de diffusion(20-27); imitateurs(27-36);
+    machine de Leibniz(37-45); continuateurs(46-53)
+  period: 1600;2000
+  duration: "23:50"
+  slides: 54
+  location: 1645
+  level: 1
+  keywords:
+    machine arithmétique; engrenage; arithmétique; base; calcul;
+    instrument; cylindre; podomètre; Académie; informatique; machine
+  people:
+    Pascal(8); Schickard(8); Leibniz(8);
+    Bollee(8); Thomas(8); Schuster(8); Braun(8);
+    Morland(8); Lepine(4); Diderot(2); Loret(3); Descartes(2);
+    ChristinedeSuede(3); LouisXIV(3); Roberval(4); Seguier(3);
+    Kepler(4); deCaus(4); Leonardo(4); Genaille(6);
+    Lucas(6); Napier(6)
+  domain: Informatique
+
+# -----------------------------------------------------------
+leibniz:
+  title: "Whodunit&nbsp;?"
+  subtitle: le rêve de Leibniz
+  abstract: |
+    Leibniz a-t-il inventé l'informatique&nbsp;? Il en a eu le mobile,
+    les moyens, et l'opportunité. Jusqu'où est-il allé&nbsp;?
+  episodes: |
+    le mobile et les moyens(00-05); Bacon et Descartes(06-12);
+    langages universels(13-21); la caractéristique générale(21-31)
+  period: 1600;1720
+  duration: "18:33"
+  slides: 32
+  location: 1694
+  level: 1
+  keywords:
+    langue universelle; caractéristique universelle; informatique;
+    machine arithmétique; calcul; machine; ; calcul différentiel;
+    calcul intégral; analyse
+  people:
+    Descartes(4); Leibniz(8); BaconFrancis(4); Mersenne(2); Beck(5);
+    Dalgarno(5); Wilkins(5); Arnauld(2)
+  domain: Informatique
+
+# -----------------------------------------------------------
+newton:
+  title: Let Newton be&nbsp;!
+  subtitle: un enfant jouant au bord de la mer
+  abstract: |
+    La passion que Newton avait pour le calcul numérique est moins connue
+    que ses exploits en physique&nbsp;; pourtant ses algorithmes marquent
+    une étape importante.
+  episodes: |
+    la légende(00-09); les calculs(10-17); les algorithmes(18-26);
+    des ragots sans fondement(25-31)
+  period: 1640;1830
+  duration: "18:03"
+  slides: 32
+  location: 1666
+  level: 3
+  keywords:
+    différences divisées; calcul différentiel; quadrature; algorithme;
+    Westminster; Cambridge; informatique; formule du binôme; logarithme;
+    calcul intégral; polynôme; fonction; calcul; approximation; Principia;
+    analyse; méthode de Newton
+  people:
+    Newton(8); Babbage(4); Wallis(4); Simpson(4); Cotes(2); Hooke(2);
+    Biot(2); Voltaire(3); Pope(3); Raphson(2)
+  domain: Informatique
+
+# -----------------------------------------------------------
+swift:
+  title: L'académie de Lagado
+  subtitle: toutes les sciences et tous les arts
+  abstract: |
+    Dans les voyages de Gulliver, la satire n'épargne pas les scientifiques.
+    Sous prétexte de se moquer, quelles inventions Swift a-t-il
+    anticipées&nbsp;?
+  episodes: |
+    voyages de Gulliver(00-05); mathématiciens de Laputa(06-11);
+    inventions à Lagado(12-22); les cibles  de Swift(23-31);
+    postérité du générateur de textes(31-35)
+  period: 1720;2010
+  duration: "17:15"
+  slides: 36
+  location: 1726
+  level: 1
+  keywords:
+    Gulliver; Laputa; Lagado; pipotron; Candide; informatique; machine;
+    combinatoire
+  people:
+    Swift(9); Newton(4); Arbuthnot(4); Pope(5);
+    Leibniz(4); Llull(4); Kircher(4); Kuhlmann(4); Voltaire(3)
+  domain: Informatique
+
+# -----------------------------------------------------------
+vaucanson:
+  title: Le canard de Vaucanson
+  subtitle: rival de Prométhée
+  abstract: |
+    Imiter la vie&nbsp;: ce fantasme du XVIII<sup>e</sup> siècle aurait-il
+    conduit à des inventions plus sérieuses qu'un canard digestif ou
+    des têtes parlantes&nbsp;?
+  episodes: |
+    automates grecs et arabes(00-04); Vaucanson et ses automates(05-13);
+    métiers à tisser(13-21); têtes parlantes(22-31)
+  period: 1720;1850
+  duration: "19:18"
+  slides: 32
+  location: 1738
+  level: 1
+  keywords:
+    automate; Académie; aérostat; canard; flûtiste; tête parlante;
+    synthèse de la parole; carte perforée; informatique; machine
+  people:
+    Vaucanson(8); Bouchon(4); Falcon(4); Jacquard(4); HeronAlexandrie(4);
+    alJazari(4); Voltaire(3); Condorcet(4); Dangon(5); deCordemoy(5);
+    delaMettrie(5); AbbeMical(8); Montgolfier(3); Rivarol(5); FredericII(1)
+  domain: Informatique
+
+# -----------------------------------------------------------
+stanhope:
+  title: Le Don Quichotte de la nation
+  subtitle: un ami de l'humanité
+  abstract: |
+    La variété des inventions de Stanhope est à la mesure de son
+    excentricité. Sa machine logique ne méritait peut-être pas une
+    longue postérité, mais lui si&nbsp;!
+  episodes: |
+    un original(00-05); caricatures de Gillray(05-12);
+    inventions de Stanhope(13-20); le démonstrateur(20-24)
+  period: 1750;1820
+  duration: "13:28"
+  slides: 25
+  location: 1790
+  level: 1
+  keywords:
+    logique; syllogisme; instrument; Révolution française;
+    machine arithmétique; bateau à vapeur; informatique; calcul; machine
+  people:
+    Stanhope(8); Gillray(7)
+  domain: Informatique
+
+# -----------------------------------------------------------
+prony:
+  title: La manufacture à logarithmes
+  subtitle: comme des épingles
+  abstract: |
+    L'épopée des grandes Tables du Cadastre, calculées sous la direction de
+    Prony, relève plus de la légende que de la réalité. &Agrave; quoi
+    ont-elles servi exactement&nbsp;?
+  episodes: |
+    Carnot et Prony(00-08); un monument scientifique(09-13);
+    la fabrique d'épingles(13-17); la réalité du travail(18-23);
+    influence sur Babbage(24-26); les autres tables(27-34)
+  period: 1790;1860
+  duration: "23:57"
+  slides: 35
+  location: 1793
+  level: 3
+  keywords:
+    table numérique; différences divisées; Révolution française;
+    stéréotype; école normale; machine aux différences; machine;
+    difference engine; informatique; calcul; approximation; polynôme
+  people:
+    Prony(8); Carnot(6); Arago(4); Newton(4); Didot(7); Babbage(6);
+    Legendre(2); Lagrange(2); Laplace(2); Monge(2)
+  domain: Informatique
+
+# -----------------------------------------------------------
+coriolis:
+  title: Les machines analogiques
+  subtitle: calculer sans les nombres
+  abstract: |
+    C'est au moment où l'ordinateur les rendait caduques que les machines
+    qui calculent sans les nombres, ont atteint leur
+    plus grande sophistication.
+  episodes: |
+    instruments géométriques(00-12); balances à équations(13-17);
+    Leibniz et la tractrice(18-23); au dix-neuvième(24-35)
+  period: -200;1950
+  duration: "14:36"
+  slides: 36
+  location: 1836
+  level: 1
+  keywords:
+    Anticythère; machine; astronomie; instrument; planimètre;
+    intégrographe; équation; calcul; équation; courbe; fonction; exponentielle;
+    équation différentielle; marées; balance; tractrice; informatique
+  people:
+    Archimede(2); Errard(6); Bion(4); Ozanam(4); Kelvin(6);
+    Berard(4); Coriolis(6); Grant(4); HenriIV(1);
+    Leibniz(2); Perrault(3); Jacob(2); Riccati(2)
+  domain: Informatique
+
+# -----------------------------------------------------------
+babbage:
+  title: La machine analytique
+  subtitle: un triste souvenir
+  abstract: |
+    Babbage a inventé l'ordinateur, et ses mémoires ne laissent aucun doute
+    sur le fait qu'il en avait compris l'enjeu et les capacités. Pourquoi
+    n'a-t-il pas été construit&nbsp;?
+  episodes: |
+    la visite de Moulton(00-03); la machine aux différences(04-07);
+    la machine analytique(08-11); le métier de Jacquard(11-16);
+    la vision de Babbage(17-25); difficultés diverses(25-36)
+  period: 1820;1880
+  duration: "24:18"
+  slides: 37
+  location: 1834
+  level: 1
+  keywords:
+    machine aux différences; machine analytique; machine; calcul;
+    analytical engine; difference engine; carte perforée; approximation;
+    mémoire; processeur; variable; algorithme; bug; informatique
+  people:
+    Babbage(8); Jacquard(4); Bouchon(2); Falcon(2); Vaucanson(2);
+    Torres(4)
+  domain: Informatique
+
+# -----------------------------------------------------------
+lovelace:
+  title: L'enchanteresse des nombres
+  subtitle: un langage nouveau, vaste et puissant
+  abstract: |
+    Elle a compris le potentiel de la machine analytique de Babbage,
+    peut-être mieux que Babbage lui-même: Ada Lovelace
+    méritait bien qu'on donne son nom à un langage.
+  episodes: |
+    témoignage de Menabrea(00-05); enfance d'Ada(06-11);
+    années de formation(11-20); l'article d'Ada(21-33)
+  period: 1810;1890
+  duration: "20:50"
+  slides: 34
+  location: 1843
+  level: 1
+  keywords:
+    machine analytique; analytical engine; femme; machine; calcul;
+    solitaire; boucle; implémentation; algorithme; informatique; variable;
+    intelligence artificielle
+  people:
+    Babbage(6); Menabrea(6); Byron(3); Lovelace(8); Jacquard(2)
+    DeMorgan(4); Somerville(4); Turing(2)
+  domain: Informatique
+
+# -----------------------------------------------------------
+jevons:
+  title: Le piano de Jevons
+  subtitle: du train au téléphone
+  abstract: |
+    Les machines de Jevons et Marquand ne pouvaient pas
+    calculer grand chose. Et si les mécaniques logiques
+    les plus intéressantes n'étaient pas celles des logiciens&nbsp;?
+  episodes: |
+    un jeune homme ambitieux(00-08); Jevons et Venn(09-19);
+    aiguillages et logique(19-23); Charles Sanders Peirce(24-27);
+    commutateurs téléphoniques(28-31)
+  period: 1820;1900
+  duration: "17:52"
+  slides: 32
+  location: 1860
+  level: 1
+  keywords:
+    aiguillage; commutateur; logique; syllogisme; machine; piano;
+    informatique; calcul
+  people:
+    Jevons(8); Marquand(6); Venn(4); Peirce(6);
+    Saxby(6); Jacquard(2); Babbage(2); Strowger(6)
+  domain: Informatique
+
+# -----------------------------------------------------------
+torres:
+  title: Des téléphériques aux dirigeables
+  subtitle: échec au roi
+  abstract: |
+    Un inventeur espagnol, Torres y Quevedo, a franchi en vingt ans
+    l'essentiel du siècle qui sépare Babbage de l'ordinateur.
+  episodes: |
+    Torres par Maurice d'Ocagne(00-08); machines algébriques(09-13);
+    télékino et joueur d'échec(14-20); l'automatisme(21-23);
+    téléphérique et dirigeable(24-31)
+  period: 1900;1930
+  duration: "16:31"
+  slides: 32
+  location: 1910
+  level: 1
+  keywords:
+    machine analogique; équation; équation différentielle;
+    électromagnétique; télécommande; automate; funiculaire; dirigeable;
+    intelligence artificielle; échecs; informatique; machine; fonction;
+    approximation; Espagne
+  people:
+    Torres(8); dOcagne(4); Ludgate(4)
+  domain: Informatique
+
+# -----------------------------------------------------------
+enigma:
+  title: Cryptographie automatique
+  subtitle: la course au codage
+  abstract: |
+    Plus un code est difficile à déchiffrer, plus il est compliqué à coder.
+    Au point qu'il n'y ait qu'une machine qui puisse s'en charger. Leibniz
+    l'avait déjà compris.
+  episodes: |
+    codes mono- et polyalphabétiques(00-06); cercles concentriques(07-19);
+    cylindre de Jefferson(20-25); de Leibniz à enigma(26-31);
+    des Polonais à Turing(32-39); la victoire de Bletchley Park(39-43)
+  period: 1460;1955
+  duration: "28:16"
+  slides: 44
+  location: 1938
+  level: 1
+  keywords:
+    Enigma; Tunny; Colossus; débarquement; cryptographie; bombe;
+    décryptage; informatique; Arabes; femme; machine
+  people:
+    Cesar(1); alKindi(6); Wheatstone(4); Babbage(4); Alberti(6);
+    Leibniz(6); Turing(8); deVigenere(4); Bion(2); Jefferson(4);
+    Rejewski(6); Eisenhower(1); Clarke(4)
+  domain: Informatique
+
+# -----------------------------------------------------------
+zuse:
+  title: Les premiers ordinateurs
+  subtitle: comment et pourquoi&nbsp;&nbsp;?
+  abstract: |
+    L'histoire est écrite par les vainqueurs; pourtant c'est bien
+    un allemand, Konrad Zuse, qui a
+    construit le premier ordinateur fonctionnel. Il a même
+    inventé pour lui le premier langage informatique.
+  episodes: |
+    quatre ancêtres(00-09); technologies et héritages(10-19);
+    la vision de Zuse(20-29)
+  period: 1930;1960
+  duration: "21:03"
+  slides: 30
+  location: 1941
+  level: 1
+  keywords:
+    Colossus; Enigma; ENIAC; EDVAC; binaire; décimal; décryptage;
+    ordinateur; machine; Mark; cryptographie; Tunny; calcul; algorithme;
+    informatique; machine
+  people:
+    Zuse(8); Flowers(6); Aiken(6); Hopper(4); Mauchly(6); Eckert(6);
+    Leibniz(4); Babbage(4)
+  domain: Informatique
+
+# -----------------------------------------------------------
+hopper:
+  title: Les pionniers du calcul
+  subtitle: des humains aux machines
+  abstract: |
+    Il fut un temps où les calculateurs humains étaient plutôt des
+    calculatrices; et aussi un temps où faute de calculateurs machines
+    on utilisait des machines à calculer.
+  episodes: |
+    le métier de calculatrice(00-06); tables de tir(07-11);
+    les calculs de Feynman(12-27); Grace Hopper(28-34);
+    les bugs(35-39)
+  period: 1890;1955
+  duration: "21:41"
+  slides: 40
+  location: 1946
+  level: 1
+  keywords:
+    bug; femme; Los Alamos; bombe atomique; ballistique; ordinateur;
+    calcul; machine analogique; programme; langage; tripos; Cambridge;
+    algorithme; informatique; machine; calculatrice
+  people:
+    Hopper(8); Edison(2); Feynman(6); Shaw(3); Aiken(4); Pearson(2);
+    vonNeumann(2)
+  domain: Informatique
+
+# -----------------------------------------------------------
+turing:
+  title: La machine à penser
+  subtitle: concurrencer les humains
+  abstract: |
+    Est-ce qu'une machine peut penser&nbsp;? Cette
+    question philosophique est ouverte
+    depuis le XVII<sup>e</sup> siècle&nbsp;; sera-t-elle un jour tranchée&nbsp;?
+  episodes: |
+    l'animal-machine(00-06); l'homme machine(07-10); le joueur d'échecs(11-20);
+    science-fiction(21-26); de vraies avancées(26-30);
+    le test de Turing(30-40)
+  period: 1600;1955
+  duration: "23:14"
+  slides: 41
+  location: 1950
+  level: 1
+  keywords:
+    échecs; intelligence artificielle; Frankenstein; automate; informatique;
+    machine
+  people:
+    Pascal(2); Lovelace(4); Kempelen(7); delaMettrie(5); Descartes(4);
+    Vaucanson(2); Brewster(4); Poe(3); Shelley(3); Butler(3);
+    Torres(6); Turing(8); Gillray(1)
+  domain: Informatique
+
+# -----------------------------------------------------------
+#                 Histoires de Statistique
+# -----------------------------------------------------------
+# -----------------------------------------------------------
+vetula:
+  title: La combinatoire des dés
+  subtitle: du Mah&#257;bh&#257;rata à Galilée
+  abstract: |
+    Toutes les civilisations ont joué aux dés, et il est vraisemblable
+    qu'une analyse combinatoire en a été déduite très tôt. Quelles traces en
+    reste-t-il&nbsp;?
+  episodes: |
+    Jeux anciens(00-06); Alphonse X(07-11); de vetula(12-17); Cardan(18-22);
+    Galilée(23-26)
+  period: -10000;1650
+  duration: "15:16"
+  slides: 27
+  location: 1280
+  level: 1
+  keywords:
+    probabilité; dés; Mahabharata; Achille; Ajax; Indiens; Arabes; jeu;
+    osselets; vetula; combinatoire; dénombrement;
+    paradoxe du duc de Toscane; variable aléatoire; comptage; paradoxe
+  people:
+    deFournival(5); Lefevre(3); AlphonseX(7); Cardan(6); Galilee(6)
+  domain: Statistique
+
+# -----------------------------------------------------------
+pacioli:
+  title: La géométrie du hasard
+  subtitle: le problème des partis
+  abstract: |
+    Quelle doit être la répartition des enjeux si une
+    partie est interrompue après quelques manches&nbsp;?
+    Ce problème a déclenché la mathématisation du hasard.
+  episodes: |
+    de divina proportione(00-08); le problème des partis(09-13);
+    Pascal et Fermat(14-19); Huygens(20-23)
+  period: 1400;1660
+  duration: "13:22"
+  slides: 24
+  location: 1500
+  level: 1
+  keywords:
+    probabilité; problème des partis; formule du binôme;
+    triangle arithmétique; espérance; Académie; jeu
+  people:
+    Pacioli(4); Leonardo(4); Pascal(6); Fermat(6); Huygens(6); Mere(3)
+  domain: Statistique
+
+# -----------------------------------------------------------
+alberti:
+  title: La proportion des voyelles
+  subtitle: d'Alberti à Markov
+  abstract: |
+    La proportion des voyelles a longtemps alimenté les préjugés sur
+    les langues. Elle a aussi accompagné plusieurs étapes clés du
+    développement  de la statistique.
+  episodes: |
+    préjugés sur les langues(00-06); Alberti et son temps(7-13);
+    une remarque d'Alberti(14-19); Pughe et la défense du Gallois(20-25);
+    le programme de Lieber(26-30); les comptes de Markov(31-34)
+  period: -1000;1915
+  duration: "21:24"
+  slides: 37
+  location: 1467
+  level: 1
+  keywords:
+    lettres; fréquence; cryptologie; voyelles; consonnes; cryptographie;
+    Ars Conjectandi; loi des grands nombres; échantillon; statistique;
+    variable aléatoire
+  people:
+    Rousseau(3); Voltaire(3); CharlesQuint(3); Alberti(6);
+    Gutenberg(3); Sinclair(2); Pughe(4); Lieber(4); Markov(6);
+    BernoulliJacques(2)
+  domain: Statistique
+
+# -----------------------------------------------------------
+graunt:
+  title: Tables de mortalité
+  subtitle: parier sur la vie
+  abstract: |
+    La statistique, ou tout au moins la démographie, sont nées de
+    l'horreur des épidémies de peste récurrentes. Au fil des
+    tables, se lit une autre horreur&nbsp;: la mortalité infantile.
+  episodes: |
+    la peste noire(00-07); les registres de mortalité de Londres(08-16);
+    William Petty(17-19); tables de Halley et Kersseboom(20-28);
+    de Buffon à Quetelet(29-33); comparaison des tables(34-37)
+  period: 1340;1940
+  duration: "21:53"
+  slides: 38
+  location: 1662
+  level: 1
+  keywords:
+    démographie; mortalité; survie; probabilité; assurance; viager;
+    peste; Decameron; arithmétique politique; catamaran; espérance;
+    Belgique; statistique; variable aléatoire; Belgique
+  people:
+    Graunt(8); Petty(6); Boccace(7); Halley(4); Kersseboom(4); Sussmilch(4);
+    Euler(4); Buffon(6); Quetelet(4); Leibniz(2)
+  domain: Statistique
+
+# -----------------------------------------------------------
+prestet:
+  title: La combinatoire des hexamètres
+  subtitle: de Bernoulli à Knuth
+  abstract: |
+    Compter le nombre d'hexamètres différents à partir d'un même vers latin
+    devrait être facile. Alors pourquoi personne ne trouve pareil&nbsp;?
+  episodes: |
+    un vers protée(00-05); versification latine(6-9);
+    Prestet et Wallis(10-16); Leibniz et Bernoulli(17-24); Knuth(25-27)
+  period: 1610;2010
+  duration: "15:20"
+  slides: 28
+  location: 1615
+  level: 3
+  keywords:
+    combinatoire; hexamètre; dactyle; spondée; trochée; dénombrement; comptage;
+    poésie
+  people:
+    Moliere(3); Bauhuis(3); Prestet(6); Wallis(6); BernoulliJacques(6);
+    BernoulliNicolas(2); Knuth(4); Leibniz(6); Vossius(3)
+  domain: Statistique
+
+# -----------------------------------------------------------
+arbuthnot:
+  title: Un argument pour la divine providence
+  subtitle: la première p-valeur
+  abstract: |
+    Savant spirituel et facétieux, ami de Swift et de Pope, Arbuthnot est
+    parti du rapport des sexes pour fabriquer le premier test
+    statistique de l'histoire.
+  episodes: |
+    de joyeux drilles(00-11); Arbuthnot et les probabilités(12-16);
+    argument pour la providence divine(17-21); polémique(22-26)
+  period: 1680;1820
+  duration: "14:33"
+  slides: 28
+  location: 1710
+  level: 3
+  keywords:
+    probabilité; test statistique; p-valeur; variable aléatoire;
+    John Bull; Scriblerus; rapport des sexes; loi binomiale;
+    loi des grands nombres; fréquence; Ars Conjectandi; statistique
+  people:
+    Arbuthnot(8); Swift(3); Pope(3); Newton(2); Montmort(4);
+    BernoulliNicolas(4); BernoulliJacques(2); Gravesande(4); Laplace(2)
+  domain: Statistique
+
+# -----------------------------------------------------------
+petersbourg:
+  title: Le paradoxe de Saint-Pétersbourg
+  subtitle: jouer en martingale
+  abstract: |
+    Un jeu d'espérance infinie sur lequel personne de sensé ne
+    miserait beaucoup&nbsp;?
+    Cet exemple proposé en 1713 fait réfléchir les probabilistes et les
+    économistes depuis plus de trois siècles.
+  episodes: |
+    Bernoulli et Montmort(00-06); Cramer et Buffon(07-12);
+    de d'Alembert à Poisson(13-25); le jeu au dix-huitième(22-31);
+    jouer en martingale(32-36); la martingale de Saint-Petersbourg(37-41)
+  period: 1710;1940
+  duration: "26:03"
+  slides: 42
+  location: 1738
+  level: 3
+  keywords:
+    paradoxe; Saint-Pétersbourg; martingale; probabilité; espérance;
+    pharaon; roulette; Académie; Ars Conjectandi; jeu; variable aléatoire;
+    loi de probabilité
+  people:
+    BernoulliNicolas(6); BernoulliJacques(2); BernoulliDaniel(6); Montmort(4);
+    Cramer(4); Buffon(6); dAlembert(6); Condorcet(4); Lexell(2); Laplace(4);
+    Poisson(4); Borel(6)
+  domain: Statistique
+
+# -----------------------------------------------------------
+demoivre:
+  title: La puissance du binôme
+  subtitle: le premier théorème central limite
+  abstract: |
+    Immigré français à Londres, ami de Halley et de Newton, Abraham de Moivre
+    avait soixante ans d'avance sur Laplace.
+  episodes: |
+    de Moivre en France(00-10); rencontre avec Newton(11-18);
+    jeu du pharaon(19-22); théorème central limite(23-25);
+    argument de de Moivre(26-29); hommage de Laplace(30-33)
+  period: 1680;1820
+  duration: "18:44"
+  slides: 36
+  location: 1756
+  level: 3
+  keywords:
+    Principia; pharaon; théorème central limite; variable aléatoire;
+    intervalle de fluctuation; loi binomiale; Ars Conjectandi;
+    loi des grands nombres; fréquence; espérance; probabilité
+  people:
+    deMoivre(8); Maty(5); Prestet(4); Huygens(2); Newton(4); Halley(2);
+    BernoulliJacques(6); BernoulliNicolas(2); Stirling(4); Laplace(4)
+  domain: Statistique
+
+# -----------------------------------------------------------
+bayes:
+  title: La probabilité des jugements
+  subtitle: de Cicéron à l'affaire Dreyfus
+  abstract: |
+    La détermination de la probabilité des causes rend théoriquement
+    possibles les applications judiciaires. Les conclusions probabilistes
+    sont-elles crédibles&nbsp;?
+  episodes: |
+    probabilité chez les Grecs(00-03); logique de Port-Royal(04-15);
+    Bayes et Laplace(16-26); Condorcet et Poisson(27-32);
+    Dreyfus et Bertillon(33-40); le rapport de Poincaré(41-46)
+  period: -200;1920
+  duration: "29:42"
+  slides: 47
+  location: 1763
+  level: 3
+  keywords:
+    Grecs; singe dactylographe; Ars Conjectandi; probabilité conditionnelle;
+    formule de Bayes; loi des grands nombres; loi binomiale; fréquence;
+    probabilité; statistique; variable aléatoire; loi de probabilité
+  people:
+    Ciceron(3); Arnauld(5); Nicole(5); Borel(4); Huygens(2); Pascal(2);
+    BernoulliJacques(4); BernoulliNicolas(4); Bayes(8); Price(4); Laplace(6);
+    Condorcet(4); Poisson(4); Dreyfus(3); Zola(3); Bertillon(5); Poincare(6);
+    Darboux(2); Appell(2)
+  domain: Statistique
+
+# -----------------------------------------------------------
+bielfeld:
+  title: L'état de l'&Eacute;tat
+  subtitle: la statistique au siècle des lumières
+  abstract: |
+    Les écrits de Jacob Bielfeld montrent
+    quelle était la diffusion de la statistique,
+    avant qu'elle ne prenne son essor au début du XIX<sup>e</sup> siècle.
+  episodes: |
+    les états de la France(00-05); Vauban et la Dixme royale(06-15);
+    Uztariz(16-19); Bielfeld(20-31); Pearson et Sinclair(31-35)
+  period: 1660;1800
+  duration: "21:29"
+  slides: 36
+  location: 1707
+  level: 1
+  keywords:
+    arithmétique politique; données; recensement; loi des grands nombres;
+    fréquence; Espagne; Prusse; statistique; mesure
+  people:
+    Pearson(4); LouisXIV(3); PhilippeV(1);
+    Bielfeld(8); Achenwall(6); Vauban(6); Uztariz(4);
+    Formey(3); Sussmilch(2); Sinclair(6);
+  domain: Statistique
+
+# -----------------------------------------------------------
+buffon:
+  title: L'aiguille de Buffon
+  subtitle: naissance des probabilités géométriques
+  abstract: |
+    Le problème de l'aiguille de Buffon est le premier
+    problème de probabilités dans le domaine du continu.
+  episodes: |
+    Buffon à l'Académie(00-04); le jeu du franc-carreau(05-08);
+    solutions de Buffon et Cramer(08-15); solution de Laplace(16-19);
+    Joseph-Emile Barbier(20-22); Bertrand et ses paradoxes(23-28);
+    Poincaré(29-33)
+  period: 1730;1920
+  duration: "20:24"
+  slides: 34
+  location: 1734
+  level: 3
+  keywords:
+    franc-carreau; aiguille; paradoxe; probabilité; espérance; Académie;
+    variable aléatoire; loi de probabilité; jeu
+  people:
+    Buffon(8); Maupertuis(4); Clairaut(4); Cramer(4); Stirling(2);
+    deMoivre(2); Bertrand(4); Laplace(4); Barbier(6); Poincare(4);
+  domain: Statistique
+
+# -----------------------------------------------------------
+playfair:
+  title: Sympathique escroc
+  subtitle: la représentation graphique des données
+  abstract: |
+    On doit l'invention des graphiques statistiques à un touche-à-tout peu
+    ordinaire.
+  episodes: |
+    les affaires de Playfair(00-04); la France vue par Playfair(05-09);
+    le bréviaire statistique(10-17); graphiques avant Playfair(18-29);
+    pourquoi des graphiques(30-36)
+  period: 1760;1810
+  duration: "17:18"
+  slides: 37
+  location: 1786
+  level: 1
+  keywords:
+    graphique; histogramme; camembert; Révolution française;
+    Académie; statistique
+  people:
+    Playfair(8); Oresme(2); Watt(3); Halley(4); BarbeuduBourg(4); Franklin(2);
+    deFourcroy(4); LouisXVI(5); Vandermonde(2); Peuchet(3)
+  domain: Statistique
+
+# -----------------------------------------------------------
+laplace:
+  title: Le Mont-Blanc mathématique
+  subtitle: théorie analytique des probabilités
+  abstract: |
+    La Théorie Analytique des Probabilités de Laplace est un monument.
+    Il a été admiré de loin, pendant au moins un siècle.
+  episodes: |
+    carrière politique(00-08); la théorie analytique(08-14);
+    Fourier et la statistique(15-22); Auguste Comte(23-27);
+    Auguste De Morgan(28-32)
+  period: 1760;1830
+  duration: "22:17"
+  slides: 37
+  location: 1780
+  level: 3
+  keywords:
+    probabilité; théorème central limite; test statistique; p-valeur;
+    intervalle de confiance; rapport des sexes; statistique;
+    variable aléatoire; loi de probabilité; Mont-Blanc
+  people:
+    Laplace(8); Napoleon(5); LouisXVIII(3); Fourier(6); Arago(3);
+    Chabrol(3); DeMorgan(4); Lagrange(2); Euler(2)
+  domain: Statistique
+
+# -----------------------------------------------------------
+adrain:
+  title: Loi de Gauss
+  subtitle: la probabilité des erreurs
+  abstract: |
+    Comment les calculs d'astronomie du siècle des lumières, et en
+    particulier les mesures du méridien, ont-ils mené à la loi
+    de Gauss et aux moindres carrés&nbsp;?
+  episodes: |
+    Borel et Galton(00-11); Gauss et les moindres carrés(12-21);
+    Legendre et Adrain(21-28); le célèbre Boscovich(28-32);
+    mesures du méridien(33-40); solution de Boscovich(40-43)
+  period: 1740;1820
+  duration: "29:19"
+  slides: 44
+  location: 1809
+  level: 3
+  keywords:
+    loi de Gauss; loi normale; théorème central limite; triangulation;
+    moindres carrés; méridien; équateur; Pérou; Laponie; probabilité;
+    Académie; statistique; variable aléatoire; loi de probabilité;
+    géodésie
+  people:
+    Gauss(8); Borel(4); Galton(4); Youden(2); Legendre(4);
+    Adrain(4); Boscovich(4); Clairaut(2); laCondamine(3);
+    Maupertuis(4); CassiniJacques(2); BenoitXIV(1); Bouguer(2)
+  domain: Statistique
+
+# -----------------------------------------------------------
+fievee:
+  title: La difficulté du recueil
+  subtitle: statistique napoléonienne
+  abstract: |
+    Les ministres de l'intérieur successifs du consulat, ont fait ce
+    qu'ils ont pu pour rassembler les statistiques des départements,
+    face à des administrations locales pas toujours coopératives.
+  episodes: |
+    ministres de Napoléon(00-07); circulaires aux départements(08-14)
+    annuaires de Bottin(14-19); mémoires de Chaptal(20-26);
+    Joseph Fiévée(27-35)
+  period: 1795;1820
+  duration: "21:56"
+  slides: 36
+  location: 1815
+  level: 1
+  keywords:
+    données; bottin; départements; consulat; annuaire; Directoire; Empire;
+    statistique
+  people:
+    Napoleon(3); deNeufchateau(5); Chaptal(6); Bottin(4); deFerriere(4);
+    Fievee(5)
+  domain: Statistique
+
+# -----------------------------------------------------------
+dupin:
+  title: Statistique à la mode
+  subtitle: la carte choroplèthe
+  abstract: |
+    Démarrée sur un coup médiatique en 1827, la mode de la statistique a
+    laissé des traces inattendues dans la
+    littérature du XIX<sup>e</sup> siècle.
+  episodes: |
+    carte choroplèthe(00-07); réactions et caricatures(07-14);
+    Antoine Andraud(14-18); statistique morale(19-24);
+    la mode de la statistique(24-27); traces littéraires(27-39)
+  period: 1825;1900
+  duration: "23:56"
+  slides: 40
+  location: 1827
+  level: 1
+  keywords:
+    carte choroplèthe; données; graphique; Académie; statistique
+  people:
+    Dupin(8); Andraud(6); Balzac(3); Stendhal(3); Labiche(3);
+    Flaubert(3); Offenbach(3); Dreyfus(3); Courteline(3); Allais(3);
+    Jaures(1)
+  domain: Statistique
+
+# -----------------------------------------------------------
+dangeville:
+  title: Des amateurs scrupuleux
+  subtitle: intuitions non paramétriques
+  abstract: |
+    Que démontrent les chiffres&nbsp;? Au début de la statistique,
+    on ne se posait pas beaucoup la question, mais certains amateurs
+    ont fait preuve de plus de bon sens que bien des mathématiciens.
+  episodes: |
+    statistique à la Dupin(00-03); critiques(04-06);
+    prudence de Cournot(07-10); hardiesse de Bigeon(10-20);
+    d'Angeville et sa soeur(20-25); bon sens de d'Angeville(26-38)
+  period: 1826;1850
+  duration: "22:40"
+  slides: 42
+  location: 1836
+  level: 3
+  keywords:
+    rapport des sexes; carte choroplèthe; Lompnès; test statistique;
+    p-valeur; Académie; données; Mont-Blanc; statistique
+  people:
+    Dupin(4); Lamartine(3); Cournot(6); Bigeon(8); Byron(1);
+    dAngeville(8); Becquerel(1)
+  domain: Statistique
+
+# -----------------------------------------------------------
+mendenhall:
+  title: La statistique littéraire
+  subtitle: croire en la loi des grands nombres
+  abstract: |
+    L'occasion rêvée de tester la loi des grands
+    nombres est apparue au moment de la controverse Shakespeare-Bacon. Mais les
+    &oelig;uvres littéraires se sont révélées plutôt rétives à l'analyse
+    statistique.
+  episodes: |
+    analyse de fréquence(00-07); fréquences et lipogrammes(08-12);
+    Arbuthnot et Bernoulli(13-19); les constantes de la nature(20-26);
+    controverse Bacon-Shakespeare(27-32); résultats décevants(33-41)
+  period: 800;1900
+  duration: "25:54"
+  slides: 43
+  location: 1880
+  level: 1
+  keywords:
+    fréquence; loi des grands nombres; lettres; lipogramme;
+    Ars Conjectandi; graphique; moyenne; statistique; Arabes;
+    variable aléatoire; loi de probabilité; Belgique
+  people:
+    alKindi(4); Arbuthnot(4); BernoulliJacques(8); Quetelet(6); Babbage(6);
+    DeMorgan(4); BaconFrancis(2); Shakespeare(3); Mendenhall(4); Dickens(1);
+    Marlowe(1); Yule(4); Cantor(2)
+  domain: Statistique
+
+# -----------------------------------------------------------
+nightingale:
+  title: The Lady with a Lamp
+  subtitle: les maladies zymotiques
+  abstract: |
+    Florence Nightingale s'est battue toute sa vie contre les maladies
+    infectieuses, avec comme seule arme sa force de conviction,
+    appuyée sur des statistiques.
+  episodes: |
+    Florence et sa vocation(00-07); guerre de Crimée(07-12);
+    statistiques pour convaincre(13-17); Farr et le choléra(18-21);
+    l'enquête de Snow(22-29); la Dame à la Lampe(30-33)
+  period: 1820;1910
+  duration: "20:39"
+  slides: 34
+  location: 1854
+  level: 1
+  keywords:
+    femme; Sébastopol; Crimée; graphique; choléra; dysenterie; infirmière;
+    statistique
+  people:
+    Nightingale(8); Farr(6); Snow(6); Longfellow(3); NapoleonIII(1);
+    Victoria(1)
+  domain: Statistique
+
+# -----------------------------------------------------------
+semmelweis:
+  title: La fièvre puerpérale
+  subtitle: les statistiques de l'horreur
+  abstract: |
+    Les données statistiques sur la catastrophe dont il
+    était témoin à l'hôpital de Vienne, ont poussé Semmelweis à agir.
+    Que pouvait-il faire&nbsp;?
+  episodes: |
+    avant Molière(00-04); au siècle des lumières(05-13);
+    Alexander Gordon(14-18); Semmelweis à Vienne(18-26);
+    Pasteur et la rage(27-35)
+  period: -500;1900
+  duration: "21:02"
+  slides: 36
+  location: 1846
+  level: 1
+  keywords:
+    fièvre puerpérale; mortalité; données; statistique; Arabes
+  people:
+    HippocrateGrand(3); ibnSina(1); Moliere(3); Boerhaave(3);
+    Semmelweis(8); Pasteur(5)
+  domain: Statistique
+
+# -----------------------------------------------------------
+galton:
+  title: Dr. Jekill and Mr. Hyde
+  subtitle: statistique et eugénisme
+  abstract: |
+    C'est un fait que l'on préfèrerait oublier&nbsp;: les pères fondateurs de la
+    statistique moderne, Francis Galton, Karl Pearson et Ronald Fisher
+    sont aussi ceux de l'eugénisme.
+  episodes: |
+    planche et dés de Galton(00-04); régression vers la médiocrité(04-07);
+    eugénisme(08-15); racisme de Bertillon(16-18);
+    progressisme de Pearson(19-24); Fisher et la génétique(25-30)
+  period: 1820;1950
+  duration: "23:17"
+  slides: 31
+  location: 1886
+  level: 1
+  keywords:
+    probabilité; régression; eugénisme; biométrie; génétique;
+    empreintes digitales; anthropométrie; statistique
+  people:
+    Galton(8); Bertillon(5); Pearson(8); Fisher(8); Darwin(5)
+  domain: Statistique
+
+# -----------------------------------------------------------
+gosset:
+  title: Une histoire de bière
+  subtitle: la statistique des petits échantillons
+  abstract: |
+    Brasseur chez Guinness, William Gosset est resté
+    dans l'histoire de la statistique sous le pseudonyme de Student.
+  episodes: |
+    brasserie Guiness(00-04); Gosset et Pearson(05-10);
+    publications de Gosset(11-15); Gosset et Fisher(16-21)
+  period: 1880;1950
+  duration: "13:23"
+  slides: 22
+  location: 1908
+  level: 3
+  keywords:
+    test statistique; intervalle de confiance; variable aléatoire;
+    probabilité; biométrie; p-valeur; Student; statistique; loi de probabilité
+  people:
+    Guinness(5); Gosset(8); Fisher(6); Pearson(6); Laplace(2)
+  domain: Statistique
+
+# -----------------------------------------------------------
+mendel:
+  title: Trop beau pour être vrai
+  subtitle: les expériences de Mendel
+  abstract: |
+    L'article de Mendel décrivant ses expériences d'hybridation contient de
+    nombreuses données expérimentales. L'accord avec la théorie est
+    tellement bon qu'il en est suspect.
+  episodes: |
+    Mendel à Brünn(00-04); expériences sur les hybrides de plantes(04-08);
+    les p-valeurs de Mendel(08-13); Pearson et Weldon(14-22);
+    colère de Bateson(23-29); verdict de Fisher(30-38)
+  period: 1860;1970
+  duration: "23:54"
+  slides: 39
+  location: 1900
+  level: 3
+  keywords:
+    test statistique; p-valeur; génétique; loi binomiale; chi-deux;
+    statistique; loi de probabilité
+  people:
+    Mendel(7); Pearson(6); Weldon(8);
+    Bateson(5); Galton(4); Darwin(3); Fisher(4)
+  domain: Statistique
+
+# -----------------------------------------------------------
+#                 Histoires de Savants
+# -----------------------------------------------------------
+# -----------------------------------------------------------
+nippur:
+  title: La maison des tablettes
+  subtitle: apprendre à compter en Mésopotamie
+  abstract: |
+    Les écoliers de Nippur apprenaient à calculer sur des tablettes d'argile,
+    Il y a presque quatre mille ans.
+  episodes: |
+    Nippur(00-05); témoignage d'écolier(06-10); exercices(11-17);
+    mathématiques(18-24); Plimpton 322(25-28)
+  period: -3000;-1000
+  duration: "16:52"
+  slides: 29
+  location: -1750
+  level: 1
+  keywords:
+    Mésopotamiens; tablette; cunéiforme; sexagésimal; Nippur; Edduba;
+    Gilgamesh; Enkidu; numération; arithmétique; triplet pythagoricien;
+    géométrie; approximation; racine; fraction
+  people:
+    Hammurabi(5)
+  domain: Savants
+
+# -----------------------------------------------------------
+hypatie:
+  title: Une femme nommée Hypatie
+  subtitle: la première mathématicienne
+  abstract: |
+    Peu est connu de façon certaine sur le destin tragique d'Hypatie. Récupérée
+    par l'anti-cléricalisme puis le romantisme, la première mathématicienne a
+    été plus fantasmée qu'étudiée.
+  episodes: |
+    ce qu'on sait(00-08); portraits(09-14); récupération par Toland(14-22);
+    Voltaire et l'Encyclopédie(23-27); au dix-neuvième(28-32)
+  period: 350;420
+  duration: "19:30"
+  slides: 33
+  location: 415
+  level: 1
+  keywords:
+    femme; Alexandrie; Grecs; astronomie; Grecs;
+    arithmétique; Encyclopédie; Almageste
+  people:
+    Hypatie(8); Ptolemee(2); Diophante(2); TheonAlexandrie(2);
+    Voltaire(5); Synesios(5); Cyrille(7); Toland(5); LecontedeLisle(5)
+  domain: Savants
+
+# -----------------------------------------------------------
+alcuin:
+  title: Pour affûter la jeunesse
+  subtitle: mathématiques à la cour de Charlemagne
+  abstract: |
+    Alcuin a été le ministre de la culture et de l'éducation de Charlemagne.
+    Il a aussi écrit un recueil d'exercices et de devinettes mathématiques.
+  episodes: |
+    Charlemagne et son image(00-06); le pélerinage de Charlemagne(07-11);
+    Saint-Charlemagne(12-16); le rôle d'Alcuin(17-21);
+    ad acuendos juvenes(21-29)
+  period: 780;820
+  duration: "18:59"
+  slides: 30
+  location: 782
+  level: 1
+  keywords:
+    récréations; devinette; fraction; traversée
+  people:
+    Alcuin(8); Charlemagne(7)
+  domain: Savants
+
+# -----------------------------------------------------------
+almamun:
+  title: La Maison de la Sagesse
+  subtitle: un conte des mille et une nuits
+  abstract: |
+    La volonté de quelques califes à Bagdad a conduit à une explosion
+    scientifique sans précédent. L'un d'eux, Haroun Al-Rashid,
+    est resté dans notre imaginaire
+    collectif comme le calife des mille et une nuits.
+  episodes: |
+    les mille et une nuits(00-08); califes abbassides(09-12);
+    maison de la sagesse(13-20); al-Khwarizmi, al Kindi et Banu Musa(21-31);
+    héritages(32-42)
+  period: 700;900
+  duration: "20:03"
+  slides: 43
+  location: 800
+  level: 1
+  keywords:
+    Arabes; Bagdad; Grecs; Maison de la Sagesse; Bait al-Hikma;
+    algorithme; astronomie; algèbre; cryptologie; cryptographie;
+    statistique; philosophie; rationalisme; numération; Almageste;
+    éléments
+  people:
+    Aristote(2); Euclide(2); Ptolemee(2); Apollonius(2); Pythagore(2);
+    ibnRushd(4); ibnSina(4); alKindi(6); BanuMusa(6); alTusi(2);
+    alJazari(2); Charlemagne(5); alRachid(5); alMansur(5); alMamun(5);
+    alKhwarizmi(6); Khayyam(2)
+  domain: Savants
+
+# -----------------------------------------------------------
+bhaskara:
+  title: L'aigrette du paon
+  subtitle: la poésie de Bh&#257;skar&#257;ch&#257;rya
+  abstract: |
+    Des exercices de mathématiques qui sont aussi des poèmes&nbsp;:
+    les maîtres indiens Bhaskara et Mahavira concevaient ainsi leur
+    enseignement.
+  episodes: |
+    panégyriques(00-04); la légende de Lilavati(05-12);
+    poésie scandée(13-16); théorème de Pythagore(17-19);
+    énoncés d'exercices(20-25); Mahavira(26-30)
+  period: 850;1190
+  duration: "16:39"
+  slides: 32
+  location: 1150
+  level: 1
+  keywords:
+    Indiens; paon; poésie; sanscrit; Vedas; clepsydre; Lilavati; éléphant;
+    serpent; arithmétique; géométrie; équation; théorème de Pythagore;
+    combinatoire; dénombrement; comptage
+  people:
+    Bhaskaracharya(8); Euclide(2); Pythagore(2); Longfellow(5);
+    Mahaviracharya(8)
+  domain: Savants
+
+# -----------------------------------------------------------
+raphael:
+  title: L'&Eacute;cole d'Athènes
+  subtitle: ce pauvre Averroes !
+  abstract: |
+    La représentation d'Averroès dans deux fresques de la renaissance
+    italienne met en lumière les préjugés occcidentaux sur l'apport de la
+    science et de la philosophie arabes.
+  episodes: |
+    personnages de l'Ecole d'Athènes(00-08); visions du tableau(09-13);
+    préjugés chez Montucla(14-17); au dix-neuvième(18-20);
+    triomphe de Saint-Thomas(21-27); pensée d'Averroès(28-32)
+  period: 900;1900
+  duration: "17:42"
+  slides: 33
+  location: 1510
+  level: 1
+  keywords:
+    Arabes; Grecs; scholastique; trivium; quadrivium; logique;
+    philosophie; rationalisme; Pape; Florence; Renaissance
+  people:
+    Raphael(7); Platon(4); Aristote(4); Euclide(2); Ptolemee(2); Pythagore(2);
+    ibnRushd(8); ibnSina(4); ThomasdAquin(6); Chasles(2); Montucla(2);
+    Leonardo(2)
+  domain: Savants
+
+# -----------------------------------------------------------
+huarte:
+  title: L'examen des aptitudes
+  subtitle: sélection et orientation
+  abstract: |
+    Un livre espagnol de Huarte propose de déterminer les aptitudes
+    de chacun pour une orientation optimale. À part
+    sur le personnage de Don Quichote, quelle a été son influence&nbsp;?
+  episodes: |
+    Don Quichote(00-04); l'examen des esprits pour les sciences(05-10);
+    trois conclusions(11-19); critiques(20-30); sélection selon Huarte(30-34)
+  period: 1570;1660
+  duration: "19:25"
+  slides: 35
+  location: 1575
+  level: 5
+  keywords:
+    déterminisme; épistémologie; sélection; orientation; Grecs;
+    théorie des humeurs; enseignement; pédagogie
+  people:
+    Huarte(7); Galien(1); HippocrateGrand(1); Aristote(2); Sorel(3);
+    Descartes(4); Cervantes(3); Shakespeare(1); HenriIV(1)
+  domain: Savants
+
+# -----------------------------------------------------------
+kepler:
+  title: La neige sexangulaire
+  subtitle: un tout petit rien
+  abstract: |
+    Offert à son mécène comme cadeau de nouvel an,
+    ce petit article de Kepler énonce un fait intuitif, dont la
+    démonstration a résisté pendant quatre siècles.
+  episodes: |
+    Kepler et son rien(00-09); nombre d'or(09-11);
+    empilements de sphères(12-24); problèmes de Hilbert(25-29);
+    postérité de Kepler(29-35)
+  period: 1600;1660
+  duration: "18:57"
+  slides: 37
+  location: 1610
+  level: 1
+  keywords:
+    flocon; neige; conjecture; empilement; sphère; cylindre; cube; géométrie;
+    science fiction; nombre d'or; microscope; astronomie; limite;
+    suite de Fibonacci; nombres de Fibonacci
+  people:
+    Kepler(8); Archimede(4); Cyrano(3); Ciceron(3); Hilbert(4);
+    Voltaire(3); Godwin(5); Fibonacci(2)
+  domain: Savants
+
+# -----------------------------------------------------------
+kircher:
+  title: L'homme qui savait tout
+  subtitle: "&hellip; ou pas"
+  abstract: |
+    Athanase Kircher a publié des milliers de pages sur des sujets variés qu'il
+    ne maîtrisait pas toujours. Il est aussi arrivé, en marge des
+    nombreux sujets de divertissement qu'il offrait à la postérité,
+    qu'il ait raison.
+  episodes: |
+    savants de la renaissance(00-05); Kircher et la musique(06-16);
+    affirmations hasardeuses(17-23); quadrature du cercle(24-30);
+    hiéroglyphes(31-40); bonnes intuitions(41-44)
+  period: 1630;1830
+  duration: "23:05"
+  slides: 45
+  location: 1670
+  level: 1
+  keywords:
+    quadrature; orgue; Chine; peste; hiéroglyphes; factorielle; combinatoire;
+    musique; Italie; Jésuites; logique; syllogisme; géométrie;
+    cadran solaire; dénombrement; comptage
+  people:
+    Kircher(8); Torricelli(2); Mersenne(2); Peiresc(4); PicdelaMirandole(4);
+    Nostradamus(4); Champollion(5); Descartes(2); Galilee(2); Mencke(3)
+  domain: Savants
+
+# -----------------------------------------------------------
+tosca:
+  title: Ad majorem Dei gloriam
+  subtitle: mathématiciens religieux
+  abstract: |
+    Jusqu'au XVIII<sup>e</sup> siècle, la plupart des professeurs
+    de mathématiques étaient des religieux, souvent Jésuites. Certains de
+    leurs livres d'enseignement ont influencé plusieurs générations.
+  episodes: |
+    expulsion des jésuites(00-11); enseignement des jésuites(12-15);
+    Milliet de Challes(16-25); professeurs espagnols(26-33)
+  period: 1600;1770
+  duration: "16:34"
+  slides: 34
+  location: 1667
+  level: 5
+  keywords:
+    Jésuites; Encyclopédie; enseignement; Espagne
+  people:
+    Voltaire(3); dAlembert(2); Diderot(2); Kircher(4); Euclide(2);
+    MillietdeChales(6); Caramuel(4); Corachan(5); Tosca(4)
+  domain: Savants
+
+# -----------------------------------------------------------
+bachet:
+  title: Récréations mathématiques
+  subtitle: problèmes plaisans et délectables
+  abstract: |
+    Présenter  des notions mathématiques sous une forme attractive et
+    plus ou moins ludique était l'objet des livres de
+    récréations, qui ont eu un grand succès du XVII<sup>e</sup> au
+    XIX<sup>e</sup>.
+  episodes: |
+    Académie Française(00-04); Flavius Josèphe(05-10);
+    résultats arithmétiques(11-15); récréations de Mydorge(16-24);
+    récréations d'Ozanam(25-33)
+  period: 1610;1780
+  duration: "22:17"
+  slides: 34
+  location: 1626
+  level: 1
+  keywords:
+    Académie; récréations; arithmétique; géométrie; optique; horloge;
+    enseignement; identité de Bézout; factorielle
+  people:
+    Vaugelas(3); Rostand(1); Cyrano(1); Bachet(8); Fermat(2); Mydorge(6);
+    Ozanam(6); alHaytham(4); Wilson(2); Euler(2); Lagrange(2); deMoivre(2);
+    Flavius(5)
+  domain: Savants
+
+# -----------------------------------------------------------
+cardan:
+  title: La chasse au lion vert
+  subtitle: et la bosse des maths
+  abstract: |
+    Du seizième au dix-neuvième siècle, les mathématiques et les
+    pseudo-sciences n'étaient pas antinomiques. Cardan et Newton en sont
+    la preuve.
+  episodes: |
+    formules et joint de Cardan(00-07); des subtilités(08-12);
+    Cardan et Shakespeare(13-17); métoposcopie(18-25);
+    phrénologie(26-30); Newton et l'alchimie(31-42)
+  period: 1550;1890
+  duration: "21:27"
+  slides: 43
+  location: 1686
+  level: 1
+  keywords:
+    Principia; algèbre; alchimie; astrologie; divination; Hamlet; métoposcopie;
+    bosse; phrénologie; crane; mercure; or; lion; serpent; métaux;
+    pierre philosophale; caducée; Italie; Angleterre; joint de Cardan
+  people:
+    Chatelet(2); Newton(6); Cardan(8); Tartaglia(2); Shakespeare(3); Hooke(2);
+    Rabelais(5); Gall(4); Lombroso(2)
+  domain: Savants
+
+# -----------------------------------------------------------
+chapelle:
+  title: Le gilet de sauvetage
+  subtitle: mathématiques pour les enfants
+  abstract: |
+    Enseigner les mathématiques dès le plus jeune âge&nbsp;?
+    Par quels moyens&nbsp;? La
+    question n'a commencé à être posée qu'à la fin du dix-septième siècle.
+  episodes: |
+    le père de Louis XV(00-06); géométries d'Arnauld et(7-13);
+    Rousseau et Morelly(14-22); la Chapelle et l'enseignement(22-29);
+    institutions de géométrie(30-35); scaphandre(36-44)
+  period: 1660;1770
+  duration: "22:15"
+  slides: 45
+  location: 1743
+  level: 5
+  keywords:
+    manuel; antisémitisme; pédagogie; enseignement; éléments; scaphandre;
+    ventriloque; Académie; arithmétique; géométrie
+  people:
+    Arnauld(6); Nicole(2); LouisXV(3); Lamy(6); Rousseau(3); Morelly(3);
+    laChapelle(6); dAlembert(2); Diderot(2); Voltaire(1)
+  domain: Savants
+
+# -----------------------------------------------------------
+chatelet:
+  title: M<sup>me</sup> Newton-pompon-du Châtelet
+  subtitle: une créature pensante
+  abstract: |
+    Longtemps, elle n'a été vue que comme que la maîtresse de Voltaire.
+    Elle méritait pourtant beaucoup mieux.
+  episodes: |
+    portraits d'Emilie(00-05);
+    témoignage de Françoise de Graffigny(06-14); études et jeu(15-18);
+    après Voltaire(19-14); principes mathématiques(24-33);
+    témoignage d'Emilie(33-41)
+  period: 1730;1750
+  duration: "21:41"
+  slides: 42
+  location: 1738
+  level: 1
+  keywords:
+    femme; Principia; analyse; astronomie; Académie;
+    Cirey; pharaon; calcul différentiel; analyse
+  people:
+    Chatelet(8); Voltaire(7); Newton(4); Leibniz(4); deGraffigny(3);
+    Colet(3); Maupertuis(4); Clairaut(4); SaintLambert(3); Mandeville(3)
+  domain: Savants
+
+# -----------------------------------------------------------
+agnesi:
+  title: La sorcière d'Agnesi
+  subtitle: pour la gloire de Dieu
+  abstract: |
+    Maria Gaetana Agnesi a publié le premier livre d'enseignement sur la
+    géométrie analytique et le calcul différentiel. En plus de capacités
+    exceptionnelles, elle a aussi démontré son courage en renonçant à la
+    célébrité.
+  episodes: |
+    phénomène de foire(00-08); institutions analytiques(09-14);
+    succès internationaux(14-22);
+    choix de vie(22-26); la sorcière d'Agnesi(27-33);
+    la cause des femmes(34-39)
+  period: 1730;1810
+  duration: "28:27"
+  slides: 40
+  location: 1752
+  level: 1
+  keywords:
+    femme; sorcière; Pape; versiera; sinus verse; Bologne; Milan;
+    Académie; analyse; dérivée; intégrale; courbe; trigonométrie;
+    fonction trigonométrique; calcul différentiel; calcul intégral;
+    analyse; trigonométrie
+  people:
+    Agnesi(8); Bassi(4); Chatelet(4); Newton(4);
+    Leibniz(2); deBrosses(5); BenoitXIV(5); Goldoni(3); Montucla(4);
+    Colson(4); Grandi(4); Galilee(2); Poisson(4); Cauchy(2);
+    Boerhaave(2)
+  domain: Savants
+
+# -----------------------------------------------------------
+dacunha:
+  title: Dans les geôles de l'Inquisition
+  subtitle: le danger des lumières
+  abstract: |
+    &Agrave; la faveur d'un gouvernement progressiste, Anast&aacute;cio
+    da Cunha est nommé professeur à l'Université de Coimbra. Il ne le
+    restera que cinq ans, avant d'être condamné par l'Inquisition.
+  episodes: |
+    éducation au Portugal(00-08); action de Pombal(09-14);
+    victime de l'inquisition(14-17); principes mathématiques(18-24)
+  period: 1750;1820
+  duration: "15:02"
+  slides: 25
+  location: 1784
+  level: 3
+  keywords:
+    Portugal; Lisbonne; Coimbra; analyse; série; dérivée; intégrale;
+    Jésuites; enseignement; calcul différentiel; calcul intégral; analyse
+  people:
+    JoseI(1); Pombal(5); Voltaire(3); Rousseau(1); Leibniz(2); Verney(5);
+    daCunha(8); Newton(2); Descartes(2)
+  domain: Savants
+
+# -----------------------------------------------------------
+baratier:
+  title: La légende du jeune Gauss
+  subtitle: mathématiciens précoces
+  abstract: |
+    L'histoire de Gauss impressionnant son maître à l'école est très connue.
+     Pourquoi est-elle autant racontée&nbsp;?
+  episodes: |
+    légende de Gauss(00-09); mathématiciens précoces(10-18);
+    Jean-Philippe Baratier(19-22); Joseph Bertrand(23-28)
+  period: 1680;1900
+  duration: "18:41"
+  slides: 29
+  location: 1785
+  level: 1
+  keywords:
+    enfant précoce; autodidacte
+  people:
+    Gauss(6); Bertrand(4); ibnSina(2); Pascal(2); Agnesi(2); Galois(2);
+    Hamilton(2); Clairaut(2); PicdelaMirandole(3); Voltaire(1); Baratier(7)
+  domain: Savants
+
+# -----------------------------------------------------------
+lagrange:
+  title: Vivre en philosophe
+  subtitle: et protéger sa tranquillité
+  abstract: |
+    Pour quelqu'un qui aimait par dessus tout qu'on le laisse tranquille,
+    s'installer à Paris en 1787 n'était pas le meilleur choix. Mais
+    Lagrange aurait peut-être été moins connu sans cette décision.
+  episodes: |
+    deux tuteurs(00-08); Frédéric et Catherine(09-15);
+    frasques de Mirabeau(16-25); Lagrange à Paris(26-34)
+  period: 1730;1820
+  duration: "22:21"
+  slides: 25
+  location: 1787
+  level: 1
+  keywords:
+    Turin; Berlin; Académie; Saint-Pétersbourg; Prusse; Russie; Italie;
+    mètre; système métrique; école normale; école polytechnique; astronomie;
+    analyse; calcul différentiel; calcul intégral; mesure; analyse;
+    corde vibrante
+  people:
+    Lagrange(8); Delambre(4); Euler(4); dAlembert(4); Hertzberg(3); Newton(4);
+    Mirabeau(3); Talleyrand(3); FredericII(3); CatherineII(3); LouisXVI(3);
+    Borda(2); Condorcet(2); Laplace(2)
+  domain: Savants
+
+# -----------------------------------------------------------
+fourier:
+  title: L'&Eacute;cole normale de l'an III
+  subtitle: apprendre l'art d'enseigner
+  abstract: |
+    Un cours de quatre mois devait former des instructeurs qui retourneraient
+    dans leurs districts pour ouvrir des écoles où se formeraient les
+    instituteurs de la république. La feuille de route a-t-elle été
+    suivie&nbsp;?
+  episodes: |
+    décret de la convention(00-07); organisation(08-11);
+    témoignage de Fourier(12-14); Lagrange et Laplace(15-19); Monge(20-28);
+    inquiétudes de Fourier(28-31)
+  period: 1760;1800
+  duration: "27:01"
+  slides: 32
+  location: 1795
+  level: 5
+  keywords:
+    école normale; école polytechnique; Jésuites; Révolution française;
+    Convention; enseignement; pédagogie; Académie
+  people:
+    Lagrange(4); dAlembert(2); Voltaire(3); Barere(3); Roland(5); Laplace(4);
+    Monge(4); Fourier(6)
+  domain: Savants
+
+# -----------------------------------------------------------
+lacroix:
+  title: Mon digne maître
+  subtitle: soixante ans de carrière
+  abstract: |
+    Beaucoup ont considéré Sylvestre Lacroix comme leur digne maître,
+    tout au long de sa longue carrière et même après. Il nous a
+    laissé une réflexion fort sensée sur sa pratique d'enseignant.
+  episodes: |
+    le premier lycée(00-09); expérience malheureuse(09-17);
+    production impressionnante(17-21); essais sur l'enseignement(22-31)
+  period: 1765;1855
+  duration: "19:33"
+  slides: 32
+  location: 1805
+  level: 5
+  keywords:
+    Académie; lycée; enseignement; géométrie; pédagogie
+  people:
+    Lacroix(8); Monge(4); Condorcet(6); Montgolfier(3); LouisXVIII(1);
+    CharlesX(1); PilatredeRozier(7); Crelle(4)
+  domain: Savants
+
+# -----------------------------------------------------------
+arago:
+  title: La prise de Mattaryèh
+  subtitle: des savants en &Eacute;gypte
+  abstract: |
+    Bonaparte avait tenu à amener des savants en &Eacute;gypte.
+    Qui étaient-ils&nbsp;? Quels étaient leurs rapports avec les militaires,
+    et avec Napoléon&nbsp;?
+  episodes: |
+    Leibniz et l'Egypte(00-05); savants en Egypte(05-16);
+    départ de Napoléon(17-24); Fourier et Geoffroy Saint-Hilaire(25-28);
+    Eloge de Fourier par Cousin(29-32); Eloge de Fourier par
+    Arago(33-44)
+  period: 1797;1834
+  duration: "23:38"
+  slides: 45
+  location: 1830
+  level: 1
+  keywords:
+    expédition; Egypte; campagne d'Egypte; Auxerre; Académie
+  people:
+    Arago(4); Fourier(6); Napoleon(5); Tarayre(5); Kleber(3);
+    Monge(4); Berthollet(4); Geoffroy(6)
+  domain: Savants
+
+# -----------------------------------------------------------
+libri:
+  title: Un bibliomane peu scrupuleux
+  subtitle: mais plein de ressources
+  abstract: |
+    Que reste-t-il de Libri, ce voleur beau parleur qui a dupé nombre de
+    ses contemporains&nbsp;?
+    &Agrave; peine de quoi raconter une petite histoire.
+  episodes: |
+    jeunesse d'un séducteur(00-09); affaire Libri(09-13);
+    défense de Mérimée(14-22); démêler le vrai du faux(23-31);
+    Libri et Sophie Germain(32-39)
+  period: 1802;1890
+  duration: "33:35"
+  slides: 40
+  location: 1848
+  level: 1
+  keywords:
+    femme; Italie; Académie; bibliothèque; escroc
+  people:
+    Libri(8); Fourier(2); Liouville(4); Merimee(5); Sand(3); Allart(5);
+    Germain(4); Lamartine(1); Hermite(2); Legendre(2); Jacobi(2); Abel(2);
+    Delisle(3); Lacroix(2); Cauchy(4); Babbage(2); Fibonacci(2);
+    LouisPhilippe(1)
+  domain: Savants
+
+# -----------------------------------------------------------
+vrainlucas:
+  title: L'affaire Vrain-Lucas
+  subtitle: une incroyable naïveté
+  abstract: |
+    Comment comprendre qu'un mathématicien et historien célèbre, Michel Chasles,
+    ait pu se laisser abuser par des faux aussi grossiers, et les défendre
+    aussi longtemps devant l'Académie des Sciences, en dépit du bon sens et
+    des preuves  accumulées&nbsp;?
+  episodes: |
+    académies de Bruxelles et Paris(00-08);
+    réactions des spécialistes(08-15); conclusion à l'académie(16-18);
+    procès(19-32); postérité(33-37)
+  period: 1860;1890
+  duration: "27:57"
+  slides: 38
+  location: 1869
+  level: 1
+  keywords:
+    Académie; quadrature; escroc; Belgique
+  people:
+    Chasles(8); VrainLucas(7); Quetelet(4); Newton(2); Pascal(2); Huygens(2);
+    LeVerrier(4); Leibniz(2); Aristote(2); BernoulliJacques(2);
+    BernoulliJean(2); Chatelet(2); Rabelais(3); CharlesQuint(3);
+    Brewster(2); Faugere(3); Galilee(4); Cleopatre(1); Cesar(1)
+  domain: Savants
+
+# -----------------------------------------------------------
+figuier:
+  title: Les frasques de Madame Nobel
+  subtitle: mathématiques marginalisées
+  abstract: |
+    Madame Nobel aurait trompé son mari avec un mathématicien,
+    et c'est pour cela qu'il n'y aurait pas de prix Nobel en
+    mathématiques&nbsp;: non, sérieux&nbsp;?
+  episodes: |
+    les miracles de la science(00-06);
+    les vulgarisateurs(07-14); Jules Verne(15-22);
+    Nobel pacifiste(23-26); la nécrologie de Nobel(27-31)
+  period: 1850;1905
+  duration: "22:18"
+  slides: 32
+  location: 1895
+  level: 1
+  keywords:
+    vulgarisation; invention; théorème de Thalès; astronomie; électricité;
+    phonographe; radio
+  people:
+    Nobel(7); Mittag(2); Edison(5); Figuier(7); Flammarion(5); LeVerrier(4);
+    Verne(5); Hetzel(5); Mace(3); Lucas(2); Laisant(2)
+  domain: Savants

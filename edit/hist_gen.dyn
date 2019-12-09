@@ -1,0 +1,55 @@
+---
+model: jquery3
+semantic_ui: css,js
+title: histoires de mathématiques
+math: mathjax
+---
+[#require]
+Histoires/dynlib/histoires_preamble
+Histoires/dynlib/histoires_tab_histoires
+Histoires/dynlib/histoires_tab_people
+Histoires/dynlib/histoires_tab_textes
+Histoires/dynlib/histoires_tab_games
+[#main]
+[#=]wsp[&thinsp;&thinsp;&thinsp;]
+[#=]icons[<<histoires[unmute]<<people[user]<<textes[book]<<jeux[gift]]
+[#=]popup[
+  <<style[<<size[min-width:500px;]]
+  <<class[ fluid]<<class[]
+  <<histoires[histoires]<<people[personnages]<<textes[textes]
+  ]
+[#=]bgcolor[
+  <<opacity[opacity: 0.95;]
+  <<histoires[background-color: #F6E3CE;]<<histoires[background-color: #FEFEFA;]<<histoires[background-color: #a9f5d0;]
+  <<people[background-color: #F5ECCE;]<<people[background-color: #FAFEFE;]<<people[background-color: #a9bcf5;]
+  <<textes[background-color: #F5F6CE;]<<textes[background-color: #FEFAFE;]<<textes[background-color: #d0a9f5;]
+  ]
+[#=]bgcolor[<<histoires[background-color: honeydew;]<<people[background-color: linen;]<<textes[background-color: lightcyan;]]
+[#<]
+{#initDDG#} (Attention: ne pas le déplacer dans histoiresGames.dyn)
+{#initAll#}
+[#>]
+{#initDetectBrowser#}
+<h1 class="ui header">
+  <div class="content">
+    Histoires de Mathématiques
+  </div>
+</h1>
+<div class="content" align="center">
+<a href="/FAQ" target=_blank>
+<font color=#cb000><b>Foire aux Questions</b></font></a>
+</div>
+<div class="content">
+  <div class="ui pointing secondary menu">
+    <a id="h_tab" class="active item tabitem" data-tab="histoires"><i class="#{icons.histoires} icon"></i>histoires</a>
+    <a id="p_tab" class="item tabitem" data-tab="people"><i class="#{icons.people} icon"></i>personnages</a>
+    <a id="t_tab" class="item tabitem" data-tab="textes"><i class="#{icons.textes} icon"></i>textes</a>
+    <a id="t_tab" class="item tabitem" data-tab="jeux"><i class="#{icons.jeux} icon"></i>jeux</a>
+  </div>
+{#tabHistoires#}
+{#tabPeople#}
+{#tabTextes#}
+{#tabGames#}
+</div>
+
+{#initJS#}

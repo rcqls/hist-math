@@ -1,0 +1,87 @@
+{#def]tabTextes[#html>]
+<div class="ui tab segment tab_textes" data-tab="textes">
+  <div class="ui grid">
+    <div class="one wide column"></div>
+    <div class="nine wide column">
+      {#dropdown]motscles_textes[#class]search selection fluid normal[#multiple]true[#default]personnages[#choices]:{motsclesTextes_dropdown}[#js]
+      //alert("changed "+JSON.stringify(value));
+      if(value.length > 0) {select_textes(Textes.motscles_selection=value.map(function(elt) {return Textes.motscles2textes[elt];}).join(","),Textes.et_ou);} else {$("#t_tab").click();select_textes('','');}
+      [#}
+    </div>
+    <div class="two wide column">
+      {#dropdown]et_ou_textes[#default]et/ou[#choices]et|ou[#js]
+      select_textes(Textes.motscles_selection,Textes.et_ou=value);
+      [#}
+    </div>
+    <div class="three wide column">{#inputUI]periode_textes[#default]periode...[#js]if(event.which==13) {select_textes(Textes.motscles_selection,Textes.et_ou);}[#}</div>
+    <div class="ui divider sixteen wide column"></div>
+  </div>
+  <div class="ui list">
+[#rb>]
+textes.sort_by{|texte,info| first=(info["date"].to_s.split(";")[0]).strip;first=(first =~ /^\?.*/ ? first[1..-1] : first); first.to_f}.each do |texte,info| #
+  auteurs=info["auteur"].split(";").map{|e| e.strip}
+  image=auteurs[0]
+  image="interrogation" unless people[image]["portrait"]
+  auteurs_liens=auteurs.map{|e| '<a class="go_tab" tab="people" to="'+e+'" style="color:teal">'+people[e]["complete"]+'</a>'}.join(", ")
+  an,edition=info["date"].to_s.split(";").map{|e| (e2=e.strip) =~ /^\?.*/ ? "c. "+e2[1..-1].to_i.to_s : e2.to_i.to_s}
+  ref=info["reference"] || (auteurs.map{|e| people[e]["name"]}.join(", ").to_s + " ("+ an + ") " + info["titre"] + ", " + (info["traducteur"] ? ("trad. : " + (people[info["traducteur"]] ? people[info["traducteur"]]["name"] : info["traducteur"]) + ", ") : "") + (info["editeur"] || "") + " " + (edition || "").to_s)
+  source=case (info["source"] || "").downcase
+    when "gallica"
+      {nom: "Gallica", lien: "http://gallica.bnf.fr"}
+    when "google"
+      {nom: "Google books", lien: "https://books.google.fr"}
+    when "archive"
+      {nom: "Internet Archive",lien: "https://archive.org"}
+    when "e-rara"
+      {nom: "e|rara",lien: "http://www.e-rara.ch"}
+    when "gdz"
+      {nom: "Göttinger Digitalisierungszentrum", lien: "http://gdz.sub.uni-goettingen.de/gdz/"}
+    when "beic"
+      {nom: "Biblioteca Europea", lien: "http://www.beic.it"}
+    when "jstor"
+      {nom: "JSTOR",lien: "https://www.jstor.org/"}
+    when "numdam"
+      {nom: "NumDam",lien: "http://www.numdam.org/"}
+    else
+      {nom: info["source"]}
+    end
+  {#>]
+    <div id="t_:{texte}" class="item :{texte} textes vue_texte">
+      <img class="ui avatar image image_textes" data-src="/users/Histoires/people/:{image}.png"></img>
+      <div class="content">
+        <div class="ui header"> :{info["titre"]}</div>
+        <div class="description"> <b>:{an} {#if]edition[#>] (édition de :{edition})[#if}</b> :{auteurs.map{|e| people[e]["complete"]}.join(", ")}
+        </div>
+      </div>
+    </div>
+    <div id="pt_:{texte}" class="ui#{popup.class} popup" style="#{popup.style.size}#{bgcolor.textes}#{bgcolor.opacity}">
+      <div class="card">
+        <div class="content">
+          <div><!-- div class=":{texte} textes"-->
+            <div class="eight wide column" align="justify">
+              <img class="ui small image floated right" src="/users/Histoires/people/:{image}.png"></img>
+              <h3 class="ui header">
+                <a href="/users/Histoires/textes/:{texte}.pdf" target="_blank" style="color:black">:{info["titre"]}</a>
+                <div class="sub header">:{an} {#if]edition[#>] (édition de :{edition})[#if}</b> :{auteurs_liens}</div>
+              </h3>
+              <I>:{info["abstract"]}</I>
+              <br/><strong>réf.</strong>#{wsp}:#{wsp} :{ref}
+              <br/><strong>source</strong>#{wsp}:#{wsp} {#if]source[:lien][#>]<a href=":{source[:lien]}" target="_blank">:{source[:nom]}</a>[#else]:{source[:nom]}[#if}
+              [#rb>]
+                hists=info["histoires"].split(";").map{|e| e.strip}
+                {#>]<br/><strong>histoire:{"s" if hists.length > 1}</strong>#{wsp}:#{wsp}[#>}
+                hists.sort_by{|e| histoires[e.strip]["location"].to_i}.each_with_index do |hist,i| #
+                  {#>][[<a class="go_tab" tab="histoires" to=":{hist}" {#hide]href="/:{hist}-auto" target="_blank" onClick='$(".menu .item").tab("change tab","histoires");$("html,body").animate({scrollTop: $("#h_:{hist}").offset().top},"slow");$("#h_:{hist}").click();'[#hide} style="color:teal">:{histoires[hist]["title"]}</a>] ][#>}
+                end
+              [#>]
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  [#>}
+end
+[#>]
+  </div>
+</div>
+[#def}

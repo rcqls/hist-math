@@ -1,0 +1,2402 @@
+---
+# -----------------------------------------------------------
+Abel1826_TheoremeBinomial:
+  titre: Recherches sur la série du binôme
+  pages: 1; 28
+  auteur: Abel
+  traducteur:
+  editeur:
+  source: Archive
+  reference: |
+    N. H. Abel (1826) Recherches sur la série du binôme, in B. Holmboe ed.
+    oeuvres complètes de N. H. Abel, Christiania: Gröndahl 66-92
+  abstract: |
+    Abel démontre le théorème binomial.
+  date: 1826
+  domain: Analyse
+  histoires: abel
+
+# -----------------------------------------------------------
+Agnesi1775_DifferentielIntegral:
+  titre: Traités élémentaires de calcul différentiel et de calcul intégral
+  pages: 2; 512
+  auteur: Agnesi
+  traducteur: P.-C. Delagardette
+  editeur: "Paris: Jombert"
+  source: BEIC
+  reference:
+  abstract: |
+    Un des premiers ouvrages de pédagogie sur l'analyse infinitésimale
+    a été écrit par une femme.
+  date: 1749; 1775
+  domain: Analyse
+  histoires: agnesi; abel
+
+# -----------------------------------------------------------
+Alcuin794_AcuendosJuvenes:
+  titre: Propositiones ad acuendos juvenes
+  pages: 3; 11
+  auteur: Alcuin
+  traducteur:
+  editeur:
+  source: Archive
+  reference: |
+    Alcuin (794) Propositiones ad acuendos juvenes, in Alcuini Opera Omnia
+    tome II (1851), J.-P. Migne ed.
+  abstract: |
+    Les propositions d'Alcuin pour affuter la jeunesse.
+  date: 1851
+  domain: Arithmétique; Algèbre
+  histoires: alcuin; zhang; sissa; zenon
+
+# -----------------------------------------------------------
+alKhayyam1100_algebre:
+  titre: l'algèbre d'Omar Alkhayyami
+  pages: 8; 218
+  auteur: Khayyam
+  traducteur: F. W&oelig;pcke
+  editeur: "Paris: Duprat"
+  source: Google
+  reference:
+  abstract: |
+    Omar Khayyam se montre le digne héritier d'al-Khwarizmi, en résolvant
+    les équations du troisième degré par intersections de coniques.
+  date: ?1100; 1851
+  domain: Algèbre
+  histoires: almamun; algorismus; alkhwarizmi; khayyam
+
+# -----------------------------------------------------------
+alKhwarizmi820_NumeroIndorum:
+  titre: Algoritmi de numero indorum
+  pages: 2;26
+  auteur: alKhwarizmi
+  traducteur: B. Boncompagni
+  editeur: "Rome: Tipografia delle scienze fisiche et matematiche"
+  source: GDZ
+  reference:
+  abstract: |
+    Le livre qui a probablement fait passer le nom d'al-Khwarizmi dans le
+    langage courant.
+  date: 820; 1857
+  domain: Arithmétique
+  histoires: algorismus; almamun; raphael
+
+# -----------------------------------------------------------
+alKhwarizmi830_Algebre:
+  titre: Livre d'algèbre et d'al-muqabala
+  pages: 1; 339
+  auteur: alKhwarizmi
+  traducteur: Roshdi Rashed
+  editeur:
+  source: don du traducteur
+  reference: |
+    "R. Rashed (2007) Al-Khwarizmi,
+    Le commencement de l'algèbre, Paris: Albert Blanchard"
+  abstract: |
+    Le livre fondateur de l'algèbre. Ce texte est reproduit ici grâce à
+    la générosité de Roshdi Rashed que nous remercions.
+  date: ?830; 2007
+  domain: Algèbre
+  histoires: almamun; algorismus; raphael; alkhwarizmi; khayyam;
+    peletier; pamiers
+
+# -----------------------------------------------------------
+Arbuthnot1710_DivineProvidence:
+  titre: An Argument for Divine Providence
+  pages: 2; 6
+  auteur: Arbuthnot
+  traducteur:
+  editeur:
+  source: JSTOR
+  reference: |
+    J. Arbuthnot (1910) An argument for Divine Providence,
+    Philosophical Transactions, 27, 186-190.
+  abstract: |
+    Le premier test statistique de l'histoire.
+  date: 1710
+  domain: Statistique
+  histoires: arbuthnot
+
+# -----------------------------------------------------------
+Archimede-212_Oeuvres1:
+  titre: "&OElig;uvres d'Archimède, Tome I"
+  pages: 10; 510
+  auteur: Archimede
+  traducteur: F. Peyrard
+  editeur: "Paris: Bachelier"
+  source: Gallica
+  reference:
+  abstract: |
+    De la sphère et du cylindre, De la mesure du cercle, Des conoïdes
+    et des sphéroïdes.
+  date: -212.1; 1844
+  domain: Savants
+  histoires: kepler; maurolico; helios; babyloneg; archimedea
+
+# -----------------------------------------------------------
+Archimede-212_Oeuvres2:
+  titre: "&OElig;uvres d'Archimède, Tome II"
+  pages: 8; 574
+  auteur: Archimede
+  traducteur: F. Peyrard
+  editeur: "Paris: Bachelier"
+  source: Google
+  reference:
+  abstract: |
+    Des spirales, De la quadrature de la parabole, L'arénaire, Lemmes.
+  date: -212; 1844
+  domain: Savants
+  histoires: archimede; maurolico; helios; archimedea; sangaku; ibnqurra; zenon
+
+# -----------------------------------------------------------
+Argand1874_QuantitesImaginaires:
+  titre: |
+    Essai sur une manière de représenter les quantités
+    imaginaires dans les constructions géométriques
+  pages: 7; 151
+  auteur: Argand
+  traducteur:
+  editeur: "Paris: Gauthier-Villars"
+  source: Gallica
+  reference:
+  abstract: |
+    La représentation géométrique des nombres complexes et la
+    démonstration du théorème fondamental de l'algèbre.
+  date: 1806; 1874
+  domain: Algèbre
+  histoires: dalembert; argand
+
+# -----------------------------------------------------------
+Aristote-350_PremiersAnalytiques:
+  titre: Logique d'Aristote
+  pages: 8; 434
+  auteur: Aristote
+  traducteur: J. Barthélemy Saint-Hilaire
+  editeur: "Paris: Ladrange"
+  source: Google
+  reference:
+  abstract: |
+    Le texte fondateur de la logique aristotélicienne.
+  date: -350; 1839
+  domain: Logique
+  histoires: stanhope; jevons; aristoter
+
+# -----------------------------------------------------------
+ArnauldNicole1662_Logique:
+  titre: La Logique ou l'Art de Penser
+  pages: 3; 484
+  auteur: Arnauld; Nicole
+  traducteur:
+  editeur: "Paris: Savreux"
+  source: Gallica
+  reference:
+  abstract: |
+    La logique de Port-Royal.
+  date: 1662
+  domain: Logique
+  histoires: bayes; hippase
+
+# -----------------------------------------------------------
+Arnauld1667_ElemensGeometrie:
+  titre: Nouveaux élemens de Géométrie
+  pages: 15; 385
+  auteur: Arnauld
+  traducteur:
+  editeur: "Paris: Savreux"
+  source: Gallica
+  reference:
+  abstract: |
+    Le premier manuel de géométrie anti-Euclide.
+  date: 1667
+  domain: Geometrie
+  histoires: chapelle; moschopoulos; euclide
+
+# -----------------------------------------------------------
+Aryabhata499_LeconsCalcul:
+  titre: Leçons de Calcul
+  pages: 5; 53
+  auteur: Aryabhata
+  traducteur: L. Rodet
+  editeur: "Paris: Leroux"
+  source: Gallica
+  reference:
+  abstract: |
+    Les leçons condensées du premier mathématicien indien connu.
+  date: 499; 1879
+  domain: Arithmétique; Analyse; Géométrie
+  histoires: aryabhata; archimede; maurolico; sunzi; gregory; oresme
+
+# -----------------------------------------------------------
+Babbage1864_Philosopher:
+  titre: Passages from the Life of a Philosopher
+  pages: 7;540
+  auteur: Babbage
+  traducteur:
+  editeur: "Londres: Longman"
+  source: Google
+  reference:
+  abstract: |
+    Les mémoires de l'inventeur de l'ordinateur.
+  date: 1864
+  domain: Informatique
+  histoires: babbage; lovelace; prony; schickard; leibniza
+
+# -----------------------------------------------------------
+Bachet1624_PlaisansDelectables:
+  titre: Problèmes plaisans et délectables qui se font par les nombres
+  pages: 4;267
+  auteur: Bachet
+  traducteur:
+  editeur: "Lyon: Rigaud"
+  source: Google
+  reference:
+  abstract: |
+    Sous un titre badin, un vrai livre d'arithmétique.
+  date: 1612;1624
+  domain: Savants
+  histoires: bachet; moschopoulos; maurolico; alhaytham; zhang
+
+# -----------------------------------------------------------
+Barreme1736_Arithmetique:
+  titre: L'Arithmétique du Sieur Barreme
+  pages: 5; 587
+  auteur: Barreme
+  traducteur:
+  editeur: "Paris: Nyon"
+  source: Gallica
+  reference:
+  abstract: |
+    le livre facile pour apprendre l'Arithmétique de soi-même et sans
+    maître (sic), avec quelques unes des tables qui ont fait la célébrité
+    de l'auteur.
+  date: 1706; 1736
+  domain: Arithmétique
+  histoires: napier; archimede
+
+# -----------------------------------------------------------
+Bateson1909_MendelHeredity:
+  titre: Mendel's principles of heredity
+  pages: 9;447
+  auteur: Bateson
+  traducteur:
+  editeur: "Cambridge University Press"
+  source: Archive
+  reference:
+  abstract: |
+    La colère de Bateson contre les statisticiens, sa traduction de
+    l'article de Mendel, et de magnifiques illustrations.
+  date: 1909
+  domain: Savants
+  histoires: mendel
+
+# -----------------------------------------------------------
+Bayes1763_EssayChances:
+  titre: An essay towards solving a problem in the doctrine of chances
+  pages: 1;49
+  auteur: Bayes
+  traducteur:
+  editeur:
+  source: Archive
+  reference: |
+    Bayes (1763) An essay towards solving a problem in the doctrine of chances,
+    Philosophical Transactions of the Royal Society of London, 53, 370-418
+  abstract: |
+    L'article posthume de Bayes sur la statistique bayésienne.
+  date: 1763
+  domain: Statistique
+  histoires: bayes
+
+# -----------------------------------------------------------
+Bhaskara1150_LilavatiPatte:
+  titre: Lilavati
+  pages: 1; 339
+  auteur: Bhaskaracharya
+  traducteur: François Patte
+  editeur:
+  source: don du traducteur
+  reference: |
+    F. Patte (2004) L'&oelig;uvre mathématique et astronomique de
+    Bhascaracharia, Genève: Droz
+  abstract: |
+    Un recueil d'exercices poétiques. Ce texte est reproduit ici grâce à
+    la générosité de François Patte que nous remercions.
+  date: 1150; 2004
+  domain: Arithmétique
+  histoires: |
+    bhaskara; aryabhata; pingala; sissa; metrodore; brahmagupta;
+    demotic; heron
+
+# -----------------------------------------------------------
+Bernoulli1713_ArtConjecturer:
+  titre: L'Art de Conjecturer
+  pages: 9; 194
+  auteur: BernoulliJacques
+  traducteur: "L.G.F. Vastel"
+  editeur: "Caen: G. Le Roy"
+  source: Google
+  reference:
+  abstract: |
+    Traduction de la première partie de l'Ars Conjectandi, qui reprend le
+    premier traité de Huygens sur les jeux de hasard.
+  date: 1713;1801
+  domain: Statistique
+  histoires: mendenhall; prestet; bayes; petersbourg; arbuthnot; pacioli
+
+# -----------------------------------------------------------
+Bertrand1889_CalculProbabilites:
+  titre: Calcul des probabilités
+  pages: 3; 394
+  auteur: Bertrand
+  traducteur:
+  editeur: "Paris: Gauthier-Villars"
+  source: Gallica
+  reference:
+  abstract: |
+    Le manuel dont est issu le paradoxe de Bertrand.
+  date: 1889
+  domain: Statistique
+  histoires: buffon; petersbourg
+
+# -----------------------------------------------------------
+Bigeon1829_ApercuStatistique:
+  titre: Aperçu statistique sur la durée de la vie
+  pages: 3; 65
+  auteur: Bigeon
+  traducteur:
+  editeur: "Toulon: Duplessis Ollivault"
+  source: Gallica
+  reference:
+  abstract: |
+    Pour un amateur de 25 ans, c'était plutôt osé de s'attaquer à
+    Charles Dupin.
+  date: 1829
+  domain: Statistique
+  histoires: dangeville
+
+# -----------------------------------------------------------
+Bion1709_InstrumentsMathematique:
+  titre: |
+    Traité de la construction et des principaux usages des
+    instruments de mathématique
+  pages: 9; 424
+  auteur: Bion
+  traducteur:
+  editeur: "Paris: Collombat"
+  source: Gallica
+  reference:
+  abstract: |
+    Les instruments de mathématiques, vus par l'ingénieur de Louis XIV.
+  date: 1709
+  domain: Informatique
+  histoires: oughtred; coriolis
+
+# -----------------------------------------------------------
+Borel1909_TheorieProbabilites:
+  titre: Eléments de la Théorie des Probabilités
+  pages: 10; 208
+  auteur: Borel
+  traducteur:
+  editeur: "Paris: Hermann"
+  source: Archive
+  reference:
+  abstract: |
+    Le dernier manuel d'avant la théorie de Kolmogorov.
+  date: 1909
+  domain: Statistique
+  histoires: adrain; petersbourg
+
+# -----------------------------------------------------------
+Bougainville1754_CalculIntegral1:
+  titre: Traité du calcul intégral
+  pages: 3; 367
+  auteur: Bougainville
+  traducteur:
+  editeur: "Paris: Guérin et Delatour"
+  source: Gallica
+  reference:
+  abstract: |
+    Pour faire suite à l'Analyse des Infiniment Petits de M. le
+    Marquis de l'Hôpital.
+  date: 1754
+  domain: Analyse
+  histoires: dalembert; berkeley; bernoullia
+
+# -----------------------------------------------------------
+Bougainville1756_CalculIntegral2:
+  titre: Traité du calcul intégral, seconde partie
+  pages: 13; 367
+  auteur: Bougainville
+  traducteur:
+  editeur: "Paris: Guérin et Delatour"
+  source: Google
+  reference:
+  abstract: |
+    Pour faire suite à l'Analyse des Infiniment Petits de M. le
+    Marquis de l'Hôpital.
+  date: 1756
+  domain: Analyse
+  histoires: dalembert; berkeley; bernoullia
+
+# -----------------------------------------------------------
+Buffon1777_SupplementHistoire4:
+  titre: Supplément à l'Histoire Naturelle
+  pages: 9; 630
+  auteur: Buffon
+  traducteur:
+  editeur: "Paris: Royale"
+  source: Google
+  reference:
+  abstract: |
+    Ce supplément contient l'Essai d'Arithmétique morale dans lequel
+    Buffon reprend ses réflexions sur les probabilités et la statistique.
+  date: 1777
+  domain: Statistique
+  histoires: buffon; graunt; borda
+
+# -----------------------------------------------------------
+Carnot1797_MetaphysiqueInfinitesimal:
+  titre: Réflexions sur la métaphysique du calcul infinitésimal
+  pages: 13; 93
+  auteur: Carnot
+  traducteur:
+  editeur: "Paris: Duprat"
+  source: Gallica
+  reference:
+  abstract: |
+    Un mémoire mathématique par un héros de la Révolution.
+  date: 1797
+  domain: Analyse
+  histoires: prony; mohr
+
+# -----------------------------------------------------------
+Cathalan1566_Arithmetique:
+  titre: L'Arithmétique et la manière d'apprendre à chifrer et conter
+  pages: 4; 161
+  auteur: Cathalan
+  traducteur:
+  editeur: "Lyon: Thibault"
+  source: Gallica
+  reference:
+  abstract: |
+    Un des premiers manuels d'arithmétique pratique, contenant le
+    calcul avec des jetons.
+  date: 1566
+  domain: Informatique
+  histoires: soroban
+
+# -----------------------------------------------------------
+Cauchy1821_AnalysePolytechnique1:
+  titre: Cours d'Analyse de l'Ecole Royale Polytechnique
+  pages: 10; 603
+  auteur: Cauchy
+  traducteur:
+  editeur: "Paris: Debure"
+  source: Google
+  reference:
+  abstract: |
+    L'analyse vue par Cauchy a longtemps été considérée comme un
+    modèle de rigueur.
+  date: 1821
+  domain: Analyse
+  histoires: dacunha; maurolico; rolle; abel; bolzano
+
+# -----------------------------------------------------------
+Cellerier1890_PrincipesAnalyse:
+  titre: Note sur les principes fondamentaux de l'analyse
+  pages: 3;21
+  auteur: Cellerier
+  traducteur:
+  editeur:
+  source: Gallica
+  reference: |
+    C. Cellerier (1890) Note sur les principes fondamentaux de l'analyse,
+    Bulletin des Sciences Mathématiques, 2(14), 142--160
+  abstract: |
+    Ce mémoire marque-t-il l'invention de l'analyse moderne?
+  date: 1890
+  domain: Analyse
+  histoires: cellerier
+
+# -----------------------------------------------------------
+Chasles1852_GeometrieSuperieure:
+  titre: Traité de Géométrie supérieure, deuxième édition
+  pages: 7; 643
+  auteur: Chasles
+  traducteur:
+  editeur: "Paris: Gauthier-Villars"
+  source: Gallica
+  reference:
+  abstract: |
+    Une présentation de la géométrie avec des quantités signées,
+    d'où est venue la relation de Chasles.
+  date: 1852
+  domain: Géométrie
+  histoires: vrainlucas; boece
+
+# -----------------------------------------------------------
+Chatelet1740_InstitutionsPhysique:
+  titre: Institutions de physique
+  pages: 13; 513
+  auteur: Chatelet
+  traducteur:
+  editeur: "Paris: Prault"
+  source: Gallica
+  reference:
+  abstract: |
+    La vision d'Emilie du Châtelet sur les philosophies de la nature
+    de Newton, Descartes et Leibniz.
+  date: 1740
+  domain: Savants
+  histoires: chatelet; agnesi
+
+# -----------------------------------------------------------
+Chuquet1484_TripartyNombres:
+  titre: Le Triparty en la science des nombres
+  pages: 6; 234
+  auteur: Chuquet
+  traducteur: A. Marre
+  editeur: "Rome: Imprimerie des sciences mathématiques et physiques"
+  source: e-rara
+  reference:
+  abstract: |
+    Un des premiers manuels d'arithmétique, contenant en particulier le
+    calcul avec des puissances.
+  date: 1484; 1881
+  domain: Arithmétique
+  histoires: pellos; peletier; napier; archimede; bombelli
+
+# -----------------------------------------------------------
+Clairaut1741_ElemensGeometrie:
+  titre: Elémens de Géométrie
+  pages: 7; 294
+  auteur: Clairaut
+  traducteur:
+  editeur: "Paris: Lambert et Durand"
+  source: archive
+  reference:
+  abstract: |
+    Des Eléments de géométrie plus accessibles que ceux d'Euclide.
+  date: 1741
+  domain: Géométrie
+  histoires: euclide
+
+# -----------------------------------------------------------
+Colebrooke1817_BrahmeguptaBhaskaracharya:
+  titre: |
+    Algebra with arithmetic and mensuration
+  pages: 5; 473
+  auteur: Brahmagupta; Bhaskaracharya
+  traducteur: "H. T. Colebrooke"
+  editeur: "London: Murray"
+  source: Archive
+  reference:
+  abstract: |
+    La première traduction occidentale des mathématiques indiennes.
+  date: 1150; 1817
+  domain: Arithmétique
+  histoires: |
+    aryabhata; brahmagupta; bhaskara; heron; demotic; helios; sunzi; zhang
+
+# -----------------------------------------------------------
+Condorcet1785_ProbabiliteDecisions:
+  titre: |
+    Essai sur l'application de l'analyse à la probabilité des
+    décisions rendues à la pluralité des voix
+  pages: 6; 197
+  auteur: Condorcet
+  traducteur:
+  editeur: "Paris: Royale"
+  source: Gallica
+  reference:
+  abstract: |
+    La source du paradoxe de Condorcet.
+  date: 1785
+  domain: Statistique
+  histoires: bayes; lacroix; petersbourg
+
+# -----------------------------------------------------------
+Coriolis1836_EquationsDifferentielles:
+  titre: |
+    Note sur un moyen de tracer des courbes données par des
+    équations différentielles
+  pages: 1; 6
+  auteur: Coriolis
+  traducteur:
+  editeur:
+  source: NumDam
+  reference: |
+    G. Coriolis (1836) Note sur un moyen de tracer des courbes
+    données par des équations différentielles, Journal de
+    Mathématiques pures et appliquées, 1(1), 5-9
+  abstract: |
+    Description de la première machine à intégrer des équations
+    différentielles.
+  date: 1836
+  domain: Informatique
+  histoires: coriolis
+
+# -----------------------------------------------------------
+Cournot1843_TheorieChances:
+  titre: Exposition de la Théorie des Chances et des Probabilités
+  pages: 8; 518
+  auteur: Cournot
+  traducteur:
+  editeur: "Paris: Hachette"
+  source: Google
+  reference:
+  abstract: |
+    Un des premiers manuels de probabilités et de statistique.
+  date: 1843
+  domain: Statistique
+  histoires: dangeville; bayes; petersbourg
+
+# -----------------------------------------------------------
+daCunha1811_PrincipesMathematiques:
+  titre: Principes Mathématiques
+  pages: 10; 330
+  auteur: daCunha
+  traducteur: J.M. D'Abreu
+  editeur: "Bordeaux: Racle"
+  source: Google
+  reference:
+  abstract: |
+    Un manuel étonnamment moderne par une victime de l'Inquisition
+    au Portugal.
+  date: 1811
+  domain: Savants
+  histoires: dacunha
+
+# -----------------------------------------------------------
+dAngeville1836_StatistiquePopulation:
+  titre: Essai sur la Statistique de la Population Française
+  pages: 13;433
+  auteur: dAngeville
+  traducteur:
+  editeur: "Bourg: Dufour"
+  source: Google
+  reference:
+  abstract: |
+    Aux débuts de la statistique, un amateur pouvait se montrer
+    plus honnête et plus rigoureux que bien des scientifiques établis.
+  date: 1836
+  domain: Statistique
+  histoires: dangeville
+
+# -----------------------------------------------------------
+Darboux1875_FonctionsDiscontinues:
+  titre: Mémoire sur les fonctions discontinues
+  pages: 2;57
+  auteur: Darboux
+  traducteur:
+  editeur:
+  source: Numdam
+  reference: |
+    G. Darboux (1875) Mémoire sur les fonctions dicontinues, Annales
+    scientifiques de l'E.N.S., 2(4), 57-112
+  abstract: |
+    Darboux résume l'analyse moderne au sens de Weierstrass.
+  date: 1875
+  domain: Analyse
+  histoires: cellerier
+
+# -----------------------------------------------------------
+deCaus1624_ForcesMouvantes:
+  titre: Les Raisons des Forces Mouvantes
+  pages: 7:190
+  auteur: deCaus
+  traducteur:
+  editeur: "Paris: Droüart"
+  source: Gallica
+  reference:
+  abstract: |
+    Le livre d'un ingénieur du dix-septième, spécialiste d'automatismes.
+  date: 1624
+  domain: Informatique
+  histoires: banumusa; schickard
+
+# -----------------------------------------------------------
+deMoivre1738_DoctrineChances:
+  titre: The Doctrine of Chances
+  pages: 9; 285
+  auteur: deMoivre
+  traducteur:
+  editeur: "London: Woodfall"
+  source: Google
+  reference:
+  abstract: |
+    L'édition où apparaît le premier théorème central limite.
+  date: 1718;1738
+  domain: Statistique
+  histoires: demoivre; buffon; bayes
+
+# -----------------------------------------------------------
+Descartes1664_Geometrie:
+  titre: La géométrie
+  pages: 2; 125
+  auteur: Descartes
+  traducteur:
+  editeur: "Paris: Angot"
+  source: e-rara
+  reference:
+  abstract: |
+    La première synthèse européenne de la géométrie et de l'algèbre.
+  date: 1637;1664
+  domain: Algèbre
+  histoires: peletier; wallis; girard; degua; hippocrate; descartes; wantzel;
+    fermata; oresme
+
+# -----------------------------------------------------------
+dOcagne1928_CalculMecanique:
+  titre: Le Calcul Simplifié par les Procédés Mécaniques et Graphiques
+  pages: 11; 225
+  auteur: dOcagne
+  traducteur:
+  editeur: "Paris: Gauthier-Villars"
+  source: Gallica
+  reference:
+  abstract: |
+    La vision d'un domaine foisonnant, avant l'avènement de l'ordinateur.
+  date: 1905; 1928
+  domain: Informatique
+  histoires: torres; coriolis
+
+# -----------------------------------------------------------
+Errard1620_GeometriePratique:
+  titre: La Géométrie et la Pratique Générale d'Icelle
+  pages: 3; 526
+  auteur: Errard; Henrion
+  traducteur:
+  editeur: Paris
+  source: Google
+  reference:
+  abstract: |
+    La géométrie pratique vue par un ingénieur du roi Henri IV, suivie
+    d'autres manuels dont un recueil de récréations par Henrion.
+  date: 1620
+  domain: Informatique
+  histoires: coriolis; demotic
+
+# -----------------------------------------------------------
+Euclide1753_DeChallesOzanam:
+  titre: Les Eléments d'Euclide
+  pages: 12; 612
+  auteur: Euclide
+  traducteur: MillietdeChales; Ozanam
+  editeur: "Paris: Jombert"
+  source: Google
+  reference:
+  abstract: |
+    Une édition à succès des éléments d'Euclide par deux grands
+    professeurs, Milliet de Challes et Ozanam.
+  date: ?-280.9; 1753
+  domain: Géométrie
+  histoires: tosca; moschopoulos; iamblichus; thales; theetete; saccheri
+
+# -----------------------------------------------------------
+Euclide1814_Elements1:
+  titre: Les &oelig;uvres d'Euclide, Tome premier
+  pages: 9; 566
+  auteur: Euclide
+  traducteur: F. Peyrard
+  editeur: "Paris: Patris"
+  source: Archive
+  reference:
+  abstract: |
+    Géométrie plane, proportions et premier livre d'arithmétique.
+    Une traduction fiable d'Euclide à partir des manuscrits.
+  date: ?-280.8;1814
+  domain: Géométrie
+  histoires: moschopoulos; tosca; maurolico; diophante; hippase;
+    iamblichus; thales; saccheri
+
+# -----------------------------------------------------------
+Euclide1816_Elements2:
+  titre: Les &oelig;uvres d'Euclide, Tome second
+  pages: 7; 566
+  auteur: Euclide
+  traducteur: F. Peyrard
+  editeur: "Paris: Patris"
+  source: Archive
+  reference:
+  abstract: |
+    L'arithmétique et les irrationnels.
+    Une traduction fiable d'Euclide à partir des manuscrits.
+  date: ?-280.7;1816
+  domain: Géométrie
+  histoires: moschopoulos; tosca; maurolico; alhaytham; diophante;
+    hippase; proclus; pythagore; zenon
+
+# -----------------------------------------------------------
+Euclide1818_Elements3:
+  titre: Les &oelig;uvres d'Euclide, Tome troisième
+  pages: 9;648
+  auteur: Euclide
+  traducteur: F. Peyrard
+  editeur: "Paris: Patris"
+  source: Archive
+  reference:
+  abstract: |
+    Géométrie dans l'espace jusqu'à la contruction des polyèdres.
+    Une traduction fiable d'Euclide à partir des manuscrits.
+  date: ?-280.6;1818
+  domain: Géométrie
+  histoires: moschopoulos; tosca; maurolico; theetete
+
+# -----------------------------------------------------------
+Euclid1847_ByrneColors:
+  titre: The Elements of Euclid with coloured diagrams
+  pages: 5; 302
+  auteur: Euclide
+  traducteur: O. Byrne
+  editeur: "London: Pickering"
+  source: Archive
+  reference:
+  abstract: |
+    Les six livres de géométrie plane en remplaçant les mots par des
+    diagrammes en couleurs.
+  date: ?-280.5; 1847
+  domain: Géométrie
+  histoires: moschopoulos; tosca; pythagore; iamblichus
+
+# -----------------------------------------------------------
+Euler1748_Analyse1:
+  titre: Introduction à l'Analyse Infinitésimale, Tome premier
+  pages: 7;390
+  auteur: Euler
+  traducteur: J. B. Labey
+  editeur: "Paris: Bachelier"
+  source: Archive
+  reference:
+  abstract: |
+    La traduction du livre majeur d'Euler sur sa théorie des fonctions.
+  date: 1748.1; 1835
+  domain: Algèbre; Analyse
+  histoires: euler; argand; oresme; rolle; abel; ramanujan
+
+# -----------------------------------------------------------
+Euler1748_Analyse2:
+  titre: Introduction à l'Analyse Infinitésimale, Tome second
+  pages: 9;469
+  auteur: Euler
+  traducteur: J. B. Labey
+  editeur: "Paris: Bachelier"
+  source: Archive
+  reference:
+  abstract: |
+    La traduction du livre majeur d'Euler sur sa théorie des fonctions.
+  date: 1748.2; 1835
+  domain: Algèbre; Analyse
+  histoires: euler; argand; oresme; rolle; ramanujan
+
+# -----------------------------------------------------------
+Euler1774_Algebre1:
+  titre: Elémens d'Algèbre, Tome premier
+  pages: 9;726
+  auteur: Euler; Lagrange
+  traducteur: Jean III Bernoulli
+  editeur: "Lyon: Bruyset"
+  source: Archive
+  reference:
+  abstract: |
+    La traduction par Jean III Bernoulli, augmentée par Lagrange, d'un
+    manuel qui a servi à une bonne partie de l'Europe sur plusieurs
+    générations.
+  date: 1770.1; 1774
+  domain: Algèbre
+  histoires: moschopoulos; lacroix
+
+# -----------------------------------------------------------
+Euler1774_Algebre2:
+  titre: Elémens d'Algèbre, Tome second
+  pages: 7; 675
+  auteur: Euler; Lagrange
+  traducteur: Jean III Bernoulli
+  editeur: "Lyon: Bruyset"
+  source: Archive
+  reference:
+  abstract: |
+    La traduction par Jean III Bernoulli, augmentée par Lagrange, d'un
+    manuel qui a servi à une bonne partie de l'Europe sur plusieurs
+    générations.
+  date: 1770.2; 1774
+  domain: Algèbre
+  histoires: moschopoulos; lacroix
+
+# -----------------------------------------------------------
+Euler1775_PrincesseAllemagne2:
+  titre: Lettres à une Princesse d'Allemagne, volume II
+  pages: 7; 337
+  auteur: Euler
+  traducteur:
+  editeur: "Berne: société typographique"
+  source: Google
+  reference:
+  abstract: |
+    Une des éditions du vivant d'Euler, d'un modèle de vulgarisation.
+    Quelques lettres du volume II traitent des syllogismes.
+  date: 1775
+  domain: Logique
+  histoires: lacroix
+
+# -----------------------------------------------------------
+Fermat1853_Diophante:
+  titre: |
+    Précis des &oelig;uvres Mathématiques de Pierre de
+    Fermat et de l'Arithmétique de Diophante
+  pages: 10;175
+  auteur: Diophante; Fermat
+  traducteur: E. Brassinne
+  editeur: "Toulouse: Douladoure"
+  source: Gallica
+  reference:
+  abstract: |
+    Les arithmétiques de Diophante, avec les fameuses annotations
+    de Fermat dans des marges trop exiguës.
+  date: ?1654;1853
+  domain: Arithmétique
+  histoires: |
+    bachet; moschopoulos; diophante; fermat; germain; wiles; babylone;
+    descartes
+
+# -----------------------------------------------------------
+Galton1886_Regression:
+  titre: Regression towards mediocrity in hereditary stature
+  pages: 1; 20
+  auteur: Galton
+  traducteur:
+  editeur:
+  source: JSTOR
+  reference: |
+    F. Galton (1886) Regression towards mediocrity in
+    hereditary stature, Journal of the Anthropological Institute of
+    Great Britain and Ireland, Vol. 15: 246–263
+  abstract: |
+    L'article fondateur de la régression linéaire.
+  date: 1886
+  domain: Statistique
+  histoires: galton
+
+# -----------------------------------------------------------
+Galton1904_Eugenics:
+  titre: "Eugenics: its definition, scope, and aims"
+  pages: 2; 26
+  auteur: Galton
+  traducteur:
+  editeur:
+  source: JSTOR
+  reference: |
+    F. Galton (1904) Eugenics: its definition, scope, and aims,
+    The American Journal of Sociology, 10(1), 1-25
+  abstract: |
+    Le père fondateur de la statistique était aussi celui de
+    l'eugénisme, et il en était très fier.
+  date: 1904
+  domain: Statistique
+  histoires: galton
+
+# -----------------------------------------------------------
+Gauss1807_RecherchesArithmetiques:
+  titre: Recherches Arithmétiques
+  pages: 5; 526
+  auteur: Gauss
+  traducteur: A.-C.-M. Poullet-Delisle
+  editeur: "Paris: Courcier"
+  source: Gallica
+  reference:
+  abstract: |
+    Ecrit par Gauss à 24 ans, ce livre a fondé l'arithmétique moderne.
+  date: 1801; 1807
+  domain: Arithmétique
+  histoires: algorismus; adrain; buttner; germain; wiles; wantzel
+
+# -----------------------------------------------------------
+Gauss1864_TheorieMouvement:
+  titre: |
+    Théorie du Mouvement des Corps Célestes Parcourant des Sections
+    Coniques Autour du Soleil
+  pages: 3; 401
+  auteur: Gauss
+  traducteur: E. Dubois
+  editeur: "Paris: Bertrand"
+  source: Gallica
+  reference:
+  abstract: |
+    Dans cet ouvrage sur le mouvement des planètes, apparaissent la loi normale,
+    le principe des moindres carrés, ainsi que l'usage moderne du mot
+    algorithme.
+  date: 1809; 1864
+  domain: Astronomie
+  histoires: adrain; algorismus
+
+# -----------------------------------------------------------
+Girard1629_InventionNouvelle:
+  titre: Invention nouvelle en l'algèbre
+  pages: 4; 71
+  auteur: Girard
+  traducteur:
+  editeur: "Amsterdam: Blaeuw"
+  source: Archive
+  reference:
+  abstract: |
+    L'acte de naissance de l'algèbre moderne.
+  date: 1629
+  domain: Algèbre
+  histoires: girard
+
+# -----------------------------------------------------------
+Gosset1908_ProbableError:
+  titre: The Probable Error of a Mean
+  pages: 2; 26
+  auteur: Gosset
+  traducteur:
+  editeur:
+  source: JSTOR
+  reference: |
+    W. S. Gosset (Student) (1908) The probable error of a mean,
+    Biometrika, 6(1), 1-25
+  abstract: |
+    L'article fondateur de la théorie des petits échantillons ne porte pas le
+    nom de son auteur.
+  date: 1908
+  domain: Statistique
+  histoires: gosset
+
+# -----------------------------------------------------------
+Grassmann1855_GenresMultiplication:
+  titre: Sur les différents genres de multiplication
+  pages: 2; 20
+  auteur: Grassmann
+  traducteur:
+  editeur:
+  source: GDZ
+  reference: |
+    H. Grassmann (1855) Sur les différents genres de multiplication,
+    Journal für die reine und angewandte Mathematik, 49, 123-141
+  abstract: |
+    Grassmann a cru bon de parler de sa théorie en français dans un
+    journal allemand.
+  date: 1855
+  domain: Algèbre
+  histoires: grassmann
+
+# -----------------------------------------------------------
+Hauy1794_InstructionsMesures:
+  titre: Instruction sur les poids et mesures républicaines
+  pages: 5; 263
+  auteur: Hauy
+  traducteur:
+  editeur: "Paris: Dépôt des Lois"
+  source: Archive
+  reference:
+  abstract: |
+    Un manuel de calcul sur les nouvelles unités de mesure, avec
+    beaucoup d'exercices.
+  date: 1794
+  domain: Arithmétique
+  histoires: borda
+
+# -----------------------------------------------------------
+Henrion1626_TraicteLogarithmes:
+  titre: Traicté des logarithmes
+  pages: 6; 57
+  auteur: Henrion
+  traducteur:
+  editeur: "Paris: Henrion"
+  source: e-rara
+  reference:
+  abstract: |
+    La première apparition des logarithmes en France.
+  date: 1624
+  domain: Informatique
+  histoires: napier; oughtred
+
+# -----------------------------------------------------------
+Hilbert1900_ProblemesFuturs:
+  titre: Sur les problèmes futurs des Mathématiques
+  pages: 1; 57
+  auteur: Hilbert
+  traducteur: L. Laugel
+  editeur:
+  source: Gallica
+  reference: |
+    D. Hilbert (1900) Sur les problèmes futurs des mathématiques, in
+    Compte-rendu du deuxième Congrès international des mathématiques,
+    Paris, Gauthier-Villars (1902), 58-114
+  abstract: |
+    Hilbert énonce les problèmes qui feront avancer la discipline au siècle
+    suivant.
+  date: 1900
+  domain: Savants
+  histoires: kepler; perron
+
+# -----------------------------------------------------------
+Hopper1952_EducationComputer:
+  titre: The education of a computer
+  pages: 1; 7
+  auteur: Hopper
+  traducteur:
+  editeur:
+  source: Archive
+  reference: |
+    G. M. Hopper (1952) The education of a Computer,
+    ACM '52 Proceedings of the 1952 ACM national meeting (Pittsburgh), 243-249.
+  abstract: |
+    La naissance du compilateur.
+  date: 1952
+  domain: Savants
+  histoires: hopper; zuse; turing
+
+# -----------------------------------------------------------
+Kepler1611_NiveSexangula:
+  titre: Strena seu de nive sexangula
+  pages: 2; 27
+  auteur: Kepler
+  traducteur:
+  editeur: "Frankfurt: Tampach"
+  source: e-rara
+  reference:
+  abstract: |
+    Le petit rien qui contient la conjecture de Kepler.
+  date: 1610; 1611
+  domain: Savants
+  histoires: kepler; lhuilier
+
+# -----------------------------------------------------------
+Kepler1615_DoliorumVinariorum:
+  titre: Nova stereometria doliorum vinariorum
+  pages: 14; 126
+  auteur: Kepler
+  traducteur:
+  editeur: "Linz: Plancus"
+  source: Google
+  reference:
+  abstract: |
+    Une réflexion sur les tonneaux de vin lance le mouvement des
+    infiniment petits.
+  date: 1615
+  domain: Analyse
+  histoires: gregory
+
+# -----------------------------------------------------------
+Kircher1669_ArsMagna:
+  titre: Ars Magna Sciendi
+  pages: 3; 515
+  auteur: Kircher
+  traducteur:
+  editeur: "Amsterdam: Jansson"
+  source: Google
+  reference:
+  abstract: |
+    Kircher réinvente et illustre abondamment la combinatoire de Llull.
+  date: 1669
+  domain: Savants; Informatique
+  histoires: kircher; llull; leibniz; swift
+
+# -----------------------------------------------------------
+lHopital1696_InfinimentPetits:
+  titre: Analyse des infiniment petits
+  pages: 4; 224
+  auteur: lHopital
+  traducteur:
+  editeur: "Paris: Imprimerie Royale"
+  source: Google
+  reference:
+  abstract: |
+    Le premier traité de calcul différentiel.
+  date: 1696
+  domain: Analyse
+  histoires: bernoullia; berkeley
+
+# -----------------------------------------------------------
+Lacroix1797_DifferentielIntegral1:
+  titre: Traité du calcul différentiel et du calcul intégral, tome 1
+  pages: 6; 565
+  auteur: Lacroix
+  traducteur:
+  editeur: "Paris: Duprat"
+  source: Gallica
+  reference:
+  abstract: |
+    Le traité de calcul différentiel admiré par Babbage.
+  date: 1797.1
+  domain: Géométrie
+  histoires: lacroix; berkeley; leibniza
+
+# -----------------------------------------------------------
+Lacroix1797_DifferentielIntegral2:
+  titre: Traité du calcul différentiel et du calcul intégral, Tome 2
+  pages: 7; 752
+  auteur: Lacroix
+  traducteur:
+  editeur: "Paris: Duprat"
+  source: Gallica
+  reference:
+  abstract: |
+    Le traité de calcul intégral admiré par Babbage.
+  date: 1797.2
+  domain: Géométrie
+  histoires: lacroix; berkeley; leibniza
+
+# -----------------------------------------------------------
+Lacroix1799_Trigonometrie:
+  titre: Traité élémentaire de trigonométrie rectiligne et sphérique
+  pages: 6; 224
+  auteur: Lacroix
+  traducteur:
+  editeur: "Paris: Duprat"
+  source: Google
+  reference:
+  abstract: |
+    La trigonométrie pour les applications.
+  date: 1799
+  domain: Géométrie
+  histoires: lacroix; kashi
+
+# -----------------------------------------------------------
+Lacroix1805_Enseignement:
+  titre: |
+    Essai sur l'Enseignement en Général, et sur celui des
+    Mathématiques en Particulier
+  pages: 5; 400
+  auteur: Lacroix
+  traducteur:
+  editeur: "Paris: Courcier"
+  source: Archive
+  reference:
+  abstract: |
+    Vu la carrière de Lacroix, ses réflexions sur l'enseignement des
+    mathématiques peuvent être méditées.
+  date: 1805
+  domain: Savants
+  histoires: lacroix; euclide
+
+# -----------------------------------------------------------
+Lacroix1855_Geometrie:
+  titre: Elements de Géométrie
+  pages: 9; 214
+  auteur: Lacroix
+  traducteur:
+  editeur: "Paris: Mallet-Bachelier"
+  source: Google
+  reference:
+  abstract: |
+    Les livres de Lacroix ont été des best sellers. Celui-ci est une
+    dix-septième édition.
+  date: 1795; 1855
+  domain: Géométrie
+  histoires: lacroix; euclide; kashi
+
+# -----------------------------------------------------------
+Laisant1915_InitiationMathematique:
+  titre: |
+    Initiation mathématique; ouvrage étranger à tout programme,
+    dédié aux amis de l'enfance
+  pages: 8; 192
+  auteur: Laisant
+  traducteur:
+  editeur: "Paris: Hachette"
+  source: Google
+  reference:
+  abstract: |
+    Des questions amusantes comme moyen pédagogique.
+  date: 1906; 1915
+  domain: Arithmétique
+  histoires: lucas; grassmann; iamblichus
+
+# -----------------------------------------------------------
+Lagrange1795_EcoleNormale:
+  titre: Leçons Elémentaires sur les Mathématiques
+  pages: 3; 108
+  auteur: Lagrange
+  traducteur:
+  editeur:
+  source: Gallica
+  reference: |
+    J. L. Lagrange (1795) Leçons élémentaires sur les mathématiques,
+    in &OElig;uvres de Lagrange Tome 7, J.-A. Serret et G.  Darboux éds. (1877)
+    Paris: Gauthier-Villars.
+  abstract: |
+    Les leçons de Lagrange à l'Ecole Normale de l'An III.
+  date: 1795; 1877
+  domain: Savants
+  histoires: lagrange; fourier; lacroix; bolzano
+
+# -----------------------------------------------------------
+Lagrange1813_FonctionsAnalytiques:
+  titre: Théorie des Fonctions Analytiques
+  pages: 11; 409
+  auteur: Lagrange
+  traducteur:
+  editeur: "Paris: Courcier"
+  source: Google
+  reference:
+  abstract: |
+    Le cours d'Analyse de Lagrange à l'Ecole Polytechnique
+  date: 1813
+  domain: Analyse
+  histoires: lagrange; rolle
+
+# -----------------------------------------------------------
+Laplace1774_ProbabiliteCauses:
+  titre: Mémoire sur la Probabilité des Causes par les événements
+  pages: 3; 41
+  auteur: Laplace
+  traducteur:
+  editeur:
+  source: Gallica
+  reference: |
+    P. S. Laplace (1774) Mémoire sur la Probabilité des Causes par
+    les événements, Mémoires de l'Académie royale des sciences de Paris
+    (Savants étrangers), T. VI p. 621, in &OElig;uvres Complètes de Laplace,
+    Tome VIII, (1893) Paris: Gauthier-Villars
+  abstract: |
+    Laplace redécouvre les probabilités des causes, déjà publiées par Bayes.
+  date: 1774;1893
+  domain: Statistique
+  histoires: bayes; laplace
+
+# -----------------------------------------------------------
+Laplace1780_MemoireProbabilites:
+  titre: Mémoire sur les Probabilités
+  pages: 3;105
+  auteur: Laplace
+  traducteur:
+  editeur:
+  source: Gallica
+  reference: |
+    P. S. Laplace (1780) Mémoire sur les probabilités, mémoires de
+    l'Académie Royale des Sciences de Paris, années 1778-1781, in &OElig;uvres
+    complètes de Laplace, Tome IX (1893) Paris: Gauthier-Villars
+  abstract: |
+    Ce mémoire contient le principe du calcul de p-valeurs et de la
+    décision statistique.
+  date: 1780; 1893
+  domain: Statistique
+  histoires: laplace; dupin; arbuthnot; dangeville
+
+# -----------------------------------------------------------
+Laplace1814_EssaiProbabilites:
+  titre: Essai Philosophique sur les Probabilités
+  pages: 14;112
+  auteur: Laplace
+  traducteur:
+  editeur: "Paris: Courcier"
+  source: Google
+  reference:
+  abstract: |
+    La version vulgarisée de la théorie analytique des probabilités, à laquelle
+    cet Essai doit servir d'introduction.
+  date: 1814
+  domain: Statistique
+  histoires: laplace; petersbourg; bayes
+
+# -----------------------------------------------------------
+Laplace1814_TheorieAnalytique:
+  titre: Théorie Analytique des Probabilités
+  pages: 8;611
+  auteur: Laplace
+  traducteur:
+  editeur: "Paris: Courcier"
+  source: Google
+  reference:
+  abstract: |
+    Le Mont-Blanc de l'Analyse mathématique, selon De Morgan.
+  date: 1814
+  domain: Statistique
+  histoires: laplace
+
+# -----------------------------------------------------------
+Legendre1805_OrbitesCometes:
+  titre: Nouvelles Méthodes pour la Détermination des Orbites des Comètes
+  pages: 11;282
+  auteur: Legendre
+  traducteur:
+  editeur: "Paris: Didot"
+  source: Google
+  reference:
+  abstract: |
+    A part les trajectoires des comètes, ce livre contient la première
+    apparition du principe des moindres carrés.
+  date: 1805
+  domain: Astronomie
+  histoires: adrain; legendre
+
+# -----------------------------------------------------------
+Legendre1798_TheorieNombres:
+  titre: Essai sur la Théorie des Nombres
+  pages: 7;556
+  auteur: Legendre
+  traducteur:
+  editeur: "Paris: Duprat"
+  source: Archive
+  reference:
+  abstract: |
+    Ce livre a précédé les recherches arithmétiques de Gauss.
+  date: 1798
+  domain: Arithmétique
+  histoires: adrain; alhaytham; buttner; germain; hadamard; wiles; legendre
+
+# -----------------------------------------------------------
+Leibniz1689_ArtInventer:
+  titre: Discours Touchant la Méthode de la Certitude et l'Art d'Inventer
+  pages: 1; 10
+  auteur: Leibniz
+  traducteur:
+  editeur:
+  source: Archive
+  reference: |
+    G. W. Leibniz (1689) Discours Touchant la Méthode de la
+    Certitude et l'Art d'Inventer, pour finir les disputes et pour faire en
+    peu de tems des grands progrès, in G. W. Leibniz, Die philosophischen
+    Schriften, hrsg. von C. I. Gerhardt, Bd. VII, Berlin, Weidmannsche
+    Buchhandlung (1885)
+  abstract: |
+    Le grand rêve de Leibniz.
+  date: 1689
+  domain: Informatique
+  histoires: leibniz
+
+# -----------------------------------------------------------
+Lemoine1913_LeconsArithmetique:
+  titre: 160 leçons d'Arithmétique; Cours moyen, Certificat d'études
+  pages: 9; 294
+  auteur: Lemoine
+  traducteur:
+  editeur: "Paris: Hachette"
+  source: Gallica
+  reference:
+  abstract: |
+    Les mathématiques du certificat d'études, il y a un siècle.
+  date: 1910;1913
+  domain: Algèbre
+  histoires: metrodore; demotic; iamblichus; heron
+
+# -----------------------------------------------------------
+Lovelace1843_SketchAnalytical:
+  titre: Sketch of the analytical engine invented by Charles Babbage
+  pages: 1;68
+  auteur: Lovelace
+  traducteur:
+  editeur:
+  source: Archive
+  reference: |
+    A. Lovelace (1943) Sketch of the analytical engine invented by
+    Charles Babbage,  in Scientific Memoirs, vol. III, London: Taylor.
+  abstract: |
+    La traduction par Ada Lovelace du premier article d'informatique de
+    l'histoire est augmentée de ses notes et de sa vision d'avenir.
+  date: 1843
+  domain: Informatique
+  histoires: lovelace; babbage
+
+# -----------------------------------------------------------
+Lucas1882_RecreationsMathematiques1:
+  titre: Récréations Mathématiques, volume 1
+  pages: 13; 290
+  auteur: Lucas
+  traducteur:
+  editeur: "Paris: Gauthier-Villard"
+  source: Google
+  reference:
+  abstract: |
+    Les traversées, les ponts, les labyrinthes, les reines, le solitaire,
+    la numération, le baguenaudier, le taquin
+  date: 1882
+  domain: Savants
+  histoires: schickard; bachet; lucas
+
+# -----------------------------------------------------------
+Lucas1896_RecreationsMathematiques2:
+  titre: Récréations Mathématiques, volume 2
+  pages: 11; 256
+  auteur: Lucas
+  traducteur:
+  editeur: "Paris: Gauthier-Villard"
+  source: Archive
+  reference:
+  abstract: |
+    Qui perd gagne, les dominos, le marelles, le parquet, le casse-tête, les
+    jeux de demoiselles, le jeu icosien d'Hamilton
+  date: 1883;1896
+  domain: Savants
+  histoires: schickard; bachet; lucas; iamblichus; hamilton
+
+# -----------------------------------------------------------
+Lucas1893_RecreationsMathematiques3:
+  titre: Récréations Mathématiques, volume 3
+  pages: 9; 214
+  auteur: Lucas
+  traducteur:
+  editeur: "Paris: Gauthier-Villard"
+  source: Archive
+  reference:
+  abstract: |
+    Le calcul digital, machines arithmétiques, le caméléon, les fonctions de
+    points, le jeu militaire, la prise de la Bastille, la patte d'oie, le
+    fer à cheval, le jeu américain, amusements par les jetons, l'étoile
+    nationale, rouge et noire
+  date: 1893
+  domain: Savants
+  histoires: schickard; bachet; lucas
+
+# -----------------------------------------------------------
+Lucas1894_RecreationsMathematiques4:
+  titre: Récréations Mathématiques, volume 4
+  pages: 9; 278
+  auteur: Lucas
+  traducteur:
+  editeur: "Paris: Gauthier-Villard"
+  source: Archive
+  reference:
+  abstract: |
+    Le calendrier perpétuel, l'arithmétique en boules, l'arithmétique en
+    bâtons, les mérelles au XIIIe siècle, les carrés magiques de Fermat,
+    les réseaux et les dominos, les régions et les quatre couleurs, la
+    machine à marcher
+  date: 1894
+  domain: Savants
+  histoires: schickard; bachet; lucas
+
+# -----------------------------------------------------------
+Lucas1895_ArithmetiqueAmusante:
+  titre: L'Arithmétique Amusante
+  pages: 11; 280
+  auteur: Lucas
+  traducteur:
+  editeur: "Paris: Gauthier-Villars"
+  source: Archive
+  reference:
+  abstract: |
+    Selon l'auteur: des amusements scientifiques pour l'enseignement et la
+    pratique du calcul.
+  date: 1895
+  domain: Arithmétique
+  histoires: schickard; bachet; lucas
+
+# -----------------------------------------------------------
+Llull1634_GrandArt:
+  titre: Le grand et dernier art de M. Raymond Lvlle
+  pages: 11; 786
+  auteur: Llull
+  traducteur: Vassy
+  editeur: "Paris: Boulanger"
+  source: Gallica
+  reference:
+  abstract: |
+    Les illuminations combinatoires de Llull.
+  date: 1305; 1634
+  domain: Informatique
+  histoires: llull; leibniz; swift
+
+# -----------------------------------------------------------
+Mace1863_ArithmetiquePommes:
+  titre: |
+    L'arithmétique du grand-papa; histoire de deux petits
+    marchands de pommes
+  pages: 5; 201
+  auteur: Mace
+  traducteur:
+  editeur: "Paris: Hetzel"
+  source: Gallica
+  reference:
+  abstract: |
+    Un best-seller de l'arithmétique pour enfants.
+  date: 1863
+  domain: Arithmétique
+  histoires: lucas; figuier
+
+# -----------------------------------------------------------
+Mahavira1912_GanitaSarasangraha:
+  titre: The Ganita-Sara-Sangraha of Mahaviracarya
+  pages: 208; 524
+  auteur: Mahaviracharya
+  traducteur: R. B. Rangacharya
+  editeur: "Madras: Government Press"
+  source: Archive
+  reference:
+  abstract: |
+    Des exercices poétiques dans le genre de la Lilavati.
+  date: ?850; 1912
+  domain: Savants
+  histoires: |
+    bhaskara; pingala; aryabhata; sunzi; metrodore; zhang; brahmagupta;
+    demotic
+
+# -----------------------------------------------------------
+Mascheroni1798_GeometrieCompas:
+  titre: La géométrie du compas
+  pages: 7; 319
+  auteur: Mascheroni
+  traducteur: "A. M. Carette"
+  editeur: "Paris: Duprat"
+  source: Archive
+  reference:
+  abstract: |
+    \`A Bonaparte l'Italique.
+  date: 1797; 1798
+  domain: Géométrie
+  histoires: mohr
+
+# -----------------------------------------------------------
+Menabrea1842_MachineBabbage:
+  titre: Notions sur la machine analytique de M. Charles Babbage
+  pages: 1; 25
+  auteur: Menabrea
+  traducteur:
+  editeur:
+  source: Google
+  reference: |
+    L. Menabrea (1842) Notions sur la machine analytique de M. Charles
+    Babbage, Bibliothèque Universelle de Genève, 41, 352-376
+  abstract: |
+    Le premier article d'informatique de l'histoire a été écrit en français.
+  date: 1842
+  domain: Informatique
+  histoires: lovelace; babbage
+
+# -----------------------------------------------------------
+Mencke1721_CharlatanerieSavants:
+  titre: De la charlatanerie des savants
+  pages: 9; 326
+  auteur: Mencke
+  traducteur:
+  editeur: "La Haye: van Duren"
+  source: Google
+  reference:
+  abstract: |
+    Une compilation réjouissante sur la cuistrerie académique.
+  date: 1721
+  domain: Savants
+  histoires: kircher
+
+# -----------------------------------------------------------
+Mendel1907_HybridesVegetaux:
+  titre: "Recherches sur des hybrides végétaux"
+  pages: 1; 49
+  auteur: Mendel
+  traducteur: "A. Chappelier"
+  editeur:
+  source: Archive
+  reference: |
+    G. Mendel (1907) Bulletin Scientifique de la France et de
+    la Belgique, 41, 371-419
+  abstract: |
+    L'article de Mendel traduit après sa redécouverte.
+  date: 1865;1907
+  domain: Statistique
+  histoires: mendel
+
+# -----------------------------------------------------------
+Mersenne1639_NouvellesPensees:
+  titre: Les nouvelles pensées de Galilée
+  pages: 4; 278
+  auteur: Galilee; Mersenne
+  traducteur:
+  editeur: "Paris: Guénon"
+  source: Gallica
+  reference:
+  abstract: La traduction abrégée du livre fondateur de la mécanique.
+  date: 1639
+  domain: Analyse
+  histoires: viviani; cantor; apollonius; merton; pascala
+
+# -----------------------------------------------------------
+Metrodore1863_AnthologieGrecque:
+  titre: Problèmes, énigmes et oracles de l'Anthologie Grecque
+  pages: 1; 26
+  auteur: Metrodore
+  traducteur: "F. Jacobs"
+  editeur: "Paris: Hachette"
+  source: Google
+  reference:
+  abstract: |
+    Les récréations mathématiques grecques.
+  date: ?500;1863
+  domain: Savants; Arithmétique; Algèbre
+  histoires: metrodore; kircher; alcuin; lucas; liuhui
+
+# -----------------------------------------------------------
+Monge1799_GeometrieDescriptive:
+  titre: Géométrie Descriptive
+  pages: 8; 169
+  auteur: Monge
+  traducteur:
+  editeur: "Paris: Baudoin"
+  source: Gallica
+  reference:
+  abstract: |
+    Le cours de Monge à l'Ecole Normale de l'An III.
+  date: 1799
+  domain: Géométrie
+  histoires: monge; fourier; lacroix; arago
+
+# -----------------------------------------------------------
+Montmort1713_AnalyseHazard:
+  titre: Essay d'Analyse sur les Jeux de Hazard
+  pages: 8; 477
+  auteur: Montmort
+  traducteur:
+  editeur: "Paris: Le Conte"
+  source: Google
+  reference:
+  abstract: |
+    Le premier livre en français sur les jeux de hasard. La seconde édition
+    inclut la correspondance de Montmort avec la famille Bernoulli.
+  date: 1713
+  domain: Statistique
+  histoires: petersbourg
+
+# -----------------------------------------------------------
+Montucla1758_HistoireMathematiques1:
+  titre: Histoire des Mathématiques, Tome Premier
+  pages: 10;688
+  auteur: Montucla
+  traducteur:
+  editeur: "Paris: Jombert"
+  source: Gallica
+  reference:
+  abstract: |
+    Le premier livre d'histoire des Mathématiques.
+  date: 1758.1
+  domain: Savants
+  histoires: raphael; agnesi; boece; diophante; viete; demorgan
+
+# -----------------------------------------------------------
+Montucla1758_HistoireMathematiques2:
+  titre: Histoire des Mathématiques, Tome Second
+  pages: 10;722
+  auteur: Montucla
+  traducteur:
+  editeur: "Paris: Jombert"
+  source: Gallica
+  reference:
+  abstract: |
+    Le premier livre d'histoire des Mathématiques.
+  date: 1758.2
+  domain: Savants
+  histoires: raphael; agnesi; boece; demorgan
+
+# -----------------------------------------------------------
+Mydorge1630_ExamenRecreations:
+  titre: Examen des récréations mathématiques et de ses problèmes
+  pages: 6; 419
+  auteur: Mydorge
+  traducteur:
+  editeur: "Paris: Robinot"
+  source: Gallica
+  reference:
+  abstract: |
+    Un des premiers livres de récréations mathématiques.
+  date: 1630
+  domain: Savants
+  histoires: bachet
+
+# -----------------------------------------------------------
+Newton1671_FluxionsBuffon:
+  titre: La Méthode des Fluxions, et des Suites Infinies
+  pages: 8; 193
+  auteur: Newton
+  traducteur: Buffon
+  editeur: "Paris: Debure"
+  source: Google
+  reference:
+  abstract: |
+    La traduction par Buffon de la théorie des fluxions de Newton.
+  date: 1671; 1740
+  domain: Analyse
+  histoires: buffon; newton; algorismus; newtona; leibniza; abel
+
+# -----------------------------------------------------------
+Newton1759_Principes1:
+  titre: Principes Mathématiques de la Philosophie Naturelle, Tome Premier
+  pages: 10; 510
+  auteur: Newton; Chatelet
+  traducteur: Chatelet
+  editeur: "Paris: Desaint et Saillant"
+  source: Google
+  reference:
+  abstract: |
+    La traduction commentée des Principia de Newton, par Emilie du Châtelet.
+  date: 1687.1; 1759
+  domain: Astronomie
+  histoires: chatelet; demoivre; cardan; newton; grassmann; leibniza
+
+# -----------------------------------------------------------
+Newton1759_Principes2:
+  titre: Principes Mathématiques de la Philosophie Naturelle, Tome Second
+  pages: 8; 498
+  auteur: Newton; Chatelet
+  traducteur: Chatelet
+  editeur: "Paris: Desaint et Saillant"
+  source: Google
+  reference:
+  abstract: |
+    La traduction des Principia de Newton, par Emilie du Châtelet.
+  date: 1687.2; 1759
+  domain: Astronomie
+  histoires: chatelet; demoivre; cardan; newton; lepaute
+
+# -----------------------------------------------------------
+Newton1802_ArithmetiqueUniverselle:
+  titre: Arithmétique Universelle
+  pages: 11; 579
+  auteur: Newton
+  traducteur: N. Beaudeux
+  editeur: "Paris: Bernard"
+  source: Google
+  reference:
+  abstract: |
+    La traduction du cours de Newton à Cambridge.
+  date: 1707; 1802
+  domain: Arithmétique; Algèbre
+  histoires: hippase; newton
+
+# -----------------------------------------------------------
+Nicomachus1926_IntroductionArithmetic:
+  titre: Introduction to arithmetics
+  pages: 16; 121
+  auteur: Nicomaque
+  traducteur: "M. L. D'Ooge"
+  editeur: "New York: Macmillan"
+  source: Archive
+  reference:
+  abstract: |
+    Traduit en latin par Boèce, ce livre a dirigé l'enseignement des
+    mathématiques pendant huit siècles.
+  date: ?100;1926
+  domain: Arithmétique
+  histoires: pythagore; aristoter; alhaytham; boece; maurolico
+
+# -----------------------------------------------------------
+Nightingale1858_BritishArmy:
+  titre: Health, efficiency, and hospital administration of the British army
+  pages: 9; 879
+  auteur: Nightingale
+  traducteur:
+  editeur: "London: Harrison"
+  source: Gallica
+  reference:
+  abstract: |
+    Le combat statistique de Florence Nightingale et son diagramme en crête de
+    coq.
+  date: 1858
+  domain: Statistique
+  histoires: nightingale
+
+# -----------------------------------------------------------
+Ozanam1694_Recreations1:
+  titre: Récréations Mathématiques et Physiques, Tome Premier
+  pages: 5; 480
+  auteur: Ozanam
+  traducteur:
+  editeur: "Paris: Jombert"
+  source: Gallica
+  reference:
+  abstract: |
+    Le best seller de la littérature mathématique au dix-huitième siècle&nbsp;:
+    problèmes d'Arithmétique, Géométrie, Optique, Gnomonique, Cosmographie.
+  date: 1694.1
+  domain: Savants
+  histoires: bachet; sunzi; theetete; sangaku
+
+# -----------------------------------------------------------
+Ozanam1694_Recreations2:
+  titre: Récréations Mathématiques et Physiques, Tome Second
+  pages: 4; 533
+  auteur: Ozanam
+  traducteur:
+  editeur: "Paris: Jombert"
+  source: Gallica
+  reference:
+  abstract: |
+    Le best seller de la littérature mathématique au dix-huitième siècle&nbsp;:
+    problèmes de Mécanique, de Pyrotechnie, de Physique.
+  date: 1694.2
+  domain: Savants
+  histoires: bachet
+
+# -----------------------------------------------------------
+Pacioli1509_DivinaProportione:
+  titre: De divina proportione
+  pages: 6; 311
+  auteur: Pacioli; Leonardo
+  traducteur:
+  editeur: "Venetiis: Paganius"
+  source: Archive
+  reference:
+  abstract: |
+    Léonard de Vinci est l'auteur des magnifiques gravures.
+  date: ?1498; 1509
+  domain: Statistique
+  histoires: pacioli; theetete
+
+# -----------------------------------------------------------
+Pascal1645_LettreDedicatoire:
+  titre: Lettre Dédicatoire à Monseigneur le Chancelier
+  pages: 3; 22
+  auteur: Pascal
+  traducteur:
+  editeur: Paris
+  source: Google
+  reference:
+  abstract: |
+    Pascal annonce sa machine arithmétique.
+  date: 1645
+  domain: Informatique
+  histoires: schickard
+
+# -----------------------------------------------------------
+Pascal1665_TriangleArithmetique:
+  titre: Traité du triangle arithmétique
+  pages: 6; 109
+  auteur: Pascal
+  traducteur:
+  editeur: "Paris: Desprez"
+  source: Google
+  reference:
+  abstract: |
+    L'origine du triangle de Pascal, et aussi la première mathématisation
+    des probabilités.
+  date: 1654; 1665
+  domain: Statistique
+  histoires: pacioli; bachet; pingala; maurolico
+
+# -----------------------------------------------------------
+Pearson1900_ChiSquared:
+  titre: The Chi-Squared Test
+  pages: 1; 19
+  auteur: Pearson
+  traducteur:
+  editeur:
+  source: JSTOR
+  reference: |
+    K. Pearson (1900) On the criterion that a given system of
+    deviations from the probable in the case of a correlated system of
+    variables is such that it can be reasonably supposed to have arisen from
+    random sampling, Philosophical Magazine, 50(302), 157-175.
+  abstract: |
+    Pearson définit le test du Chi-Deux, donne l'algorithme de calcul de la
+    loi, et des exemples d'application.
+  date: 1900
+  domain: Statistique
+  histoires: mendel; galton; gosset
+
+# -----------------------------------------------------------
+Pingala2019_Patte:
+  titre: Chandahsastram
+  pages: 1; 15
+  auteur: Pingala
+  traducteur: François Patte
+  editeur:
+  source: don du traducteur
+  reference: |
+    F. Patte, Rythmes et algorithmes, APR 2009, Bruxelles
+  abstract: |
+    Les premiers algorithmes binaires, dans le contexte
+    de la métrique sanscrite. Ce texte est reproduit ici grâce à
+    la générosité de François Patte que nous remercions.
+  date: -200; 2019
+  domain: Arithmétique
+  histoires: |
+    pingala; fohi; fibonacci
+
+# -----------------------------------------------------------
+Playfair1801_StatisticalBreviary:
+  titre: The Statistical Breviary
+  pages: 13;86
+  auteur: Playfair
+  traducteur:
+  editeur: "London: Bensley"
+  source: Google
+  reference:
+  abstract: |
+    Playfair introduit les représentations graphiques en statistique.
+  date: 1801
+  domain: Statistique
+  histoires: playfair
+
+# -----------------------------------------------------------
+Platon1600_Republique:
+  titre: La République
+  pages: 7; 446
+  auteur: Platon
+  traducteur:
+  editeur: "Paris: Drouart"
+  source: Google
+  reference:
+  abstract: |
+    Le mythe de la caverne et le quadrivum mathématique comme programme
+    éducatif.
+  date: ?-380;1600
+  domain: Arithmétique
+  histoires: platon; aristoter
+
+# -----------------------------------------------------------
+Poincare1912_CalculProbabilites:
+  titre: Calcul des Probabilités
+  pages: 7;343
+  auteur: Poincare
+  traducteur:
+  editeur: "Paris: Gauthier-Villars"
+  source: archive
+  reference:
+  abstract: |
+    Même si les probabilités n'étaient pas la spécialité de Poincaré, son
+    manuel a été abondamment utilisé.
+  date: 1894; 1912
+  domain: Statistique
+  histoires: bayes; buffon
+
+# -----------------------------------------------------------
+Poisson1837_ProbabiliteJugements:
+  titre: |
+    Recherches sur la Probabilité des Jugements en Matière Criminelle
+    et en Matière Civile
+  pages: 5;430
+  auteur: Poisson
+  traducteur:
+  editeur: "Paris: Bachelier"
+  source: Gallica
+  reference:
+  abstract: |
+    Plus un manuel de probabilités qu'un livre sur la probabilité des
+    jugements.
+  date: 1837
+  domain: Statistique
+  histoires: bayes; petersbourg
+
+# -----------------------------------------------------------
+Prestet1675_ElemensMathematiques:
+  titre: Elémens des Mathématiques
+  pages: 6;450
+  auteur: Prestet
+  traducteur:
+  editeur: "Paris: Pralard"
+  source: Gallica
+  reference:
+  abstract: |
+    Le livre dans lequel Abraham de Moivre a appris l'algèbre.
+  date: 1675
+  domain: Algèbre
+  histoires: prestet; demoivre; buttner; wallis
+
+# -----------------------------------------------------------
+Ptolemee1813_CompositionMathematique1:
+  titre: Composition Mathématique, tome premier
+  pages: 3; 613
+  auteur: Ptolemee
+  traducteur: M. Halma
+  editeur: "Paris: Grand"
+  source: Gallica
+  reference:
+  abstract: |
+    L'Almageste!
+  date: 150.1; 1813
+  domain: Astronomie
+  histoires: almamun; raphael; aryabhata; rhind; oresme; heron
+
+# -----------------------------------------------------------
+Ptolemee1816_CompositionMathematique2:
+  titre: Composition Mathématique, tome second
+  pages: 3; 613
+  auteur: Ptolemee
+  traducteur: M. Halma
+  editeur: "Paris: Grand"
+  source: Gallica
+  reference:
+  abstract: |
+    L'Almageste!
+  date: 150.2; 1816
+  domain: Astronomie
+  histoires: almamun; raphael; aryabhata; rhind
+
+# -----------------------------------------------------------
+Quetelet1831_CroissanceHomme:
+  titre: Recherche sur la Loi de la Croissance de l'Homme
+  pages: 4; 39
+  auteur: Quetelet
+  traducteur:
+  editeur: "Bruxelles: Hayez"
+  source: GDZ
+  reference:
+  abstract: |
+    Le faire-part de naissance de l'Homme Moyen.
+  date: 1831
+  domain: Statistique
+  histoires: mendenhall; graunt
+
+# -----------------------------------------------------------
+Quetelet1833_PenchantCrime:
+  titre: Recherches sur le Penchant au Crime aux Différents Ages
+  pages: 9; 97
+  auteur: Quetelet
+  traducteur:
+  editeur: "Bruxelles: Hayez"
+  source: Google
+  reference:
+  abstract: |
+    Les idées de Quetelet sur la statistique morale.
+  date: 1833
+  domain: Statistique
+  histoires: mendenhall; graunt
+
+# -----------------------------------------------------------
+Riemann1873_SeriesTrigonometriques:
+  titre: |
+    Sur la possibilité de représenter une fonction par une série
+    trigonométrique
+  pages: 2;30
+  auteur: Riemann
+  traducteur:
+  editeur:
+  source: Numdam
+  reference: |
+    B. Riemann (1873) Sur la possibilité de représenter une fonction par
+    une série trigonométrique, Bulletin des sciences mathématiques et
+    astronomiques, 5, 20-48
+  abstract: |
+    Sous prétexte de raconter l'histoire des séries de Fourier, Riemann
+    réinvente l'intégrale.
+  date: 1854; 1873
+  domain: Analyse
+  histoires: dirichlet; cellerier
+
+# -----------------------------------------------------------
+Stevin1585_Arithmetique:
+  titre: L'arithmétique de Simon Stevin de Bruges
+  pages: 5; 897
+  auteur: Stevin
+  traducteur:
+  editeur: "Leyde: Plantin"
+  source: Google
+  reference:
+  abstract: |
+    Un vision très moderne de la notion de nombre et de l'algèbre naissante.
+  date: 1585
+  domain: Arithmétique
+  histoires: hippase; diophante; borda; girard
+
+# -----------------------------------------------------------
+Swift1856_VoyagesGulliver:
+  titre: Voyages de Gulliver
+  pages: 13; 462
+  auteur: Swift
+  traducteur: W. Scott
+  editeur: "Paris: Garnier"
+  source: Gallica
+  reference:
+  abstract: |
+    L'édition de 1856, avec les illustrations de J.J. Grandville.
+  date: 1726; 1856
+  domain: Informatique
+  histoires: swift; arbuthnot
+
+# -----------------------------------------------------------
+TheonSmyrne1882_MathematiquesPlaton:
+  titre: Exposition des connaissances utiles pour la lecture de Platon
+  pages: 2; 166
+  auteur: TheonSmyrne
+  traducteur: "J. Dupuis"
+  editeur: "Paris: Hachette"
+  source: Gallica
+  reference:
+  abstract: |
+    L'arithmétique, la musique et l'astronomie selon un néo-platonicien.
+  date: ?130; 1892
+  domain: Arithmétique; Astronomie
+  histoires: helios; pythagore; platon; proclus; aristoter; pythagore;
+    maurolico; heron
+
+# -----------------------------------------------------------
+Thomas1852_Arithmometre:
+  titre: Instruction pour se servir de l'Arithmomètre
+  pages: 5; 31
+  auteur: Thomas
+  traducteur:
+  editeur: "Paris: Blondeau"
+  source: Gallica
+  reference:
+  abstract: |
+    Le manuel de la première machine à calculer commercialement viable.
+  date: 1852
+  domain: Informatique
+  histoires: schickard; hopper
+
+# -----------------------------------------------------------
+Torres1915_EssaisAutomatique:
+  titre: Essais sur l'Automatique
+  pages: 3; 14
+  auteur: Torres
+  traducteur:
+  editeur:
+  source: Gallica
+  reference: |
+    L. Torres y Quevedo (1915) Essais sur l'automatique, Revue
+    générale des sciences pures et appliquées, 15 novembre, 601-611.
+  abstract: |
+    Torres ouvre la porte non seulement à l'automatique, mais aussi
+    à l'intelligence artificielle.
+  date: 1915
+  domain: Informatique
+  histoires: torres; turing
+
+# -----------------------------------------------------------
+Trenchant1602_Arithmetique:
+  titre: L'Arithmétique de Jean Trenchant
+  pages: 7; 381
+  auteur: Trenchant
+  traducteur:
+  editeur: "Lyon: Degabiano et Girard"
+  source: Archive
+  reference:
+  abstract: |
+    Un manuel d'arithmétique élémentaire, avec la description du calcul aux
+    jetons.
+  date: 1602
+  domain: Arithmétique
+  histoires: soroban
+
+# -----------------------------------------------------------
+Turing1950_Mind:
+  titre: Computing machinery and Intelligence
+  pages: 1; 28
+  auteur: Turing
+  traducteur:
+  editeur:
+  source: Archive
+  reference: |
+    A. Turing (1950) Computing machinery and Intelligence,
+    Mind, 59(236), 433-460
+  abstract: |
+    L'article fondateur de Turing sur l'intelligence artificielle
+  date: 1950
+  domain: Informatique
+  histoires: turing
+
+# -----------------------------------------------------------
+Vauban1707_DixmeRoyale:
+  titre: Projet d'une dixme royale
+  pages: 8;238
+  auteur: Vauban
+  traducteur:
+  editeur: Paris
+  source: Gallica
+  reference:
+  abstract: |
+    Le courage de Vauban a donné le premier livre français de statistique.
+  date: 1707
+  domain: Statistique
+  histoires: bielfeld; borda
+
+# -----------------------------------------------------------
+Vaucanson1738_Fluteur:
+  titre: Le mécanisme du Fluteur Automate
+  pages: 7; 29
+  auteur: Vaucanson
+  traducteur:
+  editeur: "Paris: Guérin"
+  source: Google
+  reference:
+  abstract: |
+    La description de ses automates, par Vaucanson lui-même. Oui, le canard
+    est bien inclus.
+  date: 1738
+  domain: Informatique
+  histoires: vaucanson; turing; banumusa; babbage
+
+# -----------------------------------------------------------
+Viete1868_ArtAnalytique:
+  titre: Introduction à l'art analytique
+  pages: 2; 25
+  auteur: Viete
+  traducteur: Frédéric Ritter
+  editeur: "Rome: Imprimerie des sciences mathématiques et physiques"
+  source: Google
+  reference:
+  abstract: |
+    Le manifeste fondateur de l'algèbre moderne.
+  date: 1591;1868
+  domain: Algèbre
+  histoires: viete; wallis
+
+# -----------------------------------------------------------
+Vigenere1587_TraiteChiffres:
+  titre: Traité des Chiffres ou Secretes Manières d'Ecrire
+  pages: 8; 675
+  auteur: deVigenere
+  traducteur:
+  editeur: "Paris: L'Angelier"
+  source: Google
+  reference:
+  abstract: |
+    Le traité où Vigenère propose le code polyalphabétique qui porte son nom.
+  date: 1587
+  domain: Informatique
+  histoires: enigma
+
+# -----------------------------------------------------------
+Wallis1685_Algebra:
+  titre: A treatise of Algebra
+  pages: 4; 632
+  auteur: Wallis
+  traducteur:
+  editeur: "London: Playford"
+  source: Google
+  reference:
+  abstract: |
+    Le premier traitement pédagogique de l'algèbre, avec en plus la première
+    perspective historique, par le plus grand mathématicien anglais avant
+    Newton.
+  date: 1685
+  domain: Algèbre
+  histoires: prestet; newton; algorismus; maurolico; archimede; helios;
+    wallis; degua; argand; heron; ramanujan; abel
+
+# -----------------------------------------------------------
+Wessel1897_RepresentationDirection:
+  titre: Essai sur la représentation analytique de la direction
+  pages: 6; 82
+  auteur: Wessel
+  traducteur:
+  editeur: "Copenhague: Dreyer"
+  source: Gallica
+  reference:
+  abstract: |
+    La représentation géométrique des nombres complexes.
+  date: 1797; 1897
+  domain: Algèbre
+  histoires: argand
+
+# -----------------------------------------------------------
+Wingate1624_ReigleProportion:
+  titre: L'usage de la Reigle de Proportion en l'Arithmétique et Géométrie
+  pages: 7; 185
+  auteur: Wingate
+  traducteur:
+  editeur: "Paris: Mondière"
+  source: Google
+  reference:
+  abstract: |
+    La première description en français d'une règle à échelle logarithmique.
+  date: 1624
+  domain: Informatique
+  histoires: oughtred
+
+# -----------------------------------------------------------
+ZhuShijie1932_MiroirPrecieux:
+  titre: Le miroir précieux des quatre éléments
+  pages: 1; 29
+  auteur: ZhuShijie
+  traducteur: "L. Van Hée"
+  editeur:
+  source: archive
+  reference: |
+    L. Van Hée (1932) Le miroir précieux des quatre éléments,
+    Asia Major, 7, 242-270.
+  abstract: |
+    Le sommet de l'algèbre chinoise.
+  date: 1303;1932
+  domain: Algèbre
+  histoires: pingala; seki
+
+# -----------------------------------------------------------

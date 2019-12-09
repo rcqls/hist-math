@@ -1,0 +1,416 @@
+---
+model: jquery3
+title: timeline
+semantic-ui: css,js
+---
+[#<]{#LayoutCSSHeader]<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>[#}
+[#rb<]
+require 'yaml'
+people=YAML::load_file(File.expand_path("~/RodaSrv/public/users/Histoires/people_priorite.yml"))
+events=YAML::load_file(File.expand_path("~/RodaSrv/public/users/Histoires/events.yml"))
+dates_people={}
+people.keys.each do |e| #
+	tmp=people[e]["dates"].gsub("?","").split(";")
+	dates_people[e]={:birth=>tmp[0].to_i,:death => (tmp[1].nil? ?  2020 : tmp[1].to_i)}
+end
+
+dates_keys=[]
+people_max={math: [1], others: [1]}
+(1..4).each do |prio| #
+	cur_high=[""]*(people.length+1)
+	dates_keys_math=dates_people.keys.select{|e| people[e]["math"] and people[e]["priorite"]== prio}.sort_by {|e| dates_people[e][:birth]}
+	dates_keys += dates_keys_math
+	dates_keys_math.each do |e| #
+		birth,death=dates_people[e][:birth],dates_people[e][:death]
+		cur_high.each_index do |i| #
+			if cur_high[i].empty? or dates_people[cur_high[i]][:death] < birth
+				cur_high[i]=e
+				dates_people[e][:high]= i + people_max[:math][prio-1]
+				dates_people[e][:priority]=prio
+				dates_people[e][:math]=true
+				break
+			end
+		end
+	end
+	people_max[:math][prio] = cur_high.select{|e| !e.empty?}.length + people_max[:math][prio-1]
+
+end
+
+(1..4).each do |prio| #
+	cur_high=[""]*(people.length+1)
+	dates_keys_others=dates_people.keys.select{|e| (!people[e]["math"]) and people[e]["priorite"]== prio }.sort_by {|e| dates_people[e][:birth]}
+	dates_keys += dates_keys_others
+	dates_keys_others.each do |e| #
+		birth,death=dates_people[e][:birth],dates_people[e][:death]
+		cur_high.each_index do |i| #
+			if cur_high[i].empty? or dates_people[cur_high[i]][:death] < birth
+				cur_high[i]=e
+				dates_people[e][:high]= i+people_max[:others][prio-1]
+				dates_people[e][:priority]=prio
+				dates_people[e][:math]=false
+				break
+			end
+		end
+	end
+	people_max[:others][prio]= cur_high.select{|e| !e.empty?}.length + people_max[:others][prio-1]
+end
+
+#time_lims=[]
+#(1..4).each do |prio| #
+time_lim={
+	min: dates_people.keys.map{|e| dates_people[e][:birth]}.min,
+	max: dates_people.keys.map{|e| dates_people[e][:death]}.max
+}
+#end
+
+timelimJS="["
+(1..4).each do |prio| #
+	timelimJS << "{min: " << dates_people.keys.select{|e| dates_people[e][:priority] <= prio}.map{|e| dates_people[e][:birth]}.min.to_s << ", max: " << dates_people.keys.select{|e| dates_people[e][:priority] <= prio}.map{|e| dates_people[e][:death]}.max.to_s << "}"
+	timelimJS << "," if prio != 4
+end
+timelimJS << "]"
+
+{#hide][#hide}
+
+datesJS = "{" + dates_keys.map{|e| #
+	dates=people[e]["dates"].split(";").map{|e| (e2=e.strip) =~ /^\?.*/ ? "c. "+e2[1..-1] : e2}.join(", ")
+	e+": {birth: " + dates_people[e][:birth].to_s + ", death: " + dates_people[e][:death].to_s + ", high: " + dates_people[e][:high].to_s + ", priority: " + dates_people[e][:priority].to_s + ", math: " + dates_people[e][:math].to_s + ", name: \"" + people[e]["complete"].to_s + "\", dates: \"" + dates+ "\", abstract: \"" + people[e]["abstract"].strip.gsub("\n",' ').gsub(":","&#58;").to_s + "\", portrait: " + people[e]["portrait"].to_s + "}"
+}.join(",\n ") + "}"
+
+eventsJS="{" + events.keys.map{|e| #
+	e+": {title: \"" + events[e]["titre"].to_s + "\", date: " + events[e]["date"].to_s + ", nature: \"" + events[e]["nature"].to_s + "\", wiki: \"" + events[e]["wikipedia"].to_s + "\", priority: " + events[e]["priorite"].to_s + "}"
+}.join(", ") + "}"
+{#hide]
+
+[#hide}
+[#html>]
+
+<!--  :{timelimJS.inspect} -->
+
+<canvas id="canvasTL"></canvas>
+<!-- div id "toto" class="ui container" width=100 height=100>
+<div id="pp_Hammurabi"  class="ui popup" style="min-width:500px;background-color: linen;opacity: 0.95;">
+      <div class="card">
+        <div class="content">
+          <div> <-- div class="Hammurabi people"->
+            <div class="eight wide column" align="justify">
+              <img class="ui small image floated right" src="/users/Histoires/people/Hammurabi.png"></img>
+              <h3 class="ui header">
+                Hammurabi (c. -1800, c. -1750)
+                <div class="sub header">Le premier code civil.
+</div>
+              </h3>
+              <strong><a href="https://fr.wikipedia.org/wiki/Hammurabi" target="_blank">wikipedia</a> </strong><br/>
+              <br/><strong>histoires</strong>&thinsp;&thinsp;&thinsp;:&thinsp;&thinsp;&thinsp;[<a class="go_tab" tab="histoires" to="gilgamesh"  style="color:teal">Où tout a commencé</a>]  [<a class="go_tab" tab="histoires" to="nippur"  style="color:teal">La maison des tablettes</a>]  [<a class="go_tab" tab="histoires" to="babylone"  style="color:teal">Les pères de l'algèbre</a>] <br/> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div -->
+<script>
+var tL={
+	s: new createjs.Stage("canvasTL"),
+	i: {
+		dim: {ti: :{time_lim[:min]},ts: :{time_lim[:max]}, t0: 1500,dt: 100, ii:  -1,is: 1},
+		timelim: :{timelimJS},
+		zoom: {ta: 1.0, tb: 0.0, ia: 1.0, ib: 0.0},
+		style: {border: 3, alpha: 0.2} //border= integer to add space at top and bottom
+	},
+	f: {},
+	events: :{eventsJS},
+	people: {
+		dates: :{datesJS}, 
+		max_math: :{people_max[:math].inspect},
+		max_others: :{people_max[:others].inspect}
+	},
+	priority: {math: 2, others: 2, events: 4},
+	rect: {people: 8, axis: 6, events: 1},
+	popup: {
+		people: {
+			div: document.createElement('div'),
+			img: document.createElement('img'),
+			header: document.createElement('h3'),
+			abstract: document.createElement('p')
+		},
+		events: {
+			div: document.createElement('div'),
+			header: document.createElement('strong'),
+			abstract: document.createElement('span')
+		}
+	}
+};
+
+tL.f.init=function() {
+	tL.s.enableMouseOver(10);
+	tL.s.canvas.width = window.innerWidth;
+	tL.s.canvas.height = window.innerHeight;
+
+	tL.i.dim.ti = tL.i.timelim[tL.priority.others - 1].min;
+	tL.i.dim.ts = tL.i.timelim[tL.priority.others - 1].max;
+	tL.i.dim.ii = -tL.people.max_others[tL.priority.others] - tL.i.style.border;
+	tL.i.dim.is = tL.people.max_math[tL.priority.math] + tL.i.style.border;
+
+	tL.i.zoom.ta=tL.s.canvas.width/(tL.i.dim.ts - tL.i.dim.ti);
+	tL.i.zoom.tb=-tL.i.zoom.ta * tL.i.dim.ti;
+
+	tL.i.zoom.ia=tL.s.canvas.height/(tL.i.dim.ii - tL.i.dim.is);
+	tL.i.zoom.ib=-tL.i.zoom.ia * tL.i.dim.is;
+}
+
+tL.f.tt=function(t) {
+	return tL.i.zoom.ta * t + tL.i.zoom.tb;
+}
+
+tL.f.it=function(i) {
+	return tL.i.zoom.ia * i + tL.i.zoom.ib;
+}
+
+tL.f.init();
+
+
+
+tL.f.drawPopupPeople=function() {
+
+	var html = tL.popup.people.div;
+	html.id = 'mathpopup';
+	html.style.minWidth = "400px";
+	html.style.maxWidth = "30%";
+	html.style.minHeight = "200px";
+	html.style.opacity= 0.75;
+	html.style.backgroundColor = 'linen';
+
+	var htmlContent = document.createElement('p');
+	htmlContent.style.margin = "25px";
+
+	var htmlImg = tL.popup.people.img;
+	htmlImg.src = "/users/Histoires/people/Thales.png";
+	htmlImg.style.width = "100px";
+	htmlImg.style.height = "100px";
+	htmlImg.style.float = "right";
+
+	htmlContent.appendChild(htmlImg);
+
+	var htmlH3 = tL.popup.people.header;
+	htmlH3.innerHTML = "Hammurabi (c. -1800, c. -1750)";
+    
+
+
+	htmlContent.appendChild(htmlH3);
+	// var html3 = document.createElement('div');
+	// html3.className = "content";
+	// var html4 = tL.popup.header;
+	// html4.innerHtml="Thales";
+	// html4.className="header";
+	// html3.appendChild(html4);
+
+	//htmlCard.appendChild(html3);
+
+	var htmlAbstract = tL.popup.people.abstract;
+	htmlAbstract.innerHTML="abstract";
+	htmlContent.appendChild(htmlAbstract);
+
+	html.appendChild(htmlContent);
+	
+	html.style.position = "absolute";
+	html.style.top = 0;
+	html.style.left = 0;
+	document.body.appendChild(html);
+
+	tL.popup.people.gg = new createjs.DOMElement(html);
+	tL.popup.people.gg.x = 20;
+	tL.popup.people.gg.y = 20;
+	//gg.alpha = 0.5;
+	tL.s.addChild(tL.popup.people.gg);
+
+	//createjs.Tween.get(gg).to({x:400}, 1000);
+}
+
+tL.f.drawPopupEvents=function() {
+
+	var html = tL.popup.events.div;
+	html.id = 'eventpopup';
+	html.style.minWidth = "100px";
+	html.style.minHeight = "50px";
+	html.style.opacity= 0.75;
+	//html.style.borderWidth="5px";
+	html.style.padding= "0px";
+	html.style.borderColor="black";
+	html.style.fontSize="14";
+
+	html.style.backgroundColor = 'red';
+
+	var htmlContent = document.createElement('p');
+	//htmlContent.style.margin = "25px";
+
+	var htmlH3 = tL.popup.events.header;
+	htmlH3.innerHTML = "date";
+    
+
+
+	htmlContent.appendChild(htmlH3);
+	// var html3 = document.createElement('div');
+	// html3.className = "content";
+	// var html4 = tL.popup.header;
+	// html4.innerHtml="Thales";
+	// html4.className="header";
+	// html3.appendChild(html4);
+
+	//htmlCard.appendChild(html3);
+
+	var htmlAbstract = tL.popup.events.abstract;
+	htmlAbstract.innerHTML="titre";
+	htmlContent.appendChild(htmlAbstract);
+
+	html.appendChild(htmlContent);
+	
+	html.style.position = "absolute";
+	html.style.top = 0;
+	html.style.left = 0;
+	document.body.appendChild(html);
+
+	tL.popup.events.gg = new createjs.DOMElement(html);
+	tL.popup.events.gg.x = 500;
+	tL.popup.events.gg.y = 20;
+	//gg.alpha = 0.5;
+	tL.s.addChild(tL.popup.events.gg);
+
+	//createjs.Tween.get(gg).to({x:400}, 1000);
+}
+
+tL.f.drawPeople=function() {
+	var keys=Object.keys(tL.people.dates);
+	keys.forEach((key) => {
+		var person=tL.people.dates[key];
+		if((person.math && person.priority <= tL.priority.math) || (!person.math && person.priority<= tL.priority.others)) {
+			var rect = new createjs.Shape();
+			rect.alpha = tL.i.style.alpha;
+			rect.person = key;
+			rect.graphics.beginFill(person.math ? 'blue' : "red");
+			rect.graphics.drawRect(0,-tL.rect.people/2, tL.i.zoom.ta*(person.death - person.birth), tL.rect.people);
+			rect.graphics.endFill();
+			rect.x=tL.f.tt(person.birth);
+			rect.y=tL.f.it((person.math ? 1.0 : -1.0) * person.high);
+			rect.on("mouseover", handleInteraction);
+			rect.on("mouseout", handleInteraction);
+			tL.s.addChild(rect);
+		}
+	});
+}
+
+tL.f.drawEvents=function() {
+	var keys=Object.keys(tL.events);
+	keys.forEach((key) => {
+		var event=tL.events[key];
+		if(event.priority <= tL.priority.events) {
+			var rect = new createjs.Shape();
+			rect.alpha = tL.i.style.alpha;
+			rect.event = key;
+			rect.graphics.beginFill("black");
+			rect.graphics.drawRect(-tL.rect.events/2,0, tL.rect.events,tL.i.zoom.ia*(tL.i.dim.is - tL.i.dim.ii));
+			rect.graphics.endFill();
+			rect.x=tL.f.tt(event.date);
+			rect.y=tL.f.it( tL.i.dim.ii);
+			rect.on("mouseover", handleInteraction);
+			rect.on("mouseout", handleInteraction);
+			tL.s.addChild(rect);
+		}
+	});
+}
+
+tL.f.drawTime=function() {
+	var rect = new createjs.Shape();
+					rect.graphics.beginFill('black');
+					rect.graphics.drawRect(0,-tL.rect.axis/2, tL.i.zoom.ta*(tL.i.dim.ts - tL.i.dim.ti) , tL.rect.axis);
+					rect.graphics.endFill();
+	rect.x=tL.f.tt(tL.i.dim.ti);rect.y=tL.f.it(0);
+	tL.s.addChild(rect);
+}
+
+tL.f.show=function() {
+
+	tL.f.drawTime();
+	tL.f.drawEvents();
+	tL.f.drawPeople();
+	tL.f.drawPopupPeople();
+	tL.f.drawPopupEvents();
+	//tL.s.setTransform(0,500,1.0,-1.0);
+	//tL.s.setTransform(tL.i.zoom.tb ,tL.i.zoom.ib,1.0,1.0);
+	tL.s.update();
+}
+
+tL.f.show();
+tL.popup.people.gg.visible=false;
+tL.popup.events.gg.visible=false;
+
+createjs.Ticker.addEventListener("tick", tL.s);
+
+function handleInteraction(event) {
+	if(event.type == "mouseover") {
+		event.target.alpha = 1; 
+		if( event.target.person !== undefined) {
+			tL.popup.people.gg.visible = true;
+			var person = tL.people.dates[event.target.person];
+			tL.popup.people.img.src = "/users/Histoires/people/"+(person.portrait ? event.target.person : "interrogation") +".png";
+			tL.popup.people.header.innerHTML= person.name + " ("+ person.dates +")";
+			tL.popup.people.abstract.innerHTML=person.abstract;
+		}
+		if( event.target.event !== undefined) {
+			tL.popup.events.gg.visible = true;
+			var eventHist = tL.events[event.target.event];
+			tL.popup.events.header.innerHTML = eventHist.date+": ";
+			tL.popup.events.abstract.innerHTML = eventHist.title;
+			tL.popup.events.gg.x=(event.rawX + tL.popup.events.div.offsetWidth > tL.s.canvas.width) ? event.rawX - tL.popup.events.div.offsetWidth : event.rawX;
+			tL.popup.events.gg.y=event.rawY;
+			var col;
+			switch (eventHist.nature) {
+				case 'politique':
+					col="red";
+					break;
+				case 'art':
+					col="yellow";
+					break;
+				case 'science':
+					col="orange";
+					break;
+			}
+			tL.popup.events.div.style.backgroundColor= col;
+		}
+	} else {
+		event.target.alpha = tL.i.style.alpha;
+		tL.popup.events.gg.visible = false;
+	}
+}
+window.onresize=function() {
+	tL.s.removeAllChildren();
+	tL.f.init();
+	tL.f.show();
+}
+</script>
+[#<]
+tL.f.drawPointsFrame=function() {
+	var circle = new createjs.Shape();
+	circle.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 10);
+	circle.x = tL.f.tt(tL.i.dim.ti);//0; // 0;
+	circle.y = tL.f.it(tL.i.dim.is);//500; // 0;
+	console.log(tL.i.zoom.ta+" "+tL.i.zoom.tb+" "+circle.x +" "+circle.y);
+	tL.s.addChild(circle);
+	var circle = new createjs.Shape();
+	circle.graphics.beginFill("Red").drawCircle(0, 0, 10);
+	circle.x = tL.f.tt(tL.i.dim.ts);//250; //250;
+	circle.y = tL.f.it(tL.i.dim.is);//500; //0;
+	console.log(tL.i.zoom.ta+" "+tL.i.zoom.tb+" "+circle.x +" "+circle.y);
+	tL.s.addChild(circle);
+	var circle = new createjs.Shape();
+	circle.graphics.beginFill("Yellow").drawCircle(0, 0, 10);
+	circle.x = tL.f.tt(tL.i.dim.ti);//0;//0;
+	circle.y = tL.f.it(tL.i.dim.ii);//0;//500;
+	console.log(tL.i.zoom.ta+" "+tL.i.zoom.tb+" "+circle.x +" "+circle.y);
+	tL.s.addChild(circle);
+	var circle = new createjs.Shape();
+	circle.graphics.beginFill("green").drawCircle(0, 0, 10);
+	circle.x = tL.f.tt(tL.i.dim.ts);//250; //250;
+	circle.y = tL.f.it(tL.i.dim.ii);//0; //500;
+	console.log(tL.i.zoom.ta+" "+tL.i.zoom.tb+" "+circle.x +" "+circle.y);
+	tL.s.addChild(circle);
+}

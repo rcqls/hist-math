@@ -1,0 +1,178 @@
+[#require]DragDropGame
+[#main]
+[#=]gamesList[portrait,dates,vraifaux,quiestce,souverain,correspondant,adversaire,professeur,traducteur]
+[#=]menuGamesChoices[|
+portrait: Son portrait ?
+dates: Ses dates ?
+vraifaux: Vrai ou Faux ?
+quiestce: Qui est-ce ?
+souverain: Son souverain ?
+correspondant: Son correspondant ?
+adversaire: Son adversaire ?
+professeur: Son professeur ?
+traducteur: Son traducteur ?|
+|]
+[#<]
+
+{#def]viewDates[#,]cle[cle][#rb<]
+dates=people[#{cle}]["dates"].to_s.split(";").map{|e| (e2=e.strip) =~ /^\?.*/ ? "c. "+e2[1..-1].to_i.to_s : e2.to_i.to_s}.join(", ")
+[#>][:{dates}]
+[#def}
+
+{#def]viewNameDates[#,]cle[cle][#>]
+[:{people[#{cle}]["name"]} <br/>({#viewDates]#{cle}[#})]
+[#def}
+
+{#def]viewPortrait[#,]cle[cle][#>]
+[<img src="/users/Histoires/people/:{people[#{cle}]["portrait"] ? #{cle} : 'interrogation'}.png" width="50"></img>]
+[#def}
+
+{#def]viewPortraitName[#,]cle[cle][#>]
+[<a class="go_tab" tab="people" to=":{#{cle}}"  style="color:teal"><img class="ui avatar image" src="/users/Histoires/people/:{people[#{cle}]["portrait"] ? #{cle} : 'interrogation'}.png"></a>
+      <span>:{people[#{cle}]["name"]}</span>]
+[#def}
+
+{#def]viewPortraitNameDates[#,]cle[cle][#>]
+[<a class="go_tab" tab="people" to=":{#{cle}}"  style="color:teal"><img class="ui avatar image" src="/users/Histoires/people/:{#{cle}}.png"></a>
+      <span>:{people[#{cle}]["name"]} <br/>({#viewDates]#{cle}[#})</span>]
+[#def}
+
+{#def]tabHistoiresGames
+[#>]
+<script>{#initScores]#{gamesList}[#}</script>
+  <div class="ui grid">
+    <div class="one wide column"></div>
+    <div class="eight wide column">
+      {#menuGames]games[#choices]
+      |#{menuGamesChoices}
+      [#js]
+      |showGame(value);
+      [#}
+    </div>
+    <div class="six wide column">
+      {#showScores#}
+    </div>
+    <div class="ui divider sixteen wide column"></div>
+  </div>
+
+{#divGame]portrait
+[#<]La fonction suivante permet de définir les choix à déterminer (1ère colonne)
+{#def]choiceDDG[#>][{#viewNameDates#}][#}
+
+La fonction suivante permet de définir les propositions
+{#def]propDDG[#>]{#viewPortrait#}[#}
+[#>]
+{#associationDDG]portrait
+[#rb<] #This is a initialisation block to loadinfo used inside gameDD3cols.choices and gameDD3cols.props
+people=YAML::load_file(File.expand_path("~/RodaSrv/public/users/Histoires/people.yml"))
+propsDDG=YAML::load_file(File.expand_path("~/RodaSrv/public/users/Histoires/jeux/celeb.yml"))["celebres"].split(" ").map{|e| e.strip}
+[#}
+{#buttonsDDG]portrait[#}
+[#divGame}
+
+{#divGame]dates
+[#<]La fonction suivante permet de définir les choix à déterminer (1ère colonne)
+{#def]choiceDDG[#>][:{people[cle]["dates"].split(";").join("-")}][#}
+{#def]choiceDDG[#>]{#viewDates#}[#}
+La fonction suivante permet de définir les propositions
+{#def]propDDG[#>]{#viewPortraitName#}[#def}
+[#>]
+{#associationDDG]dates
+[#rb<] #This is a initialisation block to loadinfo used inside gameDD3cols.choices and gameDD3cols.props
+people=YAML::load_file(File.expand_path("~/RodaSrv/public/users/Histoires/people.yml"))
+propsDDG=YAML::load_file(File.expand_path("~/RodaSrv/public/users/Histoires/jeux/celeb.yml"))["celebres"].split(" ").map{|e| e.strip}
+[#}
+{#buttonsDDG]dates[#}
+[#divGame}
+
+{#divGame]souverain
+[#<]La fonction suivante permet de définir les choix à déterminer (1ère colonne)
+{#def]choiceDDG[#>]{#viewPortraitName#}[#}
+
+La fonction suivante permet de définir les propositions
+{#def]propDDG[#>]{#viewPortraitName][props[cle]][#}[#def}
+[#html>]
+{#associationDDG]souverain
+[#rb<] #This is a initialisation block to loadinfo used inside gameDD3cols.choices and gameDD3cols.props
+assoc=YAML::load_file(File.expand_path("~/RodaSrv/public/users/Histoires/jeux/assoc.yml"))
+props=assoc["souverain"]
+propsDDG=props.keys
+[#}
+{#buttonsDDG]souverain[#}
+[#divGame}
+
+{#divGame]traducteur
+[#html>]{#associationDDG]traducteur
+[#rb<] #This is a initialisation block to loadinfo used inside gameDD3cols.choices and gameDD3cols.props
+assoc=YAML::load_file(File.expand_path("~/RodaSrv/public/users/Histoires/jeux/assoc.yml"))
+props=assoc["traducteur"]
+propsDDG=props.keys
+[#}
+{#buttonsDDG]traducteur[#}
+[#divGame}
+
+{#divGame]correspondant
+[#html>]
+{#associationDDG]correspondant
+[#rb<] #This is a initialisation block to loadinfo used inside gameDD3cols.choices and gameDD3cols.props
+assoc=YAML::load_file(File.expand_path("~/RodaSrv/public/users/Histoires/jeux/assoc.yml"))
+props=assoc["correspondant"]
+propsDDG=props.keys
+[#}
+{#buttonsDDG]correspondant[#}
+[#divGame}
+
+{#divGame]adversaire
+[#html>]
+{#associationDDG]adversaire
+[#rb<] #This is a initialisation block to loadinfo used inside gameDD3cols.choices and gameDD3cols.props
+assoc=YAML::load_file(File.expand_path("~/RodaSrv/public/users/Histoires/jeux/assoc.yml"))
+props=assoc["adversaire"]
+propsDDG=props.keys
+[#}
+{#buttonsDDG]adversaire[#}
+[#divGame}
+
+{#divGame]professeur
+[#html>]
+{#associationDDG]professeur
+[#rb<] #This is a initialisation block to loadinfo used inside gameDD3cols.choices and gameDD3cols.props
+assoc=YAML::load_file(File.expand_path("~/RodaSrv/public/users/Histoires/jeux/assoc.yml"))
+props=assoc["professeur"]
+propsDDG=props.keys
+[#}
+{#buttonsDDG]professeur[#}
+[#divGame}
+
+{#divGame]vraifaux
+[#<]
+{#def]goodYmlDDG[#>]vrai[#}
+{#def]badYmlDDG[#>]faux[#}
+{#def]questionYmlDDG[#>]enonce[#}
+
+{#def]propDDG[#>][<a class="go_tab" tab="people" to=":{cle}"  style="color:teal"><img class="ui avatar image" src="/users/Histoires/people/:{cle}.png"></a>
+      <span>:{people[cle]["name"]} <br/>(:{people[cle]["dates"].split(";").join("-")})</span>]
+[#def}
+{#def]propDDG[#>]{#viewPortraitName#}[#def}
+[#html>]
+{#truefalseDDG]vraifaux[#rb<]
+truefalseDDG=YAML::load_file(File.expand_path("~/RodaSrv/public/users/Histoires/jeux/vraifaux.yml"))
+[#}
+
+{#buttonsDDG]vraifaux[#}
+[#divGame}
+
+{#divGame]quiestce
+[#<]
+{#def]choicesDDG[#rb>]quniq.keys.map{|e| quniq[e]["reponse"]}.uniq.sort.map{|cle| people[cle] ? (cle + ": " + people[cle]["name"]) : "clepasok: pasok"+cle}.join("\n")[#def}
+[#html>]
+{#quniqueDDG]quiestce[#ids.question]enonce[#ids.answer]reponse[#rb<]
+people=YAML::load_file(File.expand_path("~/RodaSrv/public/users/Histoires/people.yml"))
+quniq=YAML::load_file(File.expand_path("~/RodaSrv/public/users/Histoires/jeux/qunique.yml"))
+[#}
+<span>   </span>
+{#buttonsDDG]quiestce[#btns]score,new[#}
+[#divGame}
+
+{#initMenuGame]games[#game]portrait[#}
+[#def}

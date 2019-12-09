@@ -1,0 +1,72 @@
+{#def]tabPeople[#html>]
+<div class="ui tab segment tab_people" data-tab="people">
+  <div class="ui grid">
+    <div class="one wide column"></div>
+    <div class="nine wide column">
+      {#dropdown]motscles_people[#class]search selection fluid normal[#multiple]true[#default]personnages[#choices]:{motsclesPeople_dropdown}[#js]
+      //alert("changed "+JSON.stringify(value));
+      if(typeof(value) != "undefined" && value.length > 0) {
+      select_people(People.motscles_selection=value.map(function(elt) {return People.motscles2people[elt];}).join(","),People.et_ou);
+      } else {$("#p_tab").click();select_people('','');}
+      [#}
+    </div>
+    <div class="two wide column">
+      {#dropdown]et_ou_people[#default]et/ou[#choices]et|ou[#js]
+      select_people(People.motscles_selection,People.et_ou=value);
+      [#}
+    </div>
+    <div class="three wide column">{#inputUI]periode_people[#default]periode...[#js]if(event.which==13) {select_people(People.motscles_selection,People.et_ou);}[#}</div>
+    <div class="ui divider sixteen wide column"></div>
+  </div>
+  <div class="ui list">
+  [#rb>]
+  personnages=people.sort_by{|person,info| birth=(info["dates"].split(";")[0]).strip;birth=(birth =~ /^\?.*/ ? birth[1..-1] : birth); birth.to_i}
+  personnages.each do |person,info| #
+    dates=info["dates"].split(";").map{|e| (e2=e.strip) =~ /^\?.*/ ? "c. "+e2[1..-1] : e2}.join(", ")
+  {#>]
+    <div id="p_:{person}" class="item :{person} people vue_person">
+      <img class="ui avatar image image_people" data-src="/users/Histoires/people/{#if]info["portrait"][#>]:{person}[#else]interrogation[#if}.png"></img>
+      <div class="content">
+        <div class="ui header"> <span class="ui small">:{info["complete"]} (:{dates})</span> {#hide]{#if]info["wikipedia"][#>]<a href="https://fr.wikipedia.org/wiki/:{info["wikipedia"]}" target="_blank">wikipedia</a>[#if} {#if]info["mactutor"][#>]<a href="http://www-history.mcs.st-and.ac.uk/Biographies/:{info["mactutor"]}.html" target="_blank">MacTutor</a>[#if}[#hide}</div>
+        <div class="description">
+          {#if]!info["abstract"].strip.empty?[#>]<I>:{info["abstract"]}</I>[#if}
+        [#>]
+        </div>
+      </div>
+    </div>
+    <div id="pp_:{person}"  class="ui#{popup.class} popup" style="#{popup.style.size}#{bgcolor.people}#{bgcolor.opacity}">
+      <div class="card">
+        <div class="content">
+          <div> <!-- div class=":{person} people"-->
+            <div class="eight wide column" align="justify">
+              <img class="ui small image floated right" src="/users/Histoires/people/{#if]info["portrait"][#>]:{person}[#else]interrogation[#if}.png"></img>
+              <h3 class="ui header">
+                :{info["complete"]} (:{dates})
+                <div class="sub header">:{info["abstract"]}</div>
+              </h3>
+              <strong>{#if]info["wikipedia"][#>]<a href="https://fr.wikipedia.org/wiki/:{info["wikipedia"]}" target="_blank">wikipedia</a>[#if} {#if]info["mactutor"][#>]<a href="http://www-history.mcs.st-and.ac.uk/Biographies/:{info["mactutor"]}.html" target="_blank">MacTutor</a>[#if}</strong><br/>
+              [#rb>]if people2histoires[person]
+                {#>]<br/><strong>histoire:{"s" if people2histoires[person].length > 1}</strong>#{wsp}:#{wsp}[#>}
+                people2histoires[person].sort_by{|e,imp|  10 - imp }.each_with_index do |h,i| #
+                  hist=h[0]
+                  {#>][[<a class="go_tab" tab="histoires" to=":{hist}" {#hide]href="/:{hist}-auto" target="_blank" onClick='$(".menu .item").tab("change tab","histoires");$("html,body").animate({scrollTop: $("#h_:{hist}").offset().top},"slow");$("#h_:{hist}").click();'[#hide} style="color:teal">:{histoires[hist]["title"]}</a>]{#if](i+1) != people2histoires[person].length[#>] [#if}{#if](i+1) % 3 == 0 [#>] <br/>[#if} ][#>}
+                end
+              end
+              if textes2people[person]
+                {#>]<br/><strong>texte:{"s" if textes2people[person].length > 1}</strong>#{wsp}:#{wsp}[#>}
+                textes2people[person].sort_by{|e| e2=e.strip;first=(textes[e2]["date"].to_s.split(";")[0]).strip;first=(first =~ /^\?.*/ ? first[1..-1] : first); first.to_f}.each_with_index do |texte,i| #
+                  {#>][[<a class="go_tab" tab="textes" to=":{texte}" {#hide]onClick='$(".menu .item").tab("change tab","textes");$("html,body").animate({scrollTop: $("#t_:{texte}").offset().top},"slow");$("#t_:{texte}").click();'[#hide} style="color:teal">:{textes[texte]["titre"]}</a>] ][#>}
+                end
+              end
+              [#>]
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  [#>}
+end
+[#>]
+  </div>
+</div>
+[#def}
