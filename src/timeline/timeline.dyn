@@ -88,26 +88,6 @@ eventsJS="{" + events.keys.map{|e| #
 <!--  :{timelimJS.inspect} -->
 
 <canvas id="canvasTL"></canvas>
-<!-- div id "toto" class="ui container" width=100 height=100>
-<div id="pp_Hammurabi"  class="ui popup" style="min-width:500px;background-color: linen;opacity: 0.95;">
-      <div class="card">
-        <div class="content">
-          <div> <-- div class="Hammurabi people"->
-            <div class="eight wide column" align="justify">
-              <img class="ui small image floated right" src="/users/Histoires/people/Hammurabi.png"></img>
-              <h3 class="ui header">
-                Hammurabi (c. -1800, c. -1750)
-                <div class="sub header">Le premier code civil.
-</div>
-              </h3>
-              <strong><a href="https://fr.wikipedia.org/wiki/Hammurabi" target="_blank">wikipedia</a> </strong><br/>
-              <br/><strong>histoires</strong>&thinsp;&thinsp;&thinsp;:&thinsp;&thinsp;&thinsp;[<a class="go_tab" tab="histoires" to="gilgamesh"  style="color:teal">Où tout a commencé</a>]  [<a class="go_tab" tab="histoires" to="nippur"  style="color:teal">La maison des tablettes</a>]  [<a class="go_tab" tab="histoires" to="babylone"  style="color:teal">Les pères de l'algèbre</a>] <br/> 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</div -->
 <script>
 var tL={
 	s: new createjs.Stage("canvasTL"),
@@ -129,6 +109,7 @@ var tL={
 				popup: {
 					events: {politique: "orange", art: "cyan"}
 				},
+				events: {rug: "black"},
 				people: {math: "blue" , others: "red"},
 				zone: {border: "gray", view: "white", axis: "black"}
 			}
@@ -174,20 +155,13 @@ var tL={
 tL.i.dim.tiz=tL.i.timelim[tL.priority.others - 1].min;
 tL.i.dim.tsz=tL.i.timelim[tL.priority.others - 1].max;
 
-
-tL.f.ttg=function(t) {
-	return tL.i.zoom.tag * t + tL.i.zoom.tbg;
-}
-
-tL.f.ttgi=function(t) {
-	return 1/tL.i.zoom.tag * t - tL.i.zoom.tbg/tL.i.zoom.tag;
-}
-
-tL.f.init=function() {
+tL.f.init=function(w,h) {
 	tL.s.enableMouseOver(10);
 
-	tL.s.canvas.width = window.innerWidth;
-	tL.s.canvas.height = window.innerHeight;
+	if(typeof w == "undefined") w = window.innerWidth;
+	if(typeof h == "undefined") h = window.innerHeight;
+	tL.s.canvas.width = w;
+	tL.s.canvas.height = h;
 
 	tL.i.dim.ti = (tL.i.dim.tz ? tL.i.dim.tiz : tL.i.dim.tig);
 	tL.i.dim.ts = (tL.i.dim.tz ? tL.i.dim.tsz : tL.i.dim.tsg);
@@ -221,6 +195,14 @@ tL.f.tt=function(t) {
 
 tL.f.it=function(i) {
 	return tL.i.zoom.ia * i + tL.i.zoom.ib;
+}
+
+tL.f.ttg=function(t) {
+	return tL.i.zoom.tag * t + tL.i.zoom.tbg;
+}
+
+tL.f.ttgi=function(t) {
+	return 1/tL.i.zoom.tag * t - tL.i.zoom.tbg/tL.i.zoom.tag;
 }
 
 tL.f.drawPopupPeople=function() {
@@ -323,9 +305,7 @@ tL.f.drawPopupEvents=function() {
 	html.style.minWidth = "100px";
 	html.style.minHeight = "50px";
 	html.style.opacity= 0.75;
-	//html.style.margin="5px";
 	html.style.paddingRight=html.style.paddingLeft= "10px";
-	//html.style.borderColor="black";
 	html.style.fontSize="14";
 
 	html.style.backgroundColor = 'red';
@@ -549,7 +529,7 @@ tL.f.drawTime=function() {
 tL.f.drawMenu=function() {
 	tL.menu.math.circle = new createjs.Shape();
 	var circle = tL.menu.math.circle;
-	circle.graphics.beginFill("blue").drawCircle(20, tL.s.canvas.height - 30 , 20);
+	circle.graphics.beginFill(tL.i.style.color.people.math).drawCircle(20, tL.s.canvas.height - 30 , 20);
 	circle.alpha=0.5;
 	circle.on("click",function(event) {
 		tL.priority.math += 1;
@@ -568,7 +548,7 @@ tL.f.drawMenu=function() {
 
 	tL.menu.others.circle = new createjs.Shape();
 	var circle = tL.menu.others.circle;
-	circle.graphics.beginFill("red").drawCircle(70, tL.s.canvas.height - 30 , 20);
+	circle.graphics.beginFill(tL.i.style.color.people.others).drawCircle(70, tL.s.canvas.height - 30 , 20);
 	circle.alpha=0.5;
 	circle.on("click",function(event) {
 		tL.priority.others += 1;
@@ -587,7 +567,7 @@ tL.f.drawMenu=function() {
 
 	tL.menu.events.circle = new createjs.Shape();
 	var circle = tL.menu.events.circle;
-	circle.graphics.beginFill("black").drawCircle(120, tL.s.canvas.height - 30 , 20);
+	circle.graphics.beginFill(tL.i.style.color.events.rug).drawCircle(120, tL.s.canvas.height - 30 , 20);
 	circle.alpha=0.5;
 	circle.on("click",function(event) {
 		tL.priority.events += 1;
@@ -606,7 +586,7 @@ tL.f.drawMenu=function() {
 }
 
 tL.f.drawBorder=function(rect,x,w) {
-	rect.graphics.clear().beginFill("grey").drawRect(x,0,w,tL.s.canvas.height);
+	rect.graphics.clear().beginFill(tL.i.style.color.zone.border).drawRect(x,0,w,tL.s.canvas.height);
 	rect.graphics.endFill();
 	rect.alpha=0.2;
 }
@@ -677,7 +657,7 @@ function handleOver(event) {
 		tL.popup.events.gg.visible = false;
 		if( event.target.event !== undefined) {
 			var eventHist = tL.events[event.target.event];
-			tL.f.drawEvent(event.target,eventHist,"black");
+			tL.f.drawEvent(event.target,eventHist,tL.i.style.color.events.rug);
 			tL.zoom.event.visible = false;
 		}
 	}

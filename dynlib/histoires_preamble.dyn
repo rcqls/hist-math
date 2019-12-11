@@ -363,7 +363,7 @@ $('.menu .item')
     }
   })
 ;
-$('.menu .item').tab('change tab','histoires');
+$('.menu .item').tab('change tab','dates');
 $('.image_histoires')
   .visibility({
     type       : 'image',
