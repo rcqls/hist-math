@@ -321,7 +321,7 @@ tL.f.drawPopupPeople=function() {
 	tL.popup.people.gg = new createjs.DOMElement(html);
 	tL.popup.people.gg.visible = false;
 	tL.popup.people.gg.x = tL.i.win.left + tL.popup.people2.gg.htmlElement.offsetWidth+20;
-	tL.popup.people.gg.y = tL.i.win.top - tL.i.zoom.ia*3;
+	tL.popup.people.gg.y = tL.i.win.top;
 	//gg.alpha = 0.5;
 	tL.s.addChild(tL.popup.people.gg);
 
@@ -368,7 +368,7 @@ tL.f.drawPopupPeople2=function() {
 	tL.popup.people2.gg = new createjs.DOMElement(html);
 	tL.popup.people2.gg.visible = false;
 	tL.popup.people2.gg.x = tL.i.win.left;
-	tL.popup.people2.gg.y = tL.i.win.top - tL.i.zoom.ia*3;
+	tL.popup.people2.gg.y = tL.i.win.top;
 	//gg.alpha = 0.5;
 	tL.s.addChild(tL.popup.people2.gg);
 
@@ -422,7 +422,7 @@ tL.f.drawPerson=function(gr,person) {
 	gr.graphics.drawRect(0,-tL.rect.people/2, tL.i.zoom.ta*(person.death - person.birth), tL.rect.people);
 	gr.graphics.endFill();
 	gr.x=tL.f.tt(person.birth);
-	gr.y=tL.f.it((person.math ? 1.0 : -1.0) * (person.high + 3) + (person.math ? -2.0 : 0.0));
+	gr.y=tL.f.it((person.math ? 1.0 : -1.0) * (person.high + 3));
 }
 
 tL.f.drawEvent=function(gr,event,color) {
@@ -432,12 +432,12 @@ tL.f.drawEvent=function(gr,event,color) {
 		gr.graphics.drawRect(-tL.rect.events/2,0, tL.rect.events,-tL.i.zoom.ia*2);
 		gr.graphics.endFill();
 		gr.x=tL.f.tt(event.date);
-		gr.y=tL.f.it(event.nature == "art" ? 1 : -1);
+		gr.y=tL.f.it(event.nature == "art" ? 3 : -1);
 	} else {
 		gr.graphics.drawRect(-tL.rect.events/2,0, tL.rect.events,-tL.i.zoom.ia);
 		gr.graphics.endFill();
 		gr.x=tL.f.tt(event.date);
-		gr.y=tL.f.it(event.nature == "art" ? (event.priority == 1 ? 0 : 1) : (event.priority == 1 ? -1 : -2));
+		gr.y=tL.f.it(event.nature == "art" ? (event.priority == 1 ? 2 : 3) : (event.priority == 1 ? -1 : -2));
 	}
 }
 
@@ -446,7 +446,7 @@ tL.f.drawEventGlobal=function(gr,event,color) {
 	gr.graphics.drawRect(-tL.rect.events,0, tL.rect.events,-tL.i.zoom.ia*2);
 	gr.graphics.endFill();
 	gr.x=tL.f.ttg(event.date);
-	gr.y=0;//tL.f.it(1);
+	gr.y=tL.f.it(1);
 }
 
 
@@ -483,7 +483,17 @@ tL.f.drawEvents=function() {
 }
 
 tL.f.drawTime=function() {
-	// Un Axe
+	// Deux Axes (quand temps global est à l'intérieur!) 
+	var rect = new createjs.Shape();
+	rect.graphics.beginFill(tL.i.style.color.zone.axis);
+	rect.graphics.drawRect(0,-tL.rect.axis/2, tL.i.zoom.tag*(tL.i.dim.tsgm - tL.i.dim.tigm) , tL.rect.axis);
+	rect.graphics.endFill();
+	rect.x=tL.f.ttg(tL.i.dim.tigm);rect.y=tL.f.it(1);
+	// rect.on("click",function(evt) {
+	// 	tL.f.update(true);
+	// });
+	tL.s.addChild(rect);
+
 	var rect = new createjs.Shape();
 	rect.graphics.beginFill(tL.i.style.color.zone.axis);
 	rect.graphics.drawRect(0,-tL.rect.axis/2, tL.i.zoom.tag*(tL.i.dim.tsgm - tL.i.dim.tigm) , tL.rect.axis);
@@ -494,36 +504,16 @@ tL.f.drawTime=function() {
 	// });
 	tL.s.addChild(rect);
 
-	// timeline
-	var rect = new createjs.Shape();
-	rect.graphics.beginFill(tL.i.style.color.zone.axis);
-	rect.graphics.drawRect(0,-tL.rect.axis/2, tL.i.zoom.tag*(tL.i.dim.tsgm - tL.i.dim.tigm) , tL.rect.axis);
-	rect.graphics.endFill();
-	rect.x=tL.f.ttg(tL.i.dim.tigm);rect.y=0; //tL.f.it(0);
-	// rect.on("click",function(evt) {
-	// 	tL.f.update(true);
-	// });
-	tL.s.addChild(rect);
-
-	var rect = new createjs.Shape();
-	rect.graphics.beginFill(tL.i.style.color.zone.axis);
-	rect.graphics.drawRect(0,-tL.rect.axis/2, tL.i.zoom.tag*(tL.i.dim.tsgm - tL.i.dim.tigm) , tL.rect.axis);
-	rect.graphics.endFill();
-	rect.x=tL.f.ttg(tL.i.dim.tigm);rect.y=-tL.i.zoom.ia * 2; //tL.f.it(0);
-	// rect.on("click",function(evt) {
-	// 	tL.f.update(true);
-	// });
-	tL.s.addChild(rect);
-
+	//
 	var rect = new createjs.Shape();
 	rect.graphics.beginFill(tL.i.style.color.zone.border);
 	rect.alpha=0.2;
 	rect.graphics.drawRect(0,-tL.rect.zoom/2, tL.i.zoom.tag*(tL.i.dim.tsgm - tL.i.dim.tigm) , tL.rect.zoom);
 	rect.graphics.endFill();
-	rect.x=tL.f.ttg(tL.i.dim.tigm);rect.y=-tL.i.zoom.ia; //tL.f.it(0);
-	rect.on("click",function(evt) {
-		tL.f.update(false);
-	});
+	rect.x=tL.f.ttg(tL.i.dim.tigm);rect.y=tL.f.it(0);
+	// rect.on("click",function(evt) {
+	// 	tL.f.update(false);
+	// });
 	tL.s.addChild(rect);
 
 	tL.zoom.time= new createjs.Shape();
@@ -531,7 +521,7 @@ tL.f.drawTime=function() {
 	rect.graphics.beginFill(tL.i.style.color.zone.view);
 	rect.graphics.drawRect(0,-tL.rect.zoom/2, tL.i.zoom.tag*(tL.i.dim.tsz - tL.i.dim.tiz) , tL.rect.zoom);
 	rect.graphics.endFill();
-	rect.x=tL.f.ttg(tL.i.dim.tiz);rect.y=-tL.i.zoom.ia; //tL.f.it(0);
+	rect.x=tL.f.ttg(tL.i.dim.tiz);rect.y=tL.f.it(0);
 	rect.on("mousedown",function(evt) {
 		tL.zoom.prevStageX=evt.stageX;
 		// console.log("tL.zoom.prevStageX: "+tL.zoom.prevStageX );
@@ -571,12 +561,11 @@ tL.f.drawTime=function() {
 		tL.f.update(true);
 	});
 	tL.s.addChild(rect);
-
 	tL.zoom.left = new createjs.Shape();
 	var circle = tL.zoom.left;
 	circle.graphics.beginFill(tL.i.style.color.zone.axis);
-	circle.graphics.drawCircle(0,0,tL.rect.zoom);
-	circle.x=tL.f.ttg(tL.i.dim.tiz);circle.y=-tL.i.zoom.ia; //tL.f.it(0);
+	circle.graphics.drawCircle(0,0,tL.rect.zoom/2);
+	circle.x=tL.f.ttg(tL.i.dim.tiz);circle.y=tL.f.it(0);
 	circle.on("mousedown", function(evt) {
 		evt.target.xOLD=evt.target.x;
 		tL.f.update(false);
@@ -599,8 +588,8 @@ tL.f.drawTime=function() {
 	tL.zoom.right = new createjs.Shape();
 	var circle = tL.zoom.right;
 	circle.graphics.beginFill(tL.i.style.color.zone.axis);
-	circle.graphics.drawCircle(0,0,tL.rect.zoom);
-	circle.x=tL.f.ttg(tL.i.dim.tsz);circle.y=-tL.i.zoom.ia; //tL.f.it(0);
+	circle.graphics.drawCircle(0,0,tL.rect.zoom/2);
+	circle.x=tL.f.ttg(tL.i.dim.tsz);circle.y=tL.f.it(0);
 	circle.on("mousedown", function(evt) {
 		evt.target.xOLD=evt.target.x;
 		tL.f.update(false);
@@ -687,7 +676,7 @@ tL.f.drawMenu=function() {
 }
 
 tL.f.drawBorder=function(rect,x,w) {
-	rect.graphics.clear().beginFill(tL.i.style.color.zone.border).drawRect(x,-tL.i.zoom.ia*2.5,w,tL.s.canvas.height);
+	rect.graphics.clear().beginFill(tL.i.style.color.zone.border).drawRect(x,0,w,tL.s.canvas.height);
 	rect.graphics.endFill();
 	rect.alpha=0.2;
 }
@@ -780,7 +769,7 @@ tL.f.updatePopupEventOnOver=function(evtTarget) {
 		tL.popup.events.div.style.backgroundColor= tL.i.style.color.popup.events[eventHist.nature];
 		
 		tL.popup.events.gg.x= tL.i.win.left + evtTarget.x + ((tL.i.win.left + evtTarget.x + tL.popup.events.div.offsetWidth > tL.s.canvas.width) ? -tL.popup.events.div.offsetWidth : 0);
-		tL.popup.events.gg.y= tL.i.win.top+ evtTarget.y + (eventHist.nature == "art" ?  -tL.popup.events.div.offsetHeight - tL.i.zoom.ia : -tL.i.zoom.ia*3);
+		tL.popup.events.gg.y= tL.i.win.top+ evtTarget.y + (eventHist.nature == "art" ?  -tL.popup.events.div.offsetHeight : -tL.i.zoom.ia*2.5);
 
 		tL.f.drawEvent(evtTarget,eventHist,tL.i.style.color.popup.events[eventHist.nature]);
 		tL.zoom.event.visible = true;
