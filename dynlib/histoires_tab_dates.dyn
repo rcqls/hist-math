@@ -1,0 +1,32 @@
+[#require]Histoires/dynlib/histoiresDates
+[#main][#<]
+
+{#LayoutCSSHeader]<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>[#}
+
+{#def]tabDates
+[#html>]
+<div class="ui tab segment tab_dates" data-tab="dates">
+  <div id="canvas_container" class="ui grid" style="background-color: white;margin: 0px;padding: 0px;">
+    <div class="one wide column"></div>
+    <div class="eight wide column">
+      {#dropdown]people_dates[#class]selection search[#default]personnage[#valuesJS][tL.dropdown.people]
+	  [#js]
+	  | console.log("value: <"+value+">");
+	  |tL.f.updatePerson(value);
+	  [#}
+    </div>
+	<div class="one wide column"></div>
+	<div class="six wide column">
+      {#dropdown]themes_dates[#class]selection search[#default]Choisir un thème[#choices]
+	  lux: Luxembourg
+	  eth: Ethiopie
+	  hol: Hollande
+	  ind: Inde
+	  [#js]
+	  tL.f.updateTheme(value);
+	  [#}
+    </div>
+	<canvas id="canvasTL" style="background-color: white;margin: 0px;padding: 0px;"></canvas>
+  </div>
+</div>
+[#def}

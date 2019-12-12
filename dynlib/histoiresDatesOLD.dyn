@@ -1,0 +1,816 @@
+[#<]
+{#def]initHistoiresDatesJS[#,]force[false][#,]debug[false]
+[#,]canvas_id[canvasTL] 
+[#,]width[] [#,]height[]
+[#,]left[0] [#,]top[0]
+[#?]#{force}
+[#rb<]
+require 'yaml'
+people=YAML::load_file(File.expand_path("~/RodaSrv/public/users/Histoires/people_priorite.yml"))
+events=YAML::load_file(File.expand_path("~/RodaSrv/public/users/Histoires/events.yml"))
+dates_people={}
+people.keys.each do |e| #
+	tmp=people[e]["dates"].gsub("?","").split(";")
+	dates_people[e]={:birth=>tmp[0].to_i,:death => (tmp[1].nil? ?  2020 : tmp[1].to_i)}
+end
+
+dates_keys=[]
+people_max={math: [1], others: [1]}
+(1..4).each do |prio| #
+	cur_high=[""]*(people.length+1)
+	dates_keys_math=dates_people.keys.select{|e| people[e]["math"] and people[e]["priorite"]== prio}.sort_by {|e| dates_people[e][:birth]}
+	dates_keys += dates_keys_math
+	dates_keys_math.each do |e| #
+		birth,death=dates_people[e][:birth],dates_people[e][:death]
+		cur_high.each_index do |i| #
+			if cur_high[i].empty? or dates_people[cur_high[i]][:death] < birth
+				cur_high[i]=e
+				dates_people[e][:high]= i + people_max[:math][prio-1]
+				dates_people[e][:priority]=prio
+				dates_people[e][:math]=true
+				break
+			end
+		end
+	end
+	people_max[:math][prio] = cur_high.select{|e| !e.empty?}.length + people_max[:math][prio-1]
+
+end
+
+(1..4).each do |prio| #
+	cur_high=[""]*(people.length+1)
+	dates_keys_others=dates_people.keys.select{|e| (!people[e]["math"]) and people[e]["priorite"]== prio }.sort_by {|e| dates_people[e][:birth]}
+	dates_keys += dates_keys_others
+	dates_keys_others.each do |e| #
+		birth,death=dates_people[e][:birth],dates_people[e][:death]
+		cur_high.each_index do |i| #
+			if cur_high[i].empty? or dates_people[cur_high[i]][:death] < birth
+				cur_high[i]=e
+				dates_people[e][:high]= i+people_max[:others][prio-1]
+				dates_people[e][:priority]=prio
+				dates_people[e][:math]=false
+				break
+			end
+		end
+	end
+	people_max[:others][prio]= cur_high.select{|e| !e.empty?}.length + people_max[:others][prio-1]
+end
+
+#time_lims=[]
+#(1..4).each do |prio| #
+time_lim={
+	min: dates_people.keys.map{|e| dates_people[e][:birth]}.min,
+	max: dates_people.keys.map{|e| dates_people[e][:death]}.max
+}
+#end
+
+timelimJS="["
+(1..4).each do |prio| #
+	timelimJS << "{min: " << dates_people.keys.select{|e| dates_people[e][:priority] <= prio}.map{|e| dates_people[e][:birth]}.min.to_s << ", max: " << dates_people.keys.select{|e| dates_people[e][:priority] <= prio}.map{|e| dates_people[e][:death]}.max.to_s << "}"
+	timelimJS << "," if prio != 4
+end
+timelimJS << "]"
+
+{#hide][#hide}
+
+datesJS = "{" + dates_keys.map{|e| #
+	dates=people[e]["dates"].split(";").map{|e| (e2=e.strip) =~ /^\?.*/ ? "c. "+e2[1..-1] : e2}.join(", ")
+	e+": {birth: " + dates_people[e][:birth].to_s + ", death: " + dates_people[e][:death].to_s + ", high: " + dates_people[e][:high].to_s + ", priority: " + dates_people[e][:priority].to_s + ", math: " + dates_people[e][:math].to_s + ", name: \"" + people[e]["complete"].to_s + "\", dates: \"" + dates+ "\", abstract: \"" + people[e]["abstract"].strip.gsub("\n",' ').gsub(":","&#58;").to_s + "\", portrait: " + people[e]["portrait"].to_s + "}"
+}.join(", ") + "}"
+
+eventsJS="{" + events.keys.map{|e| #
+	e+": {title: \"" + events[e]["titre"].to_s + "\", date: " + events[e]["date"].to_s + ", nature: \"" + events[e]["nature"].to_s + "\", wiki: \"" + events[e]["wikipedia"].to_s + "\", priority: " + events[e]["priorite"].to_s + "}"
+}.join(", ") + "}"
+{#hide]
+
+[#hide}
+[#=]jscode[
+
+{#blck][#>]
+tL={
+	s: new createjs.Stage("#{canvas_id}"),
+	i: {
+		win: {left: 0, top: 0},
+		dim: {
+			tig: :{time_lim[:min]},tsg: :{time_lim[:max]},
+			tigm: 0, tsgm: 0, 
+			ti: :{time_lim[:min]},ts: :{time_lim[:max]},
+			tim: 0, tsm: 0,
+			tz: true, tiz: -1900, tsz: 2020,
+			ii:  -1,is: 1
+		},
+		timelim: :{timelimJS},
+		zoom: {ta: 1.0, tb: 0.0, ia: 1.0, ib: 0.0,tag: 1.0, tbg: 0.0},
+		style: {
+			mt: 50, //largeur pour les bords initiaux
+			mi: 3, //entiers pour marges top and bottom
+			alphaPrev: 1.0,
+			alpha: [1.0,0.8,0.6,0.4,0.2], 
+			color: {
+				popup: {
+					events: {politique: "orange", art: "cyan"}
+				},
+				events: {rug: "black"},
+				people: {math: "blue" , others: "red"},
+				zone: {border: "gray", view: "white", axis: "black"}
+			}
+		} 
+	},
+	// début couleurs: thème rouge-pourpre-bleu Fabienne
+	themes: {
+		default: {alpha: "dark", color: "ind"},
+		alpha: {
+			light: [1.0,0.8,0.6,0.4,0.2],
+			dark: [1.0,0.8,0.65,0.5,0.35]
+		},
+		lux: {
+			name: "Luxembourg",
+			description: "rouge-pourpre-bleu",
+			color: {
+				popup: {
+					events: {politique: "#C2F7FF", art: "#F7DAD8"}
+				},
+				events: {rug: "#803B81"},
+				people: {math: "#A30000" , others: "#008D9B"},
+				zone: {border: "#CDA6E7", view: "white", axis: "#803B81"}
+			}
+		},
+		eth: {
+			name: "Ethiopie",
+			description: "vert-marron-rouge",
+			color: {
+				popup: {
+					events: {politique: "#F06060", art: "#A5BC50"}
+				},
+				events: {rug: "#773622"},
+				people: {math: "#557300" , others: "#D03142"},
+				zone: {border: "#DEC3A6", view: "white", axis: "#773622"}
+			}
+		},
+		hol: {
+			name: "Hollande",
+			description: "rouge-marron-bleu",
+			color: {
+				popup: {
+					events: {politique: "#BED9FD", art: "#FFB5B5"}
+				},
+				events: {rug: "#513B3B"},
+				people: {math: "#C90B0B" , others: "#242775"},
+				zone: {border: "#9E9292", view: "white", axis: "#513B3B"}
+			}
+		},
+		ind: {
+			name: "Inde",
+			description: "orange-marron-vert",
+			color: {
+				popup: {
+					events: {politique: "#AAECAB", art: "#FFAC77"}
+				},
+				events: {rug: "#513B3B"},
+				people: {math: "#FF7400" , others: "#0D9F00"},
+				zone: {border: "#9E9292", view: "white", axis: "#513B3B"}
+			}
+		}
+	},
+	f: {},
+	menu: {
+		math: {},
+		others: {},
+		events: {}
+	},
+	zoom: {rect: {}},
+	events: :{eventsJS},
+	people: {
+		dates: :{datesJS},
+		radius: 100,
+		max_math: :{people_max[:math].inspect},
+		max_others: :{people_max[:others].inspect}
+	},
+	priority: {math: 2, others: 2, events: 1},
+	rect: {people: 8, events: 3, axis: 8, zoom: 4},
+	popup: {
+		people: {
+			div: document.createElement('div'),
+			img: document.createElement('img'),
+			header: document.createElement('h3'),
+			abstract: document.createElement('p')
+		},
+		people2: {
+			prev: "",
+			div: document.createElement('div'),
+			img: document.createElement('img'),
+			header: document.createElement('h3'),
+			abstract: document.createElement('p')
+		},
+		events: {
+			div: document.createElement('div'),
+			header: document.createElement('strong'),
+			abstract: document.createElement('span')
+		}
+	}
+};
+
+//correct initialization of tiz and tsz (useful when tsz first changed!)
+tL.i.dim.tiz=tL.i.timelim[tL.priority.others - 1].min;
+tL.i.dim.tsz=tL.i.timelim[tL.priority.others - 1].max;
+
+// Dropdown
+tL.dropdown={
+	people: Object.keys(tL.people.dates).map(function(e) {return {value: e, name: tL.people.dates[e].name};}),
+	themes: [] //TODO
+}
+
+tL.f.offset=function(el) {
+    var rect = el.getBoundingClientRect(),
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+}
+
+tL.f.setTheme=function(color,alpha) {
+	if(typeof color == "undefined") {color=tL.themes.default.color;}
+	if(typeof alpha == "undefined") {alpha=tL.themes.default.alpha;}
+	tL.i.style.color=tL.themes[color].color;
+	tL.i.style.alpha=tL.themes.alpha[alpha];
+}
+
+tL.f.init=function() {
+	tL.s.enableMouseOver(10);
+
+	tL.s.canvas.width = {#if]#{+?width}[#>]#{width}[#else]window.innerWidth[#if};
+	tL.s.canvas.height = {#if]#{+?height}[#>]#{height}[#else]window.innerHeight[#if};
+
+	tL.i.dim.ti = (tL.i.dim.tz ? tL.i.dim.tiz : tL.i.dim.tig);
+	tL.i.dim.ts = (tL.i.dim.tz ? tL.i.dim.tsz : tL.i.dim.tsg);
+	
+	tL.i.dim.ii = -tL.people.max_others[tL.priority.others] - tL.i.style.mi;
+	tL.i.dim.is = tL.people.max_math[tL.priority.math] + tL.i.style.mi;
+
+	tL.i.dim.tim = tL.i.dim.ti - tL.i.style.mt;
+	tL.i.dim.tsm = tL.i.dim.ts + tL.i.style.mt;
+	tL.i.zoom.ta=tL.s.canvas.width/(tL.i.dim.tsm - tL.i.dim.tim);
+	tL.i.zoom.tb=-tL.i.zoom.ta * tL.i.dim.tim;
+
+	tL.i.zoom.ia=tL.s.canvas.height/(tL.i.dim.ii - tL.i.dim.is);
+	tL.i.zoom.ib=-tL.i.zoom.ia * tL.i.dim.is;
+
+	//g est pour global et sert pour le réglage du zoom
+	tL.i.dim.tigm = tL.i.dim.tig - tL.i.style.mt;
+	tL.i.dim.tsgm = tL.i.dim.tsg + tL.i.style.mt;
+	tL.i.zoom.tag=tL.s.canvas.width/(tL.i.dim.tsgm - tL.i.dim.tigm);
+	tL.i.zoom.tbg=-tL.i.zoom.tag * tL.i.dim.tigm;
+
+	tL.rect.people= -tL.i.zoom.ia - 1;
+	tL.rect.axis= -(tL.i.zoom.ia * 2);
+	tL.rect.zoom=-tL.i.zoom.ia * 1;
+
+}
+
+tL.f.tt=function(t) {
+	return tL.i.zoom.ta * t + tL.i.zoom.tb;
+}
+
+tL.f.it=function(i) {
+	return tL.i.zoom.ia * i + tL.i.zoom.ib;
+}
+
+tL.f.ttg=function(t) {
+	return tL.i.zoom.tag * t + tL.i.zoom.tbg;
+}
+
+tL.f.ttgi=function(t) {
+	return 1/tL.i.zoom.tag * t - tL.i.zoom.tbg/tL.i.zoom.tag;
+}
+
+tL.f.drawPopupPeople=function() {
+
+	var html = tL.popup.people.div;
+	html.id = 'mathpopup';
+	html.style.width = "25%";
+	html.style.minHeight = "100px";
+	html.style.opacity= 0.75;
+	html.style.backgroundColor = 'linen';
+
+	var htmlContent = document.createElement('p');
+	htmlContent.style.margin = "25px";
+
+	var htmlImg = tL.popup.people.img;
+	htmlImg.src = "/users/Histoires/people/Thales.png";
+	htmlImg.style.width = "100px";
+	htmlImg.style.height = "100px";
+	htmlImg.style.float = "right";
+
+	htmlContent.appendChild(htmlImg);
+
+	var htmlH3 = tL.popup.people.header;
+	htmlH3.innerHTML = "Hammurabi (c. -1800, c. -1750)";
+    
+	htmlContent.appendChild(htmlH3);
+
+	var htmlAbstract = tL.popup.people.abstract;
+	htmlAbstract.innerHTML="abstract";
+	htmlContent.appendChild(htmlAbstract);
+
+	html.appendChild(htmlContent);
+	
+	html.style.position = "absolute";
+	html.style.top = 0;
+	html.style.left = 0;
+	document.body.appendChild(html);
+
+	tL.popup.people.gg = new createjs.DOMElement(html);
+	tL.popup.people.gg.visible = false;
+	tL.popup.people.gg.x = tL.i.win.left + tL.popup.people2.gg.htmlElement.offsetWidth+20;
+	tL.popup.people.gg.y = tL.i.win.top;
+	//gg.alpha = 0.5;
+	tL.s.addChild(tL.popup.people.gg);
+
+	//createjs.Tween.get(gg).to({x:400}, 1000);
+}
+
+
+tL.f.drawPopupPeople2=function() {
+
+	var html = tL.popup.people2.div;
+	html.id = 'mathpopup';
+	html.style.width = "25%";
+	html.style.minHeight = "100px";
+	html.style.opacity= 0.75;
+	html.style.backgroundColor = 'linen';
+
+	var htmlContent = document.createElement('p');
+	htmlContent.style.margin = "25px";
+
+	var htmlImg = tL.popup.people2.img;
+	htmlImg.src = "/users/Histoires/people/Thales.png";
+	htmlImg.style.width = "100px";
+	htmlImg.style.height = "100px";
+	htmlImg.style.float = "right";
+
+	htmlContent.appendChild(htmlImg);
+
+	var htmlH3 = tL.popup.people2.header;
+	htmlH3.innerHTML = "Hammurabi (c. -1800, c. -1750)";
+    
+	htmlContent.appendChild(htmlH3);
+
+	var htmlAbstract = tL.popup.people2.abstract;
+	htmlAbstract.innerHTML="abstract";
+	htmlContent.appendChild(htmlAbstract);
+
+	html.appendChild(htmlContent);
+	
+	html.style.position = "absolute";
+	html.style.top = 0;
+	html.style.left = 0;
+	document.body.appendChild(html);
+
+	tL.popup.people2.gg = new createjs.DOMElement(html);
+	tL.popup.people2.gg.visible = false;
+	tL.popup.people2.gg.x = tL.i.win.left;
+	tL.popup.people2.gg.y = tL.i.win.top;
+	//gg.alpha = 0.5;
+	tL.s.addChild(tL.popup.people2.gg);
+
+	//createjs.Tween.get(gg).to({x:400}, 1000);
+}
+
+tL.f.drawPopupEvents=function() {
+
+	var html = tL.popup.events.div;
+	html.id = 'eventpopup';
+	html.style.minWidth = "100px";
+	html.style.minHeight = "50px";
+	html.style.opacity= 0.75;
+	html.style.paddingRight=html.style.paddingLeft= "10px";
+	html.style.fontSize="14";
+
+	html.style.backgroundColor = 'red';
+
+	var htmlContent = document.createElement('p');
+	//htmlContent.style.margin = "25px";
+
+	var htmlH3 = tL.popup.events.header;
+	htmlH3.innerHTML = "date";
+    
+	htmlContent.appendChild(htmlH3);
+
+	var htmlAbstract = tL.popup.events.abstract;
+	htmlAbstract.innerHTML="titre";
+	htmlContent.appendChild(htmlAbstract);
+
+	html.appendChild(htmlContent);
+	
+	html.style.position = "absolute";
+	html.style.top = 0;
+	html.style.left = 0;
+	document.body.appendChild(html);
+
+	tL.popup.events.gg = new createjs.DOMElement(html);
+	tL.popup.events.gg.visible = false;
+	tL.popup.events.gg.x = 500;
+	tL.popup.events.gg.x = 20;
+	//gg.alpha = 0.5;
+	tL.s.addChild(tL.popup.events.gg);
+
+	//createjs.Tween.get(gg).to({x:400}, 1000);
+}
+
+tL.f.drawPerson=function(gr,person) {
+	gr.alpha = tL.i.style.alpha[person.priority];
+	gr.graphics.beginFill(tL.i.style.color.people[person.math ? 'math' : "others"]);
+	gr.graphics.drawRect(0,-tL.rect.people/2, tL.i.zoom.ta*(person.death - person.birth), tL.rect.people);
+	gr.graphics.endFill();
+	gr.x=tL.f.tt(person.birth);
+	gr.y=tL.f.it((person.math ? 1.0 : -1.0) * (person.high + 3));
+}
+
+tL.f.drawEvent=function(gr,event,color) {
+	gr.alpha = tL.i.style.alpha[event.priority];
+	gr.graphics.clear().beginFill(color);
+	if(tL.priority.events == 1) { 
+		gr.graphics.drawRect(-tL.rect.events/2,0, tL.rect.events,-tL.i.zoom.ia*2);
+		gr.graphics.endFill();
+		gr.x=tL.f.tt(event.date);
+		gr.y=tL.f.it(event.nature == "art" ? 3 : -1);
+	} else {
+		gr.graphics.drawRect(-tL.rect.events/2,0, tL.rect.events,-tL.i.zoom.ia);
+		gr.graphics.endFill();
+		gr.x=tL.f.tt(event.date);
+		gr.y=tL.f.it(event.nature == "art" ? (event.priority == 1 ? 2 : 3) : (event.priority == 1 ? -1 : -2));
+	}
+}
+
+tL.f.drawEventGlobal=function(gr,event,color) {
+	gr.graphics.clear().beginFill(color);
+	gr.graphics.drawRect(-tL.rect.events,0, tL.rect.events,-tL.i.zoom.ia*2);
+	gr.graphics.endFill();
+	gr.x=tL.f.ttg(event.date);
+	gr.y=tL.f.it(1);
+}
+
+
+tL.f.drawPeople=function() {
+	var keys=Object.keys(tL.people.dates);
+	keys.forEach((key) => {
+		var person=tL.people.dates[key];
+		if((person.math && person.priority <= tL.priority.math) || (!person.math && person.priority<= tL.priority.others)) {
+			var rect = new createjs.Shape();
+			rect.person = key;
+			tL.f.drawPerson(rect,person);
+			rect.on("mouseover", handleOver);
+			rect.on("mouseout", handleOver);
+			rect.on("click", handleClick);
+			tL.s.addChild(rect);
+		}
+	});
+}
+
+tL.f.drawEvents=function() {
+	var keys=Object.keys(tL.events);
+	keys.forEach((key) => {
+		var event=tL.events[key];
+		if(event.priority <= tL.priority.events) {
+			var rect = new createjs.Shape();
+			rect.event = key;
+			tL.f.drawEvent(rect,event,tL.i.style.color.zone.axis);
+			rect.on("mouseover", handleOver);
+			rect.on("mouseout", handleOver);
+			tL.s.addChild(rect);
+		}
+	});
+}
+
+tL.f.drawTime=function() {
+	var rect = new createjs.Shape();
+	rect.graphics.beginFill(tL.i.style.color.zone.axis);
+	rect.graphics.drawRect(0,-tL.rect.axis/2, tL.i.zoom.tag*(tL.i.dim.tsgm - tL.i.dim.tigm) , tL.rect.axis);
+	rect.graphics.endFill();
+	rect.x=tL.f.ttg(tL.i.dim.tigm);rect.y=tL.f.it(0);
+	// rect.on("click",function(evt) {
+	// 	tL.f.update(true);
+	// });
+	tL.s.addChild(rect);
+
+	var rect = new createjs.Shape();
+	rect.graphics.beginFill(tL.i.style.color.zone.border);
+	//rect.alpha=0.6;
+	rect.graphics.drawRect(0,-tL.rect.zoom/2, tL.i.zoom.tag*(tL.i.dim.tsgm - tL.i.dim.tigm) , tL.rect.zoom);
+	rect.graphics.endFill();
+	rect.x=tL.f.ttg(tL.i.dim.tigm);rect.y=tL.f.it(0);
+	// rect.on("click",function(evt) {
+	// 	tL.f.update(false);
+	// });
+	tL.s.addChild(rect);
+
+	tL.zoom.time= new createjs.Shape();
+	var rect = tL.zoom.time;
+	rect.graphics.beginFill(tL.i.style.color.zone.view);
+	rect.graphics.drawRect(0,-tL.rect.zoom/2, tL.i.zoom.tag*(tL.i.dim.tsz - tL.i.dim.tiz) , tL.rect.zoom);
+	rect.graphics.endFill();
+	rect.x=tL.f.ttg(tL.i.dim.tiz);rect.y=tL.f.it(0);
+	rect.on("mousedown",function(evt) {
+		tL.zoom.prevStageX=evt.stageX;
+		// console.log("tL.zoom.prevStageX: "+tL.zoom.prevStageX );
+		tL.f.update(false);
+	});
+	rect.on("pressmove",function(evt) {
+		var lag=evt.stageX - tL.zoom.prevStageX;
+		//console.log("pressmove: "+evt.stageX+" - "+tL.zoom.prevStageX);
+		var timeLeft=tL.f.ttg(tL.i.dim.tiz)+lag,timeRight=tL.f.ttg(tL.i.dim.tsz)+lag;
+		// console.log("lag: "+lag+" timeLeft:"+timeLeft + " timeright="+timeRight);
+		// console.log(tL.f.ttgi(timeLeft) + " >= "+tL.i.dim.tig+" && "+tL.f.ttgi(timeRight) +" <= " + tL.i.dim.tsg);
+		if((tL.f.ttgi(timeLeft) >= tL.i.dim.tig) && (tL.f.ttgi(timeRight) <= tL.i.dim.tsg)) {
+			tL.zoom.left.x = timeLeft;
+			tL.zoom.right.x = timeRight;
+			tL.f.drawBorder(tL.zoom.rect.left, 0, tL.zoom.left.x);
+			tL.f.drawBorder(tL.zoom.rect.right,tL.zoom.right.x,tL.s.canvas.width);
+		}
+	});
+	rect.on("pressup",function(evt) {
+		var lag=evt.stageX - tL.zoom.prevStageX;
+		var timeLeft,timeRight;
+		timeLeft=tL.f.ttg(tL.i.dim.tiz)+lag;
+		timeRight=tL.f.ttg(tL.i.dim.tsz)+lag;
+		if(tL.f.ttgi(timeLeft) < tL.i.dim.tig) {
+			lag=tL.i.zoom.ta*(tL.i.dim.tig - tL.i.dim.tiz);
+			timeLeft=tL.f.ttg(tL.i.dim.tiz)+lag;
+			timeRight=tL.f.ttg(tL.i.dim.tsz)+lag;
+		} else if(tL.f.ttgi(timeRight) > tL.i.dim.tsg) {
+			lag=tL.i.zoom.ta*(tL.i.dim.tsg - tL.i.dim.tsz);
+			timeLeft=tL.f.ttg(tL.i.dim.tiz)+lag;
+			timeRight=tL.f.ttg(tL.i.dim.tsz)+lag;
+		}
+		tL.zoom.left.x = timeLeft;
+		tL.zoom.right.x = timeRight;
+		tL.i.dim.tiz=tL.f.ttgi(timeLeft);
+		tL.i.dim.tsz=tL.f.ttgi(timeRight);
+		tL.f.update(true);
+	});
+	tL.s.addChild(rect);
+	tL.zoom.left = new createjs.Shape();
+	var circle = tL.zoom.left;
+	circle.graphics.beginFill(tL.i.style.color.zone.axis);
+	circle.graphics.drawCircle(0,0,tL.rect.zoom/2);
+	circle.x=tL.f.ttg(tL.i.dim.tiz);circle.y=tL.f.it(0);
+	circle.on("mousedown", function(evt) {
+		evt.target.xOLD=evt.target.x;
+		tL.f.update(false);
+	});
+	circle.on("pressmove",function(evt) {
+		if(tL.f.ttgi(evt.stageX) >= tL.i.dim.tig) {
+			tL.zoom.left.x = evt.stageX;
+			tL.f.drawBorder(tL.zoom.rect.left, 0, tL.zoom.left.x);
+		}
+	});
+	circle.on("pressup", function(evt) {
+		var time=(tL.f.ttgi(evt.stageX) < tL.i.dim.tig ? tL.f.ttg(tL.i.dim.tig) : evt.stageX);
+		evt.target.x = time;
+		tL.zoom.time.x = time;
+		tL.i.dim.tiz=tL.f.ttgi(tL.zoom.time.x);
+		tL.f.update(true);
+	});
+	tL.s.addChild(circle);
+
+	tL.zoom.right = new createjs.Shape();
+	var circle = tL.zoom.right;
+	circle.graphics.beginFill(tL.i.style.color.zone.axis);
+	circle.graphics.drawCircle(0,0,tL.rect.zoom/2);
+	circle.x=tL.f.ttg(tL.i.dim.tsz);circle.y=tL.f.it(0);
+	circle.on("mousedown", function(evt) {
+		evt.target.xOLD=evt.target.x;
+		tL.f.update(false);
+	});
+	circle.on("pressmove",function(evt) {
+		if(tL.f.ttgi(evt.stageX) <= tL.i.dim.tsg) {
+			tL.zoom.right.x = evt.stageX;
+			tL.f.drawBorder(tL.zoom.rect.right,tL.zoom.right.x,tL.s.canvas.width);
+		}
+	});
+	circle.on("pressup", function(evt) {
+		var time=(tL.f.ttgi(evt.stageX) > tL.i.dim.tsg ? tL.f.ttg(tL.i.dim.tsg) : evt.stageX);
+		evt.target.x = time;
+		tL.zoom.time.x = time;
+		tL.i.dim.tsz=tL.f.ttgi(tL.zoom.time.x);
+		tL.f.update(true);
+	});
+	tL.s.addChild(circle);
+
+	tL.zoom.event = new createjs.Shape();
+	var rect = tL.zoom.event;
+	rect.visible = false;
+	tL.s.addChild(rect);
+
+}
+
+tL.f.drawMenu=function() {
+	tL.menu.math.circle = new createjs.Shape();
+	var circle = tL.menu.math.circle;
+	circle.graphics.beginFill(tL.i.style.color.people.math).drawCircle(20, tL.s.canvas.height - 30 , 20);
+	circle.alpha=0.5;
+	circle.on("click",function(event) {
+		tL.priority.math += 1;
+		if(tL.priority.math > 4) {tL.priority.math=1;}
+		tL.s.removeAllChildren();
+		tL.f.init();
+		tL.f.show();
+	});
+	
+	tL.menu.math.label = new createjs.Text("", "bold 14px Arial", "#FFFFFF");
+	var label = tL.menu.math.label;
+	label.text = tL.priority.math;
+	label.textAlign = "center";
+	label.x=20;label.y=tL.s.canvas.height - 40;
+	tL.s.addChild(circle,label);
+
+	tL.menu.others.circle = new createjs.Shape();
+	var circle = tL.menu.others.circle;
+	circle.graphics.beginFill(tL.i.style.color.people.others).drawCircle(70, tL.s.canvas.height - 30 , 20);
+	circle.alpha=0.5;
+	circle.on("click",function(event) {
+		tL.priority.others += 1;
+		if(tL.priority.others > 4) {tL.priority.others=1;}
+		tL.s.removeAllChildren();
+		tL.f.init();
+		tL.f.show();
+	});
+	
+	tL.menu.others.label = new createjs.Text("", "bold 14px Arial", "#FFFFFF");
+	var label = tL.menu.others.label;
+	label.text = tL.priority.others;
+	label.textAlign = "center";
+	label.x=70;label.y=tL.s.canvas.height - 40;
+	tL.s.addChild(circle,label);
+
+	tL.menu.events.circle = new createjs.Shape();
+	var circle = tL.menu.events.circle;
+	circle.graphics.beginFill(tL.i.style.color.events.rug).drawCircle(120, tL.s.canvas.height - 30 , 20);
+	circle.alpha=0.5;
+	circle.on("click",function(event) {
+		tL.priority.events += 1;
+		if(tL.priority.events > 2) {tL.priority.events=1;}
+		tL.s.removeAllChildren();
+		tL.f.init();
+		tL.f.show();
+	});
+	
+	tL.menu.events.label = new createjs.Text("", "bold 14px Arial", "#FFFFFF");
+	var label = tL.menu.events.label;
+	label.text = tL.priority.events;
+	label.textAlign = "center";
+	label.x=120;label.y=tL.s.canvas.height - 40;
+	tL.s.addChild(circle,label);
+}
+
+tL.f.drawBorder=function(rect,x,w) {
+	rect.graphics.clear().beginFill(tL.i.style.color.zone.border).drawRect(x,0,w,tL.s.canvas.height);
+	rect.graphics.endFill();
+	rect.alpha=0.2;
+}
+
+tL.f.drawBorders=function() {
+	tL.zoom.rect.left = new createjs.Shape();
+	var rect = tL.zoom.rect.left;
+	//alert(tL.f.ttg(tL.i.dim.tiz) + " & "+ tL.s.canvas.height);
+	tL.f.drawBorder(rect,0,tL.i.dim.tz ? tL.f.ttg(tL.i.dim.tig) : tL.f.tt(tL.i.dim.tiz));
+	tL.s.addChild(rect);
+	
+	tL.zoom.rect.right = new createjs.Shape();
+	var rect = tL.zoom.rect.right;
+	//alert(tL.f.ttg(tL.i.dim.tiz) + " & "+ tL.s.canvas.height);
+	tL.f.drawBorder(rect,tL.i.dim.tz ? tL.f.ttg(tL.i.dim.tsg) : tL.f.tt(tL.i.dim.tsz),tL.s.canvas.width);
+	tL.s.addChild(rect);
+}
+
+tL.f.show=function() {
+
+	tL.f.drawPopupPeople2();
+	tL.f.drawPopupPeople();
+	tL.f.drawPopupEvents();
+
+	tL.f.drawBorders();
+	tL.f.drawEvents();
+	tL.f.drawPeople();
+	
+	tL.f.drawTime();
+	tL.f.drawMenu();
+	//tL.s.setTransform(0,500,1.0,-1.0);
+	//tL.s.setTransform(tL.i.zoom.tb ,tL.i.zoom.ib,1.0,1.0);
+	tL.s.update();
+}
+
+tL.f.selectPerson=function(timeLeft,timeRight) {
+	tL.i.dim.tiz=timeLeft;
+	tL.i.dim.tsz=timeRight;
+	tL.zoom.left.x = tL.f.tt(timeLeft);
+	tL.zoom.right.x = tL.f.tt(timeRight);
+	console.log( "selectPerson: "+timeLeft+","+timeRight+" tl: "+tL.zoom.left.x+""+tL.zoom.right.x);
+	tL.f.update(true);
+}
+
+tL.f.update=function(timezoom) {
+	tL.s.removeAllChildren();
+	tL.i.dim.tz=timezoom;
+	tL.f.init();
+	tL.f.show();
+}
+
+tL.f.updateTheme=function(theme) {
+	tL.s.removeAllChildren();
+	tL.f.setTheme(theme);
+	tL.f.init();
+	tL.f.show();
+}
+
+tL.f.updatePerson=function(person) {
+	var dates=tL.people.dates[person];
+	if(typeof dates != "undefined") {
+		var date,rad;
+		date=(dates.birth + dates.death)/2;
+		rad=tL.people.radius;
+		tL.f.selectPerson(date - rad, date + rad);
+	}
+}
+
+function handleOver(event) {
+	if(event.type == "mouseover") {
+		event.target.alpha = 1; 
+		if( event.target.person !== undefined) {
+			tL.popup.people.gg.visible = true;
+			var person = tL.people.dates[event.target.person];
+			tL.i.style.alphaPrev = tL.i.style.alpha[person.priority];
+			tL.popup.people.img.src = "/users/Histoires/people/"+(person.portrait ? event.target.person : "interrogation") +".png";
+			tL.popup.people.header.innerHTML= person.name + " ("+ person.dates +")";
+			tL.popup.people.abstract.innerHTML=person.abstract;
+		}
+		if( event.target.event !== undefined) {
+			tL.popup.events.gg.visible = true;
+			var eventHist = tL.events[event.target.event];
+			tL.i.style.alphaPrev = tL.i.style.alpha[eventHist.priority];
+			tL.popup.events.header.innerHTML = eventHist.date+": ";
+			tL.popup.events.abstract.innerHTML = eventHist.title;
+			
+			tL.popup.events.div.style.backgroundColor= tL.i.style.color.popup.events[eventHist.nature];
+			
+			// tL.popup.events.gg.x=tL.i.win.left + (event.stageX + tL.popup.events.div.offsetWidth > tL.s.canvas.width) ? event.stageX - tL.popup.events.div.offsetWidth : event.stageX;
+			// tL.popup.events.gg.y=tL.i.win.top + (eventHist.nature == "art" ? tL.f.it(2) - tL.popup.events.div.offsetHeight : tL.f.it(-4));
+			tL.popup.events.gg.x= tL.i.win.left + event.target.x + ((tL.i.win.left + event.target.x + tL.popup.events.div.offsetWidth > tL.s.canvas.width) ? -tL.popup.events.div.offsetWidth : 0);
+			tL.popup.events.gg.y= tL.i.win.top+ event.target.y + (eventHist.nature == "art" ?  -tL.popup.events.div.offsetHeight : -tL.i.zoom.ia*2.5);
+
+			tL.f.drawEvent(event.target,eventHist,tL.i.style.color.popup.events[eventHist.nature]);
+			tL.zoom.event.visible = true;
+			tL.f.drawEventGlobal(tL.zoom.event,eventHist,tL.i.style.color.popup.events[eventHist.nature]);
+		}
+	} else {
+		event.target.alpha = tL.i.style.alphaPrev;
+		tL.popup.people.gg.visible = false;
+		tL.popup.events.gg.visible = false;
+		if( event.target.event !== undefined) {
+			var eventHist = tL.events[event.target.event];
+			tL.f.drawEvent(event.target,eventHist,tL.i.style.color.events.rug);
+			tL.zoom.event.visible = false;
+		}
+	}
+}
+
+function handleClick(event) { 
+	if(tL.popup.people2.prev != event.target.person) {
+		tL.popup.people2.gg.visible = true;
+		var person = tL.people.dates[event.target.person];
+		tL.popup.people2.img.src = "/users/Histoires/people/"+(person.portrait ? event.target.person : "interrogation") +".png";
+		tL.popup.people2.header.innerHTML= person.name + " ("+ person.dates +")";
+		tL.popup.people2.abstract.innerHTML=person.abstract;
+		tL.popup.people2.prev = event.target.person;
+	} else {
+		tL.popup.people2.gg.visible = false;
+		tL.popup.people2.prev = "";
+	}
+}
+
+window.onresize=function() {
+	var offset=tL.f.offset(document.getElementById("#{canvas_id}"));
+	tL.i.win.left=offset.left;
+	tL.i.win.top=offset.top;
+	tL.s.removeAllChildren();
+	tL.f.init();
+	tL.f.show();
+}
+[#blck}]
+[#rb<]File.open(File.expand_path("~/RodaSrv/public/tools/js/histoires_dates.js"),"w") { |f| f << #{=jscode} }
+[#?]#{debug}[#html>]<!--  :{timelimJS.inspect} -->
+[#?]end
+[#html>]
+<script src="/tools/js/histoires_dates.js"></script>
+<script>
+tL.f.setTheme();
+
+tL.f.init();
+
+var offset=tL.f.offset(document.getElementById("#{canvas_id}"));
+tL.i.win.left=offset.left;
+tL.i.win.top=offset.top;
+
+tL.f.show();
+
+createjs.Ticker.addEventListener("tick", tL.s);
+createjs.Touch.enable(tL.s);
+</script>
