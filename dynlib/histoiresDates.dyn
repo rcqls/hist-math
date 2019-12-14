@@ -196,7 +196,7 @@ tL={
 			abstract: document.createElement('p')
 		},
 		people2: {
-			prev: "",
+			selected: [],
 			div: document.createElement('div'),
 			img: document.createElement('img'),
 			header: document.createElement('h3'),
@@ -820,7 +820,9 @@ function handleOver(event) {
 		}
 		tL.f.updatePopupEventOnOver(event.target);
 	} else {
-		if(tL.popup.people2.prev !== event.target.person) {event.target.alpha = tL.i.style.alphaPrev;}
+		if(!(tL.popup.people2.selected.includes(event.target.person))) {
+			event.target.alpha = tL.i.style.alphaPrev;
+		}
 		tL.popup.people.gg.visible = false;
 		tL.popup.events.gg.visible = false;
 		tL.f.updatePopupEventOnOut(event.target);
@@ -828,12 +830,13 @@ function handleOver(event) {
 }
 
 function handleClick(event) { 
-	if(tL.popup.people2.prev != event.target.person) {
+	var ind=tL.popup.people2.selected.indexOf(event.target.person);
+	if( ind < 0) {
 		tL.f.updatePopupPerson("people2",event.target);
-		tL.popup.people2.prev = event.target.person;
+		tL.popup.people2.selected.push(event.target.person);
 	} else {
-		//tL.popup.people2.gg.visible = false;
-		tL.popup.people2.prev = "";
+		tL.popup.people2.selected.splice(ind,1);
+		tL.popup.people2.gg.visible = false;
 	}
 }
 
