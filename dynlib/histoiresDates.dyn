@@ -207,7 +207,8 @@ tL={
 			header: document.createElement('strong'),
 			abstract: document.createElement('span')
 		}
-	}
+	},
+	keys: {}
 };
 
 //correct initialization of tiz and tsz (useful when tsz first changed!)
@@ -232,6 +233,14 @@ tL.f.setTheme=function(color,alpha) {
 	if(typeof alpha == "undefined") {alpha=tL.themes.default.alpha;}
 	tL.i.style.color=tL.themes[color].color;
 	tL.i.style.alpha=tL.themes.alpha[alpha];
+}
+
+tL.f.onkeydown=function(event) {
+	if(event.keyCode == 16) {tL.keys.shift=true;}
+}
+
+tL.f.onkeyup=function(event) {
+	if(event.keyCode == 16) {tL.keys.shift=false;}
 }
 
 tL.f.init=function() {
@@ -633,8 +642,10 @@ tL.f.drawMenu=function() {
 	circle.graphics.beginFill(tL.i.style.color.people.math).drawCircle(20, tL.s.canvas.height - 30 , 20);
 	circle.alpha=0.5;
 	circle.on("click",function(event) {
-		tL.priority.math += 1;
+		//console.log("keyCode:" + tL.keys.shift);
+		tL.priority.math += (tL.keys.shift ? -1.0 : 1.0);
 		if(tL.priority.math > 4) {tL.priority.math=1;}
+		if(tL.priority.math < 1) {tL.priority.math=4;}
 		tL.s.removeAllChildren();
 		tL.f.init();
 		tL.f.show();
@@ -652,8 +663,9 @@ tL.f.drawMenu=function() {
 	circle.graphics.beginFill(tL.i.style.color.people.others).drawCircle(70, tL.s.canvas.height - 30 , 20);
 	circle.alpha=0.5;
 	circle.on("click",function(event) {
-		tL.priority.others += 1;
+		tL.priority.others += (tL.keys.shift ? -1.0 : 1.0);
 		if(tL.priority.others > 4) {tL.priority.others=1;}
+		if(tL.priority.others < 1) {tL.priority.others=4;}
 		tL.s.removeAllChildren();
 		tL.f.init();
 		tL.f.show();
@@ -808,7 +820,7 @@ function handleOver(event) {
 		}
 		tL.f.updatePopupEventOnOver(event.target);
 	} else {
-		event.target.alpha = tL.i.style.alphaPrev;
+		if(tL.popup.people2.prev !== event.target.person) {event.target.alpha = tL.i.style.alphaPrev;}
 		tL.popup.people.gg.visible = false;
 		tL.popup.events.gg.visible = false;
 		tL.f.updatePopupEventOnOut(event.target);
@@ -820,7 +832,7 @@ function handleClick(event) {
 		tL.f.updatePopupPerson("people2",event.target);
 		tL.popup.people2.prev = event.target.person;
 	} else {
-		tL.popup.people2.gg.visible = false;
+		//tL.popup.people2.gg.visible = false;
 		tL.popup.people2.prev = "";
 	}
 }
@@ -840,6 +852,9 @@ window.onresize=function() {
 [#html>]
 <script src="/tools/js/histoires_dates.js"></script>
 <script>
+this.document.onkeydown=tL.f.onkeydown;
+this.document.onkeyup=tL.f.onkeyup;
+
 tL.f.setTheme();
 
 tL.f.init();
