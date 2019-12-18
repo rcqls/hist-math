@@ -7,16 +7,16 @@
 [#html>]
 <div class="ui tab segment tab_dates" data-tab="dates">
   <div id="canvas_container" class="ui grid" style="background-color: white;margin: 0px;padding: 0px;">
-    <div class="one wide column"></div>
-    <div class="eight wide column">
-      {#dropdown]people_dates[#class]selection search[#default]personnage[#valuesJS][tL.dropdown.people]
+    <div class="four wide column">
+      {#dropdown]people_dates[#class]selection search[#default]personnage[#valuesJS][tL.dropdown.people][#fullsearch][exact]
 	  [#js]
 	  | console.log("value: <"+value+">");
 	  |tL.f.updatePerson(value);
 	  [#}
     </div>
-	<div class="one wide column"></div>
-	<div class="six wide column">
+	<div class="six wide column"><a id="tab_date_a" class="go_tab" tab="people" to="HeronAlexandrie"  style="color:teal"><img id="tab_date_img" class="ui avatar image" src="/users/Histoires/img/people/96x96/interrogation.png" width="50"></a><span id="tab_date_span">Nom (Dates)</span></div>
+	<div class="six wide column"><a id="tab_date2_a" class="go_tab" tab="people" to="HeronAlexandrie"  style="color:teal"><img id="tab_date2_img" class="ui avatar image" src="/users/Histoires/img/people/96x96/interrogation.png" width="50"></a><span id="tab_date2_span">Nom (Dates)</span></div>
+	<!-- div class="six wide column">
       {#dropdown]themes_dates[#class]selection search[#default]Choisir un thème[#choices]
 	  lux: Luxembourg
 	  eth: Ethiopie
@@ -25,7 +25,7 @@
 	  [#js]
 	  tL.f.updateTheme(value);
 	  [#}
-    </div>
+    </div-->
 	<canvas id="canvasTL" style="background-color: white;margin: 0px;padding: 0px;"></canvas>
   </div>
 </div>

@@ -24,16 +24,16 @@ dates=people[#{cle}]["dates"].to_s.split(";").map{|e| (e2=e.strip) =~ /^\?.*/ ? 
 [#def}
 
 {#def]viewPortrait[#,]cle[cle][#>]
-[<img src="/users/Histoires/people/:{people[#{cle}]["portrait"] ? #{cle} : 'interrogation'}.png" width="50"></img>]
+[<img src="/users/Histoires/img/people/96x96/:{people[#{cle}]["portrait"] ? #{cle} : 'interrogation'}.png" width="50"></img>]
 [#def}
 
 {#def]viewPortraitName[#,]cle[cle][#>]
-[<a class="go_tab" tab="people" to=":{#{cle}}"  style="color:teal"><img class="ui avatar image" src="/users/Histoires/people/:{people[#{cle}]["portrait"] ? #{cle} : 'interrogation'}.png"></a>
+[<a class="go_tab" tab="people" to=":{#{cle}}"  style="color:teal"><img class="ui avatar image" src="/users/Histoires/img/people/96x96/:{people[#{cle}]["portrait"] ? #{cle} : 'interrogation'}.png"></a>
       <span>:{people[#{cle}]["name"]}</span>]
 [#def}
 
 {#def]viewPortraitNameDates[#,]cle[cle][#>]
-[<a class="go_tab" tab="people" to=":{#{cle}}"  style="color:teal"><img class="ui avatar image" src="/users/Histoires/people/:{#{cle}}.png"></a>
+[<a class="go_tab" tab="people" to=":{#{cle}}"  style="color:teal"><img class="ui avatar image" src="/users/Histoires/img/people/96x96/:{#{cle}}.png"></a>
       <span>:{people[#{cle}]["name"]} <br/>({#viewDates]#{cle}[#})</span>]
 [#def}
 
@@ -151,7 +151,7 @@ propsDDG=props.keys
 {#def]badYmlDDG[#>]faux[#}
 {#def]questionYmlDDG[#>]enonce[#}
 
-{#def]propDDG[#>][<a class="go_tab" tab="people" to=":{cle}"  style="color:teal"><img class="ui avatar image" src="/users/Histoires/people/:{cle}.png"></a>
+{#def]propDDG[#>][<a class="go_tab" tab="people" to=":{cle}"  style="color:teal"><img class="ui avatar image" src="/users/Histoires/img/people/96x96/:{cle}.png"></a>
       <span>:{people[cle]["name"]} <br/>(:{people[cle]["dates"].split(";").join("-")})</span>]
 [#def}
 {#def]propDDG[#>]{#viewPortraitName#}[#def}

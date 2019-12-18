@@ -19,13 +19,14 @@
     <div class="ui divider sixteen wide column"></div>
   </div>
   <div class="ui list">
+  {#html]RCqls/cache/people_list[#cache]peoplelist
   [#rb>]
   personnages=people.sort_by{|person,info| birth=(info["dates"].split(";")[0]).strip;birth=(birth =~ /^\?.*/ ? birth[1..-1] : birth); birth.to_i}
   personnages.each do |person,info| #
     dates=info["dates"].split(";").map{|e| (e2=e.strip) =~ /^\?.*/ ? "c. "+e2[1..-1] : e2}.join(", ")
   {#>]
     <div id="p_:{person}" class="item :{person} people vue_person">
-      <img class="ui avatar image image_people" data-src="/users/Histoires/people/{#if]info["portrait"][#>]:{person}[#else]interrogation[#if}.png"></img>
+      <img class="ui avatar image image_people" data-src="/users/Histoires/img/people/96x96/{#if]info["portrait"][#>]:{person}[#else]interrogation[#if}.png"></img>
       <div class="content">
         <div class="ui header"> <span class="ui small">:{info["complete"]} (:{dates})</span> {#hide]{#if]info["wikipedia"][#>]<a href="https://fr.wikipedia.org/wiki/:{info["wikipedia"]}" target="_blank">wikipedia</a>[#if} {#if]info["mactutor"][#>]<a href="http://www-history.mcs.st-and.ac.uk/Biographies/:{info["mactutor"]}.html" target="_blank">MacTutor</a>[#if}[#hide}</div>
         <div class="description">
@@ -39,7 +40,7 @@
         <div class="content">
           <div> <!-- div class=":{person} people"-->
             <div class="eight wide column" align="justify">
-              <img class="ui small image floated right" src="/users/Histoires/people/{#if]info["portrait"][#>]:{person}[#else]interrogation[#if}.png"></img>
+              <img class="ui small image floated right" src="/users/Histoires/img/people/96x96/{#if]info["portrait"][#>]:{person}[#else]interrogation[#if}.png"></img>
               <h3 class="ui header">
                 :{info["complete"]} (:{dates})
                 <div class="sub header">:{info["abstract"]}</div>
@@ -66,6 +67,7 @@
     </div>
   [#>}
 end
+[#html}
 [#>]
   </div>
 </div>

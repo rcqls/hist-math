@@ -27,6 +27,8 @@
     </div>
     <div class="ui divider sixteen wide column"></div>
   </div>
+[#>]
+{#html]RCqls/cache/histoires_list[#cache]histoires_list
 [#rb>]
   domaines.each do |domaine| #
   domaine_titre=domaines_titres[domaine]
@@ -37,7 +39,7 @@
   vitrine.each do |hist,info| #
   {#>]
     <div id="h_:{hist}" class="item :{hist} histoire vue_histoire">
-      <img class="ui mini image image_histoires" data-src="/users/Histoires/histoires/:{hist}.png"></img>
+      <img class="ui mini image image_histoires" data-src="/users/Histoires/img/histoires/96x96/:{hist}.png"></img>
       <div class="content">
         <div class="header">:{info["title"]}</div>
         <div class="description">:{info["subtitle"]}</div>
@@ -52,7 +54,7 @@
                 <a href="/:{hist}-auto" target="_blank" style="color:black">:{info["title"]}</a>
                 <div class="sub header">:{info["subtitle"]}</div>
               </h3>
-              <a href="/:{hist}-auto" target="_blank"><img class="ui right floated image"  src="/users/Histoires/histoires/:{hist}.png" height="180"></img></a>
+              <a href="/:{hist}-auto" target="_blank"><img class="ui right floated image"  src="/users/Histoires/img/histoires/96x96/:{hist}.png" height="180"></img></a>
               |:{info["abstract"]}|
               <BR/>
               <strong>durée</strong>#{wsp}:#{wsp}<i>:{info["duration"]}</i>,#{wsp}<strong>public</strong>#{wsp}:#{wsp}:{{1=>"tous", 3 => "lycéens et étudiants", 5 => "professeurs"}[info["level"]]},#{wsp}<strong><a href="/users/Histoires/:{domaine}/:{hist}.pdf" target="_blank" style="color:teal">pdf</a></strong>#{wsp}:#{wsp}<i>:{info["slides"]}#{wsp}p.</i>
@@ -80,6 +82,7 @@ end
   </div>
 [#>}
 end
+[#html}
 [#html>]
 </div>
 [#def}

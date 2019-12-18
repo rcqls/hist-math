@@ -17,6 +17,7 @@
     <div class="ui divider sixteen wide column"></div>
   </div>
   <div class="ui list">
+{#html]RCqls/cache/textes_list[#cache]texteslist
 [#rb>]
 textes.sort_by{|texte,info| first=(info["date"].to_s.split(";")[0]).strip;first=(first =~ /^\?.*/ ? first[1..-1] : first); first.to_f}.each do |texte,info| #
   auteurs=info["auteur"].split(";").map{|e| e.strip}
@@ -47,7 +48,7 @@ textes.sort_by{|texte,info| first=(info["date"].to_s.split(";")[0]).strip;first=
     end
   {#>]
     <div id="t_:{texte}" class="item :{texte} textes vue_texte">
-      <img class="ui avatar image image_textes" data-src="/users/Histoires/people/:{image}.png"></img>
+      <img class="ui avatar image image_textes" data-src="/users/Histoires/img/people/96x96/:{image}.png"></img>
       <div class="content">
         <div class="ui header"> :{info["titre"]}</div>
         <div class="description"> <b>:{an} {#if]edition[#>] (édition de :{edition})[#if}</b> :{auteurs.map{|e| people[e]["complete"]}.join(", ")}
@@ -59,7 +60,7 @@ textes.sort_by{|texte,info| first=(info["date"].to_s.split(";")[0]).strip;first=
         <div class="content">
           <div><!-- div class=":{texte} textes"-->
             <div class="eight wide column" align="justify">
-              <img class="ui small image floated right" src="/users/Histoires/people/:{image}.png"></img>
+              <img class="ui small image floated right" src="/users/Histoires/img/people/96x96/:{image}.png"></img>
               <h3 class="ui header">
                 <a href="/users/Histoires/textes/:{texte}.pdf" target="_blank" style="color:black">:{info["titre"]}</a>
                 <div class="sub header">:{an} {#if]edition[#>] (édition de :{edition})[#if}</b> :{auteurs_liens}</div>
@@ -81,6 +82,7 @@ textes.sort_by{|texte,info| first=(info["date"].to_s.split(";")[0]).strip;first=
     </div>
   [#>}
 end
+[#html}
 [#>]
   </div>
 </div>

@@ -1,8 +1,19 @@
-{#def]initAll[#<]
-{#initRuby#}
-{#initHistoires#}
-{#initPeople#}
-{#initTextes#}
+{#def]outputAll[#,]force[true]
+[#?]#{force}
+[#<]{#initRuby#}
+[#=]jscode[{#blck][#>]
+{#outputHistoires#}
+{#outputPeople#}
+{#outputTextes#}
+[#blck}]
+[#rb<]File.open(File.expand_path("~/RodaSrv/public/tools/js/histoires_preamble.js"),"w") { |f| f << #{=jscode} }
+[#?]end
+[#<]
+{#LayoutCSSCode]
+.go_tab:hover {cursor: context-menu;}
+.vue_texte:hover, .vue_person:hover, .vue_histoire:hover {cursor: pointer;}
+[#}
+{#LayoutJSHeader]<script src="/tools/js/histoires_preamble.js"></script>[#}
 [#def}
 
 {#def]initRuby[#rb<]
@@ -158,12 +169,8 @@ end
 [#def}
 
 
-{#def]initHistoires[#<]
-{#LayoutCSSCode]
-.go_tab:hover {cursor: context-menu;}
-.vue_texte:hover, .vue_person:hover, .vue_histoire:hover {cursor: pointer;}
-[#}
-{#LayoutJSCode]
+{#def]outputHistoires[#<]
+[#>][
 Array.prototype.unique = function() {
     var o = {}, i, l = this.length, r = [];
     for(i=0; i<l;i+=1) o[this[i]] = this[i];
@@ -226,11 +233,10 @@ function select_histoires(motscles_selection,et_ou) {
   }
   $('.image_histoires').visibility('refresh');
 }
-[#LayoutJSCode}
+]
 [#def}
 
-{#def]initPeople[#<]
-{#LayoutJSCode]
+{#def]outputPeople[#>][
 People={}
 People.motscles=:{motsclesPeople_js};
 People.motscles2people=:{motscles2people_js};
@@ -286,11 +292,11 @@ function select_people(motscles_selection,et_ou) {
   }
   $('.image_people').visibility('refresh');
 }
-[#LayoutJSCode}
+]
 [#def}
 
-{#def]initTextes[#<]
-{#LayoutJSCode]
+{#def]outputTextes[#>]
+[
 Textes={}
 Textes.motscles=:{motsclesTextes_js};
 Textes.motscles2textes=:{motscles2textes_js};
@@ -348,7 +354,7 @@ function select_textes(motscles_selection,et_ou) {
   }
   $('.image_textes').visibility('refresh');
 }
-[#LayoutJSCode}
+]
 [#def}
 
 {#def]initJS[#html>]
@@ -359,6 +365,12 @@ zIndexPop={};
 $('.menu .item')
   .tab({
   "onVisible": function(path) {
+    if(path == "dates") {
+        //if(typeof tL == "defined") {tL.f.show();}
+      } else {
+        tL.popup.people.gg.visible = false;
+        tL.popup.people2.gg.visible = false;
+      }
       $('.image_'+path).visibility('refresh');
     }
   })
@@ -557,4 +569,207 @@ $("#browser_info").html("\
   <p>Les navigateurs Safari et Internet Explorer ne sont pas compatibles avec les outils audio de ce site et il est préférable d'utiliser Firefox ou Chrome.</p></div></div>");
 }
 [#}
+[#def}
+
+===========================================
+=====   VERSION INITIALE   ================
+===========================================
+{#def]initAll[#<]
+{#initRuby#}
+{#initHistoires#}
+{#initPeople#}
+{#initTextes#}
+[#def}
+
+{#def]initHistoires[#<]
+{#LayoutCSSCode]
+.go_tab:hover {cursor: context-menu;}
+.vue_texte:hover, .vue_person:hover, .vue_histoire:hover {cursor: pointer;}
+[#}
+{#LayoutJSCode]
+Array.prototype.unique = function() {
+    var o = {}, i, l = this.length, r = [];
+    for(i=0; i<l;i+=1) o[this[i]] = this[i];
+    for(i in o) r.push(o[i]);
+    return r;
+};
+
+Histoires={}
+Histoires.motscles=:{motsclesHistoires_js};
+Histoires.motscles2histoires=:{motscles2histoires_js};
+Histoires.periodes=:{periodesHistoires_js};
+Histoires.et_ou="";
+Histoires.motscles_selection="";
+
+function intersectPeriodHistoires(from,to) {
+  var histoires=[];
+  Object.keys(Histoires.periodes).forEach(function(hist) {
+    var periode=Histoires.periodes[hist];
+    //alert("periode:"+JSON.stringify(periode)+","+JSON.stringify(from)+","+JSON.stringify(to));
+    if(periode[1]>=from && periode[0]<=to) {
+      histoires.push(hist);
+    }
+  });
+  //alert("periodes="+JSON.stringify(histoires));
+  return histoires;
+};
+
+function select_histoires(motscles_selection,et_ou) {
+  var histoiresParMotscles=motscles_selection.split(",").unique();
+  //fix weird behavior of split "".split(",") == [""]
+  if(histoiresParMotscles.includes("") && histoiresParMotscles.length==1) histoiresParMotscles=[];
+  Histoires.motscles_selection=histoiresParMotscles.join(",");
+  motscles_selection=Histoires.motscles_selection;
+  var periode=$("#periode_histoires").val(),inter=[];
+  var histoiresParPeriodes=[];
+  if(periode != "") {
+    inter=periode.split(";");
+    if(inter.length==1) inter.push(inter[0]);
+    //alert("inter="+JSON.stringify(inter));
+    histoiresParPeriodes=intersectPeriodHistoires(parseInt(inter[0]),parseInt(inter[1]));
+  }
+  //alert("periode=<"+periode+"> et/ou=<"+et_ou+"> motscles=<"+motscles+">");
+  //alert("periodes="+JSON.stringify(histoiresParPeriodes)+"] et/ou=<"+JSON.stringify(et_ou)+"> motscles="+JSON.stringify(histoiresParMotscles));
+  //hide and show
+  $(".histoire").hide();
+  if(histoiresParMotscles.length==0 && histoiresParPeriodes.length==0) {
+    $(".histoire").show();
+  } else {
+    histoiresParMotscles.forEach(function(elt) {
+      if(["","ou"].includes(et_ou) || histoiresParPeriodes.includes(elt)) {
+        //alert("elt="+JSON.stringify(elt));
+        $("."+elt).show();
+      }
+    });
+    histoiresParPeriodes.forEach(function(elt) {
+      if(["","ou"].includes(et_ou) || histoiresParMotscles.includes(elt)) {
+        $("."+elt).show();
+      }
+    });
+  }
+  $('.image_histoires').visibility('refresh');
+}
+[#LayoutJSCode}
+[#def}
+
+{#def]initPeople[#<]
+{#LayoutJSCode]
+People={}
+People.motscles=:{motsclesPeople_js};
+People.motscles2people=:{motscles2people_js};
+People.periodes=:{periodesPeople_js};
+People.et_ou="";
+People.motscles_selection="";
+
+function intersectPeriodPeople(from,to) {
+  var people=[];
+  Object.keys(People.periodes).forEach(function(person) {
+    var periode=People.periodes[person];
+    //alert("periode:"+JSON.stringify(periode)+","+JSON.stringify(from)+","+JSON.stringify(to));
+    if(periode[1]>=from && periode[0]<=to) {
+      people.push(person);
+    }
+  });
+  //alert("periodes="+JSON.stringify(people));
+  return people;
+};
+
+function select_people(motscles_selection,et_ou) {
+  var peopleParMotscles=motscles_selection.split(",").unique();
+  //fix weird behavior of split "".split(",") == [""]
+  if(peopleParMotscles.includes("") && peopleParMotscles.length==1) peopleParMotscles=[];
+  People.motscles_selection=peopleParMotscles.join(",");
+  motscles_selection=People.motscles_selection;
+  var periode=$("#periode_people").val(),inter=[];
+  var peopleParPeriodes=[];
+  if(periode != "") {
+    inter=periode.split(";");
+    if(inter.length==1) inter.push(inter[0]);
+    //alert("inter="+JSON.stringify(inter));
+    peopleParPeriodes=intersectPeriodPeople(parseInt(inter[0]),parseInt(inter[1]));
+  }
+  //alert("periode=<"+periode+"> et/ou=<"+et_ou+"> motscles=<"+motscles+">");
+  //alert("periodes="+JSON.stringify(peopleParPeriodes)+"] et/ou=<"+JSON.stringify(et_ou)+"> motscles="+JSON.stringify(peopleParMotscles));
+  //hide and show
+  $(".people").hide();
+  if(peopleParMotscles.length==0 && peopleParPeriodes.length==0) {
+    $(".people").show();
+  } else {
+    peopleParMotscles.forEach(function(elt) {
+      if(["","ou"].includes(et_ou) || peopleParPeriodes.includes(elt)) {
+        //alert("elt="+JSON.stringify(elt));
+        $("."+elt).show();
+      }
+    });
+    peopleParPeriodes.forEach(function(elt) {
+      if(["","ou"].includes(et_ou) || peopleParMotscles.includes(elt)) {
+        $("."+elt).show();
+      }
+    });
+  }
+  $('.image_people').visibility('refresh');
+}
+[#LayoutJSCode}
+[#def}
+
+{#def]initTextes[#<]
+{#LayoutJSCode]
+Textes={}
+Textes.motscles=:{motsclesTextes_js};
+Textes.motscles2textes=:{motscles2textes_js};
+Textes.periodes=:{periodesTextes_js};
+Textes.et_ou="";
+Textes.motscles_selection="";
+
+function intersectPeriodTextes(from,to) {
+  var textes=[];
+  //debug: var log="Search: "+","+JSON.stringify(from)+","+JSON.stringify(to)+" => ";
+  Object.keys(Textes.periodes).forEach(function(texte) {
+    var periode=Textes.periodes[texte];
+    if(periode[1]>=from && periode[0]<=to) {
+      //debug: log = log + ", [texte: "+texte+" -> periode:"+JSON.stringify(periode)+"]";
+      textes.push(texte);
+    }
+  });
+  //alert("periodes="+JSON.stringify(textes));
+  //debug: alert(log);
+  return textes;
+};
+
+function select_textes(motscles_selection,et_ou) {
+  var textesParMotscles=motscles_selection.split(",").unique();
+  //fix weird behavior of split "".split(",") == [""]
+  if(textesParMotscles.includes("") && textesParMotscles.length==1) textesParMotscles=[];
+  Textes.motscles_selection=textesParMotscles.join(",");
+  motscles_selection=Textes.motscles_selection;
+  var periode=$("#periode_textes").val(),inter=[];
+  var textesParPeriodes=[];
+  if(periode != "") {
+    inter=periode.split(";");
+    if(inter.length==1) inter.push(inter[0]);
+    //alert("inter="+JSON.stringify(inter));
+    textesParPeriodes=intersectPeriodTextes(parseInt(inter[0]),parseInt(inter[1]));
+  }
+  //alert("periode=<"+periode+"> et/ou=<"+et_ou+"> motscles=<"+motscles+">");
+  //alert("periodes="+JSON.stringify(textesParPeriodes)+"] et/ou=<"+JSON.stringify(et_ou)+"> motscles="+JSON.stringify(textesParMotscles));
+  //hide and show
+  $(".textes").hide();
+  if(textesParMotscles.length==0 && textesParPeriodes.length==0) {
+    $(".textes").show();
+  } else {
+    textesParMotscles.forEach(function(elt) {
+      if(["","ou"].includes(et_ou) || textesParPeriodes.includes(elt)) {
+        //alert("elt="+JSON.stringify(elt));
+        $("."+elt).show();
+      }
+    });
+    textesParPeriodes.forEach(function(elt) {
+      if(["","ou"].includes(et_ou) || textesParMotscles.includes(elt)) {
+        $("."+elt).show();
+      }
+    });
+  }
+  $('.image_textes').visibility('refresh');
+}
+[#LayoutJSCode}
 [#def}

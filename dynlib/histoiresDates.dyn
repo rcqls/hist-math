@@ -304,7 +304,7 @@ tL.f.drawPopupPeople=function() {
 	htmlContent.style.margin = "25px";
 
 	var htmlImg = tL.popup.people.img;
-	htmlImg.src = "/users/Histoires/people/Thales.png";
+	htmlImg.src = "/users/Histoires/img/people/96x96/Thales.png";
 	htmlImg.style.width = "100px";
 	htmlImg.style.height = "100px";
 	htmlImg.style.float = "right";
@@ -351,7 +351,7 @@ tL.f.drawPopupPeople2=function() {
 	htmlContent.style.margin = "25px";
 
 	var htmlImg = tL.popup.people2.img;
-	htmlImg.src = "/users/Histoires/people/Thales.png";
+	htmlImg.src = "/users/Histoires/img/people/96x96/Thales.png";
 	htmlImg.style.width = "100px";
 	htmlImg.style.height = "100px";
 	htmlImg.style.float = "right";
@@ -707,7 +707,6 @@ tL.f.drawBorder=function(rect,x,w) {
 tL.f.drawBorders=function() {
 	tL.zoom.rect.left = new createjs.Shape();
 	var rect = tL.zoom.rect.left;
-	console.log("tz: "+tL.i.dim.t+"");
 	tL.f.drawBorder(rect,0,tL.i.dim.tz ? tL.f.tt(tL.i.dim.ti) : tL.f.tt(tL.i.dim.tiz));
 	tL.s.addChild(rect);
 	
@@ -768,17 +767,22 @@ tL.f.updatePerson=function(person) {
 		if(tL.shapes.people[person] != undefined) {
 			tL.shapes.people[person].alpha=1.0;
 			tL.f.updatePopupPerson("people2",tL.shapes.people[person]);
+			tL.popup.people2.selected.push(person);
 		}
 	}
 }
 
 tL.f.updatePopupPerson=function(popup,evtTarget) {
-	var popupPeople=tL.popup[popup];
-	popupPeople.gg.visible = true;
 	var person = tL.people.dates[evtTarget.person];
-	popupPeople.img.src = "/users/Histoires/people/"+(person.portrait ? evtTarget.person : "interrogation") +".png";
-	popupPeople.header.innerHTML= person.name + " ("+ person.dates +")";
-	popupPeople.abstract.innerHTML=person.abstract;
+	// var popupPeople=tL.popup[popup];
+	// popupPeople.gg.visible = true;
+	// popupPeople.img.src = "/users/Histoires/img/people/96x96/"+(person.portrait ? evtTarget.person : "interrogation") +".png";
+	// popupPeople.header.innerHTML= person.name + " ("+ person.dates +")";
+	// popupPeople.abstract.innerHTML=person.abstract;
+	var id=(popup == "people" ? "#tab_date2" : "#tab_date");
+	$(id+"_a").attr("to",evtTarget.person);
+	$(id+"_img").attr("src","/users/Histoires/img/people/96x96/"+(person.portrait ? evtTarget.person : "interrogation") +".png");
+	$(id+"_span").html(person.name + " ("+ person.dates +")");
 }
 
 tL.f.updatePopupEventOnOver=function(evtTarget) {
@@ -837,6 +841,10 @@ function handleClick(event) {
 	} else {
 		tL.popup.people2.selected.splice(ind,1);
 		tL.popup.people2.gg.visible = false;
+	}
+	if(tL.keys.shift) {
+		$('.menu .item').tab('change tab','people');
+		$('#p_'+event.target.person).click();
 	}
 }
 
