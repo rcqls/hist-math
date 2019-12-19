@@ -27,8 +27,8 @@ Histoires/dynlib/histoires_tab_dates
   ]
 [#=]bgcolor[<<histoires[background-color: honeydew;]<<people[background-color: linen;]<<textes[background-color: lightcyan;]]
 [#<]
-{#outputDDG]false[#} (Attention: ne pas le déplacer dans histoiresGames.dyn)
-{#outputAll]false[#}
+{#outputDDG]true[#} (Attention: ne pas le déplacer dans histoiresGames.dyn)
+{#outputAll]true[#}
 [#html>]
 <h1 class="ui header">
   <div class="content">
@@ -52,7 +52,7 @@ Histoires/dynlib/histoires_tab_dates
 
 {#initJS#}
 
-{#initHistoiresDatesJS][false]
+{#initHistoiresDatesJS][true]
 [#width] 
 [document.getElementById("canvas_container").offsetWidth]
 [#height]

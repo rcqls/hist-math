@@ -6,7 +6,7 @@
 [#?]#{force}
 [#rb<]
 require 'yaml'
-people=YAML::load_file(File.expand_path("~/RodaSrv/public/users/Histoires/people_priorite.yml"))
+people=YAML::load_file(File.expand_path("~/RodaSrv/public/users/Histoires/people.yml"))
 events=YAML::load_file(File.expand_path("~/RodaSrv/public/users/Histoires/events.yml"))
 dates_people={}
 people.keys.each do |e| #
@@ -220,6 +220,8 @@ tL.dropdown={
 	people: Object.keys(tL.people.dates).map(function(e) {return {value: e, name: tL.people.dates[e].name};}),
 	themes: [] //TODO
 }
+
+//tL.dropdown.people.unshift({value: "", name: "Personnage"});
 
 tL.f.offset=function(el) {
     var rect = el.getBoundingClientRect(),
@@ -780,6 +782,7 @@ tL.f.updatePopupPerson=function(popup,evtTarget) {
 	// popupPeople.header.innerHTML= person.name + " ("+ person.dates +")";
 	// popupPeople.abstract.innerHTML=person.abstract;
 	var id=(popup == "people" ? "#tab_date2" : "#tab_date");
+	$(id+"_div").show();
 	$(id+"_a").attr("to",evtTarget.person);
 	$(id+"_img").attr("src","/users/Histoires/img/people/96x96/"+(person.portrait ? evtTarget.person : "interrogation") +".png");
 	$(id+"_span").html(person.name + " ("+ person.dates +")");
@@ -878,4 +881,7 @@ tL.f.show();
 
 createjs.Ticker.addEventListener("tick", tL.s);
 createjs.Touch.enable(tL.s);
+
+$("#tab_date_div").hide();
+$("#tab_date2_div").hide();
 </script>

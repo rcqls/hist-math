@@ -68,6 +68,7 @@ motsclesHistoires_js="["+motsclesHistoires.map{|e| '"'+e+'"'}.join(",")+"]"
 motscles2histoires_js='{'+motsclesHistoires.map{|e| '"'+e+'": "'+histoires_motscles[e].join(",")+'"'}.join(", ")+'}'
 periodesHistoires_js='{'+periodesHistoires.keys.map{|hist| '"'+hist+'": ['+periodesHistoires[hist][0].to_s+','+periodesHistoires[hist][1].to_s+']' }.join(", ")+'}'
 motsclesHistoires_dropdown=motsclesHistoires.map{|e| e}.select{|e| !e.empty?}.join("|")
+## TROP LENT: motsclesHistoires_dropdown_js='[ ' + motsclesHistoires.map{|e| e}.select{|e| !e.empty?}.map{|e| '{value: "'+e+'", name: "'+e+'"}'}.join(",") + ']'
 ########## Fin histoires
 
 ########## Début people
@@ -95,6 +96,7 @@ motsclesPeople_js="["+motsclesPeople.map{|e| '"'+e+'"'}.join(",")+"]"
 motscles2people_js='{'+motsclesPeople.map{|e| '"'+e+'": "'+people_motscles[e].join(",")+'"'}.join(", ")+'}'
 periodesPeople_js='{'+periodesPeople.keys.map{|person| '"'+person+'": ['+periodesPeople[person][0].to_s+','+periodesPeople[person][1].to_s+']' }.join(", ")+'}'
 motsclesPeople_dropdown=motsclesPeople.map{|e| e}.join("|")
+## TROP LENT: motsclesPeople_dropdown_js='[ ' + motsclesPeople.map{|e| '{value: "'+e+'", name: "'+e+'"}'}.join(",") + ']'
 ########## Fin people
 
 ########## Début textes
@@ -127,6 +129,7 @@ motsclesTextes_js="["+motsclesTextes.map{|e| '"'+e+'"'}.join(",")+"]"
 motscles2textes_js='{'+motsclesTextes.map{|e| '"'+e+'": "'+textes_motscles[e].join(",")+'"'}.join(", ")+'}'
 periodesTextes_js='{'+periodesTextes.keys.map{|texte| '"'+texte+'": ['+periodesTextes[texte][0].to_s+','+periodesTextes[texte][1].to_s+']' }.join(", ")+'}'
 motsclesTextes_dropdown=motsclesTextes.map{|e| e}.join("|")
+## TROP LENT: motsclesTextes_dropdown_js='[' + motsclesTextes.map{|e| '{value: "'+e+'", name: "'+e+'"}'}.join(",") + ']'
 ########## Fin textes
 
 ########## Dictionnaires (Ruby)
@@ -184,6 +187,8 @@ Histoires.motscles2histoires=:{motscles2histoires_js};
 Histoires.periodes=:{periodesHistoires_js};
 Histoires.et_ou="";
 Histoires.motscles_selection="";
+
+// TROP LENT: Histoires.dropdown=:{motsclesHistoires_dropdown_js};
 
 function intersectPeriodHistoires(from,to) {
   var histoires=[];
@@ -244,6 +249,8 @@ People.periodes=:{periodesPeople_js};
 People.et_ou="";
 People.motscles_selection="";
 
+// TROP LENT: People.dropdown=:{motsclesPeople_dropdown_js};
+
 function intersectPeriodPeople(from,to) {
   var people=[];
   Object.keys(People.periodes).forEach(function(person) {
@@ -303,6 +310,8 @@ Textes.motscles2textes=:{motscles2textes_js};
 Textes.periodes=:{periodesTextes_js};
 Textes.et_ou="";
 Textes.motscles_selection="";
+
+// TROP LENT: Textes.dropdown=:{motsclesTextes_dropdown_js};
 
 function intersectPeriodTextes(from,to) {
   var textes=[];
@@ -375,7 +384,7 @@ $('.menu .item')
     }
   })
 ;
-$('.menu .item').tab('change tab','dates');
+
 $('.image_histoires')
   .visibility({
     type       : 'image',
@@ -547,6 +556,7 @@ function activeGoTab() {
 }
 
 activeGoTab();
+$('.menu .item').tab('change tab','dates');
 </script>
 [#def}
 

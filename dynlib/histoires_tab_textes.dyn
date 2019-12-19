@@ -7,6 +7,10 @@
       //alert("changed "+JSON.stringify(value));
       if(value.length > 0) {select_textes(Textes.motscles_selection=value.map(function(elt) {return Textes.motscles2textes[elt];}).join(","),Textes.et_ou);} else {$("#t_tab").click();select_textes('','');}
       [#}
+      {#dropdown2]motscles_textes[#class]search selection fluid normal[#multiple]true[#placeholder]"personnages"[#valuesJS]Textes.dropdown[#js]
+      //alert("changed "+JSON.stringify(value));
+      if(value.length > 0) {select_textes(Textes.motscles_selection=value.map(function(elt) {return Textes.motscles2textes[elt];}).join(","),Textes.et_ou);} else {$("#t_tab").click();select_textes('','');}
+      [#}
     </div>
     <div class="two wide column">
       {#dropdown]et_ou_textes[#default]et/ou[#choices]et|ou[#js]

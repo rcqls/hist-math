@@ -9,6 +9,12 @@
       select_people(People.motscles_selection=value.map(function(elt) {return People.motscles2people[elt];}).join(","),People.et_ou);
       } else {$("#p_tab").click();select_people('','');}
       [#}
+      {#dropdown2]motscles_people[#class]search selection fluid normal[#multiple]true[#placeholder]"personnages"[#valuesJS]People.dropdown[#js]
+      //alert("changed "+JSON.stringify(value));
+      if(typeof(value) != "undefined" && value.length > 0) {
+      select_people(People.motscles_selection=value.map(function(elt) {return People.motscles2people[elt];}).join(","),People.et_ou);
+      } else {$("#p_tab").click();select_people('','');}
+      [#}
     </div>
     <div class="two wide column">
       {#dropdown]et_ou_people[#default]et/ou[#choices]et|ou[#js]
@@ -19,7 +25,7 @@
     <div class="ui divider sixteen wide column"></div>
   </div>
   <div class="ui list">
-  {#html]RCqls/cache/people_list[#cache]peoplelist
+  {#hide]{#html]RCqls/cache/people_list[#cache]peoplelist [#} [#hide}
   [#rb>]
   personnages=people.sort_by{|person,info| birth=(info["dates"].split(";")[0]).strip;birth=(birth =~ /^\?.*/ ? birth[1..-1] : birth); birth.to_i}
   personnages.each do |person,info| #
@@ -67,7 +73,7 @@
     </div>
   [#>}
 end
-[#html}
+{#hide]{#html][#html}[#hide}
 [#>]
   </div>
 </div>

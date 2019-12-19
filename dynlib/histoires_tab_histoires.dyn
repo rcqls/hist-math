@@ -16,6 +16,19 @@
       |}
       |if(value.length > 0) {select_histoires(Histoires.motscles_selection=value.map(function(elt) {return Histoires.motscles2histoires[elt];}).join(","),Histoires.et_ou);} else {$("#h_tab").click();select_histoires('','');}
       [#}
+      {#dropdown2]motscles_histoires[#class]search selection fluid normal[#multiple]true[#placeholder]"mots-clés ou personnages"[#valuesJS]Histoires.dropdown[#js]
+      |//alert("changed "+JSON.stringify(value) + " " +JSON.stringify(value.length) + " " +JSON.stringify(text) + " " +JSON.stringify($selectedItem) + " " +JSON.stringify(typeof($selectedItem)));
+      |if(typeof($selectedItem)=="string") {//add
+
+      |} else if(typeof($selectedItem)=="object") {//close
+      |var selHists=Histoires.motscles2histoires[$selectedItem.text()].split(",").map(function(elt) {return "#ph_"+elt;});
+      |//alert( JSON.stringify(selHists)+" "+JSON.stringify(open_popups)) ;
+      |//selHists.forEach(function(hist) {if(open_popups.includes(hist)) {alert("h:"+hist);}}) ;
+      |$("#h_tab").click();
+      |open_popups=[];
+      |}
+      |if(value.length > 0) {select_histoires(Histoires.motscles_selection=value.map(function(elt) {return Histoires.motscles2histoires[elt];}).join(","),Histoires.et_ou);} else {$("#h_tab").click();select_histoires('','');}
+      [#}
     </div>
     <div class="two wide column">
       {#dropdown]et_ou_histoires[#default]et/ou[#choices]et|ou[#js]
@@ -54,7 +67,7 @@
                 <a href="/:{hist}-auto" target="_blank" style="color:black">:{info["title"]}</a>
                 <div class="sub header">:{info["subtitle"]}</div>
               </h3>
-              <a href="/:{hist}-auto" target="_blank"><img class="ui right floated image"  src="/users/Histoires/img/histoires/96x96/:{hist}.png" height="180"></img></a>
+              <a href="/:{hist}-auto" target="_blank"><img class="ui right floated image"  src="/users/Histoires/img/histoires/96x96/:{hist}.png" height="96"></img></a>
               |:{info["abstract"]}|
               <BR/>
               <strong>durée</strong>#{wsp}:#{wsp}<i>:{info["duration"]}</i>,#{wsp}<strong>public</strong>#{wsp}:#{wsp}:{{1=>"tous", 3 => "lycéens et étudiants", 5 => "professeurs"}[info["level"]]},#{wsp}<strong><a href="/users/Histoires/:{domaine}/:{hist}.pdf" target="_blank" style="color:teal">pdf</a></strong>#{wsp}:#{wsp}<i>:{info["slides"]}#{wsp}p.</i>
