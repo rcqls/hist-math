@@ -117,6 +117,8 @@ tL={
 	},
 	// début couleurs: thème rouge-pourpre-bleu Fabienne
 	themes: {
+		choices: ["ind","lux","eth","hol"],
+		current: 0,
 		default: {alpha: "dark", color: "ind"},
 		alpha: {
 			light: [1.0,0.8,0.6,0.4,0.2],
@@ -175,7 +177,8 @@ tL={
 	menu: {
 		math: {},
 		others: {},
-		events: {}
+		events: {},
+		theme: {}
 	},
 	zoom: {rect: {}},
 	events: :{eventsJS},
@@ -698,6 +701,21 @@ tL.f.drawMenu=function() {
 	label.textAlign = "center";
 	label.x=120;label.y=tL.s.canvas.height - 40;
 	tL.s.addChild(circle,label);
+
+	tL.menu.theme.rectUp = new createjs.Shape();
+	var rect = tL.menu.theme.rectUp;
+	rect.graphics.beginFill(tL.i.style.color.people.math).drawRect(160, tL.s.canvas.height - 50 , 40, 20);
+	rect.alpha=0.5;
+	rect.on("click",tL.f.clickMenuTheme);
+	tL.s.addChild(rect);
+
+	tL.menu.theme.rectDown = new createjs.Shape();
+	rect = tL.menu.theme.rectDown;
+	rect.graphics.beginFill(tL.i.style.color.people.others).drawRect(160, tL.s.canvas.height - 30 , 40, 20);
+	rect.alpha=0.5;
+	rect.on("click",tL.f.clickMenuTheme);
+	tL.s.addChild(rect);
+
 }
 
 tL.f.drawBorder=function(rect,x,w) {
@@ -816,7 +834,12 @@ tL.f.updatePopupEventOnOut=function(evtTarget) {
 	}
 }
 
-
+tL.f.clickMenuTheme=function(event) {
+	tL.themes.current += (tL.keys.shift ? -1 : 1);
+	if(tL.themes.current >= tL.themes.choices.length) {tL.themes.current=0;}
+	if(tL.themes.current < 0) {tL.themes.current=tL.themes.choices.length - 1;}
+	tL.f.updateTheme(tL.themes.choices[tL.themes.current]);
+}
 
 function handleOver(event) {
 	if(event.type == "mouseover") {
@@ -859,6 +882,7 @@ window.onresize=function() {
 	tL.f.init();
 	tL.f.show();
 }
+
 [#blck}]
 [#rb<]File.open(File.expand_path("~/RodaSrv/public/tools/js/histoires_dates.js"),"w") { |f| f << #{=jscode} }
 [#?]#{debug}[#html>]<!--  :{timelimJS.inspect} -->
