@@ -432,6 +432,7 @@ tL.f.drawPopupEvents=function() {
 
 tL.f.drawPerson=function(gr,person) {
 	gr.alpha = tL.i.style.alpha[person.priority];
+	if(tL.popup.people2.selected.includes(gr.person)) {gr.alpha=1.0;}
 	gr.graphics.beginFill(tL.i.style.color.people[person.math ? 'math' : "others"]);
 	gr.graphics.drawRect(0,-tL.rect.people/2, tL.i.zoom.ta*(person.death - person.birth), tL.rect.people);
 	gr.graphics.endFill();
@@ -470,7 +471,7 @@ tL.f.drawPeople=function() {
 		var person=tL.people.dates[key];
 		if((person.math && person.priority <= tL.priority.math) || (!person.math && person.priority<= tL.priority.others)) {
 			var rect = new createjs.Shape();
-			tL.shapes.people[key]=rect; //save rect for each person to be use when highlighting person from dropdown
+			tL.shapes.people[key]=rect; //save rect for each person to be used when highlighting person from dropdown
 			rect.person = key;
 			tL.f.drawPerson(rect,person);
 			rect.on("mouseover", handleOver);
@@ -801,9 +802,10 @@ tL.f.updatePopupPerson=function(popup,evtTarget) {
 	// popupPeople.abstract.innerHTML=person.abstract;
 	var id=(popup == "people" ? "#tab_date2" : "#tab_date");
 	$(id+"_div").show();
-	$(id+"_a").attr("to",evtTarget.person);
+	$(id+"_img").attr("to",evtTarget.person);
 	$(id+"_img").attr("src","/users/Histoires/img/people/96x96/"+(person.portrait ? evtTarget.person : "interrogation") +".png");
-	$(id+"_span").html(person.name + " ("+ person.dates +")");
+	$(id+"_nom").html(person.name);
+	$(id+"_dates").html(person.dates);
 }
 
 tL.f.updatePopupEventOnOver=function(evtTarget) {

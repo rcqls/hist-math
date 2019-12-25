@@ -10,9 +10,10 @@ Histoires/dynlib/histoires_tab_histoires
 Histoires/dynlib/histoires_tab_people
 Histoires/dynlib/histoires_tab_textes
 Histoires/dynlib/histoires_tab_games
+Histoires/dynlib/histoires_tab_dates
 [#main]
 [#=]wsp[&thinsp;&thinsp;&thinsp;]
-[#=]icons[<<histoires[unmute]<<people[user]<<textes[book]<<jeux[gift]]
+[#=]icons[<<dates[calendar minus outline]<<histoires[unmute]<<people[user]<<textes[book]<<jeux[gift]]
 [#=]popup[
   <<style[<<size[min-width:500px;]]
   <<class[ fluid]<<class[]
@@ -26,26 +27,24 @@ Histoires/dynlib/histoires_tab_games
   ]
 [#=]bgcolor[<<histoires[background-color: honeydew;]<<people[background-color: linen;]<<textes[background-color: lightcyan;]]
 [#<]
-{#initDDG#} (Attention: ne pas le déplacer dans histoiresGames.dyn)
-{#initAll#}
-[#>]
-{#initDetectBrowser#}
+{#outputDDG]false[#} (Attention: ne pas le déplacer dans histoiresGames.dyn)
+{#outputAll]true[#}
+[#html>]
 <h1 class="ui header">
   <div class="content">
     Histoires de Mathématiques
   </div>
 </h1>
-<div class="content" align="center">
-<a href="/FAQ" target=_blank>
-<font color=#cb000><b>Foire aux Questions</b></font></a>
-</div>
 <div class="content">
   <div class="ui pointing secondary menu">
-    <a id="h_tab" class="active item tabitem" data-tab="histoires"><i class="#{icons.histoires} icon"></i>histoires</a>
+    <a id="d_tab" class="active item tabitem" data-tab="dates"><i class="#{icons.dates} icon"></i>dates</a>
+    <a id="h_tab" class="item tabitem" data-tab="histoires"><i class="#{icons.histoires} icon"></i>histoires</a>
     <a id="p_tab" class="item tabitem" data-tab="people"><i class="#{icons.people} icon"></i>personnages</a>
     <a id="t_tab" class="item tabitem" data-tab="textes"><i class="#{icons.textes} icon"></i>textes</a>
     <a id="t_tab" class="item tabitem" data-tab="jeux"><i class="#{icons.jeux} icon"></i>jeux</a>
+    <a id="f_tab" class="item tabitem2"><i class="#{icons.jeux} icon"></i>faq</a>
   </div>
+{#tabDates#}
 {#tabHistoires#}
 {#tabPeople#}
 {#tabTextes#}
@@ -53,3 +52,10 @@ Histoires/dynlib/histoires_tab_games
 </div>
 
 {#initJS#}
+
+{#initHistoiresDatesJS][false]
+[#width] 
+[document.getElementById("canvas_container").offsetWidth]
+[#height]
+[window.innerHeight - tL.f.offset(document.getElementById("canvasTL")).top]
+[#}

@@ -52,7 +52,7 @@ Histoires/dynlib/histoires_tab_dates
 
 {#initJS#}
 
-{#initHistoiresDatesJS][true]
+{#initHistoiresDatesJS][false]
 [#width] 
 [document.getElementById("canvas_container").offsetWidth]
 [#height]

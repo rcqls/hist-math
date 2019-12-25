@@ -371,15 +371,9 @@ function select_textes(motscles_selection,et_ou) {
 open_popups=[];
 zIndexPop={};
 
-$('.menu .item')
+$('.menu .tabitem')
   .tab({
   "onVisible": function(path) {
-    if(path == "dates") {
-        //if(typeof tL == "defined") {tL.f.show();}
-      } else {
-        tL.popup.people.gg.visible = false;
-        tL.popup.people2.gg.visible = false;
-      }
       $('.image_'+path).visibility('refresh');
     }
   })
