@@ -117,7 +117,7 @@ tL={
 	},
 	// début couleurs: thème rouge-pourpre-bleu Fabienne
 	themes: {
-		choices: ["ind","lux","eth","hol"],
+		choices: ["ind","lux","eth","hol","opb","dni","xul","hte","loh","bpo"],
 		current: 0,
 		default: {alpha: "dark", color: "ind"},
 		alpha: {
@@ -141,10 +141,10 @@ tL={
 			description: "vert-marron-rouge",
 			color: {
 				popup: {
-					events: {politique: "#F06060", art: "#A5BC50"}
+					events: {politique: "#A5BC50", art: "#F06060"}
 				},
 				events: {rug: "#773622"},
-				people: {math: "#557300" , others: "#D03142"},
+				people: {math: "#D03142" , others: "#557300"},
 				zone: {border: "#DEC3A6", view: "white", axis: "#773622"}
 			}
 		},
@@ -170,6 +170,78 @@ tL={
 				events: {rug: "#513B3B"},
 				people: {math: "#FF7400" , others: "#0D9F00"},
 				zone: {border: "#9E9292", view: "white", axis: "#513B3B"}
+			}
+		},
+		opb: {
+			name: "Ouganda",
+			description: "orange-pourpre-bleu",
+			color: {
+				popup: {
+					events: {politique: "#81CFE0", art: "#F8AD49"}
+				},
+				events: {rug: "#731C3D"},
+				people: {math: "#F67000" , others: "#0F909A"},
+				zone: {border: "#C9969F", view: "white", axis: "#731C3D"}
+			}
+		},
+		xul: {
+			name: "Gruobmexul",
+			description: "bleu-pourpre-rouge",
+			color: {
+				popup: {
+					events: {politique: "#F7DAD8", art: "#C2F7FF"}
+				},
+				events: {rug: "#803B81"},
+				people: {math: "#008D9B" , others: "#A30000"},
+				zone: {border: "#CDA6E7", view: "white", axis: "#803B81"}
+			}
+		},
+		hte: {
+			name: "Eipoihte",
+			description: "vert-marron-rouge",
+			color: {
+				popup: {
+					events: {politique: "#F06060", art: "#A5BC50"}
+				},
+				events: {rug: "#773622"},
+				people: {math: "#557300" , others: "#D03142"},
+				zone: {border: "#DEC3A6", view: "white", axis: "#773622"}
+			}
+		},
+		loh: {
+			name: "Ednalloh",
+			description: "bleu-marron-rouge",
+			color: {
+				popup: {
+					events: {politique: "#FFB5B5", art: "#BED9FD"}
+				},
+				events: {rug: "#513B3B"},
+				people: {math: "#242775" , others: "#C90B0B"},
+				zone: {border: "#9E9292", view: "white", axis: "#513B3B"}
+			}
+		},
+		dni: {
+			name: "Edni",
+			description: "vert-marron-orange",
+			color: {
+				popup: {
+					events: {politique: "#FFAC77", art: "#AAECAB"}
+				},
+				events: {rug: "#513B3B"},
+				people: {math: "#0D9F00" , others: "#FF7400"},
+				zone: {border: "#9E9292", view: "white", axis: "#513B3B"}
+			}
+		},
+		bpo: {
+			name: "Adnaguo",
+			description: "bleu-pourpre-orange",
+			color: {
+				popup: {
+					events: {politique: "#F8AD49", art: "#81CFE0"}
+				},
+				events: {rug: "#731C3D"},
+				people: {math: "#0F909A" , others: "#F67000"},
+				zone: {border: "#C9969F", view: "white", axis: "#731C3D"}
 			}
 		}
 	},
@@ -209,7 +281,8 @@ tL={
 			div: document.createElement('div'),
 			header: document.createElement('strong'),
 			abstract: document.createElement('span')
-		}
+		},
+		timeLeft: {}, timeRight: {}
 	},
 	keys: {}
 };
@@ -497,6 +570,16 @@ tL.f.drawEvents=function() {
 	});
 }
 
+tL.f.drawTimeLeftPopup=function() {
+	tL.popup.timeLeft.label.x=tL.popup.timeLeft.x=tL.zoom.left.x;
+	tL.popup.timeLeft.label.text=Math.trunc(tL.f.ttgi(tL.zoom.left.x));
+}
+
+tL.f.drawTimeRightPopup=function() {
+	tL.popup.timeRight.label.x=tL.popup.timeRight.x=tL.zoom.right.x;
+	tL.popup.timeRight.label.text=Math.trunc(tL.f.ttgi(tL.zoom.right.x));
+}
+
 tL.f.drawTime=function() {
 	// Un Axe
 	var rect = new createjs.Shape();
@@ -561,8 +644,12 @@ tL.f.drawTime=function() {
 		if((tL.f.ttgi(timeLeft) >= tL.i.dim.tig) && (tL.f.ttgi(timeRight) <= tL.i.dim.tsg)) {
 			tL.zoom.left.x = timeLeft;
 			tL.zoom.right.x = timeRight;
-			tL.f.drawBorder(tL.zoom.rect.left, 0, tL.zoom.leftTop.x);
-			tL.f.drawBorder(tL.zoom.rect.right,tL.zoom.rightTop.x,tL.s.canvas.width);
+			tL.f.drawBorder(tL.zoom.rect.left, 0, tL.zoom.left.x);
+			tL.f.drawBorder(tL.zoom.rect.right,tL.zoom.right.x,tL.s.canvas.width);
+			//timeLeft popup
+			tL.f.drawTimeLeftPopup();
+			//timeRight popup
+			tL.f.drawTimeRightPopup();
 		}
 	});
 	rect.on("pressup",function(evt) {
@@ -599,7 +686,9 @@ tL.f.drawTime=function() {
 	circle.on("pressmove",function(evt) {
 		if(tL.f.ttgi(evt.stageX) >= tL.i.dim.tig) {
 			tL.zoom.left.x = evt.stageX;
-			tL.f.drawBorder(tL.zoom.rect.left, 0, tL.zoom.leftTop.x);
+			tL.f.drawBorder(tL.zoom.rect.left, 0, tL.zoom.left.x);
+			//timeLeft popup
+			tL.f.drawTimeLeftPopup();
 		}
 	});
 	circle.on("pressup", function(evt) {
@@ -624,6 +713,8 @@ tL.f.drawTime=function() {
 		if(tL.f.ttgi(evt.stageX) <= tL.i.dim.tsg) {
 			tL.zoom.right.x = evt.stageX;
 			tL.f.drawBorder(tL.zoom.rect.right,tL.zoom.right.x,tL.s.canvas.width);
+			//timeRight popup
+			tL.f.drawTimeRightPopup();
 		}
 	});
 	circle.on("pressup", function(evt) {
@@ -640,6 +731,25 @@ tL.f.drawTime=function() {
 	rect.visible = false;
 	tL.s.addChild(rect);
 
+	// popup time Left and Right
+	tL.popup.timeLeft.label = new createjs.Text("10", "14px Arial", "#000000");
+	var label = tL.popup.timeLeft.label;
+	label.text = Math.trunc(tL.f.ttgi(tL.zoom.left.x));
+	label.textAlign = "center";
+	//label.textBaseline = "top";
+	label.x=tL.zoom.left.x;// - tL.i.style.mt;
+	//label.x=tL.popup.timeLeft.x;
+	label.y=-tL.i.zoom.ia * 2.0;
+	tL.s.addChild(label);
+
+	tL.popup.timeRight.label = new createjs.Text("10", "14px Arial", "#000000");
+	var label = tL.popup.timeRight.label;
+	label.text = Math.trunc(tL.f.ttgi(tL.zoom.right.x));
+	label.textAlign = "center";
+	label.textBaseline = "top";
+	label.x=tL.zoom.right.x;
+	label.y=-tL.i.zoom.ia * 2.0;
+	tL.s.addChild(label);
 }
 
 tL.f.drawMenu=function() {
@@ -908,6 +1018,6 @@ tL.f.show();
 createjs.Ticker.addEventListener("tick", tL.s);
 createjs.Touch.enable(tL.s);
 
-$("#tab_date_div").hide();
-$("#tab_date2_div").hide();
+//$("#tab_date_div").hide();
+//$("#tab_date2_div").hide();
 </script>

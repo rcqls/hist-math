@@ -1,9 +1,17 @@
 {#def]tabHistoires[#html>]
 <div class="ui tab segment tab_histoires" data-tab="histoires">
     <div class="ui grid">
-    <div class="one wide column"></div>
-    <div class="nine wide column">
-      {#dropdown]motscles_histoires[#class]search selection fluid normal[#multiple]true[#default]mots-clés ou personnages[#choices]:{motsclesHistoires_dropdown}[#js]
+    <div class="four wide column">
+      {#dropdown]motscles_histoires[#class]selection search fluid[#choices]tous|:{motsclesHistoires_dropdown}[#fullsearch][exact][#default]mots-clés ou personnages
+      [#js]
+      |console.log("value: <"+value+">");
+      |if(value == 'tous') {
+      | select_histoires('','');
+      } else {
+      | select_histoires(Histoires.motscles_selection=Histoires.motscles2histoires[value],'');
+      |}
+      [#}
+      {#dropdown2]motscles_histoires[#class]search selection fluid normal[#multiple]true[#default]mots-clés ou personnages[#choices]:{motsclesHistoires_dropdown}[#js]
       |//alert("changed "+JSON.stringify(value) + " " +JSON.stringify(value.length) + " " +JSON.stringify(text) + " " +JSON.stringify($selectedItem) + " " +JSON.stringify(typeof($selectedItem)));
       |if(typeof($selectedItem)=="string") {//add
 
@@ -16,20 +24,9 @@
       |}
       |if(value.length > 0) {select_histoires(Histoires.motscles_selection=value.map(function(elt) {return Histoires.motscles2histoires[elt];}).join(","),Histoires.et_ou);} else {$("#h_tab").click();select_histoires('','');}
       [#}
-      {#dropdown2]motscles_histoires[#class]search selection fluid normal[#multiple]true[#placeholder]"mots-clés ou personnages"[#valuesJS]Histoires.dropdown[#js]
-      |//alert("changed "+JSON.stringify(value) + " " +JSON.stringify(value.length) + " " +JSON.stringify(text) + " " +JSON.stringify($selectedItem) + " " +JSON.stringify(typeof($selectedItem)));
-      |if(typeof($selectedItem)=="string") {//add
-
-      |} else if(typeof($selectedItem)=="object") {//close
-      |var selHists=Histoires.motscles2histoires[$selectedItem.text()].split(",").map(function(elt) {return "#ph_"+elt;});
-      |//alert( JSON.stringify(selHists)+" "+JSON.stringify(open_popups)) ;
-      |//selHists.forEach(function(hist) {if(open_popups.includes(hist)) {alert("h:"+hist);}}) ;
-      |$("#h_tab").click();
-      |open_popups=[];
-      |}
-      |if(value.length > 0) {select_histoires(Histoires.motscles_selection=value.map(function(elt) {return Histoires.motscles2histoires[elt];}).join(","),Histoires.et_ou);} else {$("#h_tab").click();select_histoires('','');}
-      [#}
+       
     </div>
+    {#hide]
     <div class="two wide column">
       {#dropdown]et_ou_histoires[#default]et/ou[#choices]et|ou[#js]
       |select_histoires(Histoires.motscles_selection,Histoires.et_ou=value);
@@ -38,6 +35,7 @@
     <div class="three wide column">
       {#inputUI]periode_histoires[#default]periode...[#js]if(event.which==13) {select_histoires(Histoires.motscles_selection,Histoires.et_ou);}[#}
     </div>
+    [#hide}
     <div class="ui divider sixteen wide column"></div>
   </div>
 [#>]

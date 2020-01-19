@@ -17,10 +17,10 @@
 	<div id="tab_date_div" class="six wide column">
 		<div class="ui list">
 			<div class="item">
-				<img id="tab_date_img" class="ui avatar image go_tab" src="/users/Histoires/img/people/96x96/interrogation.png" tab="people" to="HeronAlexandrie">
+				<img id="tab_date_img" class="ui avatar image go_tab" src="/users/Histoires/img/people/orig/blanche.png" tab="people" to="">
 				<div class="content">
-					<div id="tab_date_nom" class="header">nom</div>
-					<div id="tab_date_dates" class="description">dates </div>
+					<div id="tab_date_nom" class="header"></div>
+					<div id="tab_date_dates" class="description"></div>
 				</div>
 			</div>
 		</div>
@@ -28,10 +28,10 @@
 	<div id="tab_date2_div" class="six wide column">
 		<div class="ui list">
 			<div class="item">
-				<img id="tab_date2_img" class="ui avatar image go_tab" src="/users/Histoires/img/people/96x96/interrogation.png" tab="people" to="HeronAlexandrie">
+				<img id="tab_date2_img" class="ui avatar image go_tab" src="/users/Histoires/img/people/orig/blanche.png" tab="people" to="">
 				<div class="content">
-					<div id="tab_date2_nom" class="header">nom</div>
-					<div id="tab_date2_dates" class="description">dates </div>
+					<div id="tab_date2_nom" class="header"></div>
+					<div id="tab_date2_dates" class="description"></div>
 				</div>
 			</div>
 		</div>
@@ -47,7 +47,7 @@
 	  tL.f.updateTheme(value);
 	  [#}
     </div-->
+	</div>
 	<canvas id="canvasTL" style="background-color: white;margin: 0px;padding: 0px;"></canvas>
-  </div>
 </div>
 [#def}

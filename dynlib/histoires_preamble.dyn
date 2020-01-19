@@ -1,12 +1,22 @@
-{#def]outputAll[#,]force[true]
+{#def]outputAll[#,]force[false]
 [#?]#{force}
+[#>]debut outputAll
 [#<]{#initRuby#}
+[#>]initRuby
 [#=]jscode[{#blck][#>]
 {#outputHistoires#}
 {#outputPeople#}
 {#outputTextes#}
 [#blck}]
-[#rb<]File.open(File.expand_path("~/RodaSrv/public/tools/js/histoires_preamble.js"),"w") { |f| f << #{=jscode} }
+[#>]<code><pre>jscode #{jscode}</pre></code>
+[#rb<]
+fn=File.expand_path("~/RodaSrv/public/tools/js/histoires_preamble.js")
+p [:fn,fn]
+File.open(fn,"w") do |f| #
+  f << %Q(
+    #{jscode}
+  )
+end
 [#?]end
 [#<]
 {#LayoutCSSCode]
@@ -107,8 +117,9 @@ periodesTextes={}
 textes.each do |texte,info| #
   if info["auteur"]
 	  info["auteur"].split(";").each{|e| #
-      if people[e]
-        motcle=people[e]["name"]
+      auteur=e.strip
+      if people[auteur]
+        motcle=people[auteur]["name"]
         textes_motscles[motcle] ||= []
         textes_motscles[motcle] << texte
         motsclesTextes << motcle
@@ -172,7 +183,7 @@ end
 [#def}
 
 
-{#def]outputHistoires[#<]
+{#def]outputHistoires[#>]
 [#>][
 Array.prototype.unique = function() {
     var o = {}, i, l = this.length, r = [];
@@ -188,7 +199,7 @@ Histoires.periodes=:{periodesHistoires_js};
 Histoires.et_ou="";
 Histoires.motscles_selection="";
 
-// TROP LENT: Histoires.dropdown=:{motsclesHistoires_dropdown_js};
+// TROP LENT: Histoires.dropdown=:{motsclesHistoires_dropdown};
 
 function intersectPeriodHistoires(from,to) {
   var histoires=[];
@@ -203,13 +214,47 @@ function intersectPeriodHistoires(from,to) {
   return histoires;
 };
 
-function select_histoires(motscles_selection,et_ou) {
+// function select_histoires(motscles_selection,et_ou) {
+//   var histoiresParMotscles=motscles_selection.split(",").unique();
+//   //fix weird behavior of split "".split(",") == [""]
+//   if(histoiresParMotscles.includes("") && histoiresParMotscles.length==1) histoiresParMotscles=[];
+//   Histoires.motscles_selection=histoiresParMotscles.join(",");
+//   motscles_selection=Histoires.motscles_selection;
+//   var periode=$("#periode_histoires").val(),inter=[];
+//   var histoiresParPeriodes=[];
+//   if(periode != "") {
+//     inter=periode.split(";");
+//     if(inter.length==1) inter.push(inter[0]);
+//     //alert("inter="+JSON.stringify(inter));
+//     histoiresParPeriodes=intersectPeriodHistoires(parseInt(inter[0]),parseInt(inter[1]));
+//   }
+//   //alert("periode=<"+periode+"> et/ou=<"+et_ou+"> motscles=<"+motscles+">");
+//   //alert("periodes="+JSON.stringify(histoiresParPeriodes)+"] et/ou=<"+JSON.stringify(et_ou)+"> motscles="+JSON.stringify(histoiresParMotscles));
+//   //hide and show
+//   $(".histoire").hide();
+//   if(histoiresParMotscles.length==0 && histoiresParPeriodes.length==0) {
+//     $(".histoire").show();
+//   } else {
+//     histoiresParMotscles.forEach(function(elt) {
+//       if(["","ou"].includes(et_ou) || histoiresParPeriodes.includes(elt)) {
+//         //alert("elt="+JSON.stringify(elt));
+//         $("."+elt).show();
+//       }
+//     });
+//     histoiresParPeriodes.forEach(function(elt) {
+//       if(["","ou"].includes(et_ou) || histoiresParMotscles.includes(elt)) {
+//         $("."+elt).show();
+//       }
+//     });
+//   }
+
+  function select_histoires(motscles_selection,et_ou) {
   var histoiresParMotscles=motscles_selection.split(",").unique();
   //fix weird behavior of split "".split(",") == [""]
   if(histoiresParMotscles.includes("") && histoiresParMotscles.length==1) histoiresParMotscles=[];
   Histoires.motscles_selection=histoiresParMotscles.join(",");
   motscles_selection=Histoires.motscles_selection;
-  var periode=$("#periode_histoires").val(),inter=[];
+  var periode="",inter=[];
   var histoiresParPeriodes=[];
   if(periode != "") {
     inter=periode.split(";");
@@ -249,7 +294,7 @@ People.periodes=:{periodesPeople_js};
 People.et_ou="";
 People.motscles_selection="";
 
-// TROP LENT: People.dropdown=:{motsclesPeople_dropdown_js};
+// TROP LENT: People.dropdown=:{motsclesPeople_dropdown};
 
 function intersectPeriodPeople(from,to) {
   var people=[];
@@ -270,7 +315,7 @@ function select_people(motscles_selection,et_ou) {
   if(peopleParMotscles.includes("") && peopleParMotscles.length==1) peopleParMotscles=[];
   People.motscles_selection=peopleParMotscles.join(",");
   motscles_selection=People.motscles_selection;
-  var periode=$("#periode_people").val(),inter=[];
+  var periode= "",inter=[];
   var peopleParPeriodes=[];
   if(periode != "") {
     inter=periode.split(";");
@@ -311,7 +356,7 @@ Textes.periodes=:{periodesTextes_js};
 Textes.et_ou="";
 Textes.motscles_selection="";
 
-// TROP LENT: Textes.dropdown=:{motsclesTextes_dropdown_js};
+// TROP LENT: Textes.dropdown=:{motsclesTextes_dropdown};
 
 function intersectPeriodTextes(from,to) {
   var textes=[];
@@ -334,7 +379,7 @@ function select_textes(motscles_selection,et_ou) {
   if(textesParMotscles.includes("") && textesParMotscles.length==1) textesParMotscles=[];
   Textes.motscles_selection=textesParMotscles.join(",");
   motscles_selection=Textes.motscles_selection;
-  var periode=$("#periode_textes").val(),inter=[];
+  var periode="",inter=[];
   var textesParPeriodes=[];
   if(periode != "") {
     inter=periode.split(";");
@@ -376,6 +421,12 @@ $('.menu .tabitem')
   "onVisible": function(path) {
       $('.image_'+path).visibility('refresh');
     }
+  })
+;
+
+$('.menu .tabitemfaq').click(function(evt){
+   //window.location="/FAQ"
+   window.open('/FAQ', '_blank');
   })
 ;
 
@@ -684,7 +735,7 @@ function select_people(motscles_selection,et_ou) {
   if(peopleParMotscles.includes("") && peopleParMotscles.length==1) peopleParMotscles=[];
   People.motscles_selection=peopleParMotscles.join(",");
   motscles_selection=People.motscles_selection;
-  var periode=$("#periode_people").val(),inter=[];
+  var periode="",inter=[];
   var peopleParPeriodes=[];
   if(periode != "") {
     inter=periode.split(";");

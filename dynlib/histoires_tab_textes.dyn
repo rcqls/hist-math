@@ -1,8 +1,18 @@
 {#def]tabTextes[#html>]
 <div class="ui tab segment tab_textes" data-tab="textes">
   <div class="ui grid">
-    <div class="one wide column"></div>
-    <div class="nine wide column">
+    <div class="four wide column">
+      {#dropdown]motscles_textes[#class]selection search fluid[#choices]tous|:{motsclesTextes_dropdown}[#fullsearch][exact][#default]auteur
+      [#js]
+      |console.log("value: <"+value+">");
+      |if(value == 'tous') {
+      | select_textes('','');
+      } else {
+      | select_textes(Textes.motscles_selection=Textes.motscles2textes[value],'');
+      |}
+      [#}
+      </div>
+      {#hide]
       {#dropdown]motscles_textes[#class]search selection fluid normal[#multiple]true[#default]personnages[#choices]:{motsclesTextes_dropdown}[#js]
       //alert("changed "+JSON.stringify(value));
       if(value.length > 0) {select_textes(Textes.motscles_selection=value.map(function(elt) {return Textes.motscles2textes[elt];}).join(","),Textes.et_ou);} else {$("#t_tab").click();select_textes('','');}
@@ -18,6 +28,7 @@
       [#}
     </div>
     <div class="three wide column">{#inputUI]periode_textes[#default]periode...[#js]if(event.which==13) {select_textes(Textes.motscles_selection,Textes.et_ou);}[#}</div>
+    [#hide}
     <div class="ui divider sixteen wide column"></div>
   </div>
   <div class="ui list">

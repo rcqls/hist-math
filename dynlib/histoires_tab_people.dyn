@@ -1,27 +1,24 @@
 {#def]tabPeople[#html>]
 <div class="ui tab segment tab_people" data-tab="people">
   <div class="ui grid">
-    <div class="one wide column"></div>
-    <div class="nine wide column">
-      {#dropdown]motscles_people[#class]search selection fluid normal[#multiple]true[#default]personnages[#choices]:{motsclesPeople_dropdown}[#js]
-      //alert("changed "+JSON.stringify(value));
-      if(typeof(value) != "undefined" && value.length > 0) {
-      select_people(People.motscles_selection=value.map(function(elt) {return People.motscles2people[elt];}).join(","),People.et_ou);
-      } else {$("#p_tab").click();select_people('','');}
-      [#}
-      {#dropdown2]motscles_people[#class]search selection fluid normal[#multiple]true[#placeholder]"personnages"[#valuesJS]People.dropdown[#js]
-      //alert("changed "+JSON.stringify(value));
-      if(typeof(value) != "undefined" && value.length > 0) {
-      select_people(People.motscles_selection=value.map(function(elt) {return People.motscles2people[elt];}).join(","),People.et_ou);
-      } else {$("#p_tab").click();select_people('','');}
+    <div class="four wide column">
+      {#dropdown]motscles_people[#class]selection search fluid[#choices]tous|:{motsclesPeople_dropdown}[#fullsearch][exact][#default]personnages
+      [#js]
+      |console.log("value: <"+value+">");
+      |if(value == 'tous') {
+      | select_people('','');
+      } else {
+      | select_people(People.motscles_selection=People.motscles2people[value],'');
+      |}
       [#}
     </div>
-    <div class="two wide column">
-      {#dropdown]et_ou_people[#default]et/ou[#choices]et|ou[#js]
+    {#hide]<div class="two wide column">
+      {#dropdown2]et_ou_people[#default]et/ou[#choices]et|ou[#js]
       select_people(People.motscles_selection,People.et_ou=value);
       [#}
     </div>
-    <div class="three wide column">{#inputUI]periode_people[#default]periode...[#js]if(event.which==13) {select_people(People.motscles_selection,People.et_ou);}[#}</div>
+    <div class="three wide column">{#inputUI2]periode_people[#default]periode...[#js]if(event.which==13) {select_people(People.motscles_selection,People.et_ou);}[#}</div>
+    [#hide}
     <div class="ui divider sixteen wide column"></div>
   </div>
   <div class="ui list">

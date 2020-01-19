@@ -13,7 +13,7 @@ Histoires/dynlib/histoires_tab_games
 Histoires/dynlib/histoires_tab_dates
 [#main]
 [#=]wsp[&thinsp;&thinsp;&thinsp;]
-[#=]icons[<<dates[calendar minus outline]<<histoires[unmute]<<people[user]<<textes[book]<<jeux[gift]]
+[#=]icons[<<dates[calendar minus outline]<<histoires[unmute]<<people[user]<<textes[book]<<jeux[gift]<<faq[blind]]
 [#=]popup[
   <<style[<<size[min-width:500px;]]
   <<class[ fluid]<<class[]
@@ -28,7 +28,7 @@ Histoires/dynlib/histoires_tab_dates
 [#=]bgcolor[<<histoires[background-color: honeydew;]<<people[background-color: linen;]<<textes[background-color: lightcyan;]]
 [#<]
 {#outputDDG]false[#} (Attention: ne pas le déplacer dans histoiresGames.dyn)
-{#outputAll]true[#}
+{#outputAll#}
 [#html>]
 <h1 class="ui header">
   <div class="content">
@@ -42,7 +42,7 @@ Histoires/dynlib/histoires_tab_dates
     <a id="p_tab" class="item tabitem" data-tab="people"><i class="#{icons.people} icon"></i>personnages</a>
     <a id="t_tab" class="item tabitem" data-tab="textes"><i class="#{icons.textes} icon"></i>textes</a>
     <a id="t_tab" class="item tabitem" data-tab="jeux"><i class="#{icons.jeux} icon"></i>jeux</a>
-    <a id="f_tab" class="item tabitem2"><i class="#{icons.jeux} icon"></i>faq</a>
+    <a id="f_tab" class="item tabitemfaq"><i class="#{icons.faq} icon"></i>faq</a>
   </div>
 {#tabDates#}
 {#tabHistoires#}
@@ -53,7 +53,7 @@ Histoires/dynlib/histoires_tab_dates
 
 {#initJS#}
 
-{#initHistoiresDatesJS][false]
+{#initHistoiresDatesJS][true]
 [#width] 
 [document.getElementById("canvas_container").offsetWidth]
 [#height]
