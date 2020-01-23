@@ -2,7 +2,7 @@
 <div class="ui tab segment tab_people" data-tab="people">
   <div class="ui grid">
     <div class="four wide column">
-      {#dropdown]motscles_people[#class]selection search fluid[#choices]tous|:{motsclesPeople_dropdown}[#fullsearch][exact][#default]personnages
+      {#dropdown]motscles_people[#class]selection search fluid[#choices]tous|:{motsclesPeople_dropdown}[#fullsearch][exact][#default]personnage
       [#js]
       |console.log("value: <"+value+">");
       |if(value == 'tous') {

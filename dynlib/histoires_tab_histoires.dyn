@@ -2,7 +2,7 @@
 <div class="ui tab segment tab_histoires" data-tab="histoires">
     <div class="ui grid">
     <div class="four wide column">
-      {#dropdown]motscles_histoires[#class]selection search fluid[#choices]tous|:{motsclesHistoires_dropdown}[#fullsearch][exact][#default]mots-clés ou personnages
+      {#dropdown]motscles_histoires[#class]selection search fluid[#choices]tous|:{motsclesHistoires_dropdown}[#fullsearch][exact][#default]mot-clé ou personnage
       [#js]
       |console.log("value: <"+value+">");
       |if(value == 'tous') {
