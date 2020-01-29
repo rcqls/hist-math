@@ -28,7 +28,7 @@ Histoires/dynlib/histoires_tab_dates
 [#=]bgcolor[<<histoires[background-color: honeydew;]<<people[background-color: linen;]<<textes[background-color: lightcyan;]]
 [#<]
 {#outputDDG]false[#} (Attention: ne pas le déplacer dans histoiresGames.dyn)
-{#outputAll#}
+{#outputAll]true[#}
 [#html>]
 <h1 class="ui header">
   <div class="content">

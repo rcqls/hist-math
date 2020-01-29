@@ -39,7 +39,7 @@
     <div class="ui divider sixteen wide column"></div>
   </div>
 [#>]
-{#html]RCqls/cache/histoires_list[#cache]histoires_list
+{#hide]{#html]RCqls/cache/histoires_list[#cache]histoires_list[#html}[#hide}
 [#rb>]
   domaines.each do |domaine| #
   domaine_titre=domaines_titres[domaine]
@@ -93,7 +93,6 @@ end
   </div>
 [#>}
 end
-[#html}
 [#html>]
 </div>
 [#def}

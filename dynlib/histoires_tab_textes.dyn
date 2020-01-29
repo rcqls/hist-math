@@ -32,7 +32,8 @@
     <div class="ui divider sixteen wide column"></div>
   </div>
   <div class="ui list">
-{#html]RCqls/cache/textes_list[#cache]texteslist
+[#>]
+{#hide]{#html]RCqls/cache/textes_list[#cache]texteslist[#html}[#hide}
 [#rb>]
 textes.sort_by{|texte,info| first=(info["date"].to_s.split(";")[0]).strip;first=(first =~ /^\?.*/ ? first[1..-1] : first); first.to_f}.each do |texte,info| #
   auteurs=info["auteur"].split(";").map{|e| e.strip}
@@ -97,7 +98,6 @@ textes.sort_by{|texte,info| first=(info["date"].to_s.split(";")[0]).strip;first=
     </div>
   [#>}
 end
-[#html}
 [#>]
   </div>
 </div>
